@@ -1,0 +1,3338 @@
+{
+  "page": "Reporting/DoctorReferralEntry.aspx",
+  "url": "http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+  "scanned_at": "2026-11-03T15:21:30",
+  "elements": {
+    "lnkusername": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_lnkusername\"]"
+      },
+      "label": "Sundeep Saini",
+      "text": "Sundeep Saini",
+      "client_id": "ctl00_lnkusername",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": true,
+      "group": ""
+    },
+    "lnkhome": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_lnkhome\"]"
+      },
+      "label": "Home",
+      "text": "Home",
+      "client_id": "ctl00_lnkhome",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": false,
+      "group": ""
+    },
+    "practiceTrigger": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practiceTrigger\"]"
+      },
+      "label": "TBC(Shahdara)",
+      "text": "TBC(Shahdara)",
+      "client_id": "practiceTrigger",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "clearAllBtn": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"clearAllBtn\"]"
+      },
+      "label": "Clear All",
+      "text": "Clear All",
+      "client_id": "clearAllBtn",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "applyPracticeBtn": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"applyPracticeBtn\"]"
+      },
+      "label": "Apply",
+      "text": "Apply",
+      "client_id": "applyPracticeBtn",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "practice_all": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_all\"]"
+      },
+      "label": "All Practices",
+      "text": "all",
+      "client_id": "practice_all",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "all",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_4": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_4\"]"
+      },
+      "label": "TBC(Keshavpuram)",
+      "text": "4",
+      "client_id": "practice_4",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "4",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_8": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_8\"]"
+      },
+      "label": "TBC(MayurVihar)",
+      "text": "8",
+      "client_id": "practice_8",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "8",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_2": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_2\"]"
+      },
+      "label": "TBC(Shahdara)",
+      "text": "2",
+      "client_id": "practice_2",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "2",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": true
+    },
+    "practice_10": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_10\"]"
+      },
+      "label": "TBC(Tigri)",
+      "text": "10",
+      "client_id": "practice_10",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "10",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_9": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_9\"]"
+      },
+      "label": "TBC(UttamNagar)",
+      "text": "9",
+      "client_id": "practice_9",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "9",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "link_logout": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Logout"
+      },
+      "label": "Logout",
+      "text": "Logout",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_visit": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Visit"
+      },
+      "label": "Visit",
+      "text": "Visit",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_registration": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Patient Registration"
+      },
+      "label": "Patient Registration",
+      "text": "Patient Registration",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_task_and_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Task And Messages"
+      },
+      "label": "Task And Messages",
+      "text": "Task And Messages",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_shared_emrs": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Shared EMRs"
+      },
+      "label": "Shared EMRs",
+      "text": "Shared EMRs",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_accounting": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Accounting"
+      },
+      "label": "Accounting",
+      "text": "Accounting",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_contacts": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Contacts"
+      },
+      "label": "Contacts",
+      "text": "Contacts",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_reports": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Reports"
+      },
+      "label": "Reports",
+      "text": "Reports",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_administration": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Administration"
+      },
+      "label": "Administration",
+      "text": "Administration",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_my_account": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "My Account"
+      },
+      "label": "My Account",
+      "text": "My Account",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Lab"
+      },
+      "label": "Lab",
+      "text": "Lab",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_pharmacy": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Pharmacy"
+      },
+      "label": "Pharmacy",
+      "text": "Pharmacy",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Inventory"
+      },
+      "label": "Inventory",
+      "text": "Inventory",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_chief_complaints": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Chief Complaints"
+      },
+      "label": "Chief Complaints",
+      "text": "Chief Complaints",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_examination": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Examination"
+      },
+      "label": "Examination",
+      "text": "Examination",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_test": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Test"
+      },
+      "label": "Test",
+      "text": "Test",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_medicine": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Medicine"
+      },
+      "label": "Medicine",
+      "text": "Medicine",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_allergies_and_history": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Allergies And History"
+      },
+      "label": "Allergies And History",
+      "text": "Allergies And History",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_documents": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Documents"
+      },
+      "label": "Documents",
+      "text": "Documents",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_investigation_plan": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Investigation Plan"
+      },
+      "label": "Investigation Plan",
+      "text": "Investigation Plan",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_treatment_plan": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Treatment Plan"
+      },
+      "label": "Treatment Plan",
+      "text": "Treatment Plan",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_share_emr": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Share EMR"
+      },
+      "label": "Share EMR",
+      "text": "Share EMR",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_schedule": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Schedule"
+      },
+      "label": "Schedule",
+      "text": "Schedule",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_advice": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Advice"
+      },
+      "label": "Advice",
+      "text": "Advice",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_fatiguescore": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "FatigueScore"
+      },
+      "label": "FatigueScore",
+      "text": "FatigueScore",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_diabetes_symptoms_score": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Diabetes Symptoms Score"
+      },
+      "label": "Diabetes Symptoms Score",
+      "text": "Diabetes Symptoms Score",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_satisfaction_score": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Patient Satisfaction Score"
+      },
+      "label": "Patient Satisfaction Score",
+      "text": "Patient Satisfaction Score",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_quick_view": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Quick View"
+      },
+      "label": "Quick View",
+      "text": "Quick View",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_patient": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Patient"
+      },
+      "label": "Add Patient",
+      "text": "Add Patient",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_task_for_me": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Task For Me"
+      },
+      "label": "Task For Me",
+      "text": "Task For Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_assign_task": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Assign Task"
+      },
+      "label": "Assign Task",
+      "text": "Assign Task",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inbox": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inbox"
+      },
+      "label": "Inbox",
+      "text": "Inbox",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_compose_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Compose Messages"
+      },
+      "label": "Compose Messages",
+      "text": "Compose Messages",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_sent_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Sent Messages"
+      },
+      "label": "Sent Messages",
+      "text": "Sent Messages",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_all_emrs_shared_by_me": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "All EMRs Shared By Me"
+      },
+      "label": "All EMRs Shared By Me",
+      "text": "All EMRs Shared By Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_all_emrs_share_to_me": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "All EMRs Share To Me"
+      },
+      "label": "All EMRs Share To Me",
+      "text": "All EMRs Share To Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_expense": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Expense"
+      },
+      "label": "Add Expense",
+      "text": "Add Expense",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_bill": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Bill"
+      },
+      "label": "Add Bill",
+      "text": "Add Bill",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_expense_allocation": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Expense Allocation"
+      },
+      "label": "Expense Allocation",
+      "text": "Expense Allocation",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_directory": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Directory"
+      },
+      "label": "KMed Directory",
+      "text": "KMed Directory",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_network_request": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Network Request"
+      },
+      "label": "Network Request",
+      "text": "Network Request",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_my_phone_book": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "My Phone Book"
+      },
+      "label": "My Phone Book",
+      "text": "My Phone Book",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_referral_doctor": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Referral Doctor"
+      },
+      "label": "Add Referral Doctor",
+      "text": "Add Referral Doctor",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_bulk_referral_doctor": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Bulk Referral Doctor"
+      },
+      "label": "Add Bulk Referral Doctor",
+      "text": "Add Bulk Referral Doctor",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_emr_reports": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Patient EMR Reports"
+      },
+      "label": "Patient EMR Reports",
+      "text": "Patient EMR Reports",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_schedule_audit": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Schedule Audit"
+      },
+      "label": "Schedule Audit",
+      "text": "Schedule Audit",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_bill_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Bill Report"
+      },
+      "label": "Bill Report",
+      "text": "Bill Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lab Report"
+      },
+      "label": "Lab Report",
+      "text": "Lab Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_pharmacy_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Pharmacy Report"
+      },
+      "label": "Pharmacy Report",
+      "text": "Pharmacy Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inventory Report"
+      },
+      "label": "Inventory Report",
+      "text": "Inventory Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_user_dashboard": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "User Dashboard"
+      },
+      "label": "User Dashboard",
+      "text": "User Dashboard",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_daily_visit_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Daily Visit Report"
+      },
+      "label": "Daily Visit Report",
+      "text": "Daily Visit Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_referral_doctor_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Referral Doctor Report"
+      },
+      "label": "Referral Doctor Report",
+      "text": "Referral Doctor Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_action_wall": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Action Wall"
+      },
+      "label": "Action Wall",
+      "text": "Action Wall",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_defaulter_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Defaulter Report"
+      },
+      "label": "Defaulter Report",
+      "text": "Defaulter Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_defaulter_report_old": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Defaulter Report (old)"
+      },
+      "label": "Defaulter Report (old)",
+      "text": "Defaulter Report (old)",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_patient_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Patient Report"
+      },
+      "label": "New Patient Report",
+      "text": "New Patient Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_referral_doctor_report_new": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Referral Doctor Report (new)"
+      },
+      "label": "Referral Doctor Report (new)",
+      "text": "Referral Doctor Report (new)",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_doctor_payment": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Doctor Payment"
+      },
+      "label": "Doctor Payment",
+      "text": "Doctor Payment",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lead_prospect_page": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lead Prospect Page"
+      },
+      "label": "Lead Prospect Page",
+      "text": "Lead Prospect Page",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_follow_up_reminders": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Follow-Up Reminders"
+      },
+      "label": "Follow-Up Reminders",
+      "text": "Follow-Up Reminders",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_workstatus_and_escalation_repo": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "WorkStatus And Escalation Report"
+      },
+      "label": "WorkStatus And Escalation Report",
+      "text": "WorkStatus And Escalation Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_reports_analytics": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Reports & Analytics"
+      },
+      "label": "Reports & Analytics",
+      "text": "Reports & Analytics",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_doctor_communication_day_track": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Doctor Communication Day Track"
+      },
+      "label": "Doctor Communication Day Track",
+      "text": "Doctor Communication Day Track",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_practice_location": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Practice Location"
+      },
+      "label": "Practice Location",
+      "text": "Practice Location",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_dash_board_preference": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Dash Board Preference"
+      },
+      "label": "Dash Board Preference",
+      "text": "Dash Board Preference",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_payment": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Payment"
+      },
+      "label": "Payment",
+      "text": "Payment",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_edit_profile": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Edit Profile"
+      },
+      "label": "Edit Profile",
+      "text": "Edit Profile",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_change_password": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Change Password"
+      },
+      "label": "Change Password",
+      "text": "Change Password",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_invoices": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Invoices"
+      },
+      "label": "KMed Invoices",
+      "text": "KMed Invoices",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_support": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Support"
+      },
+      "label": "KMed Support",
+      "text": "KMed Support",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_getting_started": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Getting Started"
+      },
+      "label": "Getting Started",
+      "text": "Getting Started",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab_task": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lab Task"
+      },
+      "label": "Lab Task",
+      "text": "Lab Task",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_test_done": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Test Done"
+      },
+      "label": "Test Done",
+      "text": "Test Done",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_prescriptions": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Prescriptions"
+      },
+      "label": "Prescriptions",
+      "text": "Prescriptions",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_dispensed_medicine": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Dispensed Medicine"
+      },
+      "label": "Dispensed Medicine",
+      "text": "Dispensed Medicine",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_item_master": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Item Master"
+      },
+      "label": "Item Master",
+      "text": "Item Master",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_supplier_master": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Supplier Master"
+      },
+      "label": "Supplier Master",
+      "text": "Supplier Master",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_transaction_details": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Transaction Details"
+      },
+      "label": "Transaction Details",
+      "text": "Transaction Details",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_2": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Inventory"
+      },
+      "label": "Inventory",
+      "text": "Inventory",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_inventory_transaction": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Inventory Transaction"
+      },
+      "label": "New Inventory Transaction",
+      "text": "New Inventory Transaction",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_transaction_receipt": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inventory Transaction Receipt"
+      },
+      "label": "Inventory Transaction Receipt",
+      "text": "Inventory Transaction Receipt",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_inventory_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Inventory Report"
+      },
+      "label": "New Inventory Report",
+      "text": "New Inventory Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "txtPatientName": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtPatientName\"]"
+      },
+      "label": "Enter patient name",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtPatientName",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "rblGender_0": {
+      "kind": "radio",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_rblGender_0\"]"
+      },
+      "label": "Male",
+      "text": "1",
+      "client_id": "ctl00_ContentOverUpdatePanel_rblGender_0",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "1",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "rblGender_1": {
+      "kind": "radio",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_rblGender_1\"]"
+      },
+      "label": "Female",
+      "text": "2",
+      "client_id": "ctl00_ContentOverUpdatePanel_rblGender_1",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "2",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "rblGender_2": {
+      "kind": "radio",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_rblGender_2\"]"
+      },
+      "label": "Other",
+      "text": "3",
+      "client_id": "ctl00_ContentOverUpdatePanel_rblGender_2",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "3",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "txtAge": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtAge\"]"
+      },
+      "label": "Enter age",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtAge",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtMob": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtMob\"]"
+      },
+      "label": "Enter mobile number",
+      "text": "",
+      "client_id": "txtMob",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": 10,
+      "in_page_source": true
+    },
+    "txtAltrnatemob": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtAltrnatemob\"]"
+      },
+      "label": "Enter mobile number",
+      "text": "",
+      "client_id": "txtAltrnatemob",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": 10,
+      "in_page_source": true
+    },
+    "txtAddedOn": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtAddedOn\"]"
+      },
+      "label": "Added On",
+      "text": "2026-11-03",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtAddedOn",
+      "visible": true,
+      "enabled": true,
+      "readonly": true,
+      "initial_value": "2026-11-03",
+      "maxlength": null,
+      "in_page_source": true,
+      "textmode": "Date"
+    },
+    "ddlPractice": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ddlPractice\"]"
+      },
+      "label": "Practice",
+      "text": "TBC(Shahdara)",
+      "client_id": "ddlPractice",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "2",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "2",
+          "label": "TBC(Shahdara)"
+        }
+      ]
+    },
+    "DdlReferralSource": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"DdlReferralSource\"]"
+      },
+      "label": "Referral Source",
+      "text": "-- Select Source -- Network Doctors Pharmacist Community Volunteer Pathology Lab",
+      "client_id": "DdlReferralSource",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "0",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "0",
+          "label": "-- Select Source --"
+        },
+        {
+          "value": "1",
+          "label": "Network Doctors"
+        },
+        {
+          "value": "2",
+          "label": "Pharmacist"
+        },
+        {
+          "value": "3",
+          "label": "Community Volunteer"
+        },
+        {
+          "value": "4",
+          "label": "Pathology Lab"
+        },
+        {
+          "value": "5",
+          "label": "N.G.O"
+        },
+        {
+          "value": "6",
+          "label": "Internet"
+        },
+        {
+          "value": "7",
+          "label": "Mobile Messaging"
+        },
+        {
+          "value": "8",
+          "label": "Word of Mouth"
+        },
+        {
+          "value": "9",
+          "label": "News Paper"
+        },
+        {
+          "value": "10",
+          "label": "Mass Media"
+        },
+        {
+          "value": "11",
+          "label": "Posters/Banners"
+        },
+        {
+          "value": "12",
+          "label": "Other"
+        },
+        {
+          "value": "13",
+          "label": "OPR"
+        },
+        {
+          "value": "14",
+          "label": "Team Member"
+        },
+        {
+          "value": "15",
+          "label": "ChatBot"
+        }
+      ]
+    },
+    "TxtRefferalDoctor": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"TxtRefferalDoctor\"]"
+      },
+      "label": "Search referral doctor",
+      "text": "",
+      "client_id": "TxtRefferalDoctor",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtmagent": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtmagent\"]"
+      },
+      "label": "Search MarketingAgent",
+      "text": "",
+      "client_id": "txtmagent",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtTeamMember": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtTeamMember\"]"
+      },
+      "label": "Search team member",
+      "text": "",
+      "client_id": "txtTeamMember",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "ddldisease": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ddldisease\"]"
+      },
+      "label": "Disease / Program",
+      "text": "--Select Disease-- TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB ",
+      "client_id": "ddldisease",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "0",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "0",
+          "label": "--Select Disease--"
+        },
+        {
+          "value": "1",
+          "label": "TB"
+        },
+        {
+          "value": "3",
+          "label": "TB with Diabetes"
+        },
+        {
+          "value": "4",
+          "label": "Diabetes"
+        },
+        {
+          "value": "6",
+          "label": "No Program"
+        },
+        {
+          "value": "8",
+          "label": "Follow-Up(TB)"
+        },
+        {
+          "value": "9",
+          "label": "NGO TB"
+        },
+        {
+          "value": "10",
+          "label": "TB Support(No ATT)"
+        }
+      ]
+    },
+    "ddlPatientStatus": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ddlPatientStatus\"]"
+      },
+      "label": "Program Status",
+      "text": "--Select-- On Program Treatment Inturrpted Defaulted Cured Died Prospect Follow-",
+      "client_id": "ddlPatientStatus",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "6",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "0",
+          "label": "--Select--"
+        },
+        {
+          "value": "1",
+          "label": "On Program"
+        },
+        {
+          "value": "2",
+          "label": "Treatment Inturrpted"
+        },
+        {
+          "value": "3",
+          "label": "Defaulted"
+        },
+        {
+          "value": "4",
+          "label": "Cured"
+        },
+        {
+          "value": "5",
+          "label": "Died"
+        },
+        {
+          "value": "6",
+          "label": "Prospect"
+        },
+        {
+          "value": "7",
+          "label": "Follow-up"
+        },
+        {
+          "value": "8",
+          "label": "Referred to MDR"
+        },
+        {
+          "value": "9",
+          "label": "Review After Report"
+        },
+        {
+          "value": "10",
+          "label": "OPD/Other Treatment"
+        },
+        {
+          "value": "11",
+          "label": "Consultation Only"
+        },
+        {
+          "value": "12",
+          "label": "No Program Disease"
+        },
+        {
+          "value": "13",
+          "label": "Died"
+        }
+      ]
+    },
+    "txtFollowUpDate": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtFollowUpDate\"]"
+      },
+      "label": "Appointment & Time",
+      "text": "",
+      "client_id": "txtFollowUpDate",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "textmode": "Date"
+    },
+    "ddlTime": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ddlTime\"]"
+      },
+      "label": "Appointment & Time",
+      "text": "Select Time 9:00 AM 9:15 AM 9:30 AM 9:45 AM 10:00 AM 10:15 AM 10:30 AM 10:45 AM ",
+      "client_id": "ddlTime",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "",
+          "label": "Select Time"
+        },
+        {
+          "value": "09:00",
+          "label": "9:00 AM"
+        },
+        {
+          "value": "09:15",
+          "label": "9:15 AM"
+        },
+        {
+          "value": "09:30",
+          "label": "9:30 AM"
+        },
+        {
+          "value": "09:45",
+          "label": "9:45 AM"
+        },
+        {
+          "value": "10:00",
+          "label": "10:00 AM"
+        },
+        {
+          "value": "10:15",
+          "label": "10:15 AM"
+        },
+        {
+          "value": "10:30",
+          "label": "10:30 AM"
+        },
+        {
+          "value": "10:45",
+          "label": "10:45 AM"
+        },
+        {
+          "value": "11:00",
+          "label": "11:00 AM"
+        },
+        {
+          "value": "11:15",
+          "label": "11:15 AM"
+        },
+        {
+          "value": "11:30",
+          "label": "11:30 AM"
+        },
+        {
+          "value": "11:45",
+          "label": "11:45 AM"
+        },
+        {
+          "value": "12:00",
+          "label": "12:00 PM"
+        },
+        {
+          "value": "12:15",
+          "label": "12:15 PM"
+        },
+        {
+          "value": "12:30",
+          "label": "12:30 PM"
+        },
+        {
+          "value": "12:45",
+          "label": "12:45 PM"
+        },
+        {
+          "value": "13:00",
+          "label": "1:00 PM"
+        },
+        {
+          "value": "13:15",
+          "label": "1:15 PM"
+        },
+        {
+          "value": "13:30",
+          "label": "1:30 PM"
+        },
+        {
+          "value": "13:45",
+          "label": "1:45 PM"
+        },
+        {
+          "value": "14:00",
+          "label": "2:00 PM"
+        },
+        {
+          "value": "14:15",
+          "label": "2:15 PM"
+        },
+        {
+          "value": "14:30",
+          "label": "2:30 PM"
+        },
+        {
+          "value": "14:45",
+          "label": "2:45 PM"
+        },
+        {
+          "value": "15:00",
+          "label": "3:00 PM"
+        },
+        {
+          "value": "15:15",
+          "label": "3:15 PM"
+        },
+        {
+          "value": "15:30",
+          "label": "3:30 PM"
+        },
+        {
+          "value": "15:45",
+          "label": "3:45 PM"
+        },
+        {
+          "value": "16:00",
+          "label": "4:00 PM"
+        }
+      ]
+    },
+    "txtReferralNote": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtReferralNote\"]"
+      },
+      "label": "Enter referral note",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtReferralNote",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "textmode": "MultiLine"
+    },
+    "imgupload": {
+      "kind": "file",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"imgupload\"]"
+      },
+      "label": "Upload Documents",
+      "text": "",
+      "client_id": "imgupload",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtAddress": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtAddress\"]"
+      },
+      "label": "Enter address",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtAddress",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtArea": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtArea\"]"
+      },
+      "label": "Search area",
+      "text": "",
+      "client_id": "txtArea",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "button_add": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "+ Add"
+      },
+      "label": "+ Add",
+      "text": "+ Add",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "txtpincode": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtpincode\"]"
+      },
+      "label": "Enter zip code",
+      "text": "",
+      "client_id": "txtpincode",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtcity": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtcity\"]"
+      },
+      "label": "Search city",
+      "text": "",
+      "client_id": "txtcity",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtstate": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtstate\"]"
+      },
+      "label": "Search state",
+      "text": "",
+      "client_id": "txtstate",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtcountry": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtcountry\"]"
+      },
+      "label": "Search country",
+      "text": "",
+      "client_id": "txtcountry",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "btnSaveReferral": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnSaveReferral\"]"
+      },
+      "label": "Save Referral",
+      "text": "Save Referral",
+      "client_id": "btnSaveReferral",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": true,
+      "group": "",
+      "server_handler": "if(Page_ClientValidate()) saveReferral();"
+    },
+    "button_clear": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "Clear"
+      },
+      "label": "Clear",
+      "text": "Clear",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "toggleAddedOn": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"toggleAddedOn\"]"
+      },
+      "label": "📅 Added On",
+      "text": "📅 Added On",
+      "client_id": "toggleAddedOn",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "switchDateFilter('addedon')"
+    },
+    "toggleAppointment": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"toggleAppointment\"]"
+      },
+      "label": "🗓️ Appointment",
+      "text": "🗓️ Appointment",
+      "client_id": "toggleAppointment",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "switchDateFilter('appointment')"
+    },
+    "toggleVisit": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"toggleVisit\"]"
+      },
+      "label": "🏥 Visit Date",
+      "text": "🏥 Visit Date",
+      "client_id": "toggleVisit",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "switchDateFilter('visit')"
+    },
+    "filterFromDate": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"filterFromDate\"]"
+      },
+      "label": "YYYY/MM/DD",
+      "text": "",
+      "client_id": "filterFromDate",
+      "visible": true,
+      "enabled": true,
+      "readonly": true,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "filterToDate": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"filterToDate\"]"
+      },
+      "label": "YYYY/MM/DD",
+      "text": "",
+      "client_id": "filterToDate",
+      "visible": true,
+      "enabled": true,
+      "readonly": true,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "btnFilter": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnFilter\"]"
+      },
+      "label": "🔍 Search",
+      "text": "🔍 Search",
+      "client_id": "btnFilter",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_disease": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "Disease ▾"
+      },
+      "label": "Disease ▾",
+      "text": "Disease ▾",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_referral_source": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "Referral Source ▾"
+      },
+      "label": "Referral Source ▾",
+      "text": "Referral Source ▾",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_center": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "Center ▾"
+      },
+      "label": "Center ▾",
+      "text": "Center ▾",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_patient_status": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "Patient Status ▾"
+      },
+      "label": "Patient Status ▾",
+      "text": "Patient Status ▾",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_priority": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "Priority ▾"
+      },
+      "label": "Priority ▾",
+      "text": "Priority ▾",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_doctor_types": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "Doctor Types ▾"
+      },
+      "label": "Doctor Types ▾",
+      "text": "Doctor Types ▾",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "checkbox_hybrid_doctor": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Hybrid Doctor"
+      },
+      "label": "Hybrid Doctor",
+      "text": "Hybrid Doctor",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Hybrid Doctor",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_main_doctor": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Main Doctor"
+      },
+      "label": "Main Doctor",
+      "text": "Main Doctor",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Main Doctor",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_other_doctor": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Other Doctor"
+      },
+      "label": "Other Doctor",
+      "text": "Other Doctor",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Other Doctor",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "btnClear": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnClear\"]"
+      },
+      "label": "✕ Clear",
+      "text": "✕ Clear",
+      "client_id": "btnClear",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_rotate": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Rotate"
+      },
+      "label": "Rotate",
+      "text": "Rotate",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_close": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Close"
+      },
+      "label": "Close",
+      "text": "Close",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_item": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "❮"
+      },
+      "label": "❮",
+      "text": "❮",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_item_2": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "❯"
+      },
+      "label": "❯",
+      "text": "❯",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "dhtCopyBtn": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"dhtCopyBtn\"]"
+      },
+      "label": "Copy Contact",
+      "text": "Copy Contact",
+      "client_id": "dhtCopyBtn",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "copyDoctorContact()"
+    },
+    "newAreaCountry": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"newAreaCountry\"]"
+      },
+      "label": "Country",
+      "text": "-- Select Country --",
+      "client_id": "newAreaCountry",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "0",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "0",
+          "label": "-- Select Country --"
+        }
+      ]
+    },
+    "newAreaState": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"newAreaState\"]"
+      },
+      "label": "Search state...",
+      "text": "",
+      "client_id": "newAreaState",
+      "visible": false,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "newAreaCity": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"newAreaCity\"]"
+      },
+      "label": "Search city...",
+      "text": "",
+      "client_id": "newAreaCity",
+      "visible": false,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "newAreaName": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"newAreaName\"]"
+      },
+      "label": "Enter area name",
+      "text": "",
+      "client_id": "newAreaName",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "newAreaZipcode": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"newAreaZipcode\"]"
+      },
+      "label": "Enter zipcode",
+      "text": "",
+      "client_id": "newAreaZipcode",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": 10,
+      "in_page_source": true
+    },
+    "button_save_area": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Save Area"
+      },
+      "label": "Save Area",
+      "text": "Save Area",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_item_3": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "×"
+      },
+      "label": "×",
+      "text": "×",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "kmedUploadDropZone": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"kmedUploadDropZone\"]"
+      },
+      "label": "Select Documents",
+      "text": "Drag & drop files here or click to browseYou can select multiple files (images, ",
+      "client_id": "kmedUploadDropZone",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_choose_files": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Choose Files"
+      },
+      "label": "Choose Files",
+      "text": "Choose Files",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "kmedUploadFileInput": {
+      "kind": "file",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"kmedUploadFileInput\"]"
+      },
+      "label": "",
+      "text": "",
+      "client_id": "kmedUploadFileInput",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "kmedSaveDocumentsButton": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"kmedSaveDocumentsButton\"]"
+      },
+      "label": "Save Document",
+      "text": "Save Document",
+      "client_id": "kmedSaveDocumentsButton",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "saveModalDocuments()"
+    }
+  },
+  "validators": {
+    "rfvPatientName": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvPatientName",
+      "control": "txtPatientName",
+      "control_client_id": "ctl00_ContentOverUpdatePanel_txtPatientName",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "",
+      "client_side": true
+    },
+    "rfvGender": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvGender",
+      "control": null,
+      "control_client_id": "ctl00_ContentOverUpdatePanel_rblGender",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "",
+      "client_side": true
+    },
+    "rfvAge": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvAge",
+      "control": "txtAge",
+      "control_client_id": "ctl00_ContentOverUpdatePanel_txtAge",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "",
+      "client_side": true
+    },
+    "rvAge": {
+      "kind": "range",
+      "client_id": "ctl00_ContentOverUpdatePanel_rvAge",
+      "control": "txtAge",
+      "control_client_id": "ctl00_ContentOverUpdatePanel_txtAge",
+      "message": "Age must be between 1 and 120",
+      "expression": "",
+      "group": "",
+      "initial_value": "",
+      "client_side": true
+    },
+    "rfvMobile": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvMobile",
+      "control": "txtMob",
+      "control_client_id": "txtMob",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "",
+      "client_side": true
+    },
+    "revMobile": {
+      "kind": "regex",
+      "client_id": "ctl00_ContentOverUpdatePanel_revMobile",
+      "control": "txtMob",
+      "control_client_id": "txtMob",
+      "message": "Enter valid 10 digit mobile number",
+      "expression": "^[0-9]{10}$",
+      "group": "",
+      "initial_value": "",
+      "client_side": true
+    },
+    "RegularExpressionValidator1": {
+      "kind": "regex",
+      "client_id": "ctl00_ContentOverUpdatePanel_RegularExpressionValidator1",
+      "control": "txtAltrnatemob",
+      "control_client_id": "txtAltrnatemob",
+      "message": "Enter valid 10 digit mobile number",
+      "expression": "^[0-9]{10}$",
+      "group": "",
+      "initial_value": "",
+      "client_side": true
+    },
+    "rfvAddedOn": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvAddedOn",
+      "control": "txtAddedOn",
+      "control_client_id": "ctl00_ContentOverUpdatePanel_txtAddedOn",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "",
+      "client_side": true
+    },
+    "rfvPractice": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvPractice",
+      "control": "ddlPractice",
+      "control_client_id": "ddlPractice",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "-1",
+      "client_side": true
+    },
+    "rfvReferralSource": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvReferralSource",
+      "control": "DdlReferralSource",
+      "control_client_id": "DdlReferralSource",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "0",
+      "client_side": true
+    },
+    "rfvTeamMember": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvTeamMember",
+      "control": "txtTeamMember",
+      "control_client_id": "txtTeamMember",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "",
+      "client_side": true
+    },
+    "rfvDisease": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvDisease",
+      "control": "ddldisease",
+      "control_client_id": "ddldisease",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "0",
+      "client_side": true
+    },
+    "rfvPatientStatus": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvPatientStatus",
+      "control": "ddlPatientStatus",
+      "control_client_id": "ddlPatientStatus",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "0",
+      "client_side": true
+    },
+    "rfvAddress": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvAddress",
+      "control": "txtAddress",
+      "control_client_id": "ctl00_ContentOverUpdatePanel_txtAddress",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "",
+      "client_side": true
+    },
+    "rfvArea": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvArea",
+      "control": "txtArea",
+      "control_client_id": "txtArea",
+      "message": "Required",
+      "expression": "",
+      "group": "",
+      "initial_value": "",
+      "client_side": true
+    }
+  },
+  "known_messages": [
+    "ADDED ON",
+    "Active +",
+    "Activity Mode",
+    "Activity Status",
+    "Added On",
+    "Address auto-fill failed",
+    "Age must be between 0 and 120",
+    "Age must be between 1 and 120",
+    "Area added successfully!",
+    "Area name is required",
+    "Back date not allowed",
+    "CONSULTATION ONLY",
+    "Central Hospital",
+    "City is required",
+    "Country is required",
+    "Disease is required",
+    "Doctor Mobile",
+    "Doctor Name",
+    "Doctor Type",
+    "Enter valid 10 digit mobile number",
+    "Error fetching practices:",
+    "Error saving area",
+    "Failed to fetch referral records. Please try again.",
+    "Failed to set lead session.",
+    "Follow-up From Date cannot be greater than Follow-up To Date",
+    "Follow-up date/time must be within future 1 year",
+    "From Date cannot be greater than To Date",
+    "Gender is required",
+    "Highly Active ++",
+    "Highly Negative --",
+    "Hybrid Doctor",
+    "Invalid Follow-up From Date",
+    "Invalid Follow-up To Date",
+    "Invalid From Date format",
+    "Invalid To Date format",
+    "Invalid server response",
+    "KMed ID",
+    "MARKETING AGENT",
+    "Main Doctor",
+    "Marketing Agent",
+    "Mayur Vihar",
+    "Negative -",
+    "Negative --",
+    "Network Doctors",
+    "Network error while saving lead priority.",
+    "Neutral +-",
+    "No Appointment",
+    "No communication yet",
+    "No documents",
+    "No note",
+    "No note added",
+    "Not Available",
+    "ON PROGRAM",
+    "ON TREATMENT",
+    "OPD/OTHER TREATMENT",
+    "On Program",
+    "Only 1 year ahead allowed",
+    "Optional note",
+    "Other Doctor",
+    "Patient Alternate Mobile",
+    "Patient Mobile",
+    "Patient Name",
+    "Patient Name is required",
+    "Patient Status",
+    "Please select From date",
+    "Please select Test Done On for",
+    "Please select at least one document.",
+    "REFERRAL SOURCE",
+    "REVIEW AFTER REPORT",
+    "Referral Doctor is required",
+    "Referral Slip",
+    "Referral Source",
+    "Referral Source is required",
+    "Referral saved successfully!",
+    "Referral updated successfully!",
+    "Required",
+    "SOUTH EXT",
+    "Save Referral",
+    "Save failed:",
+    "Server error occurred while saving referral.",
+    "Server error:",
+    "Server returned an error",
+    "Set Priority",
+    "State is required",
+    "TREATMENT COMPLETED",
+    "TREATMENT INTERRUPTED",
+    "TREATMENT STOPPED BY PATIENT",
+    "Team Member",
+    "Telephonic Number",
+    "Unable to identify this patient/prospect. Please refresh the page and try again.",
+    "Unable to save documents. Please try again.",
+    "Unknown error",
+    "Update Referral",
+    "Upload failed. Please check the file size and try again.",
+    "Uttam Nagar",
+    "VISIT DATE",
+    "View Document ("
+  ],
+  "page_text": "KMedNet\nCOMPLETE PRACTICE SOLUTION\nU\nSundeep Saini\n \nHome\nTBC(Shahdara)\n \nLogout\nVisit\n\t\t\nPatient Registration\n\t\t\nTask And Messages\n\t\t\nShared EMRs\n\t\t\nAccounting\n\t\t\nContacts\n\t\t\nReports\n\t\t\nAdministration\n\t\t\nMy Account\n\t\t\nLab\n\t\t\nPharmacy\n\t\t\nInventory\nDoctor Referral Patient & Lead Prospect Sheet\nPATIENT DETAILS\nPatient Name *\nGender *\nMale\tFemale\tOther\nAge *\nMobile Number *\nAlternate Mob Number\nAdded On *\nPractice *\nTBC(Shahdara)\nCLINICAL DETAILS\nReferral Source *\n-- Select Source --\nNetwork Doctors\nPharmacist\nCommunity Volunteer\nPathology Lab\nN.G.O\nInternet\nMobile Messaging\nWord of Mouth\nNews Paper\nMass Media\nPosters/Banners\nOther\nOPR\nTeam Member\nChatBot\nDisease / Program *\n--Select Disease--\nTB\nTB with Diabetes\nDiabetes\nNo Program\nFollow-Up(TB)\nNGO TB\nTB Support(No ATT)\nProgram Status *\n--Select--\nOn Program\nTreatment Inturrpted\nDefaulted\nCured\nDied\nProspect\nFollow-up\nReferred to MDR\nReview After Report\nOPD/Other Treatment\nConsultation Only\nNo Program Disease\nDied\nAppointment & Time\nSelect Time\n9:00 AM\n9:15 AM\n9:30 AM\n9:45 AM\n10:00 AM\n10:15 AM\n10:30 AM\n10:45 AM\n11:00 AM\n11:15 AM\n11:30 AM\n11:45 AM\n12:00 PM\n12:15 PM\n12:30 PM\n12:45 PM\n1:00 PM\n1:15 PM\n1:30 PM\n1:45 PM\n2:00 PM\n2:15 PM\n2:30 PM\n2:45 PM\n3:00 PM\n3:15 PM\n3:30 PM\n3:45 PM\n4:00 PM\n4:15 PM\n4:30 PM\n4:45 PM\n5:00 PM\n5:15 PM\n5:30 PM\n5:45 PM\n6:00 PM\n6:15 PM\n6:30 PM\n6:45 PM\n7:00 PM\n7:15 PM\n7:30 PM\n7:45 PM\n8:00 PM\n8:15 PM\n8:30 PM\n8:45 PM\n9:00 PM\n9:15 PM\n9:30 PM\n9:45 PM\nReferral Note\nUpload Documents\nADDRESS DETAILS\nAddress *\nArea *\n+ Add\nZIP / Postal Code\nCity\nState\nCountry\nSave Referral\nClear\nReferral Patients\n📅 Added On\n🗓️ Appointment\n🏥 Visit Date\nFrom\nTo\n🔍 Search\nDisease\n▾\nReferral Source\n▾\nCenter\n▾\nPatient Status\n▾\nPriority\n▾\nDoctor Types\n▾\n✕ Clear\nKMEDID\tPATIENT\tDISEASE\tSTATUS\tPROGRAM\tREFERRAL SOURCE\tMARKETING AGENT\tAPPT.DATES\tVISIT DATES\tPRIORITY\tACTIONS\n© 2026 KMedNet · All rights reserved",
+  "source": {
+    "found": true,
+    "aspx_path": "C:\\medcrossproject\\practice\\Reporting\\DoctorReferralEntry.aspx",
+    "code_behind_path": "C:\\medcrossproject\\practice\\Reporting\\DoctorReferralEntry.aspx.cs",
+    "handlers": {
+      "Page_Load": "void Page_Load(object sender, EventArgs e)\n        {\n            if (!IsPostBack)\n            {\n                LoadReferralSource();\n                PopulateDisease();\n                BindPracticeDropdown();\n                PopulatePatientStatus();\n\n                txtAddedOn.Text = DateTime.Today.ToString(\"yyyy-MM-dd\");\n\n                int userId = Convert.ToInt32(Session[\"appuser\"] ?? 0);\n                var allowedUsers = new[] { 4, 78, 92, 134, 19, 28, 122, 204, 163, 180 };\n                hdnCanEdit.Value = Array.IndexOf(allowedUsers, userId) >= 0 ? \"1\" : \"0\";\n            }\n        }"
+    },
+    "script_files": [
+      "<inline scripts in .aspx>"
+    ],
+    "script_rules": "// event bindings\n$('#btnFilter').on('click', function () {\n// $('#btnClear').on('click', function () {\n$('#btnFilter').on('click', function () {\n$('#btnClear').on('click', function () {\n//$('#btnFilter').on('click', function () {\n//$('#btnClear').on('click', function () {\n\nfunction mfilterSaveToLocal() {\n            try { localStorage.setItem(MFILTER_STORE_KEY, JSON.stringify(mfilterState)); }\n            catch (e) { /* ignore */ }\n        }\n\nfunction mfilterBuildSavePayload() {\n            return {\n                method: MFILTER_METHOD_SAVE,\n                source: JSON.stringify(mfilterState.source || []),\n                center: JSON.stringify(mfilterState.center || []),\n                status: JSON.stringify(mfilterState.status || []),\n                priority: JSON.stringify(mfilterState.priority || []),\n                disease: JSON.stringify(mfilterState.disease || [])\n            };\n        }\n\nfunction mfilterSave() {\n            mfilterSaveToLocal();  // optimistic local write — always instant\n            mfilterPendingSave = true;\n            if (mfilterSaveTimer) clearTimeout(mfilterSaveTimer);\n            mfilterSaveTimer = setTimeout(function () {\n                mfilterFlushSave();\n            }, 500);\n        }\n\nfunction mfilterFlushSave() {\n            if (mfilterSaveTimer) { clearTimeout(mfilterSaveTimer); mfilterSaveTimer = null; }\n            if (!mfilterPendingSave) return;\n            mfilterPendingSave = false;\n            $.ajax({\n                type: 'POST',\n                url: MFILTER_ENDPOINT,\n                data: mfilterBuildSavePayload(),\n                dataType: 'json',\n                success: function (res) {\n                    if (!res || !res.ok) {\n                        console.warn('[mfilter] Server rejected save:', res);\n                    } else if (window.console) {\n                        console.log('[mfilter] Saved', res.mode || 'ok');\n                    }\n                },\n                error: function (xhr) {\n                    console.error('[mfilter] Save failed:', xhr.status, xhr.responseText);\n                    // localStorage already has the state as fallback\n                }\n            });\n        }\n\nfunction saveReferral(forceInsert) {\n\n            if (!validateReferralForm()) return;\n\n            var rowId = $('#hdnEditRowId').val();\n\n            const date = $('#txtFollowUpDate').val();\n            const time = $('#ddlTime').val();\n            let followUp = null;\n\n            if (date) {\n                followUp = date + \" \" + (time || \"00:00\");\n                const selected = new Date(followUp);\n                const now = new Date();\n                const max = new Date();\n                max.setFullYear(now.getFullYear() + 1);\n                if (selected < now || selected > max) {\n                    alert(\"Follow-up date/time must be within future 1 year\");\n                    return;\n                }\n            }\n\n            var teamMemberId = null;\n\n            if ($('#hdnmagent').val()) {\n                teamMemberId = parseInt($('#hdnmagent').val());\n            }\n            else if ($('#hdnTeamMember').val()) {\n                teamMemberId = parseInt($('#hdnTeamMember').val());\n            }\n            var data = {\n                RowId: rowId ? parseInt(rowId) : 0,\n                PatientName: $('#<%= txtPatientName.ClientID %>').val(),\n                Gender: toIntOrNull($('input[name$=\"rblGender\"]:checked').val()),\n                Age: toIntOrNull($('#<%= txtAge.ClientID %>').val()),\n                Mobile: normalizeMobile($('#txtMob').val()),\n                AlternateMobile: normalizeMobile($('#txtAltrnatemob').val()),\n                FollowUpDate: followUp,\n                Address: $('#<%= txtAddress.ClientID %>').val(),\n                Area: toIntOrNull($('#hdnArea').val()),\n                AreaName: $('#txtArea').val(),\n                Pincode: toIntOrNull($('#hdnpincode').val()),\n                City: toIntOrNull($('#hdncity').val()),\n                State: toIntOrNull($('#hdnstate').val()),\n                Country: toIntOrNull($('#hdncountry').val()),\n                CityName: $('#txtcity').val(),\n                StateName: $('#txtstate').val(),\n                CountryName: $('#txtcountry').val(),\n                PatientStatus: toIntOrNull($('#ddlPatientStatus').val()),\n                Disease: toIntOrNull($('#ddldisease').val()),\n                TeamMemberId: teamMemberId,\n                ReferralSourceId: toIntOrNull($('#DdlReferralSource').val()),\n                ReferralDoctorId: toIntOrNull($('#hdnRefferalDoctor').val()),\n                PracticeId: toIntOrNull($('#<%= ddlPractice.ClientID %>').val()),\n                ReferralNote: $('#<%= txtReferralNote.ClientID %>').val(),\n                ForceInsert: forceInsert === true\n            };\n\n            var formData = new FormData();\n            formData.append(\"model\", JSON.stringify(data));\n            if (selectedFiles.length > 0) {\n                selectedFiles.forEach(function (file) { formData.append(\"documents\", file); });\n            }\n\n            $.ajax({\n                type: \"POST\",\n                url: '<%= ResolveUrl(\"~/GenericHandlers/DoctorReferralEntry.ashx\") %>',\n                data: formData,\n                contentType: false,\n                processData: false,\n                success: function (res) {\n                    var result = typeof res === \"string\" ? JSON.parse(res) : res;\n                    if (!result) { alert(\"Invalid server response\"); return; }\n                    \n                    if (result.confirmRequired) {\n                        if (confirm(result.message)) {\n                            saveReferral(true);\n                        }\n                        return;\n                    }\n                    \n                    if (result.ok === true) {\n                        var msg = data.RowId > 0 ? 'Referral updated successfully!' : 'Referral saved successfully!';\n                        $('#toastMsg').text(msg).fadeIn();\n                        setTimeout(function () { $('#toastMsg').fadeOut(); }, 5000);\n                        clearReferralForm();\n                        $('#hdnEditRowId').val('');\n                        GetDoctorReferralRecords();\n                    } else {\n                        // Prefer backend 'message' (used for business validation like duplicate mobile),\n                        // fallback to 'error' (exceptions) or a generic message.\n                        alert(result.message || result.error || \"Server returned an error\");\n                    }\n                },\n                error: function (xhr) {\n                    if (xhr.responseText) alert(xhr.responseText);\n                    else alert(\"Server error occurred while saving referral.\");\n                }\n            });\n        }\n\nfunction validateReferralForm() {\n            var errors = [];\n            if (!$('#<%= txtPatientName.ClientID %>').val().trim())\n                errors.push('Patient Name is required');\n            if (!toIntOrNull($('input[name$=\"rblGender\"]:checked').val()))\n                errors.push('Gender is required');\n            var age = toIntOrNull($('#<%= txtAge.ClientID %>').val());\n            if (age !== null && (age < 0 || age > 120))\n                errors.push('Age must be between 0 and 120');\n            if (!toIntOrNull($('#ddldisease').val()))\n                errors.push('Disease is required');\n            var src = toIntOrNull($('#DdlReferralSource').val());\n            if (!src) errors.push('Referral Source is required');\n            var DOCTOR_SOURCE_ID = 1;\n            if (src === DOCTOR_SOURCE_ID && !toIntOrNull($('#hdnRefferalDoctor').val()))\n                errors.push('Referral Doctor is required');\n            if (errors.length) { alert(errors.join(\"\\n\")); return false; }\n            return true;\n        }\n\nfunction isValidDateFormat(dateStr) {\n            if (!dateStr) return true;\n            var regex = /^\\d{4}-\\d{2}-\\d{2}$/;\n            if (!regex.test(dateStr)) return false;\n            var date = new Date(dateStr);\n            return !isNaN(date.getTime());\n        }\n\nfunction validateDateRange() {\n            var from = $('#fromDate').val();\n            var to = $('#toDate').val();\n            if (!isValidDateFormat(from)) { alert(\"Invalid From Date format\"); $('#fromDate').focus(); return false; }\n            if (!isValidDateFormat(to)) { alert(\"Invalid To Date format\"); $('#toDate').focus(); return false; }\n            if (from && to) {\n                if (new Date(from) > new Date(to)) { alert(\"From Date cannot be greater than To Date\"); return false; }\n            }\n            var fuFrom = $('#followUpFromDate').val();\n            var fuTo = $('#followUpToDate').val();\n            if (!isValidDateFormat(fuFrom)) { alert(\"Invalid Follow-up From Date\"); $('#followUpFromDate').focus(); return false; }\n            if (!isValidDateFormat(fuTo)) { alert(\"Invalid Follow-up To Date\"); $('#followUpToDate').focus(); return false; }\n            if (fuFrom && fuTo && new Date(fuFrom) > new Date(fuTo)) {\n                alert(\"Follow-up From Date cannot be greater than Follow-up To Date\");\n                return false;\n            }\n            return true;\n        }\n\nfunction saveNewArea() {\n            var countryId = $('#newAreaCountry').val();\n            var countryName = $('#newAreaCountry option:selected').text();\n            var stateId = $('#newAreaStateId').val();\n            var stateName = $('#newAreaState').val().trim();\n            var cityName = $('#newAreaCity').val().trim();\n            var areaName = $('#newAreaName').val().trim();\n            var zipcode = $('#newAreaZipcode').val().trim();\n            if (countryId === '0' || !countryId) { $('#newAreaMsg').text('Country is required'); return; }\n            if (!stateId) { $('#newAreaMsg').text('State is required'); return; }\n            if (!cityName) { $('#newAreaMsg').text('City is required'); return; }\n            if (!areaName) { $('#newAreaMsg').text('Area name is required'); return; }\n            $('#newAreaMsg').text('');\n            $.ajax({\n                type: 'POST',\n                contentType: 'application/json; charset=utf-8',\n                url: 'DoctorReferralEntry.aspx/SaveArea',\n                data: JSON.stringify({\n                    area_name: areaName, zipcode: zipcode, city_name: cityName,\n                    state_id: parseInt(stateId), state_name: stateName,\n                    country_id: parseInt(countryId), country_name: countryName\n                }),\n                dataType: 'json',\n                success: function (res) {\n                    var result = JSON.parse(res.d);\n                    if (result.ok) {\n                        $('#newAreaMsg').css('color', '#059669').text('Area added successfully!');\n                        setTimeout(function () {\n                            closeAddAreaModal();\n                            $('#txtArea').val(result.area_name);\n                            $('#hdnArea').val(result.area_id);\n                            $('#txtpincode').val(result.zipcode);\n                            $('#hdnpincode').val(result.zipcode);\n                            $('#areaNotFoundMsg').hide();\n                            OnSelectOrChange('pincode');\n                        }, 2000);\n                    } else {\n                        $('#newAreaMsg').css('color', '#dc2626').text(result.error || 'Error saving area');\n                    }\n                },\n                error: function (xhr) { $('#newAreaMsg').text('Server error: ' + xhr.responseText); }\n            });\n        }\n\nsaveModalDocuments = function () {\n                var status = document.getElementById('kmedUploadStatus');\n                if (!modalFiles.length) { status.textContent = 'Please select at least one document.'; status.style.display = 'block'; return; }\n                for (var i = 0; i < modalFiles.length; i++) { if (!modalFiles[i].date) { status.textContent = 'Please select Test Done On for ' + modalFiles[i].file.name + '.'; status.style.display = 'block'; return; } }\n                var form = new FormData(); form.append('method', 'savePendingDocuments'); form.append('ownerType', uploadOwnerType); form.append('ownerId', String(uploadOwnerId));\n                modalFiles.forEach(function (item, i) { form.append('files', item.file, item.file.name); form.append('documentTypeId_' + i, item.typeId || ''); form.append('testDate_' + i, item.date || ''); form.append('note_' + i, item.note || ''); });\n                var btn = document.getElementById('kmedSaveDocumentsButton'); btn.disabled = true; btn.innerHTML = '<i class=\"fa fa-spinner fa-spin\"></i> Saving...'; status.style.display = 'none';\n                $.ajax({\n                    url: uploadEndpoint, type: 'POST', data: form, processData: false, contentType: false, dataType: 'json', success: function (r) {\n                        if (r && r.saved > 0) {\n                            var savedNames = r.savedFiles || [];\n                            modalFiles = modalFiles.filter(function (item) { return savedNames.indexOf(item.file.name) < 0; });\n                            if (r.success) {\n                                var successBox = document.getElementById('kmedUploadSuccess');\n                                successBox.textContent = r.saved + ' document(s) saved successfully!';\n                                successBox.style.display = 'block';\n                                modalFiles = [];\n                                renderModalFiles();\n                            }\n                            else { renderModalFiles(); status.textContent = r.message || ('Saved ' + r.saved + ' document(s); please retry the remaining files.'); status.style.display = 'block'; }\n                        } else { status.textContent = (r && r.message) || 'Unable to save documents. Please try again.'; status.style.display = 'block'; }\n                    }, error: function (xhr) { status.textContent = 'Upload failed. Please check the file size and try again.'; status.style.display = 'block'; }, complete: function () { btn.disabled = false; btn.innerHTML = '<i class=\"fa fa-cloud-upload-alt\"></i> Save Document'; }\n                });\n            }\n\n"
+  },
+  "stats": {
+    "elements": 154,
+    "validators": 15,
+    "skipped_not_unique": [
+      "Search Patient",
+      "Team Member",
+      "Search...",
+      "Select all",
+      "Clear",
+      "Search...",
+      "Select all",
+      "Clear",
+      "Search...",
+      "Select all",
+      "Clear",
+      "Search...",
+      "Select all",
+      "Clear",
+      "Search...",
+      "Select all",
+      "Clear",
+      "Search...",
+      "Select all",
+      "Clear",
+      "Cancel",
+      "Close",
+      "Close (Esc)",
+      "Cancel"
+    ]
+  }
+}

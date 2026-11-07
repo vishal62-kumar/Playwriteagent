@@ -1,0 +1,809 @@
+{
+  "finished_at": "2026-10-31T13:47:24",
+  "results": [
+    {
+      "test": "test_TC_EA_022[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_022[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_022",
+      "title": "Check the 'on' checkbox",
+      "type": "positive",
+      "basis": "element_value proves the checkbox is checked",
+      "expected": "'on' is ticked; no server error",
+      "writes_data": false,
+      "duration": 0.9,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "tick 'on' (chkSelect)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'on' (chkSelect) ticked",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_023[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_023[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_023",
+      "title": "Uncheck the 'on' checkbox",
+      "type": "negative",
+      "basis": "element_value proves the checkbox is unchecked",
+      "expected": "'on' is unticked; no server error",
+      "writes_data": false,
+      "duration": 0.73,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "untick 'on' (chkSelect)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'on' (chkSelect) unticked",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_024[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_024[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_024",
+      "title": "Toggle the 'on' checkbox twice",
+      "type": "boundary",
+      "basis": "element_value proves the checkbox returns to initial state",
+      "expected": "'on' is unticked; no server error",
+      "writes_data": false,
+      "duration": 1.18,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "tick 'on' (chkSelect)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "untick 'on' (chkSelect)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect 'on' (chkSelect) unticked",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_025[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_025[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_025",
+      "title": "Clear selection",
+      "type": "ui",
+      "basis": "btnClearSelection element",
+      "expected": "'on' is unticked; no server error",
+      "writes_data": false,
+      "duration": 1.26,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "tick 'on' (chkSelect)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Clear Selection' (btnClearSelection)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect 'on' (chkSelect) unticked",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_026[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_026[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_026",
+      "title": "Search with valid date range",
+      "type": "smoke",
+      "basis": "btnSearch element",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 1.0,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtfrom) with '01/10/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'dd/mm/yyyy' (txtto) with '31/10/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "click 'Search' (btnSearch)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_027[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_027[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_027",
+      "title": "Search with invalid date range",
+      "type": "smoke",
+      "basis": "btnSearch element",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.91,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtfrom) with '31/10/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'dd/mm/yyyy' (txtto) with '01/10/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "click 'Search' (btnSearch)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_028[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_028[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_028",
+      "title": "Export CSV",
+      "type": "smoke",
+      "basis": "btnExportCSV element",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.88,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "click 'Export CSV' (btnExportCSV)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_029[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_029[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_029",
+      "title": "Submit allocation without selecting user",
+      "type": "negative",
+      "basis": "code-behind handler checks for selected user",
+      "expected": "message 'Please Select Allocated To User for all checked rows.' appears; no server error",
+      "writes_data": false,
+      "duration": 1.53,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "tick 'on' (chkSelect)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Submit Allocation' (btnSubmitAllocationGrid)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Please Select Allocated To User for all checked rows.'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_030[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_030[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_030",
+      "title": "Submit allocation with unselected checkbox",
+      "type": "smoke",
+      "basis": "code-behind handler requires checkbox to be checked",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 1.45,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "untick 'on' (chkSelect)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Submit Allocation' (btnSubmitAllocationGrid)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_031[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_031[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_031",
+      "title": "Submit allocation with maximum length date",
+      "type": "smoke",
+      "basis": "txtfrom and txtto fields have maxlength of 10",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.95,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtfrom) with '01/01/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'dd/mm/yyyy' (txtto) with '31/12/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "click 'Search' (btnSearch)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_032[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_032[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_032",
+      "title": "Valid date input for 'dd/mm/yyyy' field",
+      "type": "smoke",
+      "basis": "Valid date format",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.48,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtfrom) with '15/10/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_033[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_033[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_033",
+      "title": "Invalid date format input for 'dd/mm/yyyy' field",
+      "type": "smoke",
+      "basis": "Invalid date format",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.93,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtfrom) with '2023-10-15'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearch)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_034[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_034[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_034",
+      "title": "Boundary test with maximum length input for 'dd/mm/yyyy' field",
+      "type": "boundary",
+      "basis": "Maximum length of input",
+      "expected": "'dd/mm/yyyy' = '31/12/2023'; no server error",
+      "writes_data": false,
+      "duration": 0.58,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtfrom) with '31/12/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'dd/mm/yyyy' (txtfrom) = '31/12/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_035[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_035[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_035",
+      "title": "Empty input for 'dd/mm/yyyy' field",
+      "type": "smoke",
+      "basis": "Empty input",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.97,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "clear 'dd/mm/yyyy' (txtfrom)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearch)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_036[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_036[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_036",
+      "title": "Positive test with valid date format",
+      "type": "smoke",
+      "basis": "Valid date format is accepted",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.93,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtto) with '15/10/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearch)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_037[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_037[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_037",
+      "title": "Negative test with invalid date format",
+      "type": "smoke",
+      "basis": "Invalid date format should not be accepted",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.97,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtto) with '2023-10-15'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearch)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_038[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_038[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_038",
+      "title": "Boundary test with maximum length date",
+      "type": "smoke",
+      "basis": "Date field accepts maximum length input",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.98,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtto) with '31/12/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearch)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_EA_039[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261031_134702_full_page/test_accounting_expenseallocation_20261031_134702.py::test_TC_EA_039[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261031_134702_full_page\\test_accounting_expenseallocation_20261031_134702.py",
+      "id": "TC_EA_039",
+      "title": "Negative test with over maximum length input",
+      "type": "negative",
+      "basis": "Input longer than maximum length is truncated",
+      "expected": "'dd/mm/yyyy' = '31/12/2023'; no server error",
+      "writes_data": false,
+      "duration": 0.96,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtto) with '31/12/2023extra'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearch)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect 'dd/mm/yyyy' (txtto) = '31/12/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    }
+  ]
+}

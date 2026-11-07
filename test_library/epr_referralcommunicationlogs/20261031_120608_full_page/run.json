@@ -1,0 +1,13 @@
+{
+  "page": "EPR/ReferralCommunicationLogs",
+  "focus": "",
+  "finished_at": "2026-10-31T12:06:50",
+  "counts": {
+    "APP_DEFECT": 4,
+    "SCRIPT_ERROR": 0,
+    "ENVIRONMENT": 0,
+    "ASSERTION_FAILED": 0,
+    "SKIPPED": 6,
+    "PASSED": 8
+  }
+}

@@ -1,0 +1,9 @@
+﻿Test ID,Scenario,Type,Status,Category,Reason,Expected,Basis,Failed Step,Duration (s)
+TC_PC_001,Submit valid communication note,positive,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,message 'Communication added sucessfully.' appears; no server error,message_shown proves successful submission,,0.0
+TC_PC_003,Submit communication note with maximum length,boundary,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,message 'Communication added sucessfully.' appears; no server error,message_shown proves successful submission,,0.0
+TC_PC_004,Submit communication note with special characters,positive,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,message 'Communication added sucessfully.' appears; no server error,message_shown proves successful submission,,0.0
+TC_PC_002,Submit empty communication note,smoke,PASSED,PASSED,,no server error,client_script_validation shows alert for empty input,,0.79
+TC_PC_005,Check 'Action Due' checkbox,positive,PASSED,PASSED,,'Action Due' is ticked; no server error,"Initial value of checkbox is 'on', so checking it should not change its state.",,0.75
+TC_PC_006,Uncheck 'Action Due' checkbox,positive,PASSED,PASSED,,'Action Due' is unticked; no server error,The checkbox should be able to be unchecked.,,0.69
+TC_PC_007,Toggle 'Action Due' checkbox twice,boundary,PASSED,PASSED,,'Action Due' is ticked; no server error,Toggling the checkbox twice should return it to its initial state.,,0.94
+TC_PC_008,Ensure 'Action Due' checkbox does not affect server state,smoke,PASSED,PASSED,,no server error,No server-side validation or state change is expected from toggling the checkbox.,,0.88

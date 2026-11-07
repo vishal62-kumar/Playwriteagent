@@ -1,0 +1,1541 @@
+{
+  "page": "Accounting/AddExpenses",
+  "url": "http://localhost:2786/Accounting/AddExpenses.aspx",
+  "focus": "",
+  "generated_at": "2026-10-31T13:57:12",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-31T13:56:00",
+  "scenarios": [
+    {
+      "title": "Submit with valid expense details",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "message_shown proves success",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "1000"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Monthly tea expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Added Successfully"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_036",
+      "group": "Date"
+    },
+    {
+      "title": "Submit with empty expense amount",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "rfvtxtexpenseamount validator fires",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Monthly tea expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_fires",
+          "validator": "rfvtxtexpenseamount"
+        },
+        {
+          "type": "message_shown",
+          "value": "Please enter Expense Amount"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_037",
+      "group": "Date"
+    },
+    {
+      "title": "Submit with invalid expense amount format",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "revtxtexpenseamount validator fires",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "1000abc"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Monthly tea expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_fires",
+          "validator": "revtxtexpenseamount"
+        },
+        {
+          "type": "message_shown",
+          "value": "Please enter valid Expense Amount use only numeric characters "
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_038",
+      "group": "Date"
+    },
+    {
+      "title": "Submit with empty expense type",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "rfvtxtexpensetype validator fires",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "1000"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Monthly tea expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_fires",
+          "validator": "rfvtxtexpensetype"
+        },
+        {
+          "type": "message_shown",
+          "value": "Please Select Expense Type"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_039",
+      "group": "Date"
+    },
+    {
+      "title": "Submit with empty expense description",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation shows message",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "1000"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Description is mandatory."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_040",
+      "group": "Date"
+    },
+    {
+      "title": "Submit with maximum expense amount",
+      "type": "boundary",
+      "writes_data": true,
+      "basis": "client_script_validation allows maximum amount",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "50000"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Maximum allowed amount"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Added Successfully"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_041",
+      "group": "Date"
+    },
+    {
+      "title": "Submit with expense amount exceeding limit",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation shows message",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "50001"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Exceeds maximum allowed amount"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Amount cannot exceed 50,000 at one time."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_042",
+      "group": "Date"
+    },
+    {
+      "title": "Submit valid expense amount",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "client_script_validation for valid amount",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "1000"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Monthly tea expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Added Successfully"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_043",
+      "group": "Expense Amount"
+    },
+    {
+      "title": "Submit empty expense amount",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "rfvtxtexpenseamount validator fires",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": ""
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Monthly tea expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_fires",
+          "validator": "rfvtxtexpenseamount"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_044",
+      "group": "Expense Amount"
+    },
+    {
+      "title": "Submit non-numeric expense amount",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "revtxtexpenseamount validator fires",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "abc"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Monthly tea expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_fires",
+          "validator": "revtxtexpenseamount"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_045",
+      "group": "Expense Amount"
+    },
+    {
+      "title": "Submit expense amount exceeding maximum limit",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "client_script_validation for amount exceeding limit",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "60000"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Monthly tea expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Amount cannot exceed 50,000 at one time."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_046",
+      "group": "Expense Amount"
+    },
+    {
+      "title": "Select a valid expense type",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "element_value on ddlexpensetype",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_047",
+      "group": "Expense Type"
+    },
+    {
+      "title": "Select the last valid expense type",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "element_value on ddlexpensetype",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Labour Charges"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlexpensetype",
+          "value": "Labour Charges"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_048",
+      "group": "Expense Type"
+    },
+    {
+      "title": "Select a duplicate expense type",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "element_value on ddlexpensetype",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Labour Charges"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlexpensetype",
+          "value": "Labour Charges"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_049",
+      "group": "Expense Type"
+    },
+    {
+      "title": "Submit with valid description",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "code-behind handler shows success message",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Office supplies purchase"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "100"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Office Maintenance"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Added Successfully"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_050",
+      "group": "Description"
+    },
+    {
+      "title": "Submit with empty description",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client-side validation shows mandatory message",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": ""
+        },
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "100"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Office Maintenance"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Description is mandatory."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_051",
+      "group": "Description"
+    },
+    {
+      "title": "Submit with maximum length description",
+      "type": "boundary",
+      "writes_data": true,
+      "basis": "code-behind handler shows success message",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "A very long description that is exactly at the boundary of what is acceptable for this field to ensure it handles maximum length input correctly."
+        },
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "100"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Office Maintenance"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Added Successfully"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_052",
+      "group": "Description"
+    },
+    {
+      "title": "Submit with special characters in description",
+      "type": "ui",
+      "writes_data": true,
+      "basis": "code-behind handler shows success message",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Purchase of office chairs & tables @ 50% discount!"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "100"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Office Furniture"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Added Successfully"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_053",
+      "group": "Description"
+    },
+    {
+      "title": "Upload a valid file to the file input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "The file input accepts a valid file",
+      "steps": [
+        {
+          "action": "upload",
+          "element": "fubillimage"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_054",
+      "group": "No file chosen"
+    },
+    {
+      "title": "Attempt to upload more than 5 files",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "Client-side script restricts the number of files to 5",
+      "steps": [
+        {
+          "action": "upload",
+          "element": "fubillimage"
+        },
+        {
+          "action": "upload",
+          "element": "fubillimage"
+        },
+        {
+          "action": "upload",
+          "element": "fubillimage"
+        },
+        {
+          "action": "upload",
+          "element": "fubillimage"
+        },
+        {
+          "action": "upload",
+          "element": "fubillimage"
+        },
+        {
+          "action": "upload",
+          "element": "fubillimage"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "You can only have a maximum of 5 files total (including existing files)."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_055",
+      "group": "No file chosen"
+    },
+    {
+      "title": "Search with valid expense name",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid input in search field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtSearchExpense",
+          "value": "Tea Club"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_056",
+      "group": "Search expenses..."
+    },
+    {
+      "title": "Search with empty input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Empty input in search field",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtSearchExpense"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_057",
+      "group": "Search expenses..."
+    },
+    {
+      "title": "Search with special characters",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Special characters in search field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtSearchExpense",
+          "value": "!@#$%^&*()"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_058",
+      "group": "Search expenses..."
+    },
+    {
+      "title": "Search with maximum length input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Boundary test for maximum length",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtSearchExpense",
+          "value": "A very long expense name that exceeds typical length"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_059",
+      "group": "Search expenses..."
+    },
+    {
+      "title": "Valid date input in 'dd/mm/yyyy' format",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "validator_passes for valid date format",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "15/08/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_passes",
+          "validator": "revtxtdate"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_060",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Boundary test with maximum length date input",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "validator_passes for maximum length input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "31/12/9999"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_passes",
+          "validator": "revtxtdate"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_061",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Valid date input in 'dd/mm/yyyy' format",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "validator_passes for valid date format",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "15/09/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_passes",
+          "validator": "revtxtdate"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_062",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Boundary test for maximum length of date input",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "maxlength property of txtto",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "31/12/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtto",
+          "value": "31/12/2023"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_063",
+      "group": "dd/mm/yyyy"
+    }
+  ],
+  "rejected": [
+    {
+      "scenario": {
+        "title": "Submit with valid date",
+        "type": "positive",
+        "writes_data": true,
+        "basis": "revtxtdate validator passes",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtdate",
+            "value": "15/09/2023"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpenseamount",
+            "value": "1000"
+          },
+          {
+            "action": "select",
+            "element": "ddlexpensetype",
+            "value": "Tea Club"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpensedescription",
+            "value": "Monthly tea expenses"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Expense Added Successfully"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtdate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Submit with empty date",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvtxtdate validator fires",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtdate"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpenseamount",
+            "value": "1000"
+          },
+          {
+            "action": "select",
+            "element": "ddlexpensetype",
+            "value": "Tea Club"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpensedescription",
+            "value": "Monthly tea expenses"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter Date"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtdate' is disabled/read-only",
+        "required validator 'rfvtxtdate' cannot fire: field 'txtdate' has value '31/10/2026'",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Submit with invalid date format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "revtxtdate validator fires",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtdate",
+            "value": "2023-09-15"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpenseamount",
+            "value": "1000"
+          },
+          {
+            "action": "select",
+            "element": "ddlexpensetype",
+            "value": "Tea Club"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpensedescription",
+            "value": "Monthly tea expenses"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter valid Date"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtdate' is disabled/read-only",
+        "value '31/10/2026' MATCHES the pattern of 'revtxtdate' (^(([0-9])|([0-2][0-9])|(3[0-1]))\\/(([1-9])|(0[1-9])|(1[0-2]))\\/(([0-9][0-9])|([1-2][0,9][0-9][0-9]))$), so it will not fire",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Submit with disallowed date",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "cvtxtdate validator fires",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtdate",
+            "value": "31/12/9999"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpenseamount",
+            "value": "1000"
+          },
+          {
+            "action": "select",
+            "element": "ddlexpensetype",
+            "value": "Tea Club"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpensedescription",
+            "value": "Monthly tea expenses"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "cvtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "This date is not allowed."
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtdate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select 'Select Expense Type' option",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires on rfvtxtexpensetype",
+        "steps": [
+          {
+            "action": "select",
+            "element": "ddlexpensetype",
+            "value": "Select Expense Type"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvtxtexpensetype"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvtxtexpensetype': field 'txtexpenseamount' is still empty, and its own required validator 'rfvtxtexpenseamount' is in the same group - that will likely fire/show first and hide 'rfvtxtexpensetype'. Fill 'txtexpenseamount' with valid data first, so 'rfvtxtexpensetype' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select 'Select Expense Type' option with valid amount",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires on rfvtxtexpensetype",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtexpenseamount",
+            "value": "100"
+          },
+          {
+            "action": "select",
+            "element": "ddlexpensetype",
+            "value": "Select Expense Type"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvtxtexpensetype"
+          }
+        ]
+      },
+      "problems": [
+        "required validator 'rfvtxtexpensetype' cannot fire: field 'ddlexpensetype' has value 'Select Expense Type'"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Upload no file and check default state",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "The file input shows 'No file chosen' when no file is uploaded",
+        "steps": [],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "fubillimage",
+            "value": "No file chosen"
+          }
+        ]
+      },
+      "problems": [
+        "scenario has no steps",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Check default state of file input without uploading",
+        "type": "ui",
+        "writes_data": false,
+        "basis": "The file input shows 'No file chosen' when no file is uploaded",
+        "steps": [],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "fubillimage",
+            "value": "No file chosen"
+          }
+        ]
+      },
+      "problems": [
+        "scenario has no steps"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid date input with incorrect format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for invalid date format",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtfrom",
+            "value": "2023-08-15"
+          },
+          {
+            "action": "click",
+            "element": "btnSearchExpense"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter valid Date"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'revtxtdate': field 'txtexpenseamount' is still empty, and its own required validator 'rfvtxtexpenseamount' is in the same group - that will likely fire/show first and hide 'revtxtdate'. Fill 'txtexpenseamount' with valid data first, so 'revtxtdate' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Empty date input",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for required field",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtfrom"
+          },
+          {
+            "action": "click",
+            "element": "btnSearchExpense"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter Date"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvtxtdate': field 'txtexpenseamount' is still empty, and its own required validator 'rfvtxtexpenseamount' is in the same group - that will likely fire/show first and hide 'rfvtxtdate'. Fill 'txtexpenseamount' with valid data first, so 'rfvtxtdate' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid date input with incorrect format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for invalid date format",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtfrom",
+            "value": "2023-08-15"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpenseamount",
+            "value": "100"
+          },
+          {
+            "action": "click",
+            "element": "btnSearchExpense"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter valid Date"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'revtxtdate': field 'ddlexpensetype' is still empty, and its own required validator 'rfvtxtexpensetype' is in the same group - that will likely fire/show first and hide 'revtxtdate'. Fill 'ddlexpensetype' with valid data first, so 'revtxtdate' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Empty date input",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for required field",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtfrom"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpenseamount",
+            "value": "100"
+          },
+          {
+            "action": "click",
+            "element": "btnSearchExpense"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter Date"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvtxtdate': field 'ddlexpensetype' is still empty, and its own required validator 'rfvtxtexpensetype' is in the same group - that will likely fire/show first and hide 'rfvtxtdate'. Fill 'ddlexpensetype' with valid data first, so 'rfvtxtdate' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid date input with incorrect format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for invalid date format",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtto",
+            "value": "2023-09-15"
+          },
+          {
+            "action": "click",
+            "element": "btnSearchExpense"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter valid Date"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'revtxtdate': field 'txtexpenseamount' is still empty, and its own required validator 'rfvtxtexpenseamount' is in the same group - that will likely fire/show first and hide 'revtxtdate'. Fill 'txtexpenseamount' with valid data first, so 'revtxtdate' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Empty date input triggers required validator",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for required field",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtto"
+          },
+          {
+            "action": "click",
+            "element": "btnSearchExpense"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter Date"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvtxtdate': field 'txtexpenseamount' is still empty, and its own required validator 'rfvtxtexpenseamount' is in the same group - that will likely fire/show first and hide 'rfvtxtdate'. Fill 'txtexpenseamount' with valid data first, so 'rfvtxtdate' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid date input with incorrect format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for invalid date format",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtto",
+            "value": "2023-09-15"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpenseamount",
+            "value": "100"
+          },
+          {
+            "action": "click",
+            "element": "btnSearchExpense"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter valid Date"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'revtxtdate': field 'ddlexpensetype' is still empty, and its own required validator 'rfvtxtexpensetype' is in the same group - that will likely fire/show first and hide 'revtxtdate'. Fill 'ddlexpensetype' with valid data first, so 'revtxtdate' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Empty date input triggers required validator",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for required field",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtto"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpenseamount",
+            "value": "100"
+          },
+          {
+            "action": "click",
+            "element": "btnSearchExpense"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter Date"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvtxtdate': field 'ddlexpensetype' is still empty, and its own required validator 'rfvtxtexpensetype' is in the same group - that will likely fire/show first and hide 'rfvtxtdate'. Fill 'ddlexpensetype' with valid data first, so 'rfvtxtdate' is the only thing left wrong on the page."
+      ]
+    }
+  ],
+  "groups": [
+    "Date",
+    "Expense Amount",
+    "Expense Type",
+    "Description",
+    "No file chosen",
+    "Search expenses...",
+    "dd/mm/yyyy"
+  ]
+}

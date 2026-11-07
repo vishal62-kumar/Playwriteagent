@@ -1,0 +1,8 @@
+openai
+pytest
+pytest-playwright
+playwright
+python-dotenv
+openpyxl
+streamlit
+streamlit-searchbox

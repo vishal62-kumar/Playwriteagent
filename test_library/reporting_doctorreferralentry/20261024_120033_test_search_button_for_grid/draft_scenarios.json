@@ -1,0 +1,330 @@
+{
+  "page": "Reporting/DoctorReferralEntry.aspx",
+  "url": "http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+  "generated_at": "2026-10-24T12:00:33",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-24T12:00:23",
+  "scenarios": [
+    {
+      "title": "Search with valid date range",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "no_server_error",
+      "steps": [
+        {
+          "action": "click",
+          "element": "toggleAddedOn"
+        },
+        {
+          "action": "click",
+          "element": "btnFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_006"
+    },
+    {
+      "title": "Search with invalid date format",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "message_shown",
+      "steps": [
+        {
+          "action": "click",
+          "element": "toggleAddedOn"
+        },
+        {
+          "action": "click",
+          "element": "btnFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Invalid From Date format"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_007"
+    },
+    {
+      "title": "Search with from date greater than to date",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "message_shown",
+      "steps": [
+        {
+          "action": "click",
+          "element": "toggleAddedOn"
+        },
+        {
+          "action": "click",
+          "element": "btnFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "From Date cannot be greater than To Date"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_008"
+    },
+    {
+      "title": "Search with empty date fields",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "no_server_error",
+      "steps": [
+        {
+          "action": "click",
+          "element": "toggleAddedOn"
+        },
+        {
+          "action": "click",
+          "element": "btnFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_009"
+    },
+    {
+      "title": "Search with maximum date range",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "no_server_error",
+      "steps": [
+        {
+          "action": "click",
+          "element": "toggleAddedOn"
+        },
+        {
+          "action": "click",
+          "element": "btnFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_010"
+    }
+  ],
+  "rejected": [
+    {
+      "scenario": {
+        "title": "Search with valid date range",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "no_server_error",
+        "steps": [
+          {
+            "action": "click",
+            "element": "toggleAddedOn"
+          },
+          {
+            "action": "fill",
+            "element": "filterFromDate",
+            "value": "2023/01/01"
+          },
+          {
+            "action": "fill",
+            "element": "filterToDate",
+            "value": "2023/12/31"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 2: 'filterFromDate' is disabled/read-only",
+        "step 3: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Search with invalid date format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "message_shown",
+        "steps": [
+          {
+            "action": "click",
+            "element": "toggleAddedOn"
+          },
+          {
+            "action": "fill",
+            "element": "filterFromDate",
+            "value": "01-01-2023"
+          },
+          {
+            "action": "fill",
+            "element": "filterToDate",
+            "value": "12-31-2023"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "message_shown",
+            "value": "Invalid From Date format"
+          }
+        ]
+      },
+      "problems": [
+        "step 2: 'filterFromDate' is disabled/read-only",
+        "step 3: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Search with from date greater than to date",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "message_shown",
+        "steps": [
+          {
+            "action": "click",
+            "element": "toggleAddedOn"
+          },
+          {
+            "action": "fill",
+            "element": "filterFromDate",
+            "value": "2023/12/31"
+          },
+          {
+            "action": "fill",
+            "element": "filterToDate",
+            "value": "2023/01/01"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "message_shown",
+            "value": "From Date cannot be greater than To Date"
+          }
+        ]
+      },
+      "problems": [
+        "step 2: 'filterFromDate' is disabled/read-only",
+        "step 3: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Search with empty date fields",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "no_server_error",
+        "steps": [
+          {
+            "action": "click",
+            "element": "toggleAddedOn"
+          },
+          {
+            "action": "clear",
+            "element": "filterFromDate"
+          },
+          {
+            "action": "clear",
+            "element": "filterToDate"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 2: 'filterFromDate' is disabled/read-only",
+        "step 3: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Search with maximum date range",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "no_server_error",
+        "steps": [
+          {
+            "action": "click",
+            "element": "toggleAddedOn"
+          },
+          {
+            "action": "fill",
+            "element": "filterFromDate",
+            "value": "1900/01/01"
+          },
+          {
+            "action": "fill",
+            "element": "filterToDate",
+            "value": "2100/12/31"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 2: 'filterFromDate' is disabled/read-only",
+        "step 3: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    }
+  ]
+}

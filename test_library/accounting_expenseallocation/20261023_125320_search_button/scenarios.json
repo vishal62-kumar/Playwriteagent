@@ -1,0 +1,148 @@
+{
+  "page": "Accounting/ExpenseAllocation.aspx",
+  "url": "http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+  "generated_at": "2026-10-23T12:53:20",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-23T12:53:10",
+  "scenarios": [
+    {
+      "title": "Click search button after selecting a user filter",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "btnSearch element is clicked",
+      "steps": [
+        {
+          "action": "click",
+          "element": "button_user"
+        },
+        {
+          "action": "select",
+          "element": "ddlFilterUser",
+          "value": "Abhishek jain Sr. engineer"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)",
+        "steps healed after: Step 3 'select 'Abhishek jain Sr. engineer' in 'All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing' (ddlFilterUser)': el",
+        "steps healed after: Step 4 'select 'Abhishek jain Sr. engineer' in 'All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing' (ddlFilterUser)': el"
+      ],
+      "id": "TC_EA_002"
+    },
+    {
+      "title": "Click search button after selecting a practice filter",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "btnSearch element is clicked",
+      "steps": [
+        {
+          "action": "click",
+          "element": "button_practice"
+        },
+        {
+          "action": "click",
+          "element": "practiceTrigger"
+        },
+        {
+          "action": "click",
+          "element": "button_practice"
+        },
+        {
+          "action": "click",
+          "element": "practice_2"
+        },
+        {
+          "action": "click",
+          "element": "applyPracticeBtn"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)",
+        "steps healed after: Step 3 'select 'TBC(Shahdara)' in 'TBC(Shahdara) TBC(Keshavpuram) TBC(MayurVihar) TBC(UttamNagar) TBC(Tigri)' (ddlPracticeFilter)': element did not be",
+        "steps healed after: Step 4 'select 'TBC(Shahdara)' in 'TBC(Shahdara) TBC(Keshavpuram) TBC(MayurVihar) TBC(UttamNagar) TBC(Tigri)' (ddlPracticeFilter)': element did not be"
+      ],
+      "id": "TC_EA_003"
+    },
+    {
+      "title": "Click search button with date range filled",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "btnSearch element is clicked",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "01/10/2023"
+        },
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "31/10/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_004"
+    },
+    {
+      "title": "Click search button with maximum date range",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "btnSearch element is clicked",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "01/01/2023"
+        },
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "31/12/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_005"
+    }
+  ],
+  "rejected": [],
+  "focus": ""
+}

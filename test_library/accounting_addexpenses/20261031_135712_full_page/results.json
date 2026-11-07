@@ -1,0 +1,1517 @@
+{
+  "finished_at": "2026-10-31T13:58:20",
+  "results": [
+    {
+      "test": "test_TC_AE_036[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_036[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_036",
+      "title": "Submit with valid expense details",
+      "type": "positive",
+      "basis": "message_shown proves success",
+      "expected": "message 'Expense Added Successfully' appears; no server error",
+      "writes_data": true,
+      "duration": 4.23,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '1000'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'Tea Club' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Description' (txtexpensedescription) with 'Monthly tea expenses'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Expense Added Successfully'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Warning: The entered amount (₹1000) exceeds your Remaining Balance (₹-1000).\n\nDo you want to continue saving this expense?"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_037[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_037[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_037",
+      "title": "Submit with empty expense amount",
+      "type": "negative",
+      "basis": "rfvtxtexpenseamount validator fires",
+      "expected": "validation 'Please enter Expense Amount' is shown; message 'Please enter Expense Amount' appears; no server error",
+      "writes_data": false,
+      "duration": 1.15,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Tea Club' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Description' (txtexpensedescription) with 'Monthly tea expenses'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect validation 'Please enter Expense Amount'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Please enter Expense Amount'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "- Please enter Expense Amount\n"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_038[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_038[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_038",
+      "title": "Submit with invalid expense amount format",
+      "type": "negative",
+      "basis": "revtxtexpenseamount validator fires",
+      "expected": "validation 'Please enter valid Expense Amount use only numeric characters ' is shown; message 'Please enter valid Expense Amount use only numeric characters ' appears; no server error",
+      "writes_data": false,
+      "duration": 6.17,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '1000abc'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'Tea Club' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Description' (txtexpensedescription) with 'Monthly tea expenses'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect validation 'Please enter valid Expense Amount use only numeric characters '",
+          "status": "failed",
+          "detail": "Expected validation message 'Please enter valid Expense Amount use only numeric characters ' (revtxtexpenseamount) to appear, but it did not."
+        }
+      ],
+      "dialogs": [
+        "Warning: The entered amount (₹1000) exceeds your Remaining Balance (₹-2000).\n\nDo you want to continue saving this expense?"
+      ],
+      "screenshot": "screenshots/test_TC_AE_038_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected validation message 'Please enter valid Expense Amount use only numeric characters ' (revtxtexpenseamount) to appear, but it did not."
+    },
+    {
+      "test": "test_TC_AE_039[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_039[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_039",
+      "title": "Submit with empty expense type",
+      "type": "negative",
+      "basis": "rfvtxtexpensetype validator fires",
+      "expected": "validation 'Please Select Expense Type' is shown; message 'Please Select Expense Type' appears; no server error",
+      "writes_data": false,
+      "duration": 0.87,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '1000'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Description' (txtexpensedescription) with 'Monthly tea expenses'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect validation 'Please Select Expense Type'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Please Select Expense Type'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "- Please Select Expense Type"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_040[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_040[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_040",
+      "title": "Submit with empty expense description",
+      "type": "negative",
+      "basis": "client_script_validation shows message",
+      "expected": "message 'Expense Description is mandatory.' appears; no server error",
+      "writes_data": false,
+      "duration": 1.18,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '1000'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'Tea Club' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect message 'Expense Description is mandatory.'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_041[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_041[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_041",
+      "title": "Submit with maximum expense amount",
+      "type": "boundary",
+      "basis": "client_script_validation allows maximum amount",
+      "expected": "message 'Expense Added Successfully' appears; no server error",
+      "writes_data": true,
+      "duration": 1.2,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '50000'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'Tea Club' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Description' (txtexpensedescription) with 'Maximum allowed amount'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Expense Added Successfully'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Warning: The entered amount (₹50000) exceeds your Remaining Balance (₹-3000).\n\nDo you want to continue saving this expense?"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_042[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_042[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_042",
+      "title": "Submit with expense amount exceeding limit",
+      "type": "negative",
+      "basis": "client_script_validation shows message",
+      "expected": "message 'Expense Amount cannot exceed 50,000 at one time.' appears; no server error",
+      "writes_data": false,
+      "duration": 6.52,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '50001'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'Tea Club' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Description' (txtexpensedescription) with 'Exceeds maximum allowed amount'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Expense Amount cannot exceed 50,000 at one time.'",
+          "status": "failed",
+          "detail": "Expected the message 'Expense Amount cannot exceed 50,000 at one time.' but it never appeared. Pop-ups seen: ['Warning: The entered amount (₹50000) exceeds your Remaining Balance (₹-53000).\\n\\nDo you want to continue saving this expense?']."
+        }
+      ],
+      "dialogs": [
+        "Warning: The entered amount (₹50000) exceeds your Remaining Balance (₹-53000).\n\nDo you want to continue saving this expense?"
+      ],
+      "screenshot": "screenshots/test_TC_AE_042_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Expense Amount cannot exceed 50,000 at one time.' but it never appeared. Pop-ups seen: ['Warning: The entered amount (₹50000) exceeds your Remaining Balance (₹-53000).\\n\\nDo you want to continue saving this expense?']."
+    },
+    {
+      "test": "test_TC_AE_043[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_043[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_043",
+      "title": "Submit valid expense amount",
+      "type": "positive",
+      "basis": "client_script_validation for valid amount",
+      "expected": "message 'Expense Added Successfully' appears; no server error",
+      "writes_data": true,
+      "duration": 1.18,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '1000'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'Tea Club' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Description' (txtexpensedescription) with 'Monthly tea expenses'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Expense Added Successfully'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Warning: The entered amount (₹1000) exceeds your Remaining Balance (₹-103000).\n\nDo you want to continue saving this expense?"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_044[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_044[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_044",
+      "title": "Submit empty expense amount",
+      "type": "negative",
+      "basis": "rfvtxtexpenseamount validator fires",
+      "expected": "validation 'Please enter Expense Amount' is shown; no server error",
+      "writes_data": false,
+      "duration": 1.2,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with ''",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'Tea Club' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Description' (txtexpensedescription) with 'Monthly tea expenses'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect validation 'Please enter Expense Amount'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "- Please enter Expense Amount\n"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_045[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_045[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_045",
+      "title": "Submit non-numeric expense amount",
+      "type": "negative",
+      "basis": "revtxtexpenseamount validator fires",
+      "expected": "validation 'Please enter valid Expense Amount use only numeric characters ' is shown; no server error",
+      "writes_data": false,
+      "duration": 6.27,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with 'abc'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'Tea Club' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Description' (txtexpensedescription) with 'Monthly tea expenses'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect validation 'Please enter valid Expense Amount use only numeric characters '",
+          "status": "failed",
+          "detail": "Expected validation message 'Please enter valid Expense Amount use only numeric characters ' (revtxtexpenseamount) to appear, but it did not."
+        }
+      ],
+      "dialogs": [
+        "- Please enter Expense Amount\n"
+      ],
+      "screenshot": "screenshots/test_TC_AE_045_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected validation message 'Please enter valid Expense Amount use only numeric characters ' (revtxtexpenseamount) to appear, but it did not."
+    },
+    {
+      "test": "test_TC_AE_046[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_046[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_046",
+      "title": "Submit expense amount exceeding maximum limit",
+      "type": "boundary",
+      "basis": "client_script_validation for amount exceeding limit",
+      "expected": "message 'Expense Amount cannot exceed 50,000 at one time.' appears; no server error",
+      "writes_data": false,
+      "duration": 6.39,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '60000'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'Tea Club' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Description' (txtexpensedescription) with 'Monthly tea expenses'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Expense Amount cannot exceed 50,000 at one time.'",
+          "status": "failed",
+          "detail": "Expected the message 'Expense Amount cannot exceed 50,000 at one time.' but it never appeared. Pop-ups seen: ['Warning: The entered amount (₹50000) exceeds your Remaining Balance (₹-104000).\\n\\nDo you want to continue saving this expense?']."
+        }
+      ],
+      "dialogs": [
+        "Warning: The entered amount (₹50000) exceeds your Remaining Balance (₹-104000).\n\nDo you want to continue saving this expense?"
+      ],
+      "screenshot": "screenshots/test_TC_AE_046_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Expense Amount cannot exceed 50,000 at one time.' but it never appeared. Pop-ups seen: ['Warning: The entered amount (₹50000) exceeds your Remaining Balance (₹-104000).\\n\\nDo you want to continue saving this expense?']."
+    },
+    {
+      "test": "test_TC_AE_047[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_047[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_047",
+      "title": "Select a valid expense type",
+      "type": "positive",
+      "basis": "element_value on ddlexpensetype",
+      "expected": "'Expense Type' = 'Tea Club'; no server error",
+      "writes_data": false,
+      "duration": 0.75,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Tea Club' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Expense Type' (ddlexpensetype) = 'Tea Club'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_048[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_048[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_048",
+      "title": "Select the last valid expense type",
+      "type": "boundary",
+      "basis": "element_value on ddlexpensetype",
+      "expected": "'Expense Type' = 'Labour Charges'; no server error",
+      "writes_data": false,
+      "duration": 0.75,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Labour Charges' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Expense Type' (ddlexpensetype) = 'Labour Charges'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_049[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_049[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_049",
+      "title": "Select a duplicate expense type",
+      "type": "ui",
+      "basis": "element_value on ddlexpensetype",
+      "expected": "'Expense Type' = 'Labour Charges'; no server error",
+      "writes_data": false,
+      "duration": 0.73,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Labour Charges' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Expense Type' (ddlexpensetype) = 'Labour Charges'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_050[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_050[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_050",
+      "title": "Submit with valid description",
+      "type": "positive",
+      "basis": "code-behind handler shows success message",
+      "expected": "message 'Expense Added Successfully' appears; no server error",
+      "writes_data": true,
+      "duration": 1.13,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Description' (txtexpensedescription) with 'Office supplies purchase'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '100'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "select 'Office Maintenance' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Expense Added Successfully'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Warning: The entered amount (₹100) exceeds your Remaining Balance (₹-154000).\n\nDo you want to continue saving this expense?"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_051[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_051[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_051",
+      "title": "Submit with empty description",
+      "type": "negative",
+      "basis": "client-side validation shows mandatory message",
+      "expected": "message 'Expense Description is mandatory.' appears; no server error",
+      "writes_data": false,
+      "duration": 1.28,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Description' (txtexpensedescription) with ''",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '100'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "select 'Office Maintenance' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Expense Description is mandatory.'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_052[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_052[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_052",
+      "title": "Submit with maximum length description",
+      "type": "boundary",
+      "basis": "code-behind handler shows success message",
+      "expected": "message 'Expense Added Successfully' appears; no server error",
+      "writes_data": true,
+      "duration": 1.16,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Description' (txtexpensedescription) with 'A very long description that is exactly at the boundary of what is acceptable for this field to ensure it handles maximum length input correctly.'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '100'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "select 'Office Maintenance' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Expense Added Successfully'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Warning: The entered amount (₹100) exceeds your Remaining Balance (₹-154100).\n\nDo you want to continue saving this expense?"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_053[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_053[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_053",
+      "title": "Submit with special characters in description",
+      "type": "ui",
+      "basis": "code-behind handler shows success message",
+      "expected": "message 'Expense Added Successfully' appears; no server error",
+      "writes_data": true,
+      "duration": 1.21,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Description' (txtexpensedescription) with 'Purchase of office chairs & tables @ 50% discount!'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Expense Amount' (txtexpenseamount) with '100'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "select 'Office Furniture' in 'Expense Type' (ddlexpensetype)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Expense Added Successfully'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Warning: The entered amount (₹100) exceeds your Remaining Balance (₹-154200).\n\nDo you want to continue saving this expense?"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_054[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_054[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_054",
+      "title": "Upload a valid file to the file input",
+      "type": "smoke",
+      "basis": "The file input accepts a valid file",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.39,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_055[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_055[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_055",
+      "title": "Attempt to upload more than 5 files",
+      "type": "negative",
+      "basis": "Client-side script restricts the number of files to 5",
+      "expected": "message 'You can only have a maximum of 5 files total (including existing files).' appears; no server error",
+      "writes_data": false,
+      "duration": 5.82,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 8,
+          "action": "expect message 'You can only have a maximum of 5 files total (including existing files).'",
+          "status": "failed",
+          "detail": "Expected the message 'You can only have a maximum of 5 files total (including existing files).' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_AE_055_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'You can only have a maximum of 5 files total (including existing files).' but it never appeared."
+    },
+    {
+      "test": "test_TC_AE_056[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_056[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_056",
+      "title": "Search with valid expense name",
+      "type": "smoke",
+      "basis": "Valid input in search field",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.81,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search expenses...' (txtSearchExpense) with 'Tea Club'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearchExpense)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_057[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_057[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_057",
+      "title": "Search with empty input",
+      "type": "smoke",
+      "basis": "Empty input in search field",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.89,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "clear 'Search expenses...' (txtSearchExpense)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearchExpense)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_058[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_058[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_058",
+      "title": "Search with special characters",
+      "type": "smoke",
+      "basis": "Special characters in search field",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.79,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search expenses...' (txtSearchExpense) with '!@#$%^&*()'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearchExpense)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_059[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_059[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_059",
+      "title": "Search with maximum length input",
+      "type": "smoke",
+      "basis": "Boundary test for maximum length",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.97,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search expenses...' (txtSearchExpense) with 'A very long expense name that exceeds typical length'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearchExpense)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_060[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_060[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_060",
+      "title": "Valid date input in 'dd/mm/yyyy' format",
+      "type": "positive",
+      "basis": "validator_passes for valid date format",
+      "expected": "no 'Please enter valid Date' error; no server error",
+      "writes_data": false,
+      "duration": 1.44,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtfrom) with '15/08/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearchExpense)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect NO validation 'Please enter valid Date'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_061[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_061[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_061",
+      "title": "Boundary test with maximum length date input",
+      "type": "boundary",
+      "basis": "validator_passes for maximum length input",
+      "expected": "no 'Please enter valid Date' error; no server error",
+      "writes_data": false,
+      "duration": 1.34,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtfrom) with '31/12/9999'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearchExpense)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect NO validation 'Please enter valid Date'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_062[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_062[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_062",
+      "title": "Valid date input in 'dd/mm/yyyy' format",
+      "type": "positive",
+      "basis": "validator_passes for valid date format",
+      "expected": "no 'Please enter valid Date' error; no server error",
+      "writes_data": false,
+      "duration": 1.4,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtto) with '15/09/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearchExpense)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect NO validation 'Please enter valid Date'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_AE_063[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261031_135712_full_page/test_accounting_addexpenses_20261031_135712.py::test_TC_AE_063[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261031_135712_full_page\\test_accounting_addexpenses_20261031_135712.py",
+      "id": "TC_AE_063",
+      "title": "Boundary test for maximum length of date input",
+      "type": "boundary",
+      "basis": "maxlength property of txtto",
+      "expected": "'dd/mm/yyyy' = '31/12/2023'; no server error",
+      "writes_data": false,
+      "duration": 0.92,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'dd/mm/yyyy' (txtto) with '31/12/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Search' (btnSearchExpense)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect 'dd/mm/yyyy' (txtto) = '31/12/2023'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    }
+  ]
+}

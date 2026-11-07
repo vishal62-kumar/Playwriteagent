@@ -1,0 +1,500 @@
+{
+  "page": "Accounting/ExpenseAllocation.aspx",
+  "url": "http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+  "focus": "",
+  "generated_at": "2026-10-31T13:47:02",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-31T13:47:02",
+  "scenarios": [
+    {
+      "title": "Check the 'on' checkbox",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "element_value proves the checkbox is checked",
+      "steps": [
+        {
+          "action": "check",
+          "element": "chkSelect"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_checked",
+          "element": "chkSelect"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_022",
+      "group": "on"
+    },
+    {
+      "title": "Uncheck the 'on' checkbox",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "element_value proves the checkbox is unchecked",
+      "steps": [
+        {
+          "action": "uncheck",
+          "element": "chkSelect"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_unchecked",
+          "element": "chkSelect"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_023",
+      "group": "on"
+    },
+    {
+      "title": "Toggle the 'on' checkbox twice",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "element_value proves the checkbox returns to initial state",
+      "steps": [
+        {
+          "action": "check",
+          "element": "chkSelect"
+        },
+        {
+          "action": "uncheck",
+          "element": "chkSelect"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_unchecked",
+          "element": "chkSelect"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_024",
+      "group": "on"
+    },
+    {
+      "title": "Clear selection",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "btnClearSelection element",
+      "steps": [
+        {
+          "action": "check",
+          "element": "chkSelect"
+        },
+        {
+          "action": "click",
+          "element": "btnClearSelection"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_unchecked",
+          "element": "chkSelect"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_025",
+      "group": "₹0"
+    },
+    {
+      "title": "Search with valid date range",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "btnSearch element",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "01/10/2023"
+        },
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "31/10/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_026",
+      "group": "₹0"
+    },
+    {
+      "title": "Search with invalid date range",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "btnSearch element",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "31/10/2023"
+        },
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "01/10/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_027",
+      "group": "₹0"
+    },
+    {
+      "title": "Export CSV",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "btnExportCSV element",
+      "steps": [
+        {
+          "action": "click",
+          "element": "btnExportCSV"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_028",
+      "group": "₹0"
+    },
+    {
+      "title": "Submit allocation without selecting user",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "code-behind handler checks for selected user",
+      "steps": [
+        {
+          "action": "check",
+          "element": "chkSelect"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmitAllocationGrid"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Please Select Allocated To User for all checked rows."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_029",
+      "group": "Enter amount"
+    },
+    {
+      "title": "Submit allocation with unselected checkbox",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "code-behind handler requires checkbox to be checked",
+      "steps": [
+        {
+          "action": "uncheck",
+          "element": "chkSelect"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmitAllocationGrid"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_030",
+      "group": "Enter amount"
+    },
+    {
+      "title": "Submit allocation with maximum length date",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "txtfrom and txtto fields have maxlength of 10",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "01/01/2023"
+        },
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "31/12/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_031",
+      "group": "Optional note"
+    },
+    {
+      "title": "Valid date input for 'dd/mm/yyyy' field",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid date format",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "15/10/2023"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_032",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Invalid date format input for 'dd/mm/yyyy' field",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Invalid date format",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "2023-10-15"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_033",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Boundary test with maximum length input for 'dd/mm/yyyy' field",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "Maximum length of input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "31/12/2023"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtfrom",
+          "value": "31/12/2023"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_034",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Empty input for 'dd/mm/yyyy' field",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Empty input",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtfrom"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_035",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Positive test with valid date format",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid date format is accepted",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "15/10/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_036",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Negative test with invalid date format",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Invalid date format should not be accepted",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "2023-10-15"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_037",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Boundary test with maximum length date",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Date field accepts maximum length input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "31/12/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_038",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Negative test with over maximum length input",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "Input longer than maximum length is truncated",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "31/12/2023extra"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtto",
+          "value": "31/12/2023"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_039",
+      "group": "dd/mm/yyyy"
+    }
+  ],
+  "rejected": []
+}

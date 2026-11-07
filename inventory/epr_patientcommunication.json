@@ -1,0 +1,481 @@
+{
+  "page": "EPR/PatientCommunication",
+  "url": "http://localhost:2786/EPR/PatientCommunication.aspx",
+  "scanned_at": "2026-10-30T14:11:40",
+  "elements": {
+    "txtCommunication": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtCommunication\"]"
+      },
+      "label": "",
+      "text": "",
+      "client_id": "txtCommunication",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "ddlPendingStatus": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ddlPendingStatus\"]"
+      },
+      "label": "Assign To Users:",
+      "text": "-- Select User -- Sundeep Saini Dr Sunita Rani Cheif Medical Officer Lata Arya A",
+      "client_id": "ddlPendingStatus",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "",
+          "label": "-- Select User --"
+        },
+        {
+          "value": "4",
+          "label": "Sundeep Saini"
+        },
+        {
+          "value": "5",
+          "label": "Dr Sunita Rani Cheif Medical Officer"
+        },
+        {
+          "value": "6",
+          "label": "Lata Arya"
+        },
+        {
+          "value": "7",
+          "label": "Anand Manocha"
+        },
+        {
+          "value": "19",
+          "label": "Sumit Saini Sr. General Manager"
+        },
+        {
+          "value": "20",
+          "label": "Abhishek Jain Sr. Engineer"
+        },
+        {
+          "value": "22",
+          "label": "Lakshmi Verma"
+        },
+        {
+          "value": "25",
+          "label": "Naushad Khan"
+        },
+        {
+          "value": "26",
+          "label": "Ahsan Ahmad"
+        },
+        {
+          "value": "28",
+          "label": "Sumit Saini Sr. General Manager"
+        },
+        {
+          "value": "33",
+          "label": "Himani Saini kohat"
+        },
+        {
+          "value": "37",
+          "label": "Pooja Saini"
+        },
+        {
+          "value": "39",
+          "label": "Rakhi Saini"
+        },
+        {
+          "value": "40",
+          "label": "Nitin Bhati"
+        },
+        {
+          "value": "42",
+          "label": "Sangeeta Chindaliya"
+        },
+        {
+          "value": "46",
+          "label": "Aijaz Nabi Manager Admin"
+        },
+        {
+          "value": "47",
+          "label": "Manisha Kaur"
+        },
+        {
+          "value": "50",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "51",
+          "label": "Mohd Shuaib"
+        },
+        {
+          "value": "67",
+          "label": "Bhawna nagpal PHARMACY EXCECUTIVE"
+        },
+        {
+          "value": "82",
+          "label": "Monika singh Sr. Call Center Exce."
+        },
+        {
+          "value": "83",
+          "label": "Muskan Receptionist"
+        },
+        {
+          "value": "86",
+          "label": "Ritesh Kumar"
+        },
+        {
+          "value": "92",
+          "label": "Mansi yadav Call Center Exce."
+        },
+        {
+          "value": "93",
+          "label": "Komal Bansal"
+        },
+        {
+          "value": "95",
+          "label": "Krish Saini"
+        },
+        {
+          "value": "96",
+          "label": "Kanika Sharda"
+        },
+        {
+          "value": "102",
+          "label": "Mohd Danish Medical Officer"
+        },
+        {
+          "value": "103",
+          "label": "Nadeem Shabnam"
+        }
+      ]
+    },
+    "text_search": {
+      "kind": "text",
+      "selector": {
+        "by": "label",
+        "value": "Search"
+      },
+      "label": "Search",
+      "text": "",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "chkDueAction": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"chkDueAction\"]"
+      },
+      "label": "Action Due",
+      "text": "on",
+      "client_id": "chkDueAction",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "on",
+      "maxlength": null,
+      "in_page_source": true,
+      "checked": false
+    },
+    "txtfollowUpDate": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtfollowUpDate\"]"
+      },
+      "label": "dd/mm/yyyy",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtfollowUpDate",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "btnsave": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnsave\"]"
+      },
+      "label": "Save",
+      "text": "Save",
+      "client_id": "btnsave",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Save",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null
+    },
+    "select_10_25_50_100": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "select[name=\"tblRecord_length\"]"
+      },
+      "label": "Show 10 25 50 100 entries",
+      "text": "10 25 50 100",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "10",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "25",
+          "label": "25"
+        },
+        {
+          "value": "50",
+          "label": "50"
+        },
+        {
+          "value": "100",
+          "label": "100"
+        }
+      ]
+    },
+    "text_search_2": {
+      "kind": "text",
+      "selector": {
+        "by": "label",
+        "value": "Search:"
+      },
+      "label": "Search:",
+      "text": "",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "tblRecord_previous": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblRecord_previous\"]"
+      },
+      "label": "Previous",
+      "text": "Previous",
+      "client_id": "tblRecord_previous",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_1": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "1"
+      },
+      "label": "1",
+      "text": "1",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "2"
+      },
+      "label": "2",
+      "text": "2",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_3": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "3"
+      },
+      "label": "3",
+      "text": "3",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_4": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "4"
+      },
+      "label": "4",
+      "text": "4",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_5": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "5"
+      },
+      "label": "5",
+      "text": "5",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "tblRecord_next": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblRecord_next\"]"
+      },
+      "label": "Next",
+      "text": "Next",
+      "client_id": "tblRecord_next",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    }
+  },
+  "validators": {},
+  "known_messages": [
+    "Ajax error",
+    "All records shown are derived from real information.",
+    "Apply filter _INPUT_ to table",
+    "Boolean Number String Function Array Date RegExp Object Error",
+    "Cannot reinitialise DataTable",
+    "Click to edit",
+    "Communication action due completed sucessfully.",
+    "Communication added sucessfully.",
+    "DT API must be constructed as a new object",
+    "DataTables has finished its initialisation.",
+    "DataTables has redrawn the table",
+    "DataTables is currently busy",
+    "DataTables warning:",
+    "Display _MENU_ records",
+    "Example update",
+    "Filter records:",
+    "First cell is:",
+    "First page",
+    "Initial search",
+    "Internet Explorer 4.0",
+    "Internet Explorer 5.0",
+    "Invalid JSON response",
+    "Invalid JSON:",
+    "Invalid XML:",
+    "Last page",
+    "Mar 26, 2008 5:03 PM",
+    "My column title",
+    "My filter",
+    "Next page",
+    "No Transport",
+    "No conversion from",
+    "No data available in table",
+    "No entries to show",
+    "No matching records found",
+    "No records to display",
+    "Non-table node initialisation (",
+    "Permission Denied",
+    "Please wait - loading...",
+    "Possible column misalignment",
+    "Previous page",
+    "Requested unknown parameter",
+    "Saved filter was:",
+    "Show _MENU_ entries",
+    "Showing 0 to 0 of 0 entries",
+    "Showing 1 to 10 of 57 entries",
+    "Showing _START_ to _END_ of _TOTAL_ entries",
+    "Showing page _PAGE_ of _PAGES_",
+    "Showing x of y records",
+    "Starting index is",
+    "Syntax error, unrecognized expression:",
+    "Temporary row opened",
+    "The cell clicked on had the value of",
+    "Unknown paging action:",
+    "Win 95+"
+  ],
+  "page_text": "Patient Communication\nPatient ID\t\tName\t\tAge/Gender\t\nPatient Status\t\tProgram Status\t\t\t\n\n\nNew Communication\n\n\n\nAssign To Users: \n-- Select User --\nSundeep Saini\nDr Sunita Rani Cheif Medical Officer\nLata Arya\nAnand Manocha\nSumit Saini Sr. General Manager\nAbhishek Jain Sr. Engineer\nLakshmi Verma\nNaushad Khan\nAhsan Ahmad\nSumit Saini Sr. General Manager\nHimani Saini kohat\nPooja Saini\nRakhi Saini\nNitin Bhati\nSangeeta Chindaliya\nAijaz Nabi Manager Admin\nManisha Kaur\nAshwani Kumar\nMohd Shuaib\nBhawna nagpal PHARMACY EXCECUTIVE\nMonika singh Sr. Call Center Exce.\nMuskan Receptionist\nRitesh Kumar\nMansi yadav Call Center Exce.\nKomal Bansal\nKrish Saini\nKanika Sharda\nMohd Danish Medical Officer\nNadeem Shabnam\nJitender Sr. Bd Exce.\nTara Shaikh Receptionist\nAmaan Rais\nVishal Singh\nAmir Khan Sr. Bd Exce.\nAnam Qureshi Pt. Counsellor\nRicha Sharma Call Center Manager\nReetu Verma Call Center Exce.\nGanga Verma training manager\nSatish Kaushik\nSachin Kaushik\nMeenakshi Panchal Lab. Technician\nManisha Call Center Exce.\nHimanshu verma Medical Officer\nHema Sharma Data Entry Operator\nNawazish Zaidi Xray Technician\nTech@ Medcross\nFaisal Saifi Clinic Manager\nNot in use\nPriyanka Saini Dietitian\nTannu Das Pt. Coordinator\nNisha Zaidi Receptionist\nNisha Yadav Front Office Exce.\nHema Sharma Data Entry Operator\nHritik Sharma\nHimanshi Bagiri\nAnjali Mandrai\nTraining @ Medcross .\nNishant Kumar\nUma Rawat\n00000000 0000000000\nUma Rawat\nNitin Bhati\nSuman Suman\nAman Aman\nSarfraz Hybrid marketing\nTarun Hybrid marketing\nRakesh Rakesh marketing\nGaurav Marketing\nRanveer Marketing\nNaveen Marketing\nDietician KMedNet\nShivangi Yadav\nManisha Cce\nManoj Kumar\nManoj Kumar assistant manager\nChhavi Physiotherapist\nJyoti Saini\nAfsar Mohd\nHarsh Pt. Coordinator\nAkansha Lab technician\nTinkush Marketing\nShivanshu Hybrid marketing\nDevesh Kumar\nDeepak Panday\nMayank Singhal\nAnjali Calling\nTarique Tarique marketing\n Action Due\nFollow-up Date: \n\n \n\n\nCommunications\nShow \n10\n25\n50\n100\n entries\nSearch:\nDate\tCommunication\tAssigned To\tAction Due\tAdded By\tAction\tReminders\n03/08/2024 5:19PM\t\nNot Responding- Missed\n\t\tNo\t\t\n\t\nN/A\n\n03/08/2024 5:19PM\t\nNot Responding- Missed\n\t\tNo\t\t\n\t\nN/A\n\n03/08/2024 5:19PM\t\nNot Responding- Missed\n\t\tNo\t\t\n\t\nN/A\n\n03/08/2024 5:19PM\t\nNot Responding- Missed\n\t\tNo\t\t\n\t\nN/A\n\n11/05/2024 2:55PM\t\nnot erespondig\n\t\tNo\t\t\n\t\nN/A\n\n11/05/2024 2:55PM\t\nnot erespondig\n\t\tNo\t\t\n11/05/2024 2:55PM\t\nN/A\n\n11/05/2024 2:55PM\t\nnot erespondig\n\t\tNo\t\t\n\t\nN/A\n\n11/05/2024 2:55PM\t\nnot erespondig\n\t\tNo\t\t\n\t\nN/A\n\n03/04/2024 2:18PM\t\nDONE REMINDER\n\t\tNo\t\t\n\t\nN/A\n\n30/12/2023 9:18AM\t\naayege bol rahe h missed\n\t\tNo\t\t\n\t\nN/A\nShowing 1 to 10 of 43 entries\nPrevious12345Next",
+  "source": {
+    "found": true,
+    "aspx_path": "C:\\medcrossproject\\admin\\EPR\\PatientCommunication.aspx",
+    "code_behind_path": "C:\\medcrossproject\\admin\\EPR\\PatientCommunication.aspx.cs",
+    "handlers": {
+      "Page_Load": "void Page_Load(object sender, EventArgs e)\n        {\n            int patient_id = 0;\n            if (Request.QueryString[\"patient_row_id\"] != null)\n            {\n                int.TryParse(Request.QueryString[\"patient_row_id\"].ToString(), out patient_id);\n            }\n            if (patient_id > 0)\n            {\n                Patient objpatient = new Patient();\n                objpatient = Patient.Get(patient_id);\n                if (objpatient != null)\n                {\n                    Session[\"Patient_Communication\"] = patient_id.ToString();\n                    lblKmedId.Text = objpatient.KmedID;\n                    lblPatientName.Text = objpatient.FirstName + \" \" + objpatient.LastName;\n                    string age = \"\";\n                    string gender = \"\";\n                    if (objpatient.age != null)\n                    {\n                        age = Convert.ToString(objpatient.age);\n                    }\n                    else if (objpatient.dob != null)\n                    {\n                        age = (System.DateTime.Now.Year - ((DateTime)objpatient.dob).Year).ToString();\n                    }\n                    else\n                    {\n                        age = \"_\";\n                    }\n                    if (objpatient.gender != null)\n                        gender = objpatient.gender.ToString();\n                    else\n                        gender = \"_\";\n\n                    lblAgenGender.Text = age + \"/\" + gender;\n                }\n            }\n        }"
+    },
+    "script_files": [
+      "C:\\medcrossproject\\admin\\DataTable\\Script\\jquery-1.10.2.js",
+      "C:\\medcrossproject\\admin\\DataTable\\Script\\jquery.dataTables.js",
+      "<inline scripts in .aspx>"
+    ],
+    "script_rules": "function doScrollCheck() {\n\t\t\t\t\tif ( !jQuery.isReady ) {\n\n\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\t// Use the trick by Diego Perini\n\t\t\t\t\t\t\t// http://javascript.nwbox.com/IEContentLoaded/\n\t\t\t\t\t\t\ttop.doScroll(\"left\");\n\t\t\t\t\t\t} catch(e) {\n\t\t\t\t\t\t\treturn setTimeout( doScrollCheck, 50 );\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// detach all dom ready events\n\t\t\t\t\t\tdetach();\n\n\t\t\t\t\t\t// and execute any waiting functions\n\t\t\t\t\t\tjQuery.ready();\n\t\t\t\t\t}\n\t\t\t\t}\n\nfunction siblingCheck( a, b ) {\n\tvar cur = b && a,\n\t\tdiff = cur && a.nodeType === 1 && b.nodeType === 1 &&\n\t\t\t( ~b.sourceIndex || MAX_NEGATIVE ) -\n\t\t\t( ~a.sourceIndex || MAX_NEGATIVE );\n\n\t// Use IE sourceIndex if available on both nodes\n\tif ( diff ) {\n\t\treturn diff;\n\t}\n\n\t// Check if b follows a\n\tif ( cur ) {\n\t\twhile ( (cur = cur.nextSibling) ) {\n\t\t\tif ( cur === b ) {\n\t\t\t\treturn -1;\n\t\t\t}\n\t\t}\n\t}\n\n\treturn a ? 1 : -1;\n}\n\nfunction fixDefaultChecked( elem ) {\n\tif ( manipulation_rcheckableType.test( elem.type ) ) {\n\t\telem.defaultChecked = elem.checked;\n\t}\n}\n\nfunction _fnInvalidate( settings, rowIdx, src, colIdx )\n\t{\n\t\tvar row = settings.aoData[ rowIdx ];\n\t\tvar i, ien;\n\t\tvar cellWrite = function ( cell, col ) {\n\t\t\t// This is very frustrating, but in IE if you just write directly\n\t\t\t// to innerHTML, and elements that are overwritten are GC'ed,\n\t\t\t// even if there is a reference to them elsewhere\n\t\t\twhile ( cell.childNodes.length ) {\n\t\t\t\tcell.removeChild( cell.firstChild );\n\t\t\t}\n\t\n\t\t\tcell.innerHTML = _fnGetCellData( settings, rowIdx, col, 'display' );\n\t\t};\n\t\n\t\t// Are we reading last data from DOM or the data object?\n\t\tif ( src === 'dom' || ((! src || src === 'auto') && row.src === 'dom') ) {\n\t\t\t// Read the data from the DOM\n\t\t\trow._aData = _fnGetRowElements(\n\t\t\t\t\tsettings, row, colIdx, colIdx === undefined ? undefined : row._aData\n\t\t\t\t)\n\t\t\t\t.data;\n\t\t}\n\t\telse {\n\t\t\t// Reading from data object, update the DOM\n\t\t\tvar cells = row.anCells;\n\t\n\t\t\tif ( cells ) {\n\t\t\t\tif ( colIdx !== undefined ) {\n\t\t\t\t\tcellWrite( cells[colIdx], colIdx );\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\tfor ( i=0, ien=cells.length ; i<ien ; i++ ) {\n\t\t\t\t\t\tcellWrite( cells[i], i );\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\n\t\t// For both row and cell invalidation, the cached data for sorting and\n\t\t// filtering is nulled out\n\t\trow._aSortData = null;\n\t\trow._aFilterData = null;\n\t\n\t\t// Invalidate the type for a specific column (if given) or all columns since\n\t\t// the data might have changed\n\t\tvar cols = settings.aoColumns;\n\t\tif ( colIdx !== undefined ) {\n\t\t\tcols[ colIdx ].sType = null;\n\t\t}\n\t\telse {\n\t\t\tfor ( i=0, ien=cols.length ; i<ien ; i++ ) {\n\t\t\t\tcols[i].sType = null;\n\t\t\t}\n\t\n\t\t\t// Update DataTables special `DT_*` attributes for the row\n\t\t\t_fnRowAttributes( row );\n\t\t}\n\t}\n\nfnSaveFilter = function ( oFilter ) {\n\t\t\t/* Save the filtering values */\n\t\t\toPrevSearch.sSearch = oFilter.sSearch;\n\t\t\toPrevSearch.bRegex = oFilter.bRegex;\n\t\t\toPrevSearch.bSmart = oFilter.bSmart;\n\t\t\toPrevSearch.bCaseInsensitive = oFilter.bCaseInsensitive;\n\t\t}\n\nfunction _fnSaveState ( settings )\n\t{\n\t\tif ( !settings.oFeatures.bStateSave || settings.bDestroying )\n\t\t{\n\t\t\treturn;\n\t\t}\n\t\n\t\t/* Store the interesting variables */\n\t\tvar state = {\n\t\t\ttime:    +new Date(),\n\t\t\tstart:   settings._iDisplayStart,\n\t\t\tlength:  settings._iDisplayLength,\n\t\t\torder:   $.extend( true, [], settings.aaSorting ),\n\t\t\tsearch:  _fnSearchToCamel( settings.oPreviousSearch ),\n\t\t\tcolumns: $.map( settings.aoColumns, function ( col, i ) {\n\t\t\t\treturn {\n\t\t\t\t\tvisible: col.bVisible,\n\t\t\t\t\tsearch: _fnSearchToCamel( settings.aoPreSearchCols[i] )\n\t\t\t\t};\n\t\t\t} )\n\t\t};\n\t\n\t\t_fnCallbackFire( settings, \"aoStateSaveParams\", 'stateSaveParams', [settings, state] );\n\t\n\t\tsettings.oSavedState = state;\n\t\tsettings.fnStateSaveCallback.call( settings.oInstance, settings, state );\n\t}\n\nfnVersionCheck = function( version )\n\t{\n\t\tvar aThis = DataTable.version.split('.');\n\t\tvar aThat = version.split('.');\n\t\tvar iThis, iThat;\n\t\n\t\tfor ( var i=0, iLen=aThat.length ; i<iLen ; i++ ) {\n\t\t\tiThis = parseInt( aThis[i], 10 ) || 0;\n\t\t\tiThat = parseInt( aThat[i], 10 ) || 0;\n\t\n\t\t\t// Parts are the same, keep comparing\n\t\t\tif (iThis === iThat) {\n\t\t\t\tcontinue;\n\t\t\t}\n\t\n\t\t\t// Parts are different, return immediately\n\t\t\treturn iThis > iThat;\n\t\t}\n\t\n\t\treturn true;\n\t}\n\nfunction Validate(comm) {\n            var errorMessage = \"\";\n            if (comm == \"\" || comm == undefined)\n                errorMessage = \"-Please enter communication note.\\n\\n\";\n\n            if (errorMessage != '') {\n                alert(errorMessage);\n                return false;\n            }\n            else {\n                return true;\n            }\n        }\n\nfunction Save(comm, isPendingForCli, isPendingForEsc, DueAction, EndComm) {\n            $('#spnmsg').html('');\n            Posturl = '<%= Page.ResolveUrl(\"PatientCommunication.aspx/SaveCommunication\") %>';\n            $.ajax({\n                type: \"POST\",\n                url: Posturl,\n                data: JSON.stringify({ note: comm, isPendingForClinic: isPendingForCli, isPendingForEsclination: isPendingForEsc, DueAction: DueAction,EndComm: EndComm }),\n                contentType: \"application/json; charset=utf-8\",\n                dataType: \"json\",\n                async: true,\n                success: function (response) {\n                    if (response.d = 1)\n                    {\n                        GetReport();\n                        $('#txtCommunication').val('');\n                        $('#chkPendingforClinic').attr('checked', false);\n                        $('#chkPendingforEsclination').attr('checked', false);\n                        $('#chkDueAction').attr('checked', false);\n                        $('#chkEndComm').attr('checked', false);\n                        $('#spnmsg').html('Communication added sucessfully.');\n                    }                    \n                }\n                //failure: function (response) {\n                //    alert('failure; ' + response.d);\n                //},\n                //error: function (response, status, error) {\n                //    alert(response.responseText + '; ' + error);\n                //}\n            });\n        }\n\n"
+  },
+  "stats": {
+    "elements": 15,
+    "validators": 0,
+    "skipped_not_unique": []
+  }
+}

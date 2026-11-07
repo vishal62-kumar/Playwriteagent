@@ -1,0 +1,422 @@
+{
+  "page": "EPR/UniversalComm",
+  "url": "http://localhost:2786/EPR/UniversalComm.aspx",
+  "scanned_at": "2026-10-31T13:02:45",
+  "elements": {
+    "txtNote": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtNote\"]"
+      },
+      "label": "Type communication note here…",
+      "text": "",
+      "client_id": "txtNote",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "ddlPractice": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ddlPractice\"]"
+      },
+      "label": "PRACTICE",
+      "text": "All Practices TBC(Shahdara) TBC(Keshavpuram) TBC(MayurVihar) TBC(UttamNagar) TBC",
+      "client_id": "ddlPractice",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "2",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "0",
+          "label": "All Practices"
+        },
+        {
+          "value": "2",
+          "label": "TBC(Shahdara)"
+        },
+        {
+          "value": "4",
+          "label": "TBC(Keshavpuram)"
+        },
+        {
+          "value": "8",
+          "label": "TBC(MayurVihar)"
+        },
+        {
+          "value": "9",
+          "label": "TBC(UttamNagar)"
+        },
+        {
+          "value": "10",
+          "label": "TBC(Tigri)"
+        }
+      ]
+    },
+    "aInp": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"aInp\"]"
+      },
+      "label": "Click to search staff…",
+      "text": "",
+      "client_id": "aInp",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtFu": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"txtFu\"]"
+      },
+      "label": "REMINDER FOR ME",
+      "text": "",
+      "client_id": "txtFu",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "chkDue": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"chkDue\"]"
+      },
+      "label": "on",
+      "text": "on",
+      "client_id": "chkDue",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "on",
+      "maxlength": null,
+      "in_page_source": true,
+      "checked": false
+    },
+    "btnSend": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnSend\"]"
+      },
+      "label": "Send",
+      "text": "Send",
+      "client_id": "btnSend",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "doSave()"
+    },
+    "satBadge": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"satBadge\"]"
+      },
+      "label": "Satisfaction Score:",
+      "text": "Satisfaction Score:",
+      "client_id": "satBadge",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "openSatModal()"
+    },
+    "docEmptyBadge": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"docEmptyBadge\"]"
+      },
+      "label": "Doctor Rating: Not given",
+      "text": "Doctor Rating: Not given",
+      "client_id": "docEmptyBadge",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null
+    },
+    "docAgentBadge": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"docAgentBadge\"]"
+      },
+      "label": "Agent Rating:",
+      "text": "Agent Rating:",
+      "client_id": "docAgentBadge",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "openDocFeedbackModal()"
+    },
+    "docSysBadge": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"docSysBadge\"]"
+      },
+      "label": "System Rating:",
+      "text": "System Rating:",
+      "client_id": "docSysBadge",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "openDocFeedbackModal()"
+    },
+    "button_all_0": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "All 0"
+      },
+      "label": "All 0",
+      "text": "All 0",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_due_0": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Due 0"
+      },
+      "label": "Due 0",
+      "text": "Due 0",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_reminder_for_me_0": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Reminder For Me 0"
+      },
+      "label": "Reminder For Me 0",
+      "text": "Reminder For Me 0",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_assigned_0": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Assigned 0"
+      },
+      "label": "Assigned 0",
+      "text": "Assigned 0",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_closed_0": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "Closed 0"
+      },
+      "label": "Closed 0",
+      "text": "Closed 0",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "pgPv": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"pgPv\"]"
+      },
+      "label": "Prev",
+      "text": "Prev",
+      "client_id": "pgPv",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "goPage(-1)"
+    },
+    "pgNx": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"pgNx\"]"
+      },
+      "label": "Next",
+      "text": "Next",
+      "client_id": "pgNx",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "goPage(1)"
+    },
+    "pgM": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"pgM\"]"
+      },
+      "label": "Load more",
+      "text": "Load more",
+      "client_id": "pgM",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "loadMore()"
+    }
+  },
+  "validators": {},
+  "known_messages": [
+    "Admitted Outside",
+    "CONSULTATION ONLY",
+    "Call Center Contact Issue",
+    "Disease related (Fever, Cough)",
+    "Excessive Medicine / Procedure",
+    "Failed to load",
+    "Financial Problem",
+    "Infrastructure / Hygiene",
+    "Latest of",
+    "Lead / Prospect",
+    "Load failed (",
+    "Long Waiting Time",
+    "Mark as Done?",
+    "Medication experience",
+    "Medicine Side Effect",
+    "None of the above",
+    "Not generated",
+    "ON PROGRAM",
+    "ON TREATMENT",
+    "OPD/OTHER TREATMENT",
+    "Overall rating",
+    "Parse error:",
+    "Patient Communication",
+    "Patient Status",
+    "Process Related Problem",
+    "Program Status",
+    "REVIEW AFTER REPORT",
+    "Ref By",
+    "Referral Doctor",
+    "Response error:",
+    "Satisfaction score is not yet generated.",
+    "Server error:",
+    "Staff Behaviour Problem",
+    "Staff behaviour",
+    "Symptom relief",
+    "TB / Disease Not Found",
+    "TB Diagnosed But Refused & Getting Treated Elsewhere",
+    "TREATMENT COMPLETED",
+    "TREATMENT INTERRUPTED",
+    "TREATMENT STOPPED BY PATIENT"
+  ],
+  "page_text": "Lead / Prospect\nLEAD / PROSPECT\nNEW ENTRY\nNOTE *\nPRACTICE\nAll Practices\nTBC(Shahdara)\nTBC(Keshavpuram)\nTBC(MayurVihar)\nTBC(UttamNagar)\nTBC(Tigri)\nASSIGN TO\nREMINDER FOR ME\nOnly for you, not for assignees\nDue Action\nMark if action pending\nSend\nCOMMUNICATION HISTORY\nAll\n0\nDue\n0\nReminder For Me\n0\nAssigned\n0\nClosed\n0\n\nNo records found",
+  "source": {
+    "found": true,
+    "aspx_path": "C:\\medcrossproject\\practice\\EPR\\UniversalComm.aspx",
+    "code_behind_path": "C:\\medcrossproject\\practice\\EPR\\UniversalComm.aspx.cs",
+    "handlers": {
+      "Page_Load": "void Page_Load(object sender, EventArgs e)\n        {\n            if (!IsPostBack)\n            {\n                int patientId = 0;\n\n                int.TryParse(\n                    Request.QueryString[\"contextId\"],\n                    out patientId\n                );\n\n                if (patientId > 0 &&\n                    string.Equals(\n                        Request.QueryString[\"context\"],\n                        \"patient\",\n                        StringComparison.OrdinalIgnoreCase))\n                {\n                    // Only age / dob / gender are needed here, so read just those columns instead of\n                    // materialising the whole Patient entity through LINQ to SQL (which breaks whenever\n                    // any unrelated Patient column's type drifts from the dbml mapping).\n                    DataSet pds = new DBHelper().ExecuteDataSet(\n                        \"SELECT age, dob, gender FROM Patient WHERE row_id = @Id\",\n                        new[] { new SqlParameter(\"@Id\", patientId) },\n                        CommandType.Text);\n\n                    if (pds != null && pds.Tables.Count > 0 && pds.Tables[0].Rows.Count > 0)\n                    {\n                        DataRow prow = pds.Tables[0].Rows[0];\n                        string age = \"\";\n\n                        if (prow[\"age\"] != DBNull.Value)\n                        {\n                            age = Convert.ToString(prow[\"age\"]);\n                        }\n                        else if (prow[\"dob\"] != DBNull.Value)\n                        {\n                            age =\n                                (DateTime.Now.Year -\n                                 Convert.ToDateTime(prow[\"dob\"]).Year)\n                                .ToString();\n                        }\n                        else\n                        {\n                            age = \"_\";\n                        }\n\n                        string gender =\n                            prow[\"gender\"] != DBNull.Value\n                                ? Convert.ToString(prow[\"gender\"])\n                                : \"_\";\n\n                        ClientScript.RegisterStartupScript(\n                            GetType(),\n                            \"patientAgeGender\",\n                            \"window.patientAgeGender = \" +\n                            HttpUtility.JavaScriptStringEncode(\n                                age + \"/\" + gender,\n                                true\n                            ) +\n                            \";\",\n                            true\n                        );\n                    }\n                }\n            }\n        }"
+    },
+    "script_files": [
+      "<inline scripts in .aspx>"
+    ],
+    "script_rules": "// event bindings\n$('#txtFu').on('change', onFuChange);\n\nfunction doSave() {\n            var note = $('#txtNote').val().trim();\n            if (!note) { $('#txtNote').addClass('err').focus(); setTimeout(function () { $('#txtNote').removeClass('err'); }, 1500); return; }\n\n            $('#btnSend').prop('disabled', true).html('<i class=\"fa-solid fa-spinner fa-spin\"></i> Sending…');\n            var ids = $('#hdnIds').val(), first = ids ? parseInt(ids.split(',')[0]) : 0;\n\n            ajax('UniversalComm.aspx/SaveCommunication', {\n                context: CTX, contextId: CID, note: note,\n                assignedTo: first, assignedToIds: ids,\n                followUpDate: $('#txtFu').val() || '', followUpTime: '',\n                dueAction: $('#chkDue').is(':checked') ? 1 : 0, endComm: 0\n            },\n                function (d) {\n                    try {\n                        var r = JSON.parse(d);\n                        if (r.ok) {\n                            doReset();\n                            toast('Saved!', 'ok');\n                            // Switch to All tab so new record is visible\n                            $('.ftab').removeClass('on');\n                            $('.ftab[data-f=\"all\"]').addClass('on');\n                            FILT = 'all'; PAGE = 1;\n                            // Silent refresh — no spinner\n                            loadHistory(false);\n                        } else {\n                            alert('Error: ' + (r.error || 'Unknown'));\n                        }\n                    } catch (e) { alert('Parse error: ' + e.message); }\n                    $('#btnSend').prop('disabled', false).html('<i class=\"fa-solid fa-paper-plane\"></i>Send');\n                },\n                function (x) { alert('Server error: ' + x.status); $('#btnSend').prop('disabled', false).html('<i class=\"fa-solid fa-paper-plane\"></i>Send'); }\n            );\n        }\n\n"
+  },
+  "stats": {
+    "elements": 18,
+    "validators": 0,
+    "skipped_not_unique": [
+      "Reset",
+      "✕",
+      "✕"
+    ]
+  }
+}

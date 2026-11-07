@@ -1,0 +1,54 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_EA_006,Check 'on' checkbox,positive,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'","- 'on' is ticked
+- no server error",element_value,no,not run,,
+TC_EA_007,Uncheck 'on' checkbox,positive,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Untick 'on'","- 'on' is unticked
+- no server error",element_value,no,not run,,
+TC_EA_008,Toggle 'on' checkbox twice,ui,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'
+3. Untick 'on'","- 'on' is unticked
+- no server error",element_value,no,not run,,
+TC_EA_009,Attempt to select a user when dropdown is disabled,ui,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Click '₹0'","- '₹0' is disabled
+- no server error",ddlGridUser element property,no,not run,,
+TC_EA_010,Clear selection,ui,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'
+3. Click 'Clear Selection'","- 'on' is unticked
+- no server error",btnClearSelection element,no,not run,,
+TC_EA_011,Submit allocation without user selection,negative,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'
+3. Click 'Submit Allocation'","- message 'Please Select Allocated To User for all checked rows.' appears
+- no server error",btnSubmitAllocationGrid handler shows error if user not selected,no,not run,,
+TC_EA_012,Submit allocation with maximum date length,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '01/01/2023' in 'dd/mm/yyyy'
+3. Enter '31/12/2023' in 'dd/mm/yyyy'
+4. Click 'Submit Allocation'",- no server error,txtfrom and txtto have maxlength of 10,no,not run,,
+TC_EA_013,Submit allocation with invalid date format,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '2023-01-01' in 'dd/mm/yyyy'
+3. Enter '2023-12-31' in 'dd/mm/yyyy'
+4. Click 'Submit Allocation'",- no server error,txtfrom and txtto require valid date format,no,not run,,
+TC_EA_014,Valid date input for 'dd/mm/yyyy' field,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '15/10/2023' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Valid date format,no,not run,,
+TC_EA_015,Empty 'dd/mm/yyyy' field,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Clear 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Required field validation,no,not run,,
+TC_EA_016,Invalid date format in 'dd/mm/yyyy' field,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '2023-10-15' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Invalid date format,no,not run,,
+TC_EA_017,Boundary test for 'dd/mm/yyyy' field with maximum length,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '31/12/2023' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Maximum length of 10 characters,no,not run,,
+TC_EA_018,Positive test with valid date format,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '15/10/2023' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Valid input for date field,no,not run,,
+TC_EA_019,Negative test with invalid date format,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '2023-10-15' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Invalid input for date field,no,not run,,
+TC_EA_020,Boundary test with maximum length date,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '31/12/2023' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Boundary input for date field,no,not run,,
+TC_EA_021,Boundary test with over maximum length date,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '31/12/2023extra' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Boundary input exceeding maximum length,no,not run,,

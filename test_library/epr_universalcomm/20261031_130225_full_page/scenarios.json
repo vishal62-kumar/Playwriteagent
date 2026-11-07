@@ -1,0 +1,426 @@
+{
+  "page": "EPR/UniversalComm",
+  "url": "http://localhost:2786/EPR/UniversalComm.aspx",
+  "focus": "",
+  "generated_at": "2026-10-31T13:02:25",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-31T13:01:59",
+  "scenarios": [
+    {
+      "title": "Submit a valid note",
+      "type": "smoke",
+      "writes_data": true,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtNote",
+          "value": "This is a valid communication note."
+        },
+        {
+          "action": "click",
+          "element": "btnSend"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_UC_017",
+      "group": "Type communication note here…"
+    },
+    {
+      "title": "Submit an empty note",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtNote"
+        },
+        {
+          "action": "click",
+          "element": "btnSend"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_visible",
+          "element": "txtNote"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_UC_018",
+      "group": "Type communication note here…"
+    },
+    {
+      "title": "Submit a note with maximum length",
+      "type": "smoke",
+      "writes_data": true,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtNote",
+          "value": "A long note that reaches the maximum length allowed by the system."
+        },
+        {
+          "action": "click",
+          "element": "btnSend"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_UC_019",
+      "group": "Type communication note here…"
+    },
+    {
+      "title": "Submit a note with special characters",
+      "type": "smoke",
+      "writes_data": true,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtNote",
+          "value": "Special characters: !@#$%^&*()_+"
+        },
+        {
+          "action": "click",
+          "element": "btnSend"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_UC_020",
+      "group": "Type communication note here…"
+    },
+    {
+      "title": "Select 'All Practices' from PRACTICE dropdown",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "ddlPractice element options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "All Practices"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPractice",
+          "value": "All Practices"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_UC_021",
+      "group": "PRACTICE"
+    },
+    {
+      "title": "Select 'TBC(Shahdara)' from PRACTICE dropdown",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "ddlPractice element options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "TBC(Shahdara)"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPractice",
+          "value": "TBC(Shahdara)"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_UC_022",
+      "group": "PRACTICE"
+    },
+    {
+      "title": "Select 'TBC(Keshavpuram)' from PRACTICE dropdown",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "ddlPractice element options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "TBC(Keshavpuram)"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPractice",
+          "value": "TBC(Keshavpuram)"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_UC_023",
+      "group": "PRACTICE"
+    },
+    {
+      "title": "Select 'TBC(MayurVihar)' from PRACTICE dropdown",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "ddlPractice element options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "TBC(MayurVihar)"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPractice",
+          "value": "TBC(MayurVihar)"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_UC_024",
+      "group": "PRACTICE"
+    },
+    {
+      "title": "Positive case: Valid input for 'Click to search staff…'",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "No specific validator or message for this field, so check no server error",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "aInp",
+          "value": "John Doe"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_UC_025",
+      "group": "Click to search staff…"
+    },
+    {
+      "title": "Negative case: Empty input for 'Click to search staff…'",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "No specific validator or message for this field, so check no server error",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "aInp"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_UC_026",
+      "group": "Click to search staff…"
+    },
+    {
+      "title": "Boundary case: Maximum length input for 'Click to search staff…'",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "No specific validator or message for this field, so check no server error",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "aInp",
+          "value": "A very long input string that exceeds typical lengths"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_UC_027",
+      "group": "Click to search staff…"
+    },
+    {
+      "title": "Positive test with valid reminder date",
+      "type": "smoke",
+      "writes_data": true,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtNote",
+          "value": "This is a test note."
+        },
+        {
+          "action": "fill",
+          "element": "txtFu",
+          "value": "2023-10-15"
+        },
+        {
+          "action": "click",
+          "element": "btnSend"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_UC_028",
+      "group": "REMINDER FOR ME"
+    },
+    {
+      "title": "Negative test with empty reminder date",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtNote",
+          "value": "This is a test note."
+        },
+        {
+          "action": "clear",
+          "element": "txtFu"
+        },
+        {
+          "action": "click",
+          "element": "btnSend"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_UC_029",
+      "group": "REMINDER FOR ME"
+    },
+    {
+      "title": "Boundary test with maximum length reminder date",
+      "type": "smoke",
+      "writes_data": true,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtNote",
+          "value": "This is a test note."
+        },
+        {
+          "action": "fill",
+          "element": "txtFu",
+          "value": "2023-12-31"
+        },
+        {
+          "action": "click",
+          "element": "btnSend"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_UC_030",
+      "group": "REMINDER FOR ME"
+    },
+    {
+      "title": "Negative test with invalid reminder date format",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtNote",
+          "value": "This is a test note."
+        },
+        {
+          "action": "fill",
+          "element": "txtFu",
+          "value": "2023-10-15"
+        },
+        {
+          "action": "click",
+          "element": "btnSend"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)",
+        "steps healed after: Step 3 'fill 'REMINDER FOR ME' (txtFu) with '15-10-2023'': Locator.fill: Error: Malformed value"
+      ],
+      "id": "TC_UC_031",
+      "group": "REMINDER FOR ME"
+    }
+  ],
+  "rejected": [],
+  "groups": [
+    "Type communication note here…",
+    "PRACTICE",
+    "Click to search staff…",
+    "REMINDER FOR ME"
+  ]
+}

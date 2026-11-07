@@ -1,0 +1,146 @@
+{
+  "page": "Contacts/PracticeReferralDoctor",
+  "url": "http://localhost:2786/Contacts/PracticeReferralDoctor.aspx",
+  "focus": "mobile number",
+  "generated_at": "2026-11-03T14:45:31",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-11-03T14:45:31",
+  "scenarios": [
+    {
+      "title": "Submit valid 10-digit mobile number",
+      "type": "smoke",
+      "writes_data": true,
+      "basis": "client_script_validation for valid mobile number",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "9876543210"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_PRD_001"
+    },
+    {
+      "title": "Submit empty mobile number",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation for required mobile number",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtmobile"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Mobile number is required."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_002"
+    },
+    {
+      "title": "Submit mobile number with less than 10 digits",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation for invalid mobile number",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "123456789"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Enter a 10-digit mobile number."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_003"
+    },
+    {
+      "title": "Submit mobile number with more than 10 digits",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation for invalid mobile number",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890123"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Enter a 10-digit mobile number."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_004"
+    },
+    {
+      "title": "Submit mobile number with exactly 10 digits (boundary)",
+      "type": "smoke",
+      "writes_data": true,
+      "basis": "client_script_validation for valid mobile number",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_PRD_005"
+    }
+  ],
+  "rejected": []
+}

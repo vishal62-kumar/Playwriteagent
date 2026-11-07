@@ -1,0 +1,29 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_PC_001,Submit valid communication note,positive,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Enter 'Follow-up required on patient status.' in 'txtCommunication'
+3. Click 'Save'","- message 'Communication added sucessfully.' appears
+- no server error",message_shown proves successful submission,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_PC_002,Submit empty communication note,smoke,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Clear 'txtCommunication'
+3. Click 'Save'",- no server error,client_script_validation shows alert for empty input,no,PASSED,PASSED,
+TC_PC_003,Submit communication note with maximum length,boundary,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Enter 'A' in 'txtCommunication'
+3. Click 'Save'","- message 'Communication added sucessfully.' appears
+- no server error",message_shown proves successful submission,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_PC_004,Submit communication note with special characters,positive,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Enter ""Patient's status: stable. Follow-up @ 3pm!"" in 'txtCommunication'
+3. Click 'Save'","- message 'Communication added sucessfully.' appears
+- no server error",message_shown proves successful submission,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_PC_005,Check 'Action Due' checkbox,positive,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Tick 'Action Due'","- 'Action Due' is ticked
+- no server error","Initial value of checkbox is 'on', so checking it should not change its state.",no,PASSED,PASSED,
+TC_PC_006,Uncheck 'Action Due' checkbox,positive,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Untick 'Action Due'","- 'Action Due' is unticked
+- no server error",The checkbox should be able to be unchecked.,no,PASSED,PASSED,
+TC_PC_007,Toggle 'Action Due' checkbox twice,boundary,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Untick 'Action Due'
+3. Tick 'Action Due'","- 'Action Due' is ticked
+- no server error",Toggling the checkbox twice should return it to its initial state.,no,PASSED,PASSED,
+TC_PC_008,Ensure 'Action Due' checkbox does not affect server state,smoke,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Untick 'Action Due'
+3. Tick 'Action Due'",- no server error,No server-side validation or state change is expected from toggling the checkbox.,no,PASSED,PASSED,

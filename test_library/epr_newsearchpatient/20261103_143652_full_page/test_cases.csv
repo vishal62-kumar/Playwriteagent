@@ -1,0 +1,87 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_NEWS_024,Search with valid KMed ID,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Enter '2609230201' in 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'
+3. Click 'Apply'",- no server error,Valid input for txtSearch,no,PASSED,PASSED,
+TC_NEWS_025,Search with invalid KMed ID,negative,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Enter '9999999999' in 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'
+3. Click 'Apply'","- message 'Unable to identify this patient/prospect. Please refresh the page and try again.' appears
+- no server error",Invalid input for txtSearch,no,FAILED,APP_DEFECT,Expected the message 'Unable to identify this patient/prospect. Please refresh the page and try again.' but it never appeared.
+TC_NEWS_026,Search with valid mobile number,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Enter '9821968438' in 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'
+3. Click 'Apply'",- no server error,Valid input for txtSearch,no,PASSED,PASSED,
+TC_NEWS_027,Search with empty input,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Clear 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'
+3. Click 'Apply'",- no server error,Empty input for txtSearch,no,PASSED,PASSED,
+TC_NEWS_028,Positive case: Valid filter selection,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'
+4. Select 'TB' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+5. Click 'Apply'",- no server error,Valid selection of filter options,no,PASSED,PASSED,
+TC_NEWS_029,Negative case: Invalid filter combination,negative,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Cured' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'
+4. Select 'Diabetes' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+5. Click 'Apply'","- message 'Unable to identify this patient/prospect. Please refresh the page and try again.' appears
+- no server error",Invalid combination of filter options,no,FAILED,APP_DEFECT,Expected the message 'Unable to identify this patient/prospect. Please refresh the page and try again.' but it never appeared.
+TC_NEWS_030,Boundary case: Maximum entries selection,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select '100' in 'Show 10 25 50 100 entries'
+3. Click 'Apply'",- no server error,Maximum entries selection in dropdown,no,PASSED,PASSED,
+TC_NEWS_031,UI case: Clear filter,ui,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'
+4. Select 'TB' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+5. Click 'Clear'","- 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' = 'All Status'
+- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'All Programs'
+- 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'All Diseases'
+- no server error",Clear filter button functionality,no,PASSED,PASSED,
+TC_NEWS_032,Select 'On Program' status and apply filter,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,Valid selection of filterStatus,no,PASSED,PASSED,
+TC_NEWS_033,Select 'All Programs' and apply filter,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'All Programs' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'
+3. Click 'Apply'",- no server error,Valid selection of filterProgram,no,PASSED,PASSED,
+TC_NEWS_034,Select 'TB' disease and apply filter,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'TB' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+3. Click 'Apply'",- no server error,Valid selection of filterDisease,no,PASSED,PASSED,
+TC_NEWS_035,Select 'Consultation Only' status and apply filter,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Consultation Only' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,Valid selection of filterStatus,no,PASSED,PASSED,
+TC_NEWS_036,Select 'Died' program and apply filter,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Died' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'
+3. Click 'Apply'",- no server error,Valid selection of filterProgram,no,PASSED,PASSED,
+TC_NEWS_037,Select 'All Status' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'All Status' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element with 'All Status' option,no,PASSED,PASSED,
+TC_NEWS_038,Select 'On Program' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element with 'On Program' option,no,PASSED,PASSED,
+TC_NEWS_039,Select 'Cured' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Cured' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element with 'Cured' option,no,PASSED,PASSED,
+TC_NEWS_040,Select 'Review After Report' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Review After Report' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element with 'Review After Report' option,no,PASSED,PASSED,
+TC_NEWS_041,Select 'All Programs' from filterProgram dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'All Programs' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'All Programs'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+TC_NEWS_042,Select 'On Treatment' from filterProgram dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'On Treatment'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+TC_NEWS_043,Select 'Treatment Interrupted' from filterProgram dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Treatment Interrupted' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Treatment Interrupted'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+TC_NEWS_044,Select 'Died' from filterProgram dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Died' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Died'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+TC_NEWS_045,Select 'All Diseases' from filterDisease dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'All Diseases' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'","- 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'All Diseases'
+- no server error",element_value on filterDisease,no,PASSED,PASSED,
+TC_NEWS_046,Select 'TB with Diabetes' from filterDisease dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'TB with Diabetes' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'","- 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'TB with Diabetes'
+- no server error",element_value on filterDisease,no,PASSED,PASSED,
+TC_NEWS_047,Select 'Diabetes' from filterDisease dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Diabetes' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'","- 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'Diabetes'
+- no server error",element_value on filterDisease,no,PASSED,PASSED,
+TC_NEWS_048,Select 'No Program' from filterDisease dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'No Program' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'","- 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'No Program'
+- no server error",element_value on filterDisease,no,PASSED,PASSED,

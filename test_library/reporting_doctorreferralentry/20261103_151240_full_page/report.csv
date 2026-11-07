@@ -1,0 +1,63 @@
+﻿Test ID,Scenario,Type,Status,Category,Reason,Expected,Basis,Failed Step,Duration (s)
+TC_DRE_094,Enter past date for 'Appointment & Time',negative,FAILED,APP_DEFECT,Expected the message 'Follow-up date/time must be within future 1 year' but it never appeared. Pop-ups seen: ['Back date not allowed'].,message 'Follow-up date/time must be within future 1 year' appears; no server error,client_script_validation,expect message 'Follow-up date/time must be within future 1 year',14.03
+TC_DRE_095,Enter date more than 1 year in future for 'Appointment & Time',negative,FAILED,APP_DEFECT,Expected the message 'Follow-up date/time must be within future 1 year' but it never appeared. Pop-ups seen: ['Back date not allowed'].,message 'Follow-up date/time must be within future 1 year' appears; no server error,client_script_validation,expect message 'Follow-up date/time must be within future 1 year',8.85
+TC_DRE_096,Enter invalid date format for 'Appointment & Time',negative,FAILED,APP_DEFECT,Expected the message 'Invalid Follow-up From Date' but it never appeared. Pop-ups seen: ['Back date not allowed'].,message 'Invalid Follow-up From Date' appears; no server error,client_script_validation,expect message 'Invalid Follow-up From Date',6.05
+TC_DRE_106,Attempt to upload no document,negative,FAILED,APP_DEFECT,Expected the message 'Please select at least one document.' but it never appeared.,message 'Please select at least one document.' appears; no server error,Client-side validation requires at least one document,expect message 'Please select at least one document.',6.47
+TC_DRE_107,Upload a large document,negative,FAILED,APP_DEFECT,Expected the message 'Upload failed. Please check the file size and try again.' but it never appeared.,message 'Upload failed. Please check the file size and try again.' appears; no server error,Client-side validation checks file size,expect message 'Upload failed. Please check the file size and try again.',8.45
+TC_DRE_124,Negative test for empty state input,negative,FAILED,APP_DEFECT,Expected the message 'State is required' but it never appeared. Pop-ups seen: ['Please select From date'].,message 'State is required' appears; no server error,State is required,expect message 'State is required',6.27
+TC_DRE_076,Submit form with special characters in patient name,smoke,FAILED,SCRIPT_ERROR,Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.,no server error,Special character handling in txtPatientName,select 'On Program' in 'Program Status' (ddlPatientStatus),14.95
+TC_DRE_078,Valid mobile number input,positive,FAILED,SCRIPT_ERROR,Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.,no 'Enter valid 10 digit mobile number' error; no server error,validator_passes for revMobile,select 'On Program' in 'Program Status' (ddlPatientStatus),15.17
+TC_DRE_079,Boundary test for mobile number input (10 digits),boundary,FAILED,SCRIPT_ERROR,Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.,no 'Enter valid 10 digit mobile number' error; no server error,validator_passes for revMobile,select 'On Program' in 'Program Status' (ddlPatientStatus),15.19
+TC_DRE_090,Select a valid program status,positive,FAILED,SCRIPT_ERROR,Step 2 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.,'Program Status' = 'On Program'; no server error,ddlPatientStatus element options,select 'On Program' in 'Program Status' (ddlPatientStatus),13.57
+TC_DRE_091,Select the last valid option in program status,boundary,FAILED,SCRIPT_ERROR,Step 2 'select 'Died' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.,'Program Status' = 'Died'; no server error,ddlPatientStatus element options,select 'Died' in 'Program Status' (ddlPatientStatus),13.79
+TC_DRE_092,Select a middle valid option in program status,ui,FAILED,SCRIPT_ERROR,Step 2 'select 'Cured' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.,'Program Status' = 'Cured'; no server error,ddlPatientStatus element options,select 'Cured' in 'Program Status' (ddlPatientStatus),13.51
+TC_DRE_134,Boundary test for 'txtMob' with maximum length,boundary,FAILED,SCRIPT_ERROR,Step 10 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.,'Enter mobile number' = '1234567890'; no server error,maxlength of txtMob,select 'On Program' in 'Program Status' (ddlPatientStatus),15.59
+TC_DRE_074,Submit form with valid patient name,positive,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,message 'Referral saved successfully!' appears; no server error,Valid input for txtPatientName,,0.0
+TC_DRE_075,Submit form with patient name at boundary length,boundary,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,message 'Referral saved successfully!' appears; no server error,Boundary test for txtPatientName,,0.0
+TC_DRE_105,Upload a valid document,smoke,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,no server error,imgupload element allows file upload,,0.0
+TC_DRE_108,Upload multiple valid documents,smoke,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,no server error,imgupload element allows multiple file uploads,,0.0
+TC_DRE_131,Positive test for valid referral submission,positive,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,message 'Referral saved successfully!' appears; no server error,code_behind_handlers for successful referral save,,0.0
+TC_DRE_133,Valid end-to-end submission with all required fields,positive,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,message 'Referral saved successfully!' appears; no server error,code_behind_handlers for successful referral save,,0.0
+TC_DRE_135,Save Referral with all required fields filled correctly,positive,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,message 'Referral saved successfully!' appears; no server error,message_shown proves successful save,,0.0
+TC_DRE_077,Enter valid age within range,positive,PASSED,PASSED,,no 'Age must be between 1 and 120' error; no server error,rvAge validator passes,,1.68
+TC_DRE_080,Valid mobile number input,positive,PASSED,PASSED,,no 'Enter valid 10 digit mobile number' error; no server error,RegularExpressionValidator1 passes for valid input,,1.6
+TC_DRE_081,Boundary case: exactly 10 digits,boundary,PASSED,PASSED,,no 'Enter valid 10 digit mobile number' error; no server error,RegularExpressionValidator1 passes for boundary input,,10.01
+TC_DRE_082,Select valid practice option,positive,PASSED,PASSED,,'Practice' = 'TBC(Shahdara)'; no server error,ddlPractice element,,9.28
+TC_DRE_083,Attempt to select an invalid practice option,negative,PASSED,PASSED,,'Practice' = 'TBC(Shahdara)'; no server error,ddlPractice element,,8.69
+TC_DRE_084,Select a valid referral source,positive,PASSED,PASSED,,'Referral Source' = 'Network Doctors'; no server error,element_value reflects the selected option,,1.0
+TC_DRE_085,Select the last option in referral source,boundary,PASSED,PASSED,,'Referral Source' = 'ChatBot'; no server error,element_value reflects the selected option,,1.14
+TC_DRE_086,Select 'Other' as referral source,ui,PASSED,PASSED,,'Referral Source' = 'Other'; no server error,element_value reflects the selected option,,1.02
+TC_DRE_087,Select a valid disease/program option,positive,PASSED,PASSED,,'Disease / Program' = 'TB'; no server error,element_value on ddldisease,,1.03
+TC_DRE_088,Select a boundary option for disease/program,boundary,PASSED,PASSED,,'Disease / Program' = 'TB Support(No ATT)'; no server error,element_value on ddldisease,,1.12
+TC_DRE_089,Select a different valid disease/program option,positive,PASSED,PASSED,,'Disease / Program' = 'Diabetes'; no server error,element_value on ddldisease,,1.21
+TC_DRE_093,Enter valid future date for 'Appointment & Time',smoke,PASSED,PASSED,,no server error,client_script_validation,,0.75
+TC_DRE_097,Select a valid appointment time,positive,PASSED,PASSED,,'Appointment & Time' = '9:00 AM'; no server error,ddlTime element options,,8.74
+TC_DRE_098,Select 'Select Time' option,negative,PASSED,PASSED,,'Appointment & Time' = 'Select Time'; no server error,ddlTime element options,,8.75
+TC_DRE_099,Select the earliest appointment time,boundary,PASSED,PASSED,,'Appointment & Time' = '9:00 AM'; no server error,ddlTime element options,,8.18
+TC_DRE_100,Select the latest appointment time,boundary,PASSED,PASSED,,'Appointment & Time' = '1:30 PM'; no server error,ddlTime element options,,1.44
+TC_DRE_101,Enter a valid referral note,smoke,PASSED,PASSED,,no server error,Valid input for txtReferralNote,,8.85
+TC_DRE_102,Enter an empty referral note,smoke,PASSED,PASSED,,no server error,"No specific validator for txtReferralNote, check for no server error",,8.26
+TC_DRE_103,Enter a referral note with maximum length,smoke,PASSED,PASSED,,no server error,Boundary test for txtReferralNote,,8.24
+TC_DRE_104,Enter a referral note with special characters,smoke,PASSED,PASSED,,no server error,Check handling of special characters in txtReferralNote,,0.6
+TC_DRE_109,Enter valid address,smoke,PASSED,PASSED,,no server error,Valid input for txtAddress,,2.14
+TC_DRE_110,Enter address with special characters,smoke,PASSED,PASSED,,no server error,Valid input with special characters,,0.56
+TC_DRE_111,Enter long address exceeding typical length,smoke,PASSED,PASSED,,no server error,Boundary test for txtAddress length,,0.6
+TC_DRE_112,Positive scenario: Valid input in 'Search area' field,smoke,PASSED,PASSED,,no server error,Valid input in txtArea,,0.81
+TC_DRE_113,Boundary scenario: Maximum length input in 'Search area' field,smoke,PASSED,PASSED,,no server error,Boundary test for txtArea,,0.73
+TC_DRE_114,Negative scenario: Invalid characters in 'Search area' field,smoke,PASSED,PASSED,,no server error,Invalid input in txtArea,,0.69
+TC_DRE_115,Enter valid zip code,smoke,PASSED,PASSED,,no server error,Valid input for zip code,,0.6
+TC_DRE_116,Enter empty zip code,smoke,PASSED,PASSED,,no server error,"No specific validator for empty zip code, check for server error",,0.88
+TC_DRE_117,Enter zip code with special characters,smoke,PASSED,PASSED,,no server error,"No specific validator for special characters, check for server error",,0.6
+TC_DRE_118,Enter zip code exceeding typical length,smoke,PASSED,PASSED,,no server error,Boundary test for zip code length,,0.71
+TC_DRE_119,Enter a valid city name in 'Search city',smoke,PASSED,PASSED,,no server error,Valid input for txtcity,,0.65
+TC_DRE_120,Enter an empty value in 'Search city',smoke,PASSED,PASSED,,no server error,Empty input for txtcity,,0.66
+TC_DRE_121,Enter a city name with special characters in 'Search city',smoke,PASSED,PASSED,,no server error,Special characters input for txtcity,,8.38
+TC_DRE_122,Enter a city name with maximum length in 'Search city',smoke,PASSED,PASSED,,no server error,Boundary test for txtcity,,8.29
+TC_DRE_123,Positive test for valid state input,smoke,PASSED,PASSED,,no server error,Valid input should not trigger any error,,1.08
+TC_DRE_125,Boundary test for maximum length state input,smoke,PASSED,PASSED,,no server error,Ensure no error for maximum length input,,4.02
+TC_DRE_126,Negative test for invalid characters in state input,smoke,PASSED,PASSED,,no server error,Invalid characters should not cause server error,,8.79
+TC_DRE_127,Enter valid country name in 'Search country' field,smoke,PASSED,PASSED,,no server error,Valid input for txtcountry,,0.62
+TC_DRE_128,Enter empty value in 'Search country' field,smoke,PASSED,PASSED,,no server error,Empty input for txtcountry,,0.84
+TC_DRE_129,Enter special characters in 'Search country' field,smoke,PASSED,PASSED,,no server error,Special characters input for txtcountry,,0.58
+TC_DRE_130,Enter long string in 'Search country' field,smoke,PASSED,PASSED,,no server error,Boundary test for txtcountry,,8.31
+TC_DRE_132,UI test for selecting practice,ui,PASSED,PASSED,,'Practice' = 'TBC(Shahdara)'; no server error,ddlPractice element,,0.96

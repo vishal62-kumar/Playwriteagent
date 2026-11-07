@@ -1,0 +1,5 @@
+﻿Test ID,Scenario,Type,Status,Category,Reason,Expected,Basis,Failed Step,Duration (s)
+TC_EA_002,Click search button after selecting a user filter,smoke,FAILED,SCRIPT_ERROR,Step 3 'select 'Abhishek jain Sr. engineer' in 'All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing' (ddlFilterUser)': element did not become visible/enabled within 10s.,no server error,btnSearch element is clicked,select 'Abhishek jain Sr. engineer' in 'All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing' (ddlFilterUser),13.88
+TC_EA_003,Click search button after selecting a practice filter,smoke,PASSED,PASSED,,no server error,btnSearch element is clicked,,8.15
+TC_EA_004,Click search button with date range filled,smoke,PASSED,PASSED,,no server error,btnSearch element is clicked,,0.8
+TC_EA_005,Click search button with maximum date range,smoke,PASSED,PASSED,,no server error,btnSearch element is clicked,,0.77

@@ -1,0 +1,855 @@
+{
+  "page": "Contacts/PracticeReferralDoctor",
+  "url": "http://localhost:2786/Contacts/PracticeReferralDoctor.aspx",
+  "generated_at": "2026-10-23T11:50:57",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-23T11:50:31",
+  "scenarios": [
+    {
+      "title": "Submit form with all required fields filled correctly",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "client_script_validation and known_messages",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "KMedNet"
+        },
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Doctor added successfully."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_001"
+    },
+    {
+      "title": "Submit form with missing first name",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "KMedNet"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "First name is required."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_002"
+    },
+    {
+      "title": "Submit form with invalid mobile number",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "KMedNet"
+        },
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "12345"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Enter a 10-digit mobile number."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_003"
+    },
+    {
+      "title": "Submit form with missing practice selection",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Practice is required."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_004"
+    },
+    {
+      "title": "Submit form with invalid IFSC code",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "KMedNet"
+        },
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "fill",
+          "element": "txtIFSCCode",
+          "value": "INVALID"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Enter a valid 11-character IFSC code."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_005"
+    },
+    {
+      "title": "Submit form with missing gender selection",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "KMedNet"
+        },
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Gender is required."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_006"
+    },
+    {
+      "title": "Submit form with missing source type",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "KMedNet"
+        },
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Source type is required."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_007"
+    },
+    {
+      "title": "Submit form with invalid account number",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "KMedNet"
+        },
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "fill",
+          "element": "txtAccountNumber",
+          "value": "123"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Account number should be 6-20 digits."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_008"
+    },
+    {
+      "title": "Submit form with invalid bank name",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "KMedNet"
+        },
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "fill",
+          "element": "txtBankName",
+          "value": "Invalid@Bank"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Bank name contains characters that are not allowed."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_009"
+    },
+    {
+      "title": "Submit form with missing clinic name",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "KMedNet"
+        },
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Clinic name is required."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_010"
+    },
+    {
+      "title": "Submit form with missing area",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "KMedNet"
+        },
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Area is required."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_011"
+    },
+    {
+      "title": "Submit form with missing address",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "KMedNet"
+        },
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "Password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Address is required."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_012"
+    }
+  ],
+  "rejected": []
+}

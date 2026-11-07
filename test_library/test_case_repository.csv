@@ -1,0 +1,1159 @@
+﻿Run,Date,Page,What was tested,Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+20261023_125320_search_button,2026-10-23 13:31,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_002,Click search button after selecting a user filter,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Click 'User ▼'
+3. Select 'Abhishek jain Sr. engineer' in 'All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing'
+4. Click 'Search'",- no server error,btnSearch element is clicked,no,FAILED,SCRIPT_ERROR,Step 3 'select 'Abhishek jain Sr. engineer' in 'All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing' (ddlFilterUser)': element did not become visible/enabled within 10s.
+20261023_125320_search_button,2026-10-23 13:31,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_003,Click search button after selecting a practice filter,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Click 'Practice ▾'
+3. Click 'TBC(Shahdara)'
+4. Click 'Practice ▾'
+5. Click 'TBC(Shahdara)'
+6. Click 'Apply'
+7. Click 'Search'",- no server error,btnSearch element is clicked,no,PASSED,PASSED,
+20261023_125320_search_button,2026-10-23 13:31,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_004,Click search button with date range filled,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '01/10/2023' in 'dd/mm/yyyy'
+3. Enter '31/10/2023' in 'dd/mm/yyyy'
+4. Click 'Search'",- no server error,btnSearch element is clicked,no,PASSED,PASSED,
+20261023_125320_search_button,2026-10-23 13:31,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_005,Click search button with maximum date range,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '01/01/2023' in 'dd/mm/yyyy'
+3. Enter '31/12/2023' in 'dd/mm/yyyy'
+4. Click 'Search'",- no server error,btnSearch element is clicked,no,PASSED,PASSED,
+20261023_141700_bill_attachment,2026-10-23 14:30,Accounting/AddExpenses.aspx,(whole page),TC_AE_001,Upload a single valid bill attachment,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",client_script_validation,yes,FAILED,APP_DEFECT,Expected the message 'Expense Added Successfully' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+20261023_141700_bill_attachment,2026-10-23 14:30,Accounting/AddExpenses.aspx,(whole page),TC_AE_002,Upload multiple valid bill attachments within limit,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Upload a sample file to 'No file chosen'
+4. Upload a sample file to 'No file chosen'
+5. Upload a sample file to 'No file chosen'
+6. Upload a sample file to 'No file chosen'
+7. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",client_script_validation,yes,FAILED,APP_DEFECT,Expected the message 'Expense Added Successfully' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+20261023_141700_bill_attachment,2026-10-23 14:30,Accounting/AddExpenses.aspx,(whole page),TC_AE_003,Attempt to upload more than the allowed number of bill attachments,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Upload a sample file to 'No file chosen'
+4. Upload a sample file to 'No file chosen'
+5. Upload a sample file to 'No file chosen'
+6. Upload a sample file to 'No file chosen'
+7. Upload a sample file to 'No file chosen'
+8. Click 'Submit'","- message 'You can only have a maximum of 5 files total (including existing files).' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'You can only have a maximum of 5 files total (including existing files).' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+20261023_141700_bill_attachment,2026-10-23 14:30,Accounting/AddExpenses.aspx,(whole page),TC_AE_004,Upload a bill attachment with an unsupported file type,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Click 'Submit'","- message 'Server error occurred' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'Server error occurred' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+20261023_141700_bill_attachment,2026-10-23 14:30,Accounting/AddExpenses.aspx,(whole page),TC_AE_005,Upload a bill attachment with no file chosen,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Click 'Submit'",- no server error,client_script_validation,no,PASSED,PASSED,
+20261023_141700_bill_attachment,2026-10-23 14:32,Accounting/AddExpenses.aspx,(whole page),TC_AE_001,Upload a single valid bill attachment,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",client_script_validation,yes,FAILED,APP_DEFECT,Expected the message 'Expense Added Successfully' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+20261023_141700_bill_attachment,2026-10-23 14:32,Accounting/AddExpenses.aspx,(whole page),TC_AE_002,Upload multiple valid bill attachments within limit,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Upload a sample file to 'No file chosen'
+4. Upload a sample file to 'No file chosen'
+5. Upload a sample file to 'No file chosen'
+6. Upload a sample file to 'No file chosen'
+7. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",client_script_validation,yes,FAILED,APP_DEFECT,Expected the message 'Expense Added Successfully' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+20261023_141700_bill_attachment,2026-10-23 14:32,Accounting/AddExpenses.aspx,(whole page),TC_AE_003,Attempt to upload more than the allowed number of bill attachments,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Upload a sample file to 'No file chosen'
+4. Upload a sample file to 'No file chosen'
+5. Upload a sample file to 'No file chosen'
+6. Upload a sample file to 'No file chosen'
+7. Upload a sample file to 'No file chosen'
+8. Click 'Submit'","- message 'You can only have a maximum of 5 files total (including existing files).' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'You can only have a maximum of 5 files total (including existing files).' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+20261023_141700_bill_attachment,2026-10-23 14:32,Accounting/AddExpenses.aspx,(whole page),TC_AE_004,Upload a bill attachment with an unsupported file type,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Click 'Submit'","- message 'Server error occurred' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'Server error occurred' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+20261023_141700_bill_attachment,2026-10-23 14:32,Accounting/AddExpenses.aspx,(whole page),TC_AE_005,Upload a bill attachment with no file chosen,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Click 'Submit'",- no server error,client_script_validation,no,PASSED,PASSED,
+20261024_114649_postal_code,2026-10-24 11:47,Reporting/DoctorReferralEntry.aspx,postal code,TC_DRE_001,Positive test with valid postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '123456' in 'Enter zip code'
+3. Click 'Save Referral'",- no server error,"No specific validator for postal code, assume valid input",no,PASSED,PASSED,
+20261024_114649_postal_code,2026-10-24 11:47,Reporting/DoctorReferralEntry.aspx,postal code,TC_DRE_002,Negative test with empty postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Clear 'Enter zip code'
+3. Click 'Save Referral'",- no server error,"No specific validator for postal code, assume empty input is invalid",no,PASSED,PASSED,
+20261024_114649_postal_code,2026-10-24 11:47,Reporting/DoctorReferralEntry.aspx,postal code,TC_DRE_003,Boundary test with maximum length postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '1234567890' in 'Enter zip code'
+3. Click 'Save Referral'",- no server error,Assume postal code can be up to 10 characters,no,PASSED,PASSED,
+20261024_114649_postal_code,2026-10-24 11:47,Reporting/DoctorReferralEntry.aspx,postal code,TC_DRE_004,Negative test with non-numeric postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'ABCDE' in 'Enter zip code'
+3. Click 'Save Referral'",- no server error,"No specific validator for postal code, assume non-numeric input is invalid",no,PASSED,PASSED,
+20261024_114649_postal_code,2026-10-24 11:47,Reporting/DoctorReferralEntry.aspx,postal code,TC_DRE_005,Boundary test with over maximum length mobile number,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '123456789012345' in 'Enter mobile number'
+3. Click 'Save Referral'","- validation 'Enter valid 10 digit mobile number' is shown
+- no server error",revMobile validator fires for mobile number longer than 10 digits,no,FAILED,APP_DEFECT,"Expected validation message 'Enter valid 10 digit mobile number' (revMobile) to appear, but it did not."
+20261024_120033_test_search_button_for_grid,2026-10-24 12:14,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_006,Search with valid date range,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click '📅 Added On'
+3. Click '🔍 Search'",- no server error,no_server_error,no,PASSED,PASSED,
+20261024_120033_test_search_button_for_grid,2026-10-24 12:14,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_007,Search with invalid date format,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click '📅 Added On'
+3. Click '🔍 Search'","- message 'Invalid From Date format' appears
+- no server error",message_shown,no,FAILED,APP_DEFECT,"Expected the message 'Invalid From Date format' but it never appeared. Pop-ups seen: ['Please select From date', ""DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4""]."
+20261024_120033_test_search_button_for_grid,2026-10-24 12:14,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_008,Search with from date greater than to date,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click '📅 Added On'
+3. Click '🔍 Search'","- message 'From Date cannot be greater than To Date' appears
+- no server error",message_shown,no,FAILED,APP_DEFECT,"Expected the message 'From Date cannot be greater than To Date' but it never appeared. Pop-ups seen: ['Please select From date', ""DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4""]."
+20261024_120033_test_search_button_for_grid,2026-10-24 12:14,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_009,Search with empty date fields,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click '📅 Added On'
+3. Click '🔍 Search'",- no server error,no_server_error,no,PASSED,PASSED,
+20261024_120033_test_search_button_for_grid,2026-10-24 12:14,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_010,Search with maximum date range,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click '📅 Added On'
+3. Click '🔍 Search'",- no server error,no_server_error,no,PASSED,PASSED,
+20261024_123546_full_page,2026-10-24 12:35,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_001,Positive test with valid postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '123456' in 'Enter zip code'
+3. Click 'Save Referral'",- no server error,"No specific validator for postal code, assume valid input",no,PASSED,PASSED,
+20261024_123546_full_page,2026-10-24 12:35,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_002,Negative test with empty postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Clear 'Enter zip code'
+3. Click 'Save Referral'",- no server error,"No specific validator for postal code, assume empty input is invalid",no,PASSED,PASSED,
+20261024_123546_full_page,2026-10-24 12:35,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_003,Boundary test with maximum length postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '1234567890' in 'Enter zip code'
+3. Click 'Save Referral'",- no server error,Assume postal code can be up to 10 characters,no,PASSED,PASSED,
+20261024_123546_full_page,2026-10-24 12:35,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_004,Negative test with non-numeric postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'ABCDE' in 'Enter zip code'
+3. Click 'Save Referral'",- no server error,"No specific validator for postal code, assume non-numeric input is invalid",no,PASSED,PASSED,
+20261024_140302_mobile_number,2026-10-24 14:05,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_001,Submit valid 10-digit mobile number,smoke,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '9876543210' in 'Enter mobile number'
+3. Click 'Save doctor'",- no server error,client_script_validation for valid mobile number,yes,PASSED,PASSED,
+20261024_140302_mobile_number,2026-10-24 14:05,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_002,Submit empty mobile number,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Clear 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Mobile number is required.' appears
+- no server error",client_script_validation for required mobile number,no,PASSED,PASSED,
+20261024_140302_mobile_number,2026-10-24 14:05,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_003,Submit mobile number with less than 10 digits,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '123456789' in 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Enter a 10-digit mobile number.' appears
+- no server error",client_script_validation for invalid mobile number,no,PASSED,PASSED,
+20261024_140302_mobile_number,2026-10-24 14:05,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_004,Submit mobile number with more than 10 digits,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '1234567890123' in 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Enter a 10-digit mobile number.' appears
+- no server error",client_script_validation for invalid mobile number,no,FAILED,APP_DEFECT,Expected the message 'Enter a 10-digit mobile number.' but it never appeared.
+20261024_140302_mobile_number,2026-10-24 14:05,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_005,Submit mobile number with exactly 10 digits (boundary),smoke,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '1234567890' in 'Enter mobile number'
+3. Click 'Save doctor'",- no server error,client_script_validation for valid mobile number,yes,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_006,Submit with invalid expense amount format,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '1000abc' in 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- validation 'Please enter valid Expense Amount use only numeric characters ' is shown
+- message 'Please enter valid Expense Amount use only numeric characters ' appears
+- no server error",revtxtexpenseamount validator fires,no,FAILED,APP_DEFECT,"Expected validation message 'Please enter valid Expense Amount use only numeric characters ' (revtxtexpenseamount) to appear, but it did not."
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_007,Submit with empty expense amount,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Clear 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- validation 'Please enter Expense Amount' is shown
+- message 'Please enter Expense Amount' appears
+- no server error",rfvtxtexpenseamount validator fires,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_008,Submit with empty expense type,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '1000' in 'Expense Amount'
+3. Select 'Select Expense Type' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- validation 'Please Select Expense Type' is shown
+- message 'Please Select Expense Type' appears
+- no server error",rfvtxtexpensetype validator fires,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_009,Submit with maximum allowed expense amount,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '50000' in 'Expense Amount'
+3. Select 'Office Maintenance' in 'Expense Type'
+4. Enter 'Office maintenance expenses' in 'Description'
+5. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",Expense amount boundary condition,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_010,Submit valid expense amount,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '1000' in 'Expense Amount'
+3. Click 'Submit'","- no 'Please enter valid Expense Amount use only numeric characters ' error
+- no server error",validator_passes for revtxtexpenseamount,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_011,Submit empty expense amount,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Clear 'Expense Amount'
+3. Click 'Submit'","- validation 'Please enter Expense Amount' is shown
+- message 'Please enter Expense Amount' appears
+- no server error",validator_fires for rfvtxtexpenseamount,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_012,Submit non-numeric expense amount,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'abc' in 'Expense Amount'
+3. Click 'Submit'","- validation 'Please enter valid Expense Amount use only numeric characters ' is shown
+- message 'Please enter valid Expense Amount use only numeric characters ' appears
+- no server error",validator_fires for revtxtexpenseamount,no,FAILED,APP_DEFECT,"Expected validation message 'Please enter valid Expense Amount use only numeric characters ' (revtxtexpenseamount) to appear, but it did not."
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_013,Submit expense amount exceeding maximum limit,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '60000' in 'Expense Amount'
+3. Click 'Submit'","- message 'Expense Amount cannot exceed 50,000 at one time.' appears
+- no server error",client_script_validation for amount > 50000,no,FAILED,APP_DEFECT,"Expected the message 'Expense Amount cannot exceed 50,000 at one time.' but it never appeared. Pop-ups seen: ['- Please Select Expense Type']."
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_014,Select a valid expense type,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Tea Club' in 'Expense Type'","- 'Expense Type' = 'Tea Club'
+- no server error",The selection of a valid option is a standard operation for dropdowns.,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_015,Select the default option 'Select Expense Type',negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Select Expense Type' in 'Expense Type'
+3. Click 'Submit'","- validation 'Please Select Expense Type' is shown
+- message 'Please Select Expense Type' appears
+- no server error",The required validator should fire if the default option is selected.,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_016,Select a duplicate option 'Labour Charges',ui,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Labour Charges' in 'Expense Type'","- 'Expense Type' = 'Labour Charges'
+- no server error","The dropdown allows selecting duplicate options, but the UI should handle it gracefully.",no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_017,Select each valid expense type option,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Office Maintenance' in 'Expense Type'
+3. Select 'Office Bill (Electricity, Water, Internet, etc.)' in 'Expense Type'
+4. Select 'Office Cleaning / Pest Control' in 'Expense Type'
+5. Select 'Medicines' in 'Expense Type'
+6. Select 'Miscellaneous' in 'Expense Type'
+7. Select 'Office Furniture' in 'Expense Type'
+8. Select 'Transport Charges' in 'Expense Type'
+9. Select 'Labour Charges' in 'Expense Type'","- 'Expense Type' = 'Labour Charges'
+- no server error",Ensure all options can be selected without error.,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_018,Submit with valid description,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'Office supplies purchase' in 'Description'
+3. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",code_behind_handlers,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_019,Submit with empty description,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Clear 'Description'
+3. Click 'Submit'","- message 'Expense Description is mandatory.' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'Expense Description is mandatory.' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_020,Submit with maximum length description,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'A very long description that is exactly at the boundary of what is acceptable for this field' in 'Description'
+3. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",code_behind_handlers,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_021,Submit with special characters in description,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'Purchase of office chairs & tables @ 50% discount!' in 'Description'
+3. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",code_behind_handlers,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_022,Upload a single valid file,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'",- no server error,client_script_validation,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_023,Upload multiple files within limit,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'",- no server error,client_script_validation,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_024,Attempt to upload more than the allowed number of files,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'","- message 'You can only have a maximum of 5 files total (including existing files).' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'You can only have a maximum of 5 files total (including existing files).' but it never appeared.
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_025,Upload no file,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'","- 'No file chosen' = 'No file chosen'
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected 'No file chosen' (fubillimage) to be 'No file chosen' but it is 'C:\\fakepath\\qa_upload_sample.txt'.
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_026,Search with valid expense name,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'Tea Club' in 'Search expenses...'
+3. Click 'Search'",- no server error,Valid input should not cause any errors,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_027,Search with empty input,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Clear 'Search expenses...'
+3. Click 'Search'",- no server error,Empty input should not cause any errors,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_028,Search with special characters,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '!@#$%^&*()' in 'Search expenses...'
+3. Click 'Search'",- no server error,Special characters should not cause any errors,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_029,Search with long input exceeding typical length,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'a very long expense name that exceeds typical length' in 'Search expenses...'
+3. Click 'Search'",- no server error,Long input should not cause any errors,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_030,Valid date input,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '15/08/2023' in 'dd/mm/yyyy'
+3. Click 'Search'","- no 'Please enter valid Date' error
+- no server error",validator_passes for a valid date format,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_031,Boundary test for maximum length,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '01/01/20231' in 'dd/mm/yyyy'
+3. Click 'Search'","- 'dd/mm/yyyy' = '01/01/2023'
+- no server error",Maximum length of the date field,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_032,Invalid date format in search,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '15-08-2023' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,validator_fires for an invalid date format,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_033,Empty date input in search,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Clear 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,validator_fires for a required field,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_034,Valid date input in 'dd/mm/yyyy' format,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '15/09/2023' in 'dd/mm/yyyy'
+3. Click 'Submit'","- no 'Please enter valid Date' error
+- no server error",revtxtdate validator passes,no,PASSED,PASSED,
+20261030_125011_full_page,2026-10-30 12:51,Accounting/AddExpenses,(whole page),TC_AE_035,Boundary test for maximum length of date input,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '31/12/9999' in 'dd/mm/yyyy'
+3. Click 'Submit'","- no 'Please enter valid Date' error
+- 'dd/mm/yyyy' = '31/12/9999'
+- no server error",revtxtdate validator passes,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_001,Submit a valid communication note,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a valid communication note.' in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,yes,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_002,Submit an empty communication note,negative,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '' in 'Type communication note here…'
+3. Click 'Send'","- 'Type communication note here…' is visible
+- no server error",client_script_validation,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_003,Submit a communication note with maximum length,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'A long note that reaches the maximum length allowed by the system.' in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,yes,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_004,Submit a communication note with special characters,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter ""<script>alert('XSS')</script>"" in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_005,Select 'All Practices' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'All Practices' in 'PRACTICE'","- 'PRACTICE' = 'All Practices'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_006,Select 'TBC(Shahdara)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(Shahdara)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(Shahdara)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_007,Select 'TBC(Keshavpuram)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(Keshavpuram)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(Keshavpuram)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_008,Select 'TBC(MayurVihar)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(MayurVihar)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(MayurVihar)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_009,Enter valid staff name in search field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'John Doe' in 'Click to search staff…'",- no server error,Valid input should not cause any errors,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_010,Enter empty value in search field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '' in 'Click to search staff…'",- no server error,Empty input should not cause any errors,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_011,Enter maximum length string in search field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'A very long staff name that exceeds normal expectations' in 'Click to search staff…'",- no server error,Boundary test for maximum input length,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_012,Enter special characters in search field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '!@#$%^&*()' in 'Click to search staff…'",- no server error,Special characters should not cause any errors,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_013,Valid input for 'REMINDER FOR ME',smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '2023-10-15' in 'REMINDER FOR ME'
+3. Click 'Send'",- no server error,no_server_error,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_014,Empty 'REMINDER FOR ME' field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Clear 'REMINDER FOR ME'
+3. Click 'Send'",- no server error,no_server_error,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_015,Boundary test for 'REMINDER FOR ME' field with maximum length,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '2023-12-31' in 'REMINDER FOR ME'
+3. Click 'Send'",- no server error,no_server_error,no,PASSED,PASSED,
+20261030_140422_full_page,2026-10-30 14:04,EPR/UniversalComm,(whole page),TC_UC_016,Invalid date format in 'REMINDER FOR ME' field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '2023-10-15' in 'REMINDER FOR ME'
+3. Click 'Send'",- no server error,no_server_error,no,PASSED,PASSED,
+20261030_141149_full_page,2026-10-30 14:11,EPR/PatientCommunication,(whole page),TC_PC_001,Submit valid communication note,positive,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Enter 'Follow-up required on patient status.' in 'txtCommunication'
+3. Click 'Save'","- message 'Communication added sucessfully.' appears
+- no server error",message_shown proves successful submission,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261030_141149_full_page,2026-10-30 14:11,EPR/PatientCommunication,(whole page),TC_PC_002,Submit empty communication note,smoke,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Clear 'txtCommunication'
+3. Click 'Save'",- no server error,client_script_validation shows alert for empty input,no,PASSED,PASSED,
+20261030_141149_full_page,2026-10-30 14:11,EPR/PatientCommunication,(whole page),TC_PC_003,Submit communication note with maximum length,boundary,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Enter 'A' in 'txtCommunication'
+3. Click 'Save'","- message 'Communication added sucessfully.' appears
+- no server error",message_shown proves successful submission,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261030_141149_full_page,2026-10-30 14:11,EPR/PatientCommunication,(whole page),TC_PC_004,Submit communication note with special characters,positive,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Enter ""Patient's status: stable. Follow-up @ 3pm!"" in 'txtCommunication'
+3. Click 'Save'","- message 'Communication added sucessfully.' appears
+- no server error",message_shown proves successful submission,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261030_141149_full_page,2026-10-30 14:11,EPR/PatientCommunication,(whole page),TC_PC_005,Check 'Action Due' checkbox,positive,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Tick 'Action Due'","- 'Action Due' is ticked
+- no server error","Initial value of checkbox is 'on', so checking it should not change its state.",no,PASSED,PASSED,
+20261030_141149_full_page,2026-10-30 14:11,EPR/PatientCommunication,(whole page),TC_PC_006,Uncheck 'Action Due' checkbox,positive,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Untick 'Action Due'","- 'Action Due' is unticked
+- no server error",The checkbox should be able to be unchecked.,no,PASSED,PASSED,
+20261030_141149_full_page,2026-10-30 14:11,EPR/PatientCommunication,(whole page),TC_PC_007,Toggle 'Action Due' checkbox twice,boundary,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Untick 'Action Due'
+3. Tick 'Action Due'","- 'Action Due' is ticked
+- no server error",Toggling the checkbox twice should return it to its initial state.,no,PASSED,PASSED,
+20261030_141149_full_page,2026-10-30 14:11,EPR/PatientCommunication,(whole page),TC_PC_008,Ensure 'Action Due' checkbox does not affect server state,smoke,"1. Open http://localhost:2786/EPR/PatientCommunication.aspx
+2. Untick 'Action Due'
+3. Tick 'Action Due'",- no server error,No server-side validation or state change is expected from toggling the checkbox.,no,PASSED,PASSED,
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_001,Submit valid communication note,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'This is a valid communication note.' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",code_behind_handlers shows success message on valid input,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_002,Submit empty communication note,negative,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter '' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Please Write Communication' appears
+- no server error",code_behind_handlers shows error message on empty input,no,FAILED,APP_DEFECT,Expected the message 'Please Write Communication' but it never appeared.
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_003,Submit communication note with maximum length,boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'a' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",code_behind_handlers shows success message on valid input,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_004,Submit communication note with special characters,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter ""!@#$%^&*()_+-=[]{}|;':,.<>?/~`"" in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",code_behind_handlers shows success message on valid input,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_005,Select a valid option from 'ASSIGN TO',positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Sundeep Saini'
+- no server error",ddlPendingStatus options,no,PASSED,PASSED,
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_006,Select another valid option from 'ASSIGN TO',positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Dr Sunita Rani Cheif Medical Officer' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Dr Sunita Rani Cheif Medical Officer'
+- no server error",ddlPendingStatus options,no,PASSED,PASSED,
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_007,Boundary test: Select the last option from 'ASSIGN TO',boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Bhawna nagpal PHARMACY EXCECUTIVE' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Bhawna nagpal PHARMACY EXCECUTIVE'
+- no server error",ddlPendingStatus options,no,PASSED,PASSED,
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_008,Boundary test: Select the first option from 'ASSIGN TO',boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Sundeep Saini'
+- no server error",ddlPendingStatus options,no,PASSED,PASSED,
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_009,Check 'Action Due' checkbox,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Tick 'Action Due'","- 'Action Due' is ticked
+- no server error",element_value proves checkbox can be checked,no,PASSED,PASSED,
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_010,Uncheck 'Action Due' checkbox,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Untick 'Action Due'","- 'Action Due' is unticked
+- no server error",element_value proves checkbox can be unchecked,no,PASSED,PASSED,
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_011,Submit communication with valid data,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'Follow-up communication note' in 'Type your communication note — e.g.'
+3. Select 'Sundeep Saini' in 'ASSIGN TO'
+4. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",message_shown proves successful submission,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_012,Check required field validation for communication note,negative,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'
+3. Click 'Send Note'","- message 'Please Write Communication' appears
+- no server error",message_shown proves validation error,no,FAILED,APP_DEFECT,Expected the message 'Please Write Communication' but it never appeared.
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_013,Boundary test for communication note length,smoke,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'A' in 'Type your communication note — e.g.'",- no server error,no_server_error proves handling of long input,no,PASSED,PASSED,
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_014,Positive scenario: Valid communication and assignment,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'Follow-up on patient progress.' in 'Type your communication note — e.g.'
+3. Select 'Sundeep Saini' in 'ASSIGN TO'
+4. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",btnSaveAjax handler shows success message,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_015,Negative scenario: Missing communication note,negative,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'
+3. Click 'Send Note'","- message 'Please Write Communication' appears
+- no server error",btnSaveAjax handler shows error message,no,FAILED,APP_DEFECT,Expected the message 'Please Write Communication' but it never appeared.
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_016,Boundary scenario: Maximum length communication note,boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'A' in 'Type your communication note — e.g.'","- message 'Submitted successfully!' appears
+- no server error",btnSaveAjax handler shows success message,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_017,UI scenario: Assign user without follow-up date,ui,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'Check assignment without date.' in 'Type your communication note — e.g.'
+3. Select 'Sundeep Saini' in 'ASSIGN TO'
+4. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",client_script_validation shows message,no,FAILED,APP_DEFECT,Expected the message 'Submitted successfully!' but it never appeared.
+20261031_120608_full_page,2026-10-31 12:06,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_018,Boundary scenario: No user assigned with follow-up date,smoke,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'Follow-up required.' in 'Type your communication note — e.g.'
+3. Click 'Send Note'",- no server error,client_script_validation shows message,no,PASSED,PASSED,
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_019,Submit valid communication note,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'This is a valid communication note.' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",code-behind handler shows success message,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_020,Submit empty communication note,negative,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter '' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Please Write Communication' appears
+- no server error",code-behind handler shows error message,no,FAILED,APP_DEFECT,Expected the message 'Please Write Communication' but it never appeared.
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_021,Submit communication note with maximum length,boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'A long communication note that reaches the maximum length allowed by the system.' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",code-behind handler shows success message,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_022,Submit communication note with special characters,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'Special characters: !@#$%^&*()_+-=;:\'"",.<>/?' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",code-behind handler shows success message,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_023,Select a valid option from 'ASSIGN TO' dropdown,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Sundeep Saini'
+- no server error",Selecting a valid option from the dropdown,no,PASSED,PASSED,
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_024,Select another valid option from 'ASSIGN TO' dropdown,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Dr Sunita Rani Cheif Medical Officer' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Dr Sunita Rani Cheif Medical Officer'
+- no server error",Selecting a different valid option from the dropdown,no,PASSED,PASSED,
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_025,Boundary test: Select the first option from 'ASSIGN TO' dropdown,boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Sundeep Saini'
+- no server error",Selecting the first option from the dropdown,no,PASSED,PASSED,
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_026,Boundary test: Select the last option from 'ASSIGN TO' dropdown,boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Bhawna nagpal PHARMACY EXCECUTIVE' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Bhawna nagpal PHARMACY EXCECUTIVE'
+- no server error",Selecting the last option from the dropdown,no,PASSED,PASSED,
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_027,Check 'Action Due' checkbox,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Tick 'Action Due'","- 'Action Due' is ticked
+- no server error",Element 'chkDueAction' initial value is 'on',no,PASSED,PASSED,
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_028,Uncheck 'Action Due' checkbox,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Untick 'Action Due'","- 'Action Due' is unticked
+- no server error",Element 'chkDueAction' can be unchecked,no,PASSED,PASSED,
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_029,Toggle 'Action Due' checkbox off and on,ui,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Untick 'Action Due'
+3. Tick 'Action Due'","- 'Action Due' is ticked
+- no server error",Element 'chkDueAction' can be toggled,no,PASSED,PASSED,
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_030,Submit communication with valid data,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'Follow-up note for patient' in 'Type your communication note — e.g.'
+3. Select 'Sundeep Saini' in 'ASSIGN TO'
+4. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",Handler 'btnsave_Click' shows success message,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_031,Check required field validation for communication note,negative,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'
+3. Click 'Send Note'","- message 'Please Write Communication' appears
+- no server error",Handler 'btnsave_Click' shows error message when communication is empty,no,FAILED,APP_DEFECT,Expected the message 'Please Write Communication' but it never appeared.
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_032,Boundary test for maximum length of communication note,smoke,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'A' in 'Type your communication note — e.g.'",- no server error,"No specific maxlength defined, but testing large input",no,PASSED,PASSED,
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_033,Positive case: Valid communication note submission,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'Follow-up scheduled for next week.' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",Successful submission shows 'Submitted successfully!',yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_034,Negative case: Empty communication note,negative,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter '' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Please Write Communication' appears
+- no server error",Empty communication note shows 'Please Write Communication',no,FAILED,APP_DEFECT,Expected the message 'Please Write Communication' but it never appeared.
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_035,Boundary case: Maximum length communication note,boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'A' in 'Type your communication note — e.g.'","- message 'Submitted successfully!' appears
+- no server error",Successful submission with maximum length note,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_036,UI case: Select 'Sundeep Saini' from ASSIGN TO dropdown,ui,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Sundeep Saini'
+- no server error",Dropdown selection is visible,no,PASSED,PASSED,
+20261031_121037_full_page,2026-10-31 12:11,EPR/ReferralCommunicationLogs,(whole page),TC_RCL_037,UI case: Check 'Action Due' checkbox,ui,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Tick 'Action Due'","- 'Action Due' is ticked
+- no server error",Checkbox is checked,no,PASSED,PASSED,
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_017,Submit a valid note,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a valid communication note.' in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_018,Submit an empty note,negative,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Clear 'Type communication note here…'
+3. Click 'Send'","- 'Type communication note here…' is visible
+- no server error",client_script_validation,no,PASSED,PASSED,
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_019,Submit a note with maximum length,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'A long note that reaches the maximum length allowed by the system.' in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_020,Submit a note with special characters,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'Special characters: !@#$%^&*()_+' in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_021,Select 'All Practices' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'All Practices' in 'PRACTICE'","- 'PRACTICE' = 'All Practices'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_022,Select 'TBC(Shahdara)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(Shahdara)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(Shahdara)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_023,Select 'TBC(Keshavpuram)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(Keshavpuram)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(Keshavpuram)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_024,Select 'TBC(MayurVihar)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(MayurVihar)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(MayurVihar)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_025,Positive case: Valid input for 'Click to search staff…',smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'John Doe' in 'Click to search staff…'",- no server error,"No specific validator or message for this field, so check no server error",no,PASSED,PASSED,
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_026,Negative case: Empty input for 'Click to search staff…',smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Clear 'Click to search staff…'",- no server error,"No specific validator or message for this field, so check no server error",no,PASSED,PASSED,
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_027,Boundary case: Maximum length input for 'Click to search staff…',smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'A very long input string that exceeds typical lengths' in 'Click to search staff…'",- no server error,"No specific validator or message for this field, so check no server error",no,PASSED,PASSED,
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_028,Positive test with valid reminder date,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a test note.' in 'Type communication note here…'
+3. Enter '2023-10-15' in 'REMINDER FOR ME'
+4. Click 'Send'",- no server error,client_script_validation,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_029,Negative test with empty reminder date,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a test note.' in 'Type communication note here…'
+3. Clear 'REMINDER FOR ME'
+4. Click 'Send'",- no server error,client_script_validation,no,PASSED,PASSED,
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_030,Boundary test with maximum length reminder date,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a test note.' in 'Type communication note here…'
+3. Enter '2023-12-31' in 'REMINDER FOR ME'
+4. Click 'Send'",- no server error,client_script_validation,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261031_130225_full_page,2026-10-31 13:02,EPR/UniversalComm,(whole page),TC_UC_031,Negative test with invalid reminder date format,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a test note.' in 'Type communication note here…'
+3. Enter '2023-10-15' in 'REMINDER FOR ME'
+4. Click 'Send'",- no server error,client_script_validation,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_022,Check the 'on' checkbox,positive,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'","- 'on' is ticked
+- no server error",element_value proves the checkbox is checked,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_023,Uncheck the 'on' checkbox,negative,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Untick 'on'","- 'on' is unticked
+- no server error",element_value proves the checkbox is unchecked,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_024,Toggle the 'on' checkbox twice,boundary,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'
+3. Untick 'on'","- 'on' is unticked
+- no server error",element_value proves the checkbox returns to initial state,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_025,Clear selection,ui,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'
+3. Click 'Clear Selection'","- 'on' is unticked
+- no server error",btnClearSelection element,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_026,Search with valid date range,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '01/10/2023' in 'dd/mm/yyyy'
+3. Enter '31/10/2023' in 'dd/mm/yyyy'
+4. Click 'Search'",- no server error,btnSearch element,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_027,Search with invalid date range,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '31/10/2023' in 'dd/mm/yyyy'
+3. Enter '01/10/2023' in 'dd/mm/yyyy'
+4. Click 'Search'",- no server error,btnSearch element,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_028,Export CSV,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Click 'Export CSV'",- no server error,btnExportCSV element,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_029,Submit allocation without selecting user,negative,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'
+3. Click 'Submit Allocation'","- message 'Please Select Allocated To User for all checked rows.' appears
+- no server error",code-behind handler checks for selected user,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_030,Submit allocation with unselected checkbox,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Untick 'on'
+3. Click 'Submit Allocation'",- no server error,code-behind handler requires checkbox to be checked,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_031,Submit allocation with maximum length date,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '01/01/2023' in 'dd/mm/yyyy'
+3. Enter '31/12/2023' in 'dd/mm/yyyy'
+4. Click 'Search'",- no server error,txtfrom and txtto fields have maxlength of 10,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_032,Valid date input for 'dd/mm/yyyy' field,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '15/10/2023' in 'dd/mm/yyyy'",- no server error,Valid date format,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_033,Invalid date format input for 'dd/mm/yyyy' field,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '2023-10-15' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Invalid date format,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_034,Boundary test with maximum length input for 'dd/mm/yyyy' field,boundary,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '31/12/2023' in 'dd/mm/yyyy'","- 'dd/mm/yyyy' = '31/12/2023'
+- no server error",Maximum length of input,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_035,Empty input for 'dd/mm/yyyy' field,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Clear 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Empty input,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_036,Positive test with valid date format,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '15/10/2023' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Valid date format is accepted,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_037,Negative test with invalid date format,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '2023-10-15' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Invalid date format should not be accepted,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_038,Boundary test with maximum length date,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '31/12/2023' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Date field accepts maximum length input,no,PASSED,PASSED,
+20261031_134702_full_page,2026-10-31 13:47,Accounting/ExpenseAllocation.aspx,(whole page),TC_EA_039,Negative test with over maximum length input,negative,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '31/12/2023extra' in 'dd/mm/yyyy'
+3. Click 'Search'","- 'dd/mm/yyyy' = '31/12/2023'
+- no server error",Input longer than maximum length is truncated,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_036,Submit with valid expense details,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '1000' in 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",message_shown proves success,yes,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_037,Submit with empty expense amount,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Tea Club' in 'Expense Type'
+3. Enter 'Monthly tea expenses' in 'Description'
+4. Click 'Submit'","- validation 'Please enter Expense Amount' is shown
+- message 'Please enter Expense Amount' appears
+- no server error",rfvtxtexpenseamount validator fires,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_038,Submit with invalid expense amount format,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '1000abc' in 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- validation 'Please enter valid Expense Amount use only numeric characters ' is shown
+- message 'Please enter valid Expense Amount use only numeric characters ' appears
+- no server error",revtxtexpenseamount validator fires,no,FAILED,APP_DEFECT,"Expected validation message 'Please enter valid Expense Amount use only numeric characters ' (revtxtexpenseamount) to appear, but it did not."
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_039,Submit with empty expense type,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '1000' in 'Expense Amount'
+3. Enter 'Monthly tea expenses' in 'Description'
+4. Click 'Submit'","- validation 'Please Select Expense Type' is shown
+- message 'Please Select Expense Type' appears
+- no server error",rfvtxtexpensetype validator fires,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_040,Submit with empty expense description,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '1000' in 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Click 'Submit'","- message 'Expense Description is mandatory.' appears
+- no server error",client_script_validation shows message,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_041,Submit with maximum expense amount,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '50000' in 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Maximum allowed amount' in 'Description'
+5. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",client_script_validation allows maximum amount,yes,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_042,Submit with expense amount exceeding limit,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '50001' in 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Exceeds maximum allowed amount' in 'Description'
+5. Click 'Submit'","- message 'Expense Amount cannot exceed 50,000 at one time.' appears
+- no server error",client_script_validation shows message,no,FAILED,APP_DEFECT,"Expected the message 'Expense Amount cannot exceed 50,000 at one time.' but it never appeared. Pop-ups seen: ['Warning: The entered amount (₹50000) exceeds your Remaining Balance (₹-53000).\n\nDo you want to continue saving this expense?']."
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_043,Submit valid expense amount,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '1000' in 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",client_script_validation for valid amount,yes,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_044,Submit empty expense amount,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '' in 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- validation 'Please enter Expense Amount' is shown
+- no server error",rfvtxtexpenseamount validator fires,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_045,Submit non-numeric expense amount,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'abc' in 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- validation 'Please enter valid Expense Amount use only numeric characters ' is shown
+- no server error",revtxtexpenseamount validator fires,no,FAILED,APP_DEFECT,"Expected validation message 'Please enter valid Expense Amount use only numeric characters ' (revtxtexpenseamount) to appear, but it did not."
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_046,Submit expense amount exceeding maximum limit,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '60000' in 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- message 'Expense Amount cannot exceed 50,000 at one time.' appears
+- no server error",client_script_validation for amount exceeding limit,no,FAILED,APP_DEFECT,"Expected the message 'Expense Amount cannot exceed 50,000 at one time.' but it never appeared. Pop-ups seen: ['Warning: The entered amount (₹50000) exceeds your Remaining Balance (₹-104000).\n\nDo you want to continue saving this expense?']."
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_047,Select a valid expense type,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Tea Club' in 'Expense Type'","- 'Expense Type' = 'Tea Club'
+- no server error",element_value on ddlexpensetype,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_048,Select the last valid expense type,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Labour Charges' in 'Expense Type'","- 'Expense Type' = 'Labour Charges'
+- no server error",element_value on ddlexpensetype,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_049,Select a duplicate expense type,ui,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Labour Charges' in 'Expense Type'","- 'Expense Type' = 'Labour Charges'
+- no server error",element_value on ddlexpensetype,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_050,Submit with valid description,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'Office supplies purchase' in 'Description'
+3. Enter '100' in 'Expense Amount'
+4. Select 'Office Maintenance' in 'Expense Type'
+5. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",code-behind handler shows success message,yes,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_051,Submit with empty description,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '' in 'Description'
+3. Enter '100' in 'Expense Amount'
+4. Select 'Office Maintenance' in 'Expense Type'
+5. Click 'Submit'","- message 'Expense Description is mandatory.' appears
+- no server error",client-side validation shows mandatory message,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_052,Submit with maximum length description,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'A very long description that is exactly at the boundary of what is acceptable for this field to ensure it handles maximum length input correctly.' in 'Description'
+3. Enter '100' in 'Expense Amount'
+4. Select 'Office Maintenance' in 'Expense Type'
+5. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",code-behind handler shows success message,yes,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_053,Submit with special characters in description,ui,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'Purchase of office chairs & tables @ 50% discount!' in 'Description'
+3. Enter '100' in 'Expense Amount'
+4. Select 'Office Furniture' in 'Expense Type'
+5. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",code-behind handler shows success message,yes,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_054,Upload a valid file to the file input,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'",- no server error,The file input accepts a valid file,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_055,Attempt to upload more than 5 files,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Upload a sample file to 'No file chosen'
+4. Upload a sample file to 'No file chosen'
+5. Upload a sample file to 'No file chosen'
+6. Upload a sample file to 'No file chosen'
+7. Upload a sample file to 'No file chosen'","- message 'You can only have a maximum of 5 files total (including existing files).' appears
+- no server error",Client-side script restricts the number of files to 5,no,FAILED,APP_DEFECT,Expected the message 'You can only have a maximum of 5 files total (including existing files).' but it never appeared.
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_056,Search with valid expense name,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'Tea Club' in 'Search expenses...'
+3. Click 'Search'",- no server error,Valid input in search field,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_057,Search with empty input,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Clear 'Search expenses...'
+3. Click 'Search'",- no server error,Empty input in search field,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_058,Search with special characters,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '!@#$%^&*()' in 'Search expenses...'
+3. Click 'Search'",- no server error,Special characters in search field,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_059,Search with maximum length input,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'A very long expense name that exceeds typical length' in 'Search expenses...'
+3. Click 'Search'",- no server error,Boundary test for maximum length,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_060,Valid date input in 'dd/mm/yyyy' format,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '15/08/2023' in 'dd/mm/yyyy'
+3. Click 'Search'","- no 'Please enter valid Date' error
+- no server error",validator_passes for valid date format,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_061,Boundary test with maximum length date input,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '31/12/9999' in 'dd/mm/yyyy'
+3. Click 'Search'","- no 'Please enter valid Date' error
+- no server error",validator_passes for maximum length input,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_062,Valid date input in 'dd/mm/yyyy' format,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '15/09/2023' in 'dd/mm/yyyy'
+3. Click 'Search'","- no 'Please enter valid Date' error
+- no server error",validator_passes for valid date format,no,PASSED,PASSED,
+20261031_135712_full_page,2026-10-31 13:58,Accounting/AddExpenses,(whole page),TC_AE_063,Boundary test for maximum length of date input,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '31/12/2023' in 'dd/mm/yyyy'
+3. Click 'Search'","- 'dd/mm/yyyy' = '31/12/2023'
+- no server error",maxlength property of txtto,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_001,Search with valid name,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Enter 'Divya' in 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'",- no server error,Valid input in txtSearch field,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_002,Search with valid KMed ID,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Enter '2609230201' in 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'",- no server error,Valid input in txtSearch field,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_003,Search with invalid input,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Enter 'InvalidInput123' in 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'",- no server error,Invalid input in txtSearch field,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_004,Search with boundary input,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Enter 'A very long input string that exceeds typical search lengths' in 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'",- no server error,Boundary input in txtSearch field,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_005,Positive test with valid filter selection,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'","- 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' = 'On Program'
+- no server error",filterStatus element,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_006,Negative test with invalid filter selection,negative,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Died' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'
+3. Click 'Apply'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Died'
+- no server error",filterProgram element,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_007,Boundary test with maximum length search term,boundary,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Enter 'A very long search term that exceeds normal length' in 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'
+3. Click 'Apply'","- 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...' = 'A very long search term that exceeds normal length'
+- no server error",txtSearch element,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_008,UI test for clearing filters,ui,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Cured' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Clear'","- 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' = 'All Status'
+- no server error",btnClearFilter element,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_009,Valid status selection and filter application,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,Valid dropdown selection,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_010,Boundary test for status selection,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Died' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,Boundary dropdown selection,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_011,Clear filter action,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Click 'Clear'",- no server error,Clear button functionality,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_012,Select 'All Status' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'All Status' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element options,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_013,Select 'On Program' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element options,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_014,Select 'Cured' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Cured' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element options,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_015,Select 'Died' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Died' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element options,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_016,Select 'All Programs' from filterProgram,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'All Programs' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'All Programs'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_017,Select 'On Treatment' from filterProgram,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'On Treatment'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_018,Select 'Treatment Interrupted' from filterProgram,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Treatment Interrupted' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Treatment Interrupted'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_019,Select 'Died' from filterProgram,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Died' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Died'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_020,Select 'All Diseases' from filterDisease dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'All Diseases' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+3. Click 'Apply'",- no server error,filterDisease element,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_021,Select 'TB with Diabetes' from filterDisease dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'TB with Diabetes' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+3. Click 'Apply'",- no server error,filterDisease element,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_022,Select 'No Program' from filterDisease dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'No Program' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+3. Click 'Apply'",- no server error,filterDisease element,no,PASSED,PASSED,
+20261031_150114_full_page,2026-10-31 15:02,EPR/newsearchpatient,(whole page),TC_NEWS_023,Select 'TB Support(No ATT)' from filterDisease dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'TB Support(No ATT)' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+3. Click 'Apply'",- no server error,filterDisease element,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_024,Search with valid KMed ID,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Enter '2609230201' in 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'
+3. Click 'Apply'",- no server error,Valid input for txtSearch,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_025,Search with invalid KMed ID,negative,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Enter '9999999999' in 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'
+3. Click 'Apply'","- message 'Unable to identify this patient/prospect. Please refresh the page and try again.' appears
+- no server error",Invalid input for txtSearch,no,FAILED,APP_DEFECT,Expected the message 'Unable to identify this patient/prospect. Please refresh the page and try again.' but it never appeared.
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_026,Search with valid mobile number,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Enter '9821968438' in 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'
+3. Click 'Apply'",- no server error,Valid input for txtSearch,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_027,Search with empty input,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Clear 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...'
+3. Click 'Apply'",- no server error,Empty input for txtSearch,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_028,Positive case: Valid filter selection,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'
+4. Select 'TB' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+5. Click 'Apply'",- no server error,Valid selection of filter options,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_029,Negative case: Invalid filter combination,negative,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Cured' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'
+4. Select 'Diabetes' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+5. Click 'Apply'","- message 'Unable to identify this patient/prospect. Please refresh the page and try again.' appears
+- no server error",Invalid combination of filter options,no,FAILED,APP_DEFECT,Expected the message 'Unable to identify this patient/prospect. Please refresh the page and try again.' but it never appeared.
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_030,Boundary case: Maximum entries selection,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select '100' in 'Show 10 25 50 100 entries'
+3. Click 'Apply'",- no server error,Maximum entries selection in dropdown,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_031,UI case: Clear filter,ui,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'
+4. Select 'TB' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+5. Click 'Clear'","- 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' = 'All Status'
+- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'All Programs'
+- 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'All Diseases'
+- no server error",Clear filter button functionality,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_032,Select 'On Program' status and apply filter,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,Valid selection of filterStatus,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_033,Select 'All Programs' and apply filter,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'All Programs' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'
+3. Click 'Apply'",- no server error,Valid selection of filterProgram,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_034,Select 'TB' disease and apply filter,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'TB' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'
+3. Click 'Apply'",- no server error,Valid selection of filterDisease,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_035,Select 'Consultation Only' status and apply filter,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Consultation Only' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,Valid selection of filterStatus,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_036,Select 'Died' program and apply filter,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Died' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'
+3. Click 'Apply'",- no server error,Valid selection of filterProgram,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_037,Select 'All Status' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'All Status' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element with 'All Status' option,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_038,Select 'On Program' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element with 'On Program' option,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_039,Select 'Cured' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Cured' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element with 'Cured' option,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_040,Select 'Review After Report' from filterStatus dropdown,smoke,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Review After Report' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation'
+3. Click 'Apply'",- no server error,filterStatus element with 'Review After Report' option,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_041,Select 'All Programs' from filterProgram dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'All Programs' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'All Programs'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_042,Select 'On Treatment' from filterProgram dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'On Treatment'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_043,Select 'Treatment Interrupted' from filterProgram dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Treatment Interrupted' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Treatment Interrupted'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_044,Select 'Died' from filterProgram dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Died' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre'","- 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Died'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_045,Select 'All Diseases' from filterDisease dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'All Diseases' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'","- 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'All Diseases'
+- no server error",element_value on filterDisease,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_046,Select 'TB with Diabetes' from filterDisease dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'TB with Diabetes' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'","- 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'TB with Diabetes'
+- no server error",element_value on filterDisease,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_047,Select 'Diabetes' from filterDisease dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'Diabetes' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'","- 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'Diabetes'
+- no server error",element_value on filterDisease,no,PASSED,PASSED,
+20261103_143652_full_page,2026-11-03 14:39,EPR/newsearchpatient,(whole page),TC_NEWS_048,Select 'No Program' from filterDisease dropdown,positive,"1. Open http://localhost:2786/EPR/newsearchpatient.aspx
+2. Select 'No Program' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup'","- 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'No Program'
+- no server error",element_value on filterDisease,no,PASSED,PASSED,
+20261103_144531_mobile_number,2026-11-03 14:45,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_001,Submit valid 10-digit mobile number,smoke,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '9876543210' in 'Enter mobile number'
+3. Click 'Save doctor'",- no server error,client_script_validation for valid mobile number,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261103_144531_mobile_number,2026-11-03 14:45,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_002,Submit empty mobile number,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Clear 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Mobile number is required.' appears
+- no server error",client_script_validation for required mobile number,no,PASSED,PASSED,
+20261103_144531_mobile_number,2026-11-03 14:45,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_003,Submit mobile number with less than 10 digits,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '123456789' in 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Enter a 10-digit mobile number.' appears
+- no server error",client_script_validation for invalid mobile number,no,PASSED,PASSED,
+20261103_144531_mobile_number,2026-11-03 14:45,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_004,Submit mobile number with more than 10 digits,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '1234567890123' in 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Enter a 10-digit mobile number.' appears
+- no server error",client_script_validation for invalid mobile number,no,FAILED,APP_DEFECT,Expected the message 'Enter a 10-digit mobile number.' but it never appeared.
+20261103_144531_mobile_number,2026-11-03 14:45,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_005,Submit mobile number with exactly 10 digits (boundary),smoke,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '1234567890' in 'Enter mobile number'
+3. Click 'Save doctor'",- no server error,client_script_validation for valid mobile number,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261103_145955_mobile_number,2026-11-03 15:00,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_001,Submit valid 10-digit mobile number,smoke,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '9876543210' in 'Enter mobile number'
+3. Click 'Save doctor'",- no server error,client_script_validation for valid mobile number,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261103_145955_mobile_number,2026-11-03 15:00,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_002,Submit empty mobile number,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Clear 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Mobile number is required.' appears
+- no server error",client_script_validation for required mobile number,no,PASSED,PASSED,
+20261103_145955_mobile_number,2026-11-03 15:00,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_003,Submit mobile number with less than 10 digits,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '123456789' in 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Enter a 10-digit mobile number.' appears
+- no server error",client_script_validation for invalid mobile number,no,PASSED,PASSED,
+20261103_145955_mobile_number,2026-11-03 15:00,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_004,Submit mobile number with more than 10 digits,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '1234567890123' in 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Enter a 10-digit mobile number.' appears
+- no server error",client_script_validation for invalid mobile number,no,FAILED,APP_DEFECT,Expected the message 'Enter a 10-digit mobile number.' but it never appeared.
+20261103_145955_mobile_number,2026-11-03 15:00,Contacts/PracticeReferralDoctor,mobile number,TC_PRD_005,Submit mobile number with exactly 10 digits (boundary),smoke,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '1234567890' in 'Enter mobile number'
+3. Click 'Save doctor'",- no server error,client_script_validation for valid mobile number,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_074,Submit form with valid patient name,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Enter '30' in 'Enter age'
+4. Enter '1234567890' in 'Enter mobile number'
+5. Select 'TBC(Shahdara)' in 'Practice'
+6. Select 'Network Doctors' in 'Referral Source'
+7. Select 'TB' in 'Disease / Program'
+8. Select 'On Program' in 'Program Status'
+9. Enter '123 Main St' in 'Enter address'
+10. Enter 'Downtown' in 'Search area'
+11. Click 'Save Referral'","- message 'Referral saved successfully!' appears
+- no server error",Valid input for txtPatientName,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_075,Submit form with patient name at boundary length,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'A very long patient name that exceeds typical length' in 'Enter patient name'
+3. Enter '30' in 'Enter age'
+4. Enter '1234567890' in 'Enter mobile number'
+5. Select 'TBC(Shahdara)' in 'Practice'
+6. Select 'Network Doctors' in 'Referral Source'
+7. Select 'TB' in 'Disease / Program'
+8. Select 'On Program' in 'Program Status'
+9. Enter '123 Main St' in 'Enter address'
+10. Enter 'Downtown' in 'Search area'
+11. Click 'Save Referral'","- message 'Referral saved successfully!' appears
+- no server error",Boundary test for txtPatientName,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_076,Submit form with special characters in patient name,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John@Doe!' in 'Enter patient name'
+3. Enter '30' in 'Enter age'
+4. Enter '1234567890' in 'Enter mobile number'
+5. Select 'TBC(Shahdara)' in 'Practice'
+6. Select 'Network Doctors' in 'Referral Source'
+7. Select 'TB' in 'Disease / Program'
+8. Click 'Patient Status ▾'
+9. Select 'On Program' in 'Program Status'
+10. Enter '123 Main St' in 'Enter address'
+11. Enter 'Downtown' in 'Search area'
+12. Click 'Save Referral'",- no server error,Special character handling in txtPatientName,no,FAILED,SCRIPT_ERROR,Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_077,Enter valid age within range,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '25' in 'Enter age'
+3. Click 'Save Referral'","- no 'Age must be between 1 and 120' error
+- no server error",rvAge validator passes,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_078,Valid mobile number input,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Enter '30' in 'Enter age'
+4. Enter '9876543210' in 'Enter mobile number'
+5. Select 'TBC(Shahdara)' in 'Practice'
+6. Select 'Network Doctors' in 'Referral Source'
+7. Select 'TB' in 'Disease / Program'
+8. Click 'Patient Status ▾'
+9. Select 'On Program' in 'Program Status'
+10. Enter '123 Main St' in 'Enter address'
+11. Enter 'Downtown' in 'Search area'
+12. Click 'Save Referral'","- no 'Enter valid 10 digit mobile number' error
+- no server error",validator_passes for revMobile,no,FAILED,SCRIPT_ERROR,Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_079,Boundary test for mobile number input (10 digits),boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Enter '30' in 'Enter age'
+4. Enter '0123456789' in 'Enter mobile number'
+5. Select 'TBC(Shahdara)' in 'Practice'
+6. Select 'Network Doctors' in 'Referral Source'
+7. Select 'TB' in 'Disease / Program'
+8. Click 'Patient Status ▾'
+9. Select 'On Program' in 'Program Status'
+10. Enter '123 Main St' in 'Enter address'
+11. Enter 'Downtown' in 'Search area'
+12. Click 'Save Referral'","- no 'Enter valid 10 digit mobile number' error
+- no server error",validator_passes for revMobile,no,FAILED,SCRIPT_ERROR,Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_080,Valid mobile number input,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Enter '1234567890' in 'Enter mobile number'
+4. Click 'Save Referral'","- no 'Enter valid 10 digit mobile number' error
+- no server error",RegularExpressionValidator1 passes for valid input,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_081,Boundary case: exactly 10 digits,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Enter '0987654321' in 'Enter mobile number'
+4. Click 'Save Referral'","- no 'Enter valid 10 digit mobile number' error
+- no server error",RegularExpressionValidator1 passes for boundary input,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_082,Select valid practice option,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'TBC(Shahdara)' in 'Practice'","- 'Practice' = 'TBC(Shahdara)'
+- no server error",ddlPractice element,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_083,Attempt to select an invalid practice option,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'TBC(Shahdara)' in 'Practice'","- 'Practice' = 'TBC(Shahdara)'
+- no server error",ddlPractice element,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_084,Select a valid referral source,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Network Doctors' in 'Referral Source'","- 'Referral Source' = 'Network Doctors'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_085,Select the last option in referral source,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'ChatBot' in 'Referral Source'","- 'Referral Source' = 'ChatBot'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_086,Select 'Other' as referral source,ui,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Other' in 'Referral Source'","- 'Referral Source' = 'Other'
+- no server error",element_value reflects the selected option,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_087,Select a valid disease/program option,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'TB' in 'Disease / Program'","- 'Disease / Program' = 'TB'
+- no server error",element_value on ddldisease,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_088,Select a boundary option for disease/program,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'TB Support(No ATT)' in 'Disease / Program'","- 'Disease / Program' = 'TB Support(No ATT)'
+- no server error",element_value on ddldisease,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_089,Select a different valid disease/program option,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Diabetes' in 'Disease / Program'","- 'Disease / Program' = 'Diabetes'
+- no server error",element_value on ddldisease,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_090,Select a valid program status,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'On Program' in 'Program Status'","- 'Program Status' = 'On Program'
+- no server error",ddlPatientStatus element options,no,FAILED,SCRIPT_ERROR,Step 2 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_091,Select the last valid option in program status,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Died' in 'Program Status'","- 'Program Status' = 'Died'
+- no server error",ddlPatientStatus element options,no,FAILED,SCRIPT_ERROR,Step 2 'select 'Died' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_092,Select a middle valid option in program status,ui,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Cured' in 'Program Status'","- 'Program Status' = 'Cured'
+- no server error",ddlPatientStatus element options,no,FAILED,SCRIPT_ERROR,Step 2 'select 'Cured' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_093,Enter valid future date for 'Appointment & Time',smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '2024-11-03' in 'Appointment & Time'",- no server error,client_script_validation,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_094,Enter past date for 'Appointment & Time',negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '2022-11-03' in 'Appointment & Time'","- message 'Follow-up date/time must be within future 1 year' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'Follow-up date/time must be within future 1 year' but it never appeared. Pop-ups seen: ['Back date not allowed'].
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_095,Enter date more than 1 year in future for 'Appointment & Time',negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '2025-11-04' in 'Appointment & Time'","- message 'Follow-up date/time must be within future 1 year' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'Follow-up date/time must be within future 1 year' but it never appeared. Pop-ups seen: ['Back date not allowed'].
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_096,Enter invalid date format for 'Appointment & Time',negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '2024-11-03' in 'Appointment & Time'","- message 'Invalid Follow-up From Date' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'Invalid Follow-up From Date' but it never appeared. Pop-ups seen: ['Back date not allowed'].
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_097,Select a valid appointment time,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select '9:00 AM' in 'Appointment & Time'","- 'Appointment & Time' = '9:00 AM'
+- no server error",ddlTime element options,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_098,Select 'Select Time' option,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Select Time' in 'Appointment & Time'","- 'Appointment & Time' = 'Select Time'
+- no server error",ddlTime element options,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_099,Select the earliest appointment time,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select '9:00 AM' in 'Appointment & Time'","- 'Appointment & Time' = '9:00 AM'
+- no server error",ddlTime element options,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_100,Select the latest appointment time,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select '1:30 PM' in 'Appointment & Time'","- 'Appointment & Time' = '1:30 PM'
+- no server error",ddlTime element options,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_101,Enter a valid referral note,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'Patient requires follow-up in two weeks.' in 'Enter referral note'",- no server error,Valid input for txtReferralNote,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_102,Enter an empty referral note,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Clear 'Enter referral note'",- no server error,"No specific validator for txtReferralNote, check for no server error",no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_103,Enter a referral note with maximum length,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'A very long referral note that is intended to test the boundary conditions of the input field. It should be long enough to reach any potential maximum length limit imposed by the system.' in 'Enter referral note'",- no server error,Boundary test for txtReferralNote,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_104,Enter a referral note with special characters,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'Special characters test: !@#$%^&*()_+' in 'Enter referral note'",- no server error,Check handling of special characters in txtReferralNote,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_105,Upload a valid document,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Upload a sample file to 'Upload Documents'
+3. Click 'Save Referral'",- no server error,imgupload element allows file upload,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_106,Attempt to upload no document,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click 'Save Referral'","- message 'Please select at least one document.' appears
+- no server error",Client-side validation requires at least one document,no,FAILED,APP_DEFECT,Expected the message 'Please select at least one document.' but it never appeared.
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_107,Upload a large document,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Upload a sample file to 'Upload Documents'
+3. Click 'Save Referral'","- message 'Upload failed. Please check the file size and try again.' appears
+- no server error",Client-side validation checks file size,no,FAILED,APP_DEFECT,Expected the message 'Upload failed. Please check the file size and try again.' but it never appeared.
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_108,Upload multiple valid documents,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Upload a sample file to 'Upload Documents'
+3. Upload a sample file to 'Upload Documents'
+4. Click 'Save Referral'",- no server error,imgupload element allows multiple file uploads,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_109,Enter valid address,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '123 Main St, Springfield' in 'Enter address'",- no server error,Valid input for txtAddress,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_110,Enter address with special characters,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '456 Elm St, Apt #5, Springfield' in 'Enter address'",- no server error,Valid input with special characters,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_111,Enter long address exceeding typical length,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '789 Long Street Name That Exceeds Normal Length, Springfield, Some State, 12345' in 'Enter address'",- no server error,Boundary test for txtAddress length,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_112,Positive scenario: Valid input in 'Search area' field,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'Downtown' in 'Search area'",- no server error,Valid input in txtArea,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_113,Boundary scenario: Maximum length input in 'Search area' field,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'A very long area name that exceeds typical length' in 'Search area'",- no server error,Boundary test for txtArea,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_114,Negative scenario: Invalid characters in 'Search area' field,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'Area@123!' in 'Search area'",- no server error,Invalid input in txtArea,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_115,Enter valid zip code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '12345' in 'Enter zip code'",- no server error,Valid input for zip code,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_116,Enter empty zip code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '' in 'Enter zip code'",- no server error,"No specific validator for empty zip code, check for server error",no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_117,Enter zip code with special characters,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '123@#' in 'Enter zip code'",- no server error,"No specific validator for special characters, check for server error",no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_118,Enter zip code exceeding typical length,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '1234567890' in 'Enter zip code'",- no server error,Boundary test for zip code length,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_119,Enter a valid city name in 'Search city',smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'New York' in 'Search city'",- no server error,Valid input for txtcity,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_120,Enter an empty value in 'Search city',smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '' in 'Search city'",- no server error,Empty input for txtcity,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_121,Enter a city name with special characters in 'Search city',smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'New@York!' in 'Search city'",- no server error,Special characters input for txtcity,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_122,Enter a city name with maximum length in 'Search city',smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'A very long city name that exceeds typical length' in 'Search city'",- no server error,Boundary test for txtcity,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_123,Positive test for valid state input,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'California' in 'Search state'
+3. Click '🔍 Search'",- no server error,Valid input should not trigger any error,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_124,Negative test for empty state input,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Clear 'Search state'
+3. Click '🔍 Search'","- message 'State is required' appears
+- no server error",State is required,no,FAILED,APP_DEFECT,Expected the message 'State is required' but it never appeared. Pop-ups seen: ['Please select From date'].
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_125,Boundary test for maximum length state input,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'A very long state name that exceeds normal length' in 'Search state'
+3. Click '🔍 Search'",- no server error,Ensure no error for maximum length input,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_126,Negative test for invalid characters in state input,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'C@lifornia!' in 'Search state'
+3. Click '🔍 Search'",- no server error,Invalid characters should not cause server error,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_127,Enter valid country name in 'Search country' field,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'India' in 'Search country'",- no server error,Valid input for txtcountry,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_128,Enter empty value in 'Search country' field,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '' in 'Search country'",- no server error,Empty input for txtcountry,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_129,Enter special characters in 'Search country' field,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '@#$%^&*' in 'Search country'",- no server error,Special characters input for txtcountry,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_130,Enter long string in 'Search country' field,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'A very long country name that exceeds typical length' in 'Search country'",- no server error,Boundary test for txtcountry,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_131,Positive test for valid referral submission,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Tick 'Male'
+4. Enter '30' in 'Enter age'
+5. Enter '1234567890' in 'Enter mobile number'
+6. Select 'TBC(Shahdara)' in 'Practice'
+7. Select 'Network Doctors' in 'Referral Source'
+8. Select 'TB' in 'Disease / Program'
+9. Select 'On Program' in 'Program Status'
+10. Enter '123 Main St' in 'Enter address'
+11. Enter 'Central' in 'Search area'
+12. Click 'Save Referral'","- message 'Referral saved successfully!' appears
+- no server error",code_behind_handlers for successful referral save,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_132,UI test for selecting practice,ui,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'TBC(Shahdara)' in 'Practice'","- 'Practice' = 'TBC(Shahdara)'
+- no server error",ddlPractice element,no,PASSED,PASSED,
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_133,Valid end-to-end submission with all required fields,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Tick 'Male'
+4. Enter '30' in 'Enter age'
+5. Enter '1234567890' in 'Enter mobile number'
+6. Select 'TBC(Shahdara)' in 'Practice'
+7. Select 'Network Doctors' in 'Referral Source'
+8. Select 'TB' in 'Disease / Program'
+9. Select 'On Program' in 'Program Status'
+10. Enter '123 Main St' in 'Enter address'
+11. Enter 'Downtown' in 'Search area'
+12. Click 'Save Referral'","- message 'Referral saved successfully!' appears
+- no server error",code_behind_handlers for successful referral save,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_134,Boundary test for 'txtMob' with maximum length,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Tick 'Male'
+4. Enter '30' in 'Enter age'
+5. Enter '1234567890' in 'Enter mobile number'
+6. Select 'TBC(Shahdara)' in 'Practice'
+7. Select 'Network Doctors' in 'Referral Source'
+8. Select 'TB' in 'Disease / Program'
+9. Click 'Patient Status ▾'
+10. Select 'On Program' in 'Program Status'
+11. Enter '123 Main St' in 'Enter address'
+12. Enter 'Downtown' in 'Search area'
+13. Click 'Save Referral'","- 'Enter mobile number' = '1234567890'
+- no server error",maxlength of txtMob,no,FAILED,SCRIPT_ERROR,Step 10 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s.
+20261103_151240_full_page,2026-11-03 15:23,Reporting/DoctorReferralEntry.aspx,(whole page),TC_DRE_135,Save Referral with all required fields filled correctly,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Tick 'Male'
+4. Enter '30' in 'Enter age'
+5. Enter '1234567890' in 'Enter mobile number'
+6. Enter '123 Main St' in 'Enter address'
+7. Enter 'Downtown' in 'Search area'
+8. Select 'Network Doctors' in 'Referral Source'
+9. Select 'TB' in 'Disease / Program'
+10. Select 'On Program' in 'Program Status'
+11. Click 'Save Referral'","- message 'Referral saved successfully!' appears
+- no server error",message_shown proves successful save,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run

@@ -1,0 +1,6 @@
+﻿Test ID,Scenario,Type,Status,Category,Reason,Expected,Basis,Failed Step,Duration (s)
+TC_PRD_004,Submit mobile number with more than 10 digits,negative,FAILED,APP_DEFECT,Expected the message 'Enter a 10-digit mobile number.' but it never appeared.,message 'Enter a 10-digit mobile number.' appears; no server error,client_script_validation for invalid mobile number,expect message 'Enter a 10-digit mobile number.',8.36
+TC_PRD_001,Submit valid 10-digit mobile number,smoke,PASSED,PASSED,,no server error,client_script_validation for valid mobile number,,0.92
+TC_PRD_002,Submit empty mobile number,negative,PASSED,PASSED,,message 'Mobile number is required.' appears; no server error,client_script_validation for required mobile number,,3.3
+TC_PRD_003,Submit mobile number with less than 10 digits,negative,PASSED,PASSED,,message 'Enter a 10-digit mobile number.' appears; no server error,client_script_validation for invalid mobile number,,2.8
+TC_PRD_005,Submit mobile number with exactly 10 digits (boundary),smoke,PASSED,PASSED,,no server error,client_script_validation for valid mobile number,,0.74

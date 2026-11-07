@@ -1,0 +1,13 @@
+{
+  "page": "Reporting/DoctorReferralEntry.aspx",
+  "focus": "",
+  "finished_at": "2026-11-03T15:23:51",
+  "counts": {
+    "APP_DEFECT": 6,
+    "SCRIPT_ERROR": 7,
+    "ENVIRONMENT": 0,
+    "ASSERTION_FAILED": 0,
+    "SKIPPED": 7,
+    "PASSED": 42
+  }
+}

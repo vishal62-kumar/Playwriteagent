@@ -1,0 +1,24 @@
+﻿Test ID,Scenario,Type,Status,Category,Reason,Expected,Basis,Failed Step,Duration (s)
+TC_NEWS_001,Search with valid name,smoke,PASSED,PASSED,,no server error,Valid input in txtSearch field,,0.74
+TC_NEWS_002,Search with valid KMed ID,smoke,PASSED,PASSED,,no server error,Valid input in txtSearch field,,0.47
+TC_NEWS_003,Search with invalid input,smoke,PASSED,PASSED,,no server error,Invalid input in txtSearch field,,0.36
+TC_NEWS_004,Search with boundary input,smoke,PASSED,PASSED,,no server error,Boundary input in txtSearch field,,0.52
+TC_NEWS_005,Positive test with valid filter selection,positive,PASSED,PASSED,,'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' = 'On Program'; no server error,filterStatus element,,1.17
+TC_NEWS_006,Negative test with invalid filter selection,negative,PASSED,PASSED,,'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Died'; no server error,filterProgram element,,4.3
+TC_NEWS_007,Boundary test with maximum length search term,boundary,PASSED,PASSED,,"'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...' = 'A very long search term that exceeds normal length'; no server error",txtSearch element,,5.05
+TC_NEWS_008,UI test for clearing filters,ui,PASSED,PASSED,,'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' = 'All Status'; no server error,btnClearFilter element,,2.58
+TC_NEWS_009,Valid status selection and filter application,smoke,PASSED,PASSED,,no server error,Valid dropdown selection,,1.32
+TC_NEWS_010,Boundary test for status selection,smoke,PASSED,PASSED,,no server error,Boundary dropdown selection,,3.33
+TC_NEWS_011,Clear filter action,smoke,PASSED,PASSED,,no server error,Clear button functionality,,1.17
+TC_NEWS_012,Select 'All Status' from filterStatus dropdown,smoke,PASSED,PASSED,,no server error,filterStatus element options,,3.28
+TC_NEWS_013,Select 'On Program' from filterStatus dropdown,smoke,PASSED,PASSED,,no server error,filterStatus element options,,1.28
+TC_NEWS_014,Select 'Cured' from filterStatus dropdown,smoke,PASSED,PASSED,,no server error,filterStatus element options,,1.24
+TC_NEWS_015,Select 'Died' from filterStatus dropdown,smoke,PASSED,PASSED,,no server error,filterStatus element options,,1.2
+TC_NEWS_016,Select 'All Programs' from filterProgram,positive,PASSED,PASSED,,'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'All Programs'; no server error,element_value reflects the selected option,,0.91
+TC_NEWS_017,Select 'On Treatment' from filterProgram,positive,PASSED,PASSED,,'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'On Treatment'; no server error,element_value reflects the selected option,,1.75
+TC_NEWS_018,Select 'Treatment Interrupted' from filterProgram,positive,PASSED,PASSED,,'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Treatment Interrupted'; no server error,element_value reflects the selected option,,2.37
+TC_NEWS_019,Select 'Died' from filterProgram,positive,PASSED,PASSED,,'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Died'; no server error,element_value reflects the selected option,,1.69
+TC_NEWS_020,Select 'All Diseases' from filterDisease dropdown,smoke,PASSED,PASSED,,no server error,filterDisease element,,5.45
+TC_NEWS_021,Select 'TB with Diabetes' from filterDisease dropdown,smoke,PASSED,PASSED,,no server error,filterDisease element,,6.71
+TC_NEWS_022,Select 'No Program' from filterDisease dropdown,smoke,PASSED,PASSED,,no server error,filterDisease element,,5.52
+TC_NEWS_023,Select 'TB Support(No ATT)' from filterDisease dropdown,smoke,PASSED,PASSED,,no server error,filterDisease element,,5.17

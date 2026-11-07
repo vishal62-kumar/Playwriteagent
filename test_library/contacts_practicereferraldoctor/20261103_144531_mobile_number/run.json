@@ -1,0 +1,13 @@
+{
+  "page": "Contacts/PracticeReferralDoctor",
+  "focus": "mobile number",
+  "finished_at": "2026-11-03T14:45:50",
+  "counts": {
+    "APP_DEFECT": 1,
+    "SCRIPT_ERROR": 0,
+    "ENVIRONMENT": 0,
+    "ASSERTION_FAILED": 0,
+    "SKIPPED": 2,
+    "PASSED": 2
+  }
+}

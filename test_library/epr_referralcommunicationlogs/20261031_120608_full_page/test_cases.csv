@@ -1,0 +1,66 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_RCL_001,Submit valid communication note,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'This is a valid communication note.' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",code_behind_handlers shows success message on valid input,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_RCL_002,Submit empty communication note,negative,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter '' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Please Write Communication' appears
+- no server error",code_behind_handlers shows error message on empty input,no,FAILED,APP_DEFECT,Expected the message 'Please Write Communication' but it never appeared.
+TC_RCL_003,Submit communication note with maximum length,boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'a' in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",code_behind_handlers shows success message on valid input,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_RCL_004,Submit communication note with special characters,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter ""!@#$%^&*()_+-=[]{}|;':,.<>?/~`"" in 'Type your communication note — e.g.'
+3. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",code_behind_handlers shows success message on valid input,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_RCL_005,Select a valid option from 'ASSIGN TO',positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Sundeep Saini'
+- no server error",ddlPendingStatus options,no,PASSED,PASSED,
+TC_RCL_006,Select another valid option from 'ASSIGN TO',positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Dr Sunita Rani Cheif Medical Officer' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Dr Sunita Rani Cheif Medical Officer'
+- no server error",ddlPendingStatus options,no,PASSED,PASSED,
+TC_RCL_007,Boundary test: Select the last option from 'ASSIGN TO',boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Bhawna nagpal PHARMACY EXCECUTIVE' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Bhawna nagpal PHARMACY EXCECUTIVE'
+- no server error",ddlPendingStatus options,no,PASSED,PASSED,
+TC_RCL_008,Boundary test: Select the first option from 'ASSIGN TO',boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'","- 'ASSIGN TO' = 'Sundeep Saini'
+- no server error",ddlPendingStatus options,no,PASSED,PASSED,
+TC_RCL_009,Check 'Action Due' checkbox,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Tick 'Action Due'","- 'Action Due' is ticked
+- no server error",element_value proves checkbox can be checked,no,PASSED,PASSED,
+TC_RCL_010,Uncheck 'Action Due' checkbox,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Untick 'Action Due'","- 'Action Due' is unticked
+- no server error",element_value proves checkbox can be unchecked,no,PASSED,PASSED,
+TC_RCL_011,Submit communication with valid data,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'Follow-up communication note' in 'Type your communication note — e.g.'
+3. Select 'Sundeep Saini' in 'ASSIGN TO'
+4. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",message_shown proves successful submission,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_RCL_012,Check required field validation for communication note,negative,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'
+3. Click 'Send Note'","- message 'Please Write Communication' appears
+- no server error",message_shown proves validation error,no,FAILED,APP_DEFECT,Expected the message 'Please Write Communication' but it never appeared.
+TC_RCL_013,Boundary test for communication note length,smoke,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'A' in 'Type your communication note — e.g.'",- no server error,no_server_error proves handling of long input,no,PASSED,PASSED,
+TC_RCL_014,Positive scenario: Valid communication and assignment,positive,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'Follow-up on patient progress.' in 'Type your communication note — e.g.'
+3. Select 'Sundeep Saini' in 'ASSIGN TO'
+4. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",btnSaveAjax handler shows success message,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_RCL_015,Negative scenario: Missing communication note,negative,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Select 'Sundeep Saini' in 'ASSIGN TO'
+3. Click 'Send Note'","- message 'Please Write Communication' appears
+- no server error",btnSaveAjax handler shows error message,no,FAILED,APP_DEFECT,Expected the message 'Please Write Communication' but it never appeared.
+TC_RCL_016,Boundary scenario: Maximum length communication note,boundary,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'A' in 'Type your communication note — e.g.'","- message 'Submitted successfully!' appears
+- no server error",btnSaveAjax handler shows success message,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_RCL_017,UI scenario: Assign user without follow-up date,ui,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'Check assignment without date.' in 'Type your communication note — e.g.'
+3. Select 'Sundeep Saini' in 'ASSIGN TO'
+4. Click 'Send Note'","- message 'Submitted successfully!' appears
+- no server error",client_script_validation shows message,no,FAILED,APP_DEFECT,Expected the message 'Submitted successfully!' but it never appeared.
+TC_RCL_018,Boundary scenario: No user assigned with follow-up date,smoke,"1. Open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx
+2. Enter 'Follow-up required.' in 'Type your communication note — e.g.'
+3. Click 'Send Note'",- no server error,client_script_validation shows message,no,PASSED,PASSED,

@@ -1,0 +1,382 @@
+{
+  "page": "EPR/ReferralCommunicationLogs",
+  "url": "http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+  "scanned_at": "2026-10-31T12:10:15",
+  "elements": {
+    "txtfollowUpDate": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtfollowUpDate\"]"
+      },
+      "label": "",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtfollowUpDate",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "btnsave": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_btnsave\"]"
+      },
+      "label": "",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_btnsave",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "btnsave_Click"
+    },
+    "txtCommunication": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtCommunication\"]"
+      },
+      "label": "Type your communication note — e.g.",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtCommunication",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "ddlPendingStatus": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ddlPendingStatus\"]"
+      },
+      "label": "ASSIGN TO",
+      "text": "Sundeep Saini Dr Sunita Rani Cheif Medical Officer Lata Arya Anand Manocha Sumit",
+      "client_id": "ddlPendingStatus",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "4",
+          "label": "Sundeep Saini"
+        },
+        {
+          "value": "5",
+          "label": "Dr Sunita Rani Cheif Medical Officer"
+        },
+        {
+          "value": "6",
+          "label": "Lata Arya"
+        },
+        {
+          "value": "7",
+          "label": "Anand Manocha"
+        },
+        {
+          "value": "19",
+          "label": "Sumit Saini Sr. General Manager"
+        },
+        {
+          "value": "20",
+          "label": "Abhishek Jain Sr. Engineer"
+        },
+        {
+          "value": "22",
+          "label": "Lakshmi Verma"
+        },
+        {
+          "value": "25",
+          "label": "Naushad Khan"
+        },
+        {
+          "value": "26",
+          "label": "Ahsan Ahmad"
+        },
+        {
+          "value": "28",
+          "label": "Sumit Saini Sr. General Manager"
+        },
+        {
+          "value": "33",
+          "label": "Himani Saini kohat"
+        },
+        {
+          "value": "37",
+          "label": "Pooja Saini"
+        },
+        {
+          "value": "39",
+          "label": "Rakhi Saini"
+        },
+        {
+          "value": "40",
+          "label": "Nitin Bhati"
+        },
+        {
+          "value": "42",
+          "label": "Sangeeta Chindaliya"
+        },
+        {
+          "value": "46",
+          "label": "Aijaz Nabi Manager Admin"
+        },
+        {
+          "value": "47",
+          "label": "Manisha Kaur"
+        },
+        {
+          "value": "50",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "51",
+          "label": "Mohd Shuaib"
+        },
+        {
+          "value": "67",
+          "label": "Bhawna nagpal PHARMACY EXCECUTIVE"
+        },
+        {
+          "value": "82",
+          "label": "Monika singh Sr. Call Center Exce."
+        },
+        {
+          "value": "83",
+          "label": "Muskan Receptionist"
+        },
+        {
+          "value": "86",
+          "label": "Ritesh Kumar"
+        },
+        {
+          "value": "92",
+          "label": "Mansi yadav Call Center Exce."
+        },
+        {
+          "value": "93",
+          "label": "Komal Bansal"
+        },
+        {
+          "value": "95",
+          "label": "Krish Saini"
+        },
+        {
+          "value": "96",
+          "label": "Kanika Sharda"
+        },
+        {
+          "value": "102",
+          "label": "Mohd Danish Medical Officer"
+        },
+        {
+          "value": "103",
+          "label": "Nadeem Shabnam"
+        },
+        {
+          "value": "119",
+          "label": "Jitender Sr. Bd Exce."
+        }
+      ]
+    },
+    "text_search": {
+      "kind": "text",
+      "selector": {
+        "by": "label",
+        "value": "Search"
+      },
+      "label": "Search",
+      "text": "",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "chkDueAction": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"chkDueAction\"]"
+      },
+      "label": "Action Due",
+      "text": "on",
+      "client_id": "chkDueAction",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "on",
+      "maxlength": null,
+      "in_page_source": true,
+      "checked": false
+    },
+    "followUpDateProxy": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"followUpDateProxy\"]"
+      },
+      "label": "yyyy-mm-dd",
+      "text": "",
+      "client_id": "followUpDateProxy",
+      "visible": true,
+      "enabled": true,
+      "readonly": true,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "btnSaveAjax": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnSaveAjax\"]"
+      },
+      "label": "Send Note",
+      "text": "Send Note",
+      "client_id": "btnSaveAjax",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "saveCommAjax()"
+    },
+    "select_10_25_50_100": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "select[name=\"tblRecord_length\"]"
+      },
+      "label": "Show 10 25 50 100 entries",
+      "text": "10 25 50 100",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "10",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "25",
+          "label": "25"
+        },
+        {
+          "value": "50",
+          "label": "50"
+        },
+        {
+          "value": "100",
+          "label": "100"
+        }
+      ]
+    },
+    "text_search_2": {
+      "kind": "text",
+      "selector": {
+        "by": "label",
+        "value": "Search:"
+      },
+      "label": "Search:",
+      "text": "",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "tblRecord_previous": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblRecord_previous\"]"
+      },
+      "label": "Previous",
+      "text": "Previous",
+      "client_id": "tblRecord_previous",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "tblRecord_next": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblRecord_next\"]"
+      },
+      "label": "Next",
+      "text": "Next",
+      "client_id": "tblRecord_next",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    }
+  },
+  "validators": {},
+  "known_messages": [
+    "@Message",
+    "Action marked as Done!",
+    "Click to assign users…",
+    "DataTable error:",
+    "Error:",
+    "Mark this action as Done?",
+    "No communications yet",
+    "No matching records found",
+    "Please Write Communication",
+    "Submitted successfully!"
+  ],
+  "page_text": "Referral Communication\nPatient interaction & follow-up log\nPATIENT\n—\nMOBILE\n—\nPRACTICE\n—\nDOCTOR\n—\nSTATUS\n—\nNew Communication\nLog a call, note, or follow-up update\nASSIGN TO\nSundeep Saini\nDr Sunita Rani Cheif Medical Officer\nLata Arya\nAnand Manocha\nSumit Saini Sr. General Manager\nAbhishek Jain Sr. Engineer\nLakshmi Verma\nNaushad Khan\nAhsan Ahmad\nSumit Saini Sr. General Manager\nHimani Saini kohat\nPooja Saini\nRakhi Saini\nNitin Bhati\nSangeeta Chindaliya\nAijaz Nabi Manager Admin\nManisha Kaur\nAshwani Kumar\nMohd Shuaib\nBhawna nagpal PHARMACY EXCECUTIVE\nMonika singh Sr. Call Center Exce.\nMuskan Receptionist\nRitesh Kumar\nMansi yadav Call Center Exce.\nKomal Bansal\nKrish Saini\nKanika Sharda\nMohd Danish Medical Officer\nNadeem Shabnam\nJitender Sr. Bd Exce.\nTara Shaikh Receptionist\nAmaan Rais\nVishal Singh\nAmir Khan Sr. Bd Exce.\nAnam Qureshi Pt. Counsellor\nRicha Sharma Call Center Manager\nReetu Verma Call Center Exce.\nGanga Verma training manager\nSatish Kaushik\nSachin Kaushik\nMeenakshi Panchal Lab. Technician\nManisha Call Center Exce.\nHimanshu verma Medical Officer\nHema Sharma Data Entry Operator\nNawazish Zaidi Xray Technician\nTech@ Medcross\nFaisal Saifi Clinic Manager\nNot in use\nPriyanka Saini Dietitian\nTannu Das Pt. Coordinator\nNisha Zaidi Receptionist\nNisha Yadav Front Office Exce.\nHema Sharma Data Entry Operator\nHritik Sharma\nHimanshi Bagiri\nAnjali Mandrai\nTraining @ Medcross .\nNishant Kumar\nUma Rawat\n00000000 0000000000\nUma Rawat\nNitin Bhati\nSuman Suman\nAman Aman\nSarfraz Hybrid marketing\nTarun Hybrid marketing\nRakesh Rakesh marketing\nGaurav Marketing\nRanveer Marketing\nNaveen Marketing\nDietician KMedNet\nShivangi Yadav\nManisha Cce\nManoj Kumar\nManoj Kumar assistant manager\nChhavi Physiotherapist\nJyoti Saini\nAfsar Mohd\nHarsh Pt. Coordinator\nAkansha Lab technician\nTinkush Marketing\nShivanshu Hybrid marketing\nDevesh Kumar\nDeepak Panday\nMayank Singhal\nAnjali Calling\nTarique Tarique marketing\nAction Due\nFOLLOW-UP DATE\nNotes are timestamped and attributed to your account\nSend Note\nCommunication History\nAll past interactions, newest first\n0 notes\nShow \n10\n25\n50\n100\n entries\nSearch:\nDATE\tCOMMUNICATION\tASSIGNED TO\tACTION DUE\tADDED BY\tACTION\tREMINDERS\nNo communications yet\nShowing 0 to 0 of 0 entries\nPreviousNext",
+  "source": {
+    "found": true,
+    "aspx_path": "C:\\medcrossproject\\practice\\EPR\\ReferralCommunicationLogs.aspx",
+    "code_behind_path": "C:\\medcrossproject\\practice\\EPR\\ReferralCommunicationLogs.aspx.cs",
+    "handlers": {
+      "Page_Load": "void Page_Load(object sender, EventArgs e)\n        {\n            if (!IsPostBack)\n            {\n                if (Request.QueryString[\"patientId\"] != null)\n                    hdnPatientId.Value = Request.QueryString[\"patientId\"];\n\n                if (Request.QueryString[\"doctorId\"] != null)\n                    hdnDoctorId.Value = Request.QueryString[\"doctorId\"];\n\n                if (Request.QueryString[\"name\"] != null)\n                    hdnPatientName.Value = Request.QueryString[\"name\"];\n\n                // Store patientId in session (same pattern as PatientCommunication)\n                if (!string.IsNullOrEmpty(hdnPatientId.Value))\n                    Session[\"ReferralComm_PatientId\"] = hdnPatientId.Value;\n\n                if (!string.IsNullOrEmpty(hdnDoctorId.Value))\n                    Session[\"ReferralComm_DoctorId\"] = hdnDoctorId.Value;\n\n                lblpatientname.Text = hdnPatientName.Value;\n                lblpatientname.ForeColor = System.Drawing.Color.Blue;\n            }\n        }",
+      "btnsave_Click": "void btnsave_Click(object sender, EventArgs e)\n        {\n            if (Request.QueryString[\"patientId\"] != null)\n                patientId = Convert.ToInt32(Request.QueryString[\"patientId\"]);\n\n            if (Request.QueryString[\"doctorId\"] != null)\n                doctorId = Convert.ToInt32(Request.QueryString[\"doctorId\"]);\n\n            try\n            {\n                if (txtCommunication.InnerText.Trim() == \"\")\n                {\n                    lblMessage.Text = \"Please Write Communication\";\n                    lblMessage.ForeColor = System.Drawing.Color.Red;\n                    return;\n                }\n\n                int appUserId = Convert.ToInt32(HttpContext.Current.Session[\"appuser\"]);\n                int practiceId = Convert.ToInt32(HttpContext.Current.Session[\"practice_id\"]);\n\n                string query = @\"INSERT INTO ReferralCommunicationLog\n                                    (ReferredPatientID, Message, Done_On, Appuser_id, Practice_id, ReferralDoctorID)\n                                 VALUES\n                                    (@ReferredPatientID, @Message, GETDATE(), @AppUserID, @PracticeID, @ReferralDoctorID)\";\n\n                List<SqlParameter> parameters = new List<SqlParameter>\n                {\n                    new SqlParameter(\"@ReferredPatientID\", patientId),\n                    new SqlParameter(\"@Message\",           txtCommunication.InnerText.Trim()),\n                    new SqlParameter(\"@AppUserID\",         appUserId),\n                    new SqlParameter(\"@PracticeID\",        practiceId),\n                    new SqlParameter(\"@ReferralDoctorID\",  doctorId)\n                };\n\n                DBHelper dbHelper = new DBHelper();\n                dbHelper.ExecuteNonQuery(query, parameters.ToArray(), CommandType.Text);\n\n                lblMessage.Text = \"Submitted successfully!\";\n                lblMessage.ForeColor = System.Drawing.Color.Green;\n                txtCommunication.InnerText = \"\";\n            }\n            catch (Exception ex)\n            {\n                lblMessage.Text = \"Error: \" + ex.Message;\n                lblMessage.ForeColor = System.Drawing.Color.Red;\n            }\n        }"
+    },
+    "script_files": [
+      "<inline scripts in .aspx>"
+    ],
+    "script_rules": "// event bindings\n$('#chkEndComm').on('change', function () {\n\nfunction saveCommAjax() {\n            var comm = $.trim($('textarea[id*=\"txtCommunication\"]').val());\n            if (!comm) { showCommMsg('&#9888; Please enter a communication note.', '#b45309', '#fef3c7'); return; }\n\n            var selectedIds = $('#ddlPendingStatus').val() || [];\n            if (!Array.isArray(selectedIds)) selectedIds = [selectedIds];\n            var DueAction = $('#chkDueAction').is(':checked');\n            var EndComm = $('#chkEndComm').is(':checked');\n            var followUpDate = $('#<%= txtfollowUpDate.ClientID %>').val() || null;\n\n            if (followUpDate && selectedIds.length === 0) {\n                showCommMsg('&#9888; Please assign a user when follow-up date is set.', '#b45309', '#fef3c7');\n                return;\n            }\n\n            var btn = $('#btnSaveAjax');\n            btn.prop('disabled', true).html('<i class=\"fa fa-spinner fa-spin\"></i> Saving&hellip;');\n\n            $.ajax({\n                type: 'POST', url: 'ReferralCommunicationLogs.aspx/SaveCommunication',\n                contentType: 'application/json; charset=utf-8', dataType: 'json',\n                data: JSON.stringify({\n                    note: comm,\n                    ddlPendingStatus: selectedIds.map(Number),\n                    DueAction: DueAction,\n                    EndComm: EndComm,\n                    followUpDate: followUpDate\n                }),\n                success: function (res) {\n                    if (res.d === '1') {\n                        $('textarea[id*=\"txtCommunication\"]').val('');\n                        $('#ddlPendingStatus').val(null).trigger('change');\n                        $('#chkDueAction').prop('checked', false).prop('disabled', false);\n                        $('#chkEndComm').prop('checked', false);\n                        $('#<%= txtfollowUpDate.ClientID %>').val('');\n                        $('#followUpDateProxy').val('');\n                        $('#followupSetMsg').hide();\n                        $('#chipsArea').empty();\n                        showCommMsg('&#10003; Communication saved!', '#065f46', '#d1fae5');\n                        GetReport();\n                    } else {\n                        showCommMsg('&#10007; Failed to save. Please try again.', '#991b1b', '#fee2e2');\n                    }\n                },\n                error: function (xhr) {\n                    showCommMsg('&#10007; Server error: ' + (xhr.statusText || 'Unknown'), '#991b1b', '#fee2e2');\n                },\n                complete: function () {\n                    btn.prop('disabled', false).html('<i class=\"fa fa-paper-plane\"></i> Send Note');\n                }\n            });\n        }\n\n"
+  },
+  "stats": {
+    "elements": 12,
+    "validators": 0,
+    "skipped_not_unique": []
+  }
+}

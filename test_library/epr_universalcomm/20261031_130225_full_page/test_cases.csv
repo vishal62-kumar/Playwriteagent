@@ -1,0 +1,48 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_UC_017,Submit a valid note,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a valid communication note.' in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_UC_018,Submit an empty note,negative,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Clear 'Type communication note here…'
+3. Click 'Send'","- 'Type communication note here…' is visible
+- no server error",client_script_validation,no,PASSED,PASSED,
+TC_UC_019,Submit a note with maximum length,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'A long note that reaches the maximum length allowed by the system.' in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_UC_020,Submit a note with special characters,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'Special characters: !@#$%^&*()_+' in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_UC_021,Select 'All Practices' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'All Practices' in 'PRACTICE'","- 'PRACTICE' = 'All Practices'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+TC_UC_022,Select 'TBC(Shahdara)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(Shahdara)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(Shahdara)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+TC_UC_023,Select 'TBC(Keshavpuram)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(Keshavpuram)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(Keshavpuram)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+TC_UC_024,Select 'TBC(MayurVihar)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(MayurVihar)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(MayurVihar)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+TC_UC_025,Positive case: Valid input for 'Click to search staff…',smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'John Doe' in 'Click to search staff…'",- no server error,"No specific validator or message for this field, so check no server error",no,PASSED,PASSED,
+TC_UC_026,Negative case: Empty input for 'Click to search staff…',smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Clear 'Click to search staff…'",- no server error,"No specific validator or message for this field, so check no server error",no,PASSED,PASSED,
+TC_UC_027,Boundary case: Maximum length input for 'Click to search staff…',smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'A very long input string that exceeds typical lengths' in 'Click to search staff…'",- no server error,"No specific validator or message for this field, so check no server error",no,PASSED,PASSED,
+TC_UC_028,Positive test with valid reminder date,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a test note.' in 'Type communication note here…'
+3. Enter '2023-10-15' in 'REMINDER FOR ME'
+4. Click 'Send'",- no server error,client_script_validation,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_UC_029,Negative test with empty reminder date,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a test note.' in 'Type communication note here…'
+3. Clear 'REMINDER FOR ME'
+4. Click 'Send'",- no server error,client_script_validation,no,PASSED,PASSED,
+TC_UC_030,Boundary test with maximum length reminder date,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a test note.' in 'Type communication note here…'
+3. Enter '2023-12-31' in 'REMINDER FOR ME'
+4. Click 'Send'",- no server error,client_script_validation,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_UC_031,Negative test with invalid reminder date format,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a test note.' in 'Type communication note here…'
+3. Enter '2023-10-15' in 'REMINDER FOR ME'
+4. Click 'Send'",- no server error,client_script_validation,no,PASSED,PASSED,

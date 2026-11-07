@@ -1,0 +1,56 @@
+{
+  "finished_at": "2026-10-31T13:02:51",
+  "results": [
+    {
+      "test": "test_TC_UC_031[chromium]",
+      "nodeid": "test_library/epr_universalcomm/20261031_130225_full_page/test_epr_universalcomm_20261031_130225.py::test_TC_UC_031[chromium]",
+      "file": "test_library\\epr_universalcomm\\20261031_130225_full_page\\test_epr_universalcomm_20261031_130225.py",
+      "id": "TC_UC_031",
+      "title": "Negative test with invalid reminder date format",
+      "type": "smoke",
+      "basis": "client_script_validation",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.83,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/UniversalComm.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Type communication note here…' (txtNote) with 'This is a test note.'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'REMINDER FOR ME' (txtFu) with '2023-10-15'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "click 'Send' (btnSend)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Error: The INSERT statement conflicted with the FOREIGN KEY constraint \"FK__ReferralC__Refer__498FB7E4\". The conflict occurred in database \"PolyClinicAugust\", table \"dbo.ReferredPatientByDoctor\", column 'row_id'.\nThe statement has been terminated."
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "finished_at": "2026-10-23T14:32:22",
+  "results": [
+    {
+      "test": "test_TC_AE_001[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261023_141700_bill_attachment/test_accounting_addexpenses_20261023_141700.py::test_TC_AE_001[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261023_141700_bill_attachment\\test_accounting_addexpenses_20261023_141700.py",
+      "id": "TC_AE_001",
+      "title": "Upload a single valid bill attachment",
+      "type": "positive",
+      "basis": "client_script_validation",
+      "expected": "message 'Expense Added Successfully' appears; no server error",
+      "writes_data": true,
+      "duration": 6.42,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Expense Added Successfully'",
+          "status": "failed",
+          "detail": "Expected the message 'Expense Added Successfully' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\\n- Please Select Expense Type']."
+        }
+      ],
+      "dialogs": [
+        "- Please enter Expense Amount\n- Please Select Expense Type"
+      ],
+      "screenshot": "screenshots/test_TC_AE_001_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Expense Added Successfully' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\\n- Please Select Expense Type']."
+    },
+    {
+      "test": "test_TC_AE_002[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261023_141700_bill_attachment/test_accounting_addexpenses_20261023_141700.py::test_TC_AE_002[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261023_141700_bill_attachment\\test_accounting_addexpenses_20261023_141700.py",
+      "id": "TC_AE_002",
+      "title": "Upload multiple valid bill attachments within limit",
+      "type": "positive",
+      "basis": "client_script_validation",
+      "expected": "message 'Expense Added Successfully' appears; no server error",
+      "writes_data": true,
+      "duration": 5.87,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 8,
+          "action": "expect message 'Expense Added Successfully'",
+          "status": "failed",
+          "detail": "Expected the message 'Expense Added Successfully' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\\n- Please Select Expense Type']."
+        }
+      ],
+      "dialogs": [
+        "- Please enter Expense Amount\n- Please Select Expense Type"
+      ],
+      "screenshot": "screenshots/test_TC_AE_002_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Expense Added Successfully' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\\n- Please Select Expense Type']."
+    },
+    {
+      "test": "test_TC_AE_003[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261023_141700_bill_attachment/test_accounting_addexpenses_20261023_141700.py::test_TC_AE_003[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261023_141700_bill_attachment\\test_accounting_addexpenses_20261023_141700.py",
+      "id": "TC_AE_003",
+      "title": "Attempt to upload more than the allowed number of bill attachments",
+      "type": "negative",
+      "basis": "client_script_validation",
+      "expected": "message 'You can only have a maximum of 5 files total (including existing files).' appears; no server error",
+      "writes_data": false,
+      "duration": 6.0,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 8,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 9,
+          "action": "expect message 'You can only have a maximum of 5 files total (including existing files).'",
+          "status": "failed",
+          "detail": "Expected the message 'You can only have a maximum of 5 files total (including existing files).' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\\n- Please Select Expense Type']."
+        }
+      ],
+      "dialogs": [
+        "- Please enter Expense Amount\n- Please Select Expense Type"
+      ],
+      "screenshot": "screenshots/test_TC_AE_003_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'You can only have a maximum of 5 files total (including existing files).' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\\n- Please Select Expense Type']."
+    },
+    {
+      "test": "test_TC_AE_004[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261023_141700_bill_attachment/test_accounting_addexpenses_20261023_141700.py::test_TC_AE_004[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261023_141700_bill_attachment\\test_accounting_addexpenses_20261023_141700.py",
+      "id": "TC_AE_004",
+      "title": "Upload a bill attachment with an unsupported file type",
+      "type": "negative",
+      "basis": "client_script_validation",
+      "expected": "message 'Server error occurred' appears; no server error",
+      "writes_data": false,
+      "duration": 5.89,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "upload qa_upload_sample.txt to 'No file chosen' (fubillimage)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Server error occurred'",
+          "status": "failed",
+          "detail": "Expected the message 'Server error occurred' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\\n- Please Select Expense Type']."
+        }
+      ],
+      "dialogs": [
+        "- Please enter Expense Amount\n- Please Select Expense Type"
+      ],
+      "screenshot": "screenshots/test_TC_AE_004_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Server error occurred' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\\n- Please Select Expense Type']."
+    },
+    {
+      "test": "test_TC_AE_005[chromium]",
+      "nodeid": "test_library/accounting_addexpenses/20261023_141700_bill_attachment/test_accounting_addexpenses_20261023_141700.py::test_TC_AE_005[chromium]",
+      "file": "test_library\\accounting_addexpenses\\20261023_141700_bill_attachment\\test_accounting_addexpenses_20261023_141700.py",
+      "id": "TC_AE_005",
+      "title": "Upload a bill attachment with no file chosen",
+      "type": "smoke",
+      "basis": "client_script_validation",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.78,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/AddExpenses.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "click 'Submit' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "- Please enter Expense Amount\n- Please Select Expense Type"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    }
+  ]
+}

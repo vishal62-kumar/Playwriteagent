@@ -1,0 +1,3961 @@
+{
+  "page": "Reporting/DoctorReferralEntry.aspx",
+  "url": "http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+  "focus": "",
+  "generated_at": "2026-10-31T12:35:03",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-31T12:32:15",
+  "scenarios": [
+    {
+      "title": "Enter a valid patient name",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid input for txtPatientName",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtPatientName",
+          "value": "John Doe"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_011",
+      "group": "Enter patient name"
+    },
+    {
+      "title": "Enter a very long patient name",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Boundary test for txtPatientName",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtPatientName",
+          "value": "A very long patient name that exceeds typical length expectations"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_012",
+      "group": "Enter patient name"
+    },
+    {
+      "title": "Enter a patient name with special characters",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Special characters in txtPatientName",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtPatientName",
+          "value": "John Doe!@#"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_013",
+      "group": "Enter patient name"
+    },
+    {
+      "title": "Enter age below minimum boundary",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "rvAge validator fires",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtAge",
+          "value": "0"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Age must be between 1 and 120"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_014",
+      "group": "Enter age"
+    },
+    {
+      "title": "Enter age above maximum boundary",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "rvAge validator fires",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtAge",
+          "value": "121"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Age must be between 1 and 120"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_015",
+      "group": "Enter age"
+    },
+    {
+      "title": "Enter valid age within range",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "rvAge validator passes",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtPatientName",
+          "value": "John Doe"
+        },
+        {
+          "action": "fill",
+          "element": "txtAge",
+          "value": "25"
+        },
+        {
+          "action": "fill",
+          "element": "txtMob",
+          "value": "1234567890"
+        },
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "TBC(Shahdara)"
+        },
+        {
+          "action": "select",
+          "element": "DdlReferralSource",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "select",
+          "element": "ddldisease",
+          "value": "TB"
+        },
+        {
+          "action": "select",
+          "element": "ddlPatientStatus",
+          "value": "On Program"
+        },
+        {
+          "action": "fill",
+          "element": "txtAddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_passes",
+          "validator": "rvAge"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_016",
+      "group": "Enter age"
+    },
+    {
+      "title": "Enter valid 10 digit mobile number in alternate mobile field",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "RegularExpressionValidator1 passes for valid input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtPatientName",
+          "value": "John Doe"
+        },
+        {
+          "action": "fill",
+          "element": "txtAltrnatemob",
+          "value": "1234567890"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_passes",
+          "validator": "RegularExpressionValidator1"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_017",
+      "group": "Enter mobile number"
+    },
+    {
+      "title": "Enter boundary value of 10 digits in alternate mobile field",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "RegularExpressionValidator1 passes for boundary input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtPatientName",
+          "value": "John Doe"
+        },
+        {
+          "action": "fill",
+          "element": "txtAltrnatemob",
+          "value": "0987654321"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_passes",
+          "validator": "RegularExpressionValidator1"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_018",
+      "group": "Enter mobile number"
+    },
+    {
+      "title": "Verify 'Added On' field remains unchanged after form submission",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "txtAddedOn is not modifiable and retains its initial value",
+      "steps": [
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtAddedOn",
+          "value": "2026-10-31"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_019",
+      "group": "Added On"
+    },
+    {
+      "title": "Select valid practice option",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "ddlPractice options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "TBC(Shahdara)"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPractice",
+          "value": "TBC(Shahdara)"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_020",
+      "group": "Practice"
+    },
+    {
+      "title": "Select a valid referral source",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "Valid selection of referral source",
+      "steps": [
+        {
+          "action": "select",
+          "element": "DdlReferralSource",
+          "value": "Network Doctors"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "DdlReferralSource",
+          "value": "Network Doctors"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_021",
+      "group": "Referral Source"
+    },
+    {
+      "title": "Select the last option in referral source",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "Boundary test for referral source options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "DdlReferralSource",
+          "value": "ChatBot"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "DdlReferralSource",
+          "value": "ChatBot"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_022",
+      "group": "Referral Source"
+    },
+    {
+      "title": "Select a middle option in referral source",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "UI test for selecting a middle option",
+      "steps": [
+        {
+          "action": "select",
+          "element": "DdlReferralSource",
+          "value": "Internet"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "DdlReferralSource",
+          "value": "Internet"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_023",
+      "group": "Referral Source"
+    },
+    {
+      "title": "Select a valid disease/program option",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "Valid selection of a disease/program option",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddldisease",
+          "value": "TB"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddldisease",
+          "value": "TB"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_024",
+      "group": "Disease / Program"
+    },
+    {
+      "title": "Select the 'No Program' option",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "Valid selection of 'No Program' option",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddldisease",
+          "value": "No Program"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddldisease",
+          "value": "No Program"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_025",
+      "group": "Disease / Program"
+    },
+    {
+      "title": "Select the 'TB Support(No ATT)' option",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "Valid selection of 'TB Support(No ATT)' option",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddldisease",
+          "value": "TB Support(No ATT)"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddldisease",
+          "value": "TB Support(No ATT)"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_026",
+      "group": "Disease / Program"
+    },
+    {
+      "title": "Select a valid program status",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "ddlPatientStatus element options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPatientStatus",
+          "value": "On Program"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPatientStatus",
+          "value": "On Program"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_027",
+      "group": "Program Status"
+    },
+    {
+      "title": "Select a boundary option for program status",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "ddlPatientStatus element options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPatientStatus",
+          "value": "Died"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPatientStatus",
+          "value": "Died"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_028",
+      "group": "Program Status"
+    },
+    {
+      "title": "Select another valid program status",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "ddlPatientStatus element options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPatientStatus",
+          "value": "Cured"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPatientStatus",
+          "value": "Cured"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_029",
+      "group": "Program Status"
+    },
+    {
+      "title": "Valid future date within one year",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtFollowUpDate",
+          "value": "2024-10-30"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_030",
+      "group": "Appointment & Time"
+    },
+    {
+      "title": "Date in the past",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtFollowUpDate",
+          "value": "2023-10-01"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Follow-up date/time must be within future 1 year"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_031",
+      "group": "Appointment & Time"
+    },
+    {
+      "title": "Date exactly one year in the future",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtFollowUpDate",
+          "value": "2024-10-31"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_032",
+      "group": "Appointment & Time"
+    },
+    {
+      "title": "Date more than one year in the future",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtFollowUpDate",
+          "value": "2024-11-01"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Follow-up date/time must be within future 1 year"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_033",
+      "group": "Appointment & Time"
+    },
+    {
+      "title": "Select a valid appointment time",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "Valid option selection in ddlTime",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlTime",
+          "value": "9:00 AM"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlTime",
+          "value": "9:00 AM"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_034",
+      "group": "Appointment & Time"
+    },
+    {
+      "title": "Select the default 'Select Time' option",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "Boundary condition for ddlTime",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlTime",
+          "value": "Select Time"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlTime",
+          "value": "Select Time"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_035",
+      "group": "Appointment & Time"
+    },
+    {
+      "title": "Select the last available appointment time",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "Boundary condition for ddlTime",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlTime",
+          "value": "1:30 PM"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlTime",
+          "value": "1:30 PM"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_036",
+      "group": "Appointment & Time"
+    },
+    {
+      "title": "Select a valid appointment time",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "Valid option selection in ddlTime",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlTime",
+          "value": "9:00 AM"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlTime",
+          "value": "9:00 AM"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_037",
+      "group": "Appointment & Time"
+    },
+    {
+      "title": "Enter a valid referral note",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid input for txtReferralNote",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtReferralNote",
+          "value": "Patient requires follow-up consultation."
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_038",
+      "group": "Enter referral note"
+    },
+    {
+      "title": "Enter an empty referral note",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "No specific validator for txtReferralNote",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtReferralNote"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_039",
+      "group": "Enter referral note"
+    },
+    {
+      "title": "Enter a long referral note",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Boundary test for txtReferralNote",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtReferralNote",
+          "value": "This is a very long referral note intended to test the boundary conditions of the input field. It should be able to handle a large amount of text without any issues."
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_040",
+      "group": "Enter referral note"
+    },
+    {
+      "title": "Enter a referral note with special characters",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Special character handling for txtReferralNote",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtReferralNote",
+          "value": "Referral note with special characters: !@#$%^&*()"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_041",
+      "group": "Enter referral note"
+    },
+    {
+      "title": "Upload a valid document",
+      "type": "smoke",
+      "writes_data": true,
+      "basis": "Successful upload and save of document",
+      "steps": [
+        {
+          "action": "upload",
+          "element": "imgupload"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_042",
+      "group": "Upload Documents"
+    },
+    {
+      "title": "Attempt to upload no document",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "Client-side validation for no document selected",
+      "steps": [
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Please select at least one document."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_043",
+      "group": "Upload Documents"
+    },
+    {
+      "title": "Upload a document and simulate server error",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "Server error during document upload",
+      "steps": [
+        {
+          "action": "upload",
+          "element": "imgupload"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Server error occurred while saving referral."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_044",
+      "group": "Upload Documents"
+    },
+    {
+      "title": "Upload a document with invalid file size",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "Client-side validation for file size",
+      "steps": [
+        {
+          "action": "upload",
+          "element": "imgupload"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Upload failed. Please check the file size and try again."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_045",
+      "group": "Upload Documents"
+    },
+    {
+      "title": "Enter a valid address",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid input for txtAddress",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtAddress",
+          "value": "123 Main St, Springfield"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_046",
+      "group": "Enter address"
+    },
+    {
+      "title": "Enter address with special characters",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Boundary test for txtAddress",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtAddress",
+          "value": "!@#$%^&*()_+|"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_047",
+      "group": "Enter address"
+    },
+    {
+      "title": "Enter a very long address",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Boundary test for txtAddress",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtAddress",
+          "value": "123 Main St, Springfield, IL, 62704, United States of America, North America, Earth, Solar System, Milky Way Galaxy, Universe"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_048",
+      "group": "Enter address"
+    },
+    {
+      "title": "Positive scenario: Valid input for 'Search area'",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid input for 'Search area'",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_049",
+      "group": "Search area"
+    },
+    {
+      "title": "Boundary scenario: Maximum length input for 'Search area'",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Boundary test for 'Search area' field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "A very long area name that exceeds typical length"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_050",
+      "group": "Search area"
+    },
+    {
+      "title": "Negative scenario: Invalid characters in 'Search area'",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "No specific validator for invalid characters, check for server error",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "<script>alert('test')</script>"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_051",
+      "group": "Search area"
+    },
+    {
+      "title": "Valid zip code input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid input for zip code",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtpincode",
+          "value": "12345"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_052",
+      "group": "Enter zip code"
+    },
+    {
+      "title": "Empty zip code input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "No specific validator for empty zip code, check for server error",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtpincode"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_053",
+      "group": "Enter zip code"
+    },
+    {
+      "title": "Zip code with special characters",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Check for server error with invalid characters",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtpincode",
+          "value": "1234@"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_054",
+      "group": "Enter zip code"
+    },
+    {
+      "title": "Boundary test for zip code length",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Check for server error with maximum length input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtpincode",
+          "value": "1234567890"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_055",
+      "group": "Enter zip code"
+    },
+    {
+      "title": "Fill 'Search city' with a valid city name",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid input for 'Search city'",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtcity",
+          "value": "New York"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_056",
+      "group": "Search city"
+    },
+    {
+      "title": "Fill 'Search city' with an empty value",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "Empty input for 'Search city'",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtcity",
+          "value": ""
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "City is required"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_057",
+      "group": "Search city"
+    },
+    {
+      "title": "Fill 'Search city' with a very long city name",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Boundary test for 'Search city'",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtcity",
+          "value": "A very long city name that exceeds typical length expectations"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_058",
+      "group": "Search city"
+    },
+    {
+      "title": "Fill 'Search city' with special characters",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Special characters in 'Search city'",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtcity",
+          "value": "@#$%^&*()"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_059",
+      "group": "Search city"
+    },
+    {
+      "title": "Enter a valid state name in the 'Search state' field",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid input in the 'Search state' field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtstate",
+          "value": "California"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_060",
+      "group": "Search state"
+    },
+    {
+      "title": "Enter an invalid state name in the 'Search state' field",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Invalid input in the 'Search state' field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtstate",
+          "value": "123InvalidState"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_061",
+      "group": "Search state"
+    },
+    {
+      "title": "Enter a boundary value (empty) in the 'Search state' field",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Boundary test with empty input in the 'Search state' field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtstate",
+          "value": ""
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_062",
+      "group": "Search state"
+    },
+    {
+      "title": "Enter a boundary value (long string) in the 'Search state' field",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Boundary test with long input in the 'Search state' field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtstate",
+          "value": "A very long state name that exceeds normal length expectations"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_063",
+      "group": "Search state"
+    },
+    {
+      "title": "Valid country name input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "no_server_error",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtcountry",
+          "value": "India"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_064",
+      "group": "Search country"
+    },
+    {
+      "title": "Empty country name input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "no_server_error",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtcountry"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_065",
+      "group": "Search country"
+    },
+    {
+      "title": "Boundary test with maximum length input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "no_server_error",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtcountry",
+          "value": "United States of America"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_066",
+      "group": "Search country"
+    },
+    {
+      "title": "Special characters in country name",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "no_server_error",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtcountry",
+          "value": "Côte d'Ivoire"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_067",
+      "group": "Search country"
+    },
+    {
+      "title": "Positive test with valid patient data",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "code_behind_handlers for successful referral save",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtPatientName",
+          "value": "John Doe"
+        },
+        {
+          "action": "check",
+          "element": "rblGender_0"
+        },
+        {
+          "action": "fill",
+          "element": "txtAge",
+          "value": "30"
+        },
+        {
+          "action": "fill",
+          "element": "txtMob",
+          "value": "1234567890"
+        },
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "TBC(Shahdara)"
+        },
+        {
+          "action": "select",
+          "element": "DdlReferralSource",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "select",
+          "element": "ddldisease",
+          "value": "TB"
+        },
+        {
+          "action": "select",
+          "element": "ddlPatientStatus",
+          "value": "On Program"
+        },
+        {
+          "action": "fill",
+          "element": "txtAddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Referral saved successfully!"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_068",
+      "group": "YYYY/MM/DD"
+    },
+    {
+      "title": "Boundary test with maximum age",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "rvAge validator passes",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtPatientName",
+          "value": "Max Age"
+        },
+        {
+          "action": "check",
+          "element": "rblGender_2"
+        },
+        {
+          "action": "fill",
+          "element": "txtAge",
+          "value": "120"
+        },
+        {
+          "action": "fill",
+          "element": "txtMob",
+          "value": "0987654321"
+        },
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "TBC(Shahdara)"
+        },
+        {
+          "action": "select",
+          "element": "DdlReferralSource",
+          "value": "Internet"
+        },
+        {
+          "action": "select",
+          "element": "ddldisease",
+          "value": "No Program"
+        },
+        {
+          "action": "select",
+          "element": "ddlPatientStatus",
+          "value": "Consultation Only"
+        },
+        {
+          "action": "fill",
+          "element": "txtAddress",
+          "value": "789 Pine St"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Suburb"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_DRE_069",
+      "group": "YYYY/MM/DD"
+    },
+    {
+      "title": "UI test for practice dropdown",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "ddlPractice element",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "TBC(Shahdara)"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPractice",
+          "value": "TBC(Shahdara)"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_070",
+      "group": "YYYY/MM/DD"
+    },
+    {
+      "title": "Valid end-to-end submission",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "code_behind_handlers",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtPatientName",
+          "value": "John Doe"
+        },
+        {
+          "action": "check",
+          "element": "rblGender_0"
+        },
+        {
+          "action": "fill",
+          "element": "txtAge",
+          "value": "30"
+        },
+        {
+          "action": "fill",
+          "element": "txtMob",
+          "value": "1234567890"
+        },
+        {
+          "action": "select",
+          "element": "ddlPractice",
+          "value": "TBC(Shahdara)"
+        },
+        {
+          "action": "select",
+          "element": "DdlReferralSource",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "select",
+          "element": "ddldisease",
+          "value": "TB"
+        },
+        {
+          "action": "select",
+          "element": "ddlPatientStatus",
+          "value": "On Program"
+        },
+        {
+          "action": "fill",
+          "element": "txtAddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Referral saved successfully!"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_071",
+      "group": "YYYY/MM/DD"
+    },
+    {
+      "title": "Dropdown selection for 'Referral Source'",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "DdlReferralSource",
+      "steps": [
+        {
+          "action": "select",
+          "element": "DdlReferralSource",
+          "value": "Internet"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "DdlReferralSource",
+          "value": "Internet"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_072",
+      "group": "YYYY/MM/DD"
+    },
+    {
+      "title": "Save Referral with all required fields filled correctly",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "code_behind_handlers and client_script_validation",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtPatientName",
+          "value": "John Doe"
+        },
+        {
+          "action": "check",
+          "element": "rblGender_0"
+        },
+        {
+          "action": "fill",
+          "element": "txtAge",
+          "value": "30"
+        },
+        {
+          "action": "fill",
+          "element": "txtMob",
+          "value": "1234567890"
+        },
+        {
+          "action": "select",
+          "element": "DdlReferralSource",
+          "value": "Network Doctors"
+        },
+        {
+          "action": "select",
+          "element": "ddldisease",
+          "value": "TB"
+        },
+        {
+          "action": "select",
+          "element": "ddlPatientStatus",
+          "value": "On Program"
+        },
+        {
+          "action": "fill",
+          "element": "txtAddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveReferral"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Referral saved successfully!"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_DRE_073",
+      "group": "Save Referral"
+    }
+  ],
+  "rejected": [
+    {
+      "scenario": {
+        "title": "Leave patient name empty",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvPatientName validator fires",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtPatientName"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvPatientName"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvPatientName': field 'txtAge' is still empty, and its own required validator 'rfvAge' is in the same group - that will likely fire/show first and hide 'rfvPatientName'. Fill 'txtAge' with valid data first, so 'rfvPatientName' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Leave patient name empty",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvPatientName validator fires",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "25"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "clear",
+            "element": "txtPatientName"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvPatientName"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvPatientName': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvPatientName'. Fill 'txtTeamMember' with valid data first, so 'rfvPatientName' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Enter valid age within range",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "rvAge validator passes",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "25"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "rvAge"
+          }
+        ]
+      },
+      "problems": [
+        "validator_passes 'rvAge': no button is clicked, so validation never runs",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Leave age field empty",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvAge validator fires",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtAge"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvAge"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvAge': field 'txtPatientName' is still empty, and its own required validator 'rfvPatientName' is in the same group - that will likely fire/show first and hide 'rfvAge'. Fill 'txtPatientName' with valid data first, so 'rfvAge' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Leave age field empty",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvAge validator fires",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "clear",
+            "element": "txtAge"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvAge"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvAge': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvAge'. Fill 'txtTeamMember' with valid data first, so 'rfvAge' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Valid mobile number input",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "validator_passes for revMobile",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "revMobile"
+          }
+        ]
+      },
+      "problems": [
+        "validator_passes 'revMobile': no button is clicked, so validation never runs",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Empty mobile number input",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for rfvMobile",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvMobile"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvMobile': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvMobile'. Fill 'txtTeamMember' with valid data first, so 'rfvMobile' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid mobile number input (less than 10 digits)",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for revMobile",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "12345"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revMobile"
+          },
+          {
+            "type": "message_shown",
+            "value": "Enter valid 10 digit mobile number"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'revMobile': field 'txtPatientName' is still empty, and its own required validator 'rfvPatientName' is in the same group - that will likely fire/show first and hide 'revMobile'. Fill 'txtPatientName' with valid data first, so 'revMobile' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary test for mobile number input (10 digits)",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "validator_passes for revMobile",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "0987654321"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "revMobile"
+          }
+        ]
+      },
+      "problems": [
+        "validator_passes 'revMobile': no button is clicked, so validation never runs",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Valid mobile number input",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "validator_passes for revMobile",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          },
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "fill",
+            "element": "txtTeamMember",
+            "value": "Team Member"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "revMobile"
+          },
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 10: 'txtTeamMember' is hidden when the page loads - click the control that reveals it first"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Empty mobile number input",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for rfvMobile",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "fill",
+            "element": "txtTeamMember",
+            "value": "Team Member"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvMobile"
+          }
+        ]
+      },
+      "problems": [
+        "step 9: 'txtTeamMember' is hidden when the page loads - click the control that reveals it first",
+        "validator_fires 'rfvMobile': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvMobile'. Fill 'txtTeamMember' with valid data first, so 'rfvMobile' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid mobile number input (less than 10 digits)",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for revMobile",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "12345"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "fill",
+            "element": "txtTeamMember",
+            "value": "Team Member"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revMobile"
+          },
+          {
+            "type": "message_shown",
+            "value": "Enter valid 10 digit mobile number"
+          }
+        ]
+      },
+      "problems": [
+        "step 10: 'txtTeamMember' is hidden when the page loads - click the control that reveals it first",
+        "validator_fires 'revMobile': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'revMobile'. Fill 'txtTeamMember' with valid data first, so 'revMobile' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary test for mobile number input (10 digits)",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "validator_passes for revMobile",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "0987654321"
+          },
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "fill",
+            "element": "txtTeamMember",
+            "value": "Team Member"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "revMobile"
+          },
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 10: 'txtTeamMember' is hidden when the page loads - click the control that reveals it first"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Enter valid 10 digit mobile number in alternate mobile field",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "RegularExpressionValidator1 passes for valid input",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtAltrnatemob",
+            "value": "1234567890"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "RegularExpressionValidator1"
+          }
+        ]
+      },
+      "problems": [
+        "validator_passes 'RegularExpressionValidator1': no button is clicked, so validation never runs",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Enter invalid mobile number with less than 10 digits",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "RegularExpressionValidator1 fires for invalid input",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtAltrnatemob",
+            "value": "12345"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "RegularExpressionValidator1"
+          },
+          {
+            "type": "message_shown",
+            "value": "Enter valid 10 digit mobile number"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'RegularExpressionValidator1': field 'txtPatientName' is still empty, and its own required validator 'rfvPatientName' is in the same group - that will likely fire/show first and hide 'RegularExpressionValidator1'. Fill 'txtPatientName' with valid data first, so 'RegularExpressionValidator1' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Enter invalid mobile number with more than 10 digits",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "RegularExpressionValidator1 fires for invalid input",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtAltrnatemob",
+            "value": "1234567890123"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "RegularExpressionValidator1"
+          },
+          {
+            "type": "message_shown",
+            "value": "Enter valid 10 digit mobile number"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'RegularExpressionValidator1': field 'txtPatientName' is still empty, and its own required validator 'rfvPatientName' is in the same group - that will likely fire/show first and hide 'RegularExpressionValidator1'. Fill 'txtPatientName' with valid data first, so 'RegularExpressionValidator1' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Enter boundary value of 10 digits in alternate mobile field",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "RegularExpressionValidator1 passes for boundary input",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtAltrnatemob",
+            "value": "0987654321"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "RegularExpressionValidator1"
+          }
+        ]
+      },
+      "problems": [
+        "validator_passes 'RegularExpressionValidator1': no button is clicked, so validation never runs",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Enter invalid mobile number with less than 10 digits",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "RegularExpressionValidator1 fires for invalid input",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAltrnatemob",
+            "value": "12345"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "RegularExpressionValidator1"
+          },
+          {
+            "type": "message_shown",
+            "value": "Enter valid 10 digit mobile number"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'RegularExpressionValidator1': field 'txtAge' is still empty, and its own required validator 'rfvAge' is in the same group - that will likely fire/show first and hide 'RegularExpressionValidator1'. Fill 'txtAge' with valid data first, so 'RegularExpressionValidator1' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Enter invalid mobile number with more than 10 digits",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "RegularExpressionValidator1 fires for invalid input",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAltrnatemob",
+            "value": "1234567890123"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "RegularExpressionValidator1"
+          },
+          {
+            "type": "message_shown",
+            "value": "Enter valid 10 digit mobile number"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'RegularExpressionValidator1': field 'txtAge' is still empty, and its own required validator 'rfvAge' is in the same group - that will likely fire/show first and hide 'RegularExpressionValidator1'. Fill 'txtAge' with valid data first, so 'RegularExpressionValidator1' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Verify 'Added On' field is pre-filled with today's date",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "code-behind Page_Load sets txtAddedOn to today's date",
+        "steps": [],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "txtAddedOn",
+            "value": "2026-10-31"
+          }
+        ]
+      },
+      "problems": [
+        "scenario has no steps",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Attempt to modify 'Added On' field",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "txtAddedOn is disabled or readonly",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtAddedOn"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddedOn",
+            "value": "2023-11-01"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "txtAddedOn",
+            "value": "2026-10-31"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtAddedOn' is disabled/read-only",
+        "step 2: 'txtAddedOn' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Verify 'Added On' field is pre-filled with today's date",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "code-behind Page_Load sets txtAddedOn to today's date",
+        "steps": [],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "txtAddedOn",
+            "value": "2023-10-31"
+          }
+        ]
+      },
+      "problems": [
+        "scenario has no steps"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Verify 'Added On' field is disabled",
+        "type": "ui",
+        "writes_data": false,
+        "basis": "txtAddedOn is disabled or readonly",
+        "steps": [],
+        "assertions": [
+          {
+            "type": "element_disabled",
+            "element": "txtAddedOn"
+          }
+        ]
+      },
+      "problems": [
+        "scenario has no steps"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Practice field required validation",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvPractice validator",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "ddlPractice"
+          },
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvPractice"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: cannot 'clear' a select element ('ddlPractice')",
+        "validator_fires 'rfvPractice': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvPractice'. Fill 'txtTeamMember' with valid data first, so 'rfvPractice' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Practice field required validation",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvPractice validator",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "fill",
+            "element": "txtTeamMember",
+            "value": "Team Member"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvPractice"
+          }
+        ]
+      },
+      "problems": [
+        "step 9: 'txtTeamMember' is hidden when the page loads - click the control that reveals it first",
+        "validator_fires 'rfvPractice': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvPractice'. Fill 'txtTeamMember' with valid data first, so 'rfvPractice' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select the default referral source option",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "Required validator for referral source",
+        "steps": [
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "-- Select Source --"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvReferralSource"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvReferralSource': field 'txtPatientName' is still empty, and its own required validator 'rfvPatientName' is in the same group - that will likely fire/show first and hide 'rfvReferralSource'. Fill 'txtPatientName' with valid data first, so 'rfvReferralSource' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select the default referral source option",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "Required validator for referral source",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "-- Select Source --"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvReferralSource"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvReferralSource': field 'txtAge' is still empty, and its own required validator 'rfvAge' is in the same group - that will likely fire/show first and hide 'rfvReferralSource'. Fill 'txtAge' with valid data first, so 'rfvReferralSource' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select the default '--Select Disease--' option",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvDisease validator fires when no disease is selected",
+        "steps": [
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "--Select Disease--"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvDisease"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvDisease': field 'txtPatientName' is still empty, and its own required validator 'rfvPatientName' is in the same group - that will likely fire/show first and hide 'rfvDisease'. Fill 'txtPatientName' with valid data first, so 'rfvDisease' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select the default '--Select Disease--' option",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvDisease validator fires when no disease is selected",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "--Select Disease--"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvDisease"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvDisease': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvDisease'. Fill 'txtTeamMember' with valid data first, so 'rfvDisease' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select the default option for program status",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvPatientStatus validator",
+        "steps": [
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "--Select--"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvPatientStatus"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvPatientStatus': field 'txtPatientName' is still empty, and its own required validator 'rfvPatientName' is in the same group - that will likely fire/show first and hide 'rfvPatientStatus'. Fill 'txtPatientName' with valid data first, so 'rfvPatientStatus' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select the default option for program status",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvPatientStatus validator",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "--Select--"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvPatientStatus"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvPatientStatus': field 'txtAge' is still empty, and its own required validator 'rfvAge' is in the same group - that will likely fire/show first and hide 'rfvPatientStatus'. Fill 'txtAge' with valid data first, so 'rfvPatientStatus' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Attempt to select an invalid appointment time",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "Invalid option selection in ddlTime",
+        "steps": [
+          {
+            "action": "select",
+            "element": "ddlTime",
+            "value": "Invalid Time"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "ddlTime",
+            "value": "Select Time"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: option 'Invalid Time' is not in 'ddlTime'. Real options: ['9:00 AM', '9:15 AM', '9:30 AM', '9:45 AM', '10:00 AM', '10:15 AM', '10:30 AM', '10:45 AM', '11:00 AM', '11:15 AM']",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Leave address field empty",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvAddress validator fires",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtAddress"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvAddress"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvAddress': field 'txtPatientName' is still empty, and its own required validator 'rfvPatientName' is in the same group - that will likely fire/show first and hide 'rfvAddress'. Fill 'txtPatientName' with valid data first, so 'rfvAddress' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Leave address field empty",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvAddress validator fires",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "clear",
+            "element": "txtAddress"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvAddress"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvAddress': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvAddress'. Fill 'txtTeamMember' with valid data first, so 'rfvAddress' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Negative scenario: Empty 'Search area' field",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvArea validator fires when 'Search area' is empty",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtArea"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvArea"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvArea': field 'txtPatientName' is still empty, and its own required validator 'rfvPatientName' is in the same group - that will likely fire/show first and hide 'rfvArea'. Fill 'txtPatientName' with valid data first, so 'rfvArea' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Negative scenario: Empty 'Search area' field",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvArea validator fires when 'Search area' is empty",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "clear",
+            "element": "txtArea"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvArea"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvArea': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvArea'. Fill 'txtTeamMember' with valid data first, so 'rfvArea' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Positive test with valid date format",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "client_script_validation for valid date format",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterFromDate",
+            "value": "2023/10/15"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterFromDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Negative test with invalid date format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "client_script_validation for invalid date format",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterFromDate",
+            "value": "15-10-2023"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "message_shown",
+            "value": "Invalid From Date format"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterFromDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary test with empty date field",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "client_script_validation for empty date field",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "filterFromDate"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "message_shown",
+            "value": "Please select From date"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterFromDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary test with maximum valid date",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "client_script_validation for valid date format",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterFromDate",
+            "value": "9999/12/31"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterFromDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Negative test with invalid mobile number",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "revMobile validator fires",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "Jane Doe"
+          },
+          {
+            "action": "check",
+            "element": "rblGender_1"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "25"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "12345"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Pharmacist"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "Diabetes"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "Prospect"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "456 Elm St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Uptown"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revMobile"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'revMobile': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'revMobile'. Fill 'txtTeamMember' with valid data first, so 'revMobile' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Valid date format in 'filterToDate'",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "client_script_validation",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterToDate",
+            "value": "2023-10-15"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid date format in 'filterToDate'",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "client_script_validation",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterToDate",
+            "value": "15/10/2023"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "message_shown",
+            "value": "Invalid To Date format"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Empty 'filterToDate' field",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "client_script_validation",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "filterToDate"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary test with maximum valid date in 'filterToDate'",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "client_script_validation",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterToDate",
+            "value": "9999-12-31"
+          },
+          {
+            "action": "click",
+            "element": "btnFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Required field 'Patient Name' empty",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvPatientName",
+        "steps": [
+          {
+            "action": "check",
+            "element": "rblGender_0"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvPatientName"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvPatientName': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvPatientName'. Fill 'txtTeamMember' with valid data first, so 'rfvPatientName' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid mobile number format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "revMobile",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "check",
+            "element": "rblGender_0"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "12345"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revMobile"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'revMobile': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'revMobile'. Fill 'txtTeamMember' with valid data first, so 'revMobile' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary test for mobile number length",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "revMobile",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtPatientName",
+            "value": "John Doe"
+          },
+          {
+            "action": "check",
+            "element": "rblGender_0"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "12345678901"
+          },
+          {
+            "action": "select",
+            "element": "ddlPractice",
+            "value": "TBC(Shahdara)"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revMobile"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'revMobile': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'revMobile'. Fill 'txtTeamMember' with valid data first, so 'revMobile' is the only thing left wrong on the page."
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Save Referral with missing required fields",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvPatientName validator",
+        "steps": [
+          {
+            "action": "check",
+            "element": "rblGender_0"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvPatientName"
+          }
+        ]
+      },
+      "problems": [
+        "validator_fires 'rfvPatientName': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvPatientName'. Fill 'txtTeamMember' with valid data first, so 'rfvPatientName' is the only thing left wrong on the page.",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Save Referral with missing required fields",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvPatientName validator",
+        "steps": [
+          {
+            "action": "check",
+            "element": "rblGender_0"
+          },
+          {
+            "action": "fill",
+            "element": "txtAge",
+            "value": "30"
+          },
+          {
+            "action": "fill",
+            "element": "txtMob",
+            "value": "1234567890"
+          },
+          {
+            "action": "select",
+            "element": "DdlReferralSource",
+            "value": "Network Doctors"
+          },
+          {
+            "action": "select",
+            "element": "ddldisease",
+            "value": "TB"
+          },
+          {
+            "action": "select",
+            "element": "ddlPatientStatus",
+            "value": "On Program"
+          },
+          {
+            "action": "fill",
+            "element": "txtAddress",
+            "value": "123 Main St"
+          },
+          {
+            "action": "fill",
+            "element": "txtArea",
+            "value": "Downtown"
+          },
+          {
+            "action": "fill",
+            "element": "txtTeamMember",
+            "value": "John Doe"
+          },
+          {
+            "action": "click",
+            "element": "btnSaveReferral"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvPatientName"
+          }
+        ]
+      },
+      "problems": [
+        "step 9: 'txtTeamMember' is hidden when the page loads - click the control that reveals it first",
+        "validator_fires 'rfvPatientName': field 'txtTeamMember' is still empty, and its own required validator 'rfvTeamMember' is in the same group - that will likely fire/show first and hide 'rfvPatientName'. Fill 'txtTeamMember' with valid data first, so 'rfvPatientName' is the only thing left wrong on the page."
+      ]
+    }
+  ],
+  "groups": [
+    "Enter patient name",
+    "Enter age",
+    "Enter mobile number",
+    "Added On",
+    "Practice",
+    "Referral Source",
+    "Disease / Program",
+    "Program Status",
+    "Appointment & Time",
+    "Enter referral note",
+    "Upload Documents",
+    "Enter address",
+    "Search area",
+    "Enter zip code",
+    "Search city",
+    "Search state",
+    "Search country",
+    "YYYY/MM/DD",
+    "Save Referral"
+  ]
+}

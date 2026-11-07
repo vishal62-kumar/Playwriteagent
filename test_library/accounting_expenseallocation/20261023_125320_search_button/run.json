@@ -1,0 +1,13 @@
+{
+  "page": "Accounting/ExpenseAllocation.aspx",
+  "focus": "",
+  "finished_at": "2026-10-23T13:31:05",
+  "counts": {
+    "APP_DEFECT": 0,
+    "SCRIPT_ERROR": 1,
+    "ENVIRONMENT": 0,
+    "ASSERTION_FAILED": 0,
+    "SKIPPED": 0,
+    "PASSED": 3
+  }
+}

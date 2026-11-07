@@ -1,0 +1,629 @@
+{
+  "finished_at": "2026-10-31T12:06:50",
+  "results": [
+    {
+      "test": "test_TC_RCL_001[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_001[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_001",
+      "title": "Submit valid communication note",
+      "type": "positive",
+      "basis": "code_behind_handlers shows success message on valid input",
+      "expected": "message 'Submitted successfully!' appears; no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    },
+    {
+      "test": "test_TC_RCL_002[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_002[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_002",
+      "title": "Submit empty communication note",
+      "type": "negative",
+      "basis": "code_behind_handlers shows error message on empty input",
+      "expected": "message 'Please Write Communication' appears; no server error",
+      "writes_data": false,
+      "duration": 6.37,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Type your communication note — e.g.' (txtCommunication) with ''",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Send Note' (btnSaveAjax)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Please Write Communication'",
+          "status": "failed",
+          "detail": "Expected the message 'Please Write Communication' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_RCL_002_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Please Write Communication' but it never appeared."
+    },
+    {
+      "test": "test_TC_RCL_003[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_003[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_003",
+      "title": "Submit communication note with maximum length",
+      "type": "boundary",
+      "basis": "code_behind_handlers shows success message on valid input",
+      "expected": "message 'Submitted successfully!' appears; no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    },
+    {
+      "test": "test_TC_RCL_004[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_004[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_004",
+      "title": "Submit communication note with special characters",
+      "type": "positive",
+      "basis": "code_behind_handlers shows success message on valid input",
+      "expected": "message 'Submitted successfully!' appears; no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    },
+    {
+      "test": "test_TC_RCL_005[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_005[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_005",
+      "title": "Select a valid option from 'ASSIGN TO'",
+      "type": "positive",
+      "basis": "ddlPendingStatus options",
+      "expected": "'ASSIGN TO' = 'Sundeep Saini'; no server error",
+      "writes_data": false,
+      "duration": 1.72,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Sundeep Saini' in 'ASSIGN TO' (ddlPendingStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'ASSIGN TO' (ddlPendingStatus) = 'Sundeep Saini'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_RCL_006[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_006[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_006",
+      "title": "Select another valid option from 'ASSIGN TO'",
+      "type": "positive",
+      "basis": "ddlPendingStatus options",
+      "expected": "'ASSIGN TO' = 'Dr Sunita Rani Cheif Medical Officer'; no server error",
+      "writes_data": false,
+      "duration": 0.99,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Dr Sunita Rani Cheif Medical Officer' in 'ASSIGN TO' (ddlPendingStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'ASSIGN TO' (ddlPendingStatus) = 'Dr Sunita Rani Cheif Medical Officer'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_RCL_007[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_007[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_007",
+      "title": "Boundary test: Select the last option from 'ASSIGN TO'",
+      "type": "boundary",
+      "basis": "ddlPendingStatus options",
+      "expected": "'ASSIGN TO' = 'Bhawna nagpal PHARMACY EXCECUTIVE'; no server error",
+      "writes_data": false,
+      "duration": 1.0,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Bhawna nagpal PHARMACY EXCECUTIVE' in 'ASSIGN TO' (ddlPendingStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'ASSIGN TO' (ddlPendingStatus) = 'Bhawna nagpal PHARMACY EXCECUTIVE'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_RCL_008[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_008[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_008",
+      "title": "Boundary test: Select the first option from 'ASSIGN TO'",
+      "type": "boundary",
+      "basis": "ddlPendingStatus options",
+      "expected": "'ASSIGN TO' = 'Sundeep Saini'; no server error",
+      "writes_data": false,
+      "duration": 1.12,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Sundeep Saini' in 'ASSIGN TO' (ddlPendingStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'ASSIGN TO' (ddlPendingStatus) = 'Sundeep Saini'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_RCL_009[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_009[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_009",
+      "title": "Check 'Action Due' checkbox",
+      "type": "positive",
+      "basis": "element_value proves checkbox can be checked",
+      "expected": "'Action Due' is ticked; no server error",
+      "writes_data": false,
+      "duration": 1.38,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "tick 'Action Due' (chkDueAction)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Action Due' (chkDueAction) ticked",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_RCL_010[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_010[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_010",
+      "title": "Uncheck 'Action Due' checkbox",
+      "type": "positive",
+      "basis": "element_value proves checkbox can be unchecked",
+      "expected": "'Action Due' is unticked; no server error",
+      "writes_data": false,
+      "duration": 0.94,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "untick 'Action Due' (chkDueAction)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Action Due' (chkDueAction) unticked",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_RCL_011[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_011[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_011",
+      "title": "Submit communication with valid data",
+      "type": "positive",
+      "basis": "message_shown proves successful submission",
+      "expected": "message 'Submitted successfully!' appears; no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    },
+    {
+      "test": "test_TC_RCL_012[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_012[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_012",
+      "title": "Check required field validation for communication note",
+      "type": "negative",
+      "basis": "message_shown proves validation error",
+      "expected": "message 'Please Write Communication' appears; no server error",
+      "writes_data": false,
+      "duration": 6.33,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Sundeep Saini' in 'ASSIGN TO' (ddlPendingStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Send Note' (btnSaveAjax)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Please Write Communication'",
+          "status": "failed",
+          "detail": "Expected the message 'Please Write Communication' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_RCL_012_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Please Write Communication' but it never appeared."
+    },
+    {
+      "test": "test_TC_RCL_013[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_013[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_013",
+      "title": "Boundary test for communication note length",
+      "type": "smoke",
+      "basis": "no_server_error proves handling of long input",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.57,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Type your communication note — e.g.' (txtCommunication) with 'A'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_RCL_014[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_014[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_014",
+      "title": "Positive scenario: Valid communication and assignment",
+      "type": "positive",
+      "basis": "btnSaveAjax handler shows success message",
+      "expected": "message 'Submitted successfully!' appears; no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    },
+    {
+      "test": "test_TC_RCL_015[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_015[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_015",
+      "title": "Negative scenario: Missing communication note",
+      "type": "negative",
+      "basis": "btnSaveAjax handler shows error message",
+      "expected": "message 'Please Write Communication' appears; no server error",
+      "writes_data": false,
+      "duration": 6.3,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Sundeep Saini' in 'ASSIGN TO' (ddlPendingStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Send Note' (btnSaveAjax)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Please Write Communication'",
+          "status": "failed",
+          "detail": "Expected the message 'Please Write Communication' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_RCL_015_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Please Write Communication' but it never appeared."
+    },
+    {
+      "test": "test_TC_RCL_016[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_016[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_016",
+      "title": "Boundary scenario: Maximum length communication note",
+      "type": "boundary",
+      "basis": "btnSaveAjax handler shows success message",
+      "expected": "message 'Submitted successfully!' appears; no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    },
+    {
+      "test": "test_TC_RCL_017[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_017[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_017",
+      "title": "UI scenario: Assign user without follow-up date",
+      "type": "ui",
+      "basis": "client_script_validation shows message",
+      "expected": "message 'Submitted successfully!' appears; no server error",
+      "writes_data": false,
+      "duration": 7.25,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Type your communication note — e.g.' (txtCommunication) with 'Check assignment without date.'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'Sundeep Saini' in 'ASSIGN TO' (ddlPendingStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "click 'Send Note' (btnSaveAjax)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect message 'Submitted successfully!'",
+          "status": "failed",
+          "detail": "Expected the message 'Submitted successfully!' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_RCL_017_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Submitted successfully!' but it never appeared."
+    },
+    {
+      "test": "test_TC_RCL_018[chromium]",
+      "nodeid": "test_library/epr_referralcommunicationlogs/20261031_120608_full_page/test_epr_referralcommunicationlogs_20261031_120608.py::test_TC_RCL_018[chromium]",
+      "file": "test_library\\epr_referralcommunicationlogs\\20261031_120608_full_page\\test_epr_referralcommunicationlogs_20261031_120608.py",
+      "id": "TC_RCL_018",
+      "title": "Boundary scenario: No user assigned with follow-up date",
+      "type": "smoke",
+      "basis": "client_script_validation shows message",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 1.43,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Type your communication note — e.g.' (txtCommunication) with 'Follow-up required.'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Send Note' (btnSaveAjax)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    }
+  ]
+}

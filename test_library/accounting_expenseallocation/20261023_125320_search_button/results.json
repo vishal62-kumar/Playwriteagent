@@ -1,0 +1,111 @@
+{
+  "finished_at": "2026-10-23T13:31:05",
+  "results": [
+    {
+      "test": "test_TC_EA_002[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261023_125320_search_button/test_accounting_expenseallocation_20261023_125320.py::test_TC_EA_002[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261023_125320_search_button\\test_accounting_expenseallocation_20261023_125320.py",
+      "id": "TC_EA_002",
+      "title": "Click search button after selecting a user filter",
+      "type": "smoke",
+      "basis": "btnSearch element is clicked",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 13.88,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "click 'User ▼' (button_user)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'Abhishek jain Sr. engineer' in 'All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing' (ddlFilterUser)",
+          "status": "failed",
+          "detail": "Step 3 'select 'Abhishek jain Sr. engineer' in 'All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing' (ddlFilterUser)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_EA_002_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 3 'select 'Abhishek jain Sr. engineer' in 'All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing' (ddlFilterUser)': element did not become visible/enabled within 10s."
+    },
+    {
+      "test": "test_TC_EA_003[chromium]",
+      "nodeid": "test_library/accounting_expenseallocation/20261023_125320_search_button/test_accounting_expenseallocation_20261023_125320.py::test_TC_EA_003[chromium]",
+      "file": "test_library\\accounting_expenseallocation\\20261023_125320_search_button\\test_accounting_expenseallocation_20261023_125320.py",
+      "id": "TC_EA_003",
+      "title": "Click search button after selecting a practice filter",
+      "type": "smoke",
+      "basis": "btnSearch element is clicked",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 8.15,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "click 'Practice ▾' (button_practice)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'TBC(Shahdara)' (practiceTrigger)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "click 'Practice ▾' (button_practice)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'TBC(Shahdara)' (practice_2)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "click 'Apply' (applyPracticeBtn)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "click 'Search' (btnSearch)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 8,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Please select at least one practice"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    }
+  ]
+}

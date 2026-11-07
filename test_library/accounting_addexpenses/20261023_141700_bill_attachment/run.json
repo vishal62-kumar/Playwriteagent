@@ -1,0 +1,13 @@
+{
+  "page": "Accounting/AddExpenses.aspx",
+  "focus": "",
+  "finished_at": "2026-10-23T14:32:22",
+  "counts": {
+    "APP_DEFECT": 4,
+    "SCRIPT_ERROR": 0,
+    "ENVIRONMENT": 0,
+    "ASSERTION_FAILED": 0,
+    "SKIPPED": 0,
+    "PASSED": 1
+  }
+}

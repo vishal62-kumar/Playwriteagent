@@ -1,0 +1,17 @@
+﻿Test ID,Scenario,Type,Status,Category,Reason,Expected,Basis,Failed Step,Duration (s)
+TC_UC_001,Submit a valid communication note,smoke,PASSED,PASSED,,no server error,client_script_validation,,0.87
+TC_UC_002,Submit an empty communication note,negative,PASSED,PASSED,,'Type communication note here…' is visible; no server error,client_script_validation,,0.92
+TC_UC_003,Submit a communication note with maximum length,smoke,PASSED,PASSED,,no server error,client_script_validation,,0.67
+TC_UC_004,Submit a communication note with special characters,smoke,PASSED,PASSED,,no server error,client_script_validation,,1.25
+TC_UC_005,Select 'All Practices' from PRACTICE dropdown,positive,PASSED,PASSED,,'PRACTICE' = 'All Practices'; no server error,ddlPractice element options,,0.85
+TC_UC_006,Select 'TBC(Shahdara)' from PRACTICE dropdown,positive,PASSED,PASSED,,'PRACTICE' = 'TBC(Shahdara)'; no server error,ddlPractice element options,,1.38
+TC_UC_007,Select 'TBC(Keshavpuram)' from PRACTICE dropdown,positive,PASSED,PASSED,,'PRACTICE' = 'TBC(Keshavpuram)'; no server error,ddlPractice element options,,1.35
+TC_UC_008,Select 'TBC(MayurVihar)' from PRACTICE dropdown,positive,PASSED,PASSED,,'PRACTICE' = 'TBC(MayurVihar)'; no server error,ddlPractice element options,,1.29
+TC_UC_009,Enter valid staff name in search field,smoke,PASSED,PASSED,,no server error,Valid input should not cause any errors,,0.29
+TC_UC_010,Enter empty value in search field,smoke,PASSED,PASSED,,no server error,Empty input should not cause any errors,,0.55
+TC_UC_011,Enter maximum length string in search field,smoke,PASSED,PASSED,,no server error,Boundary test for maximum input length,,0.24
+TC_UC_012,Enter special characters in search field,smoke,PASSED,PASSED,,no server error,Special characters should not cause any errors,,0.28
+TC_UC_013,Valid input for 'REMINDER FOR ME',smoke,PASSED,PASSED,,no server error,no_server_error,,0.61
+TC_UC_014,Empty 'REMINDER FOR ME' field,smoke,PASSED,PASSED,,no server error,no_server_error,,0.58
+TC_UC_015,Boundary test for 'REMINDER FOR ME' field with maximum length,smoke,PASSED,PASSED,,no server error,no_server_error,,1.0
+TC_UC_016,Invalid date format in 'REMINDER FOR ME' field,smoke,PASSED,PASSED,,no server error,no_server_error,,0.64

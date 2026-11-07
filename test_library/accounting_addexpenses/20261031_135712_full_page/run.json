@@ -1,0 +1,13 @@
+{
+  "page": "Accounting/AddExpenses",
+  "focus": "",
+  "finished_at": "2026-10-31T13:58:21",
+  "counts": {
+    "APP_DEFECT": 5,
+    "SCRIPT_ERROR": 0,
+    "ENVIRONMENT": 0,
+    "ASSERTION_FAILED": 0,
+    "SKIPPED": 0,
+    "PASSED": 23
+  }
+}

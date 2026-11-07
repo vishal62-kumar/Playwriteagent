@@ -1,0 +1,28 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_AE_001,Upload a single valid bill attachment,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",client_script_validation,yes,FAILED,APP_DEFECT,Expected the message 'Expense Added Successfully' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+TC_AE_002,Upload multiple valid bill attachments within limit,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Upload a sample file to 'No file chosen'
+4. Upload a sample file to 'No file chosen'
+5. Upload a sample file to 'No file chosen'
+6. Upload a sample file to 'No file chosen'
+7. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",client_script_validation,yes,FAILED,APP_DEFECT,Expected the message 'Expense Added Successfully' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+TC_AE_003,Attempt to upload more than the allowed number of bill attachments,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Upload a sample file to 'No file chosen'
+4. Upload a sample file to 'No file chosen'
+5. Upload a sample file to 'No file chosen'
+6. Upload a sample file to 'No file chosen'
+7. Upload a sample file to 'No file chosen'
+8. Click 'Submit'","- message 'You can only have a maximum of 5 files total (including existing files).' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'You can only have a maximum of 5 files total (including existing files).' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+TC_AE_004,Upload a bill attachment with an unsupported file type,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'
+3. Click 'Submit'","- message 'Server error occurred' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'Server error occurred' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+TC_AE_005,Upload a bill attachment with no file chosen,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Click 'Submit'",- no server error,client_script_validation,no,PASSED,PASSED,

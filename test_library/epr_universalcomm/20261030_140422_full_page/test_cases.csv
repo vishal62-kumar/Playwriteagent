@@ -1,0 +1,46 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_UC_001,Submit a valid communication note,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'This is a valid communication note.' in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,yes,PASSED,PASSED,
+TC_UC_002,Submit an empty communication note,negative,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '' in 'Type communication note here…'
+3. Click 'Send'","- 'Type communication note here…' is visible
+- no server error",client_script_validation,no,PASSED,PASSED,
+TC_UC_003,Submit a communication note with maximum length,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'A long note that reaches the maximum length allowed by the system.' in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,yes,PASSED,PASSED,
+TC_UC_004,Submit a communication note with special characters,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter ""<script>alert('XSS')</script>"" in 'Type communication note here…'
+3. Click 'Send'",- no server error,client_script_validation,no,PASSED,PASSED,
+TC_UC_005,Select 'All Practices' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'All Practices' in 'PRACTICE'","- 'PRACTICE' = 'All Practices'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+TC_UC_006,Select 'TBC(Shahdara)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(Shahdara)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(Shahdara)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+TC_UC_007,Select 'TBC(Keshavpuram)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(Keshavpuram)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(Keshavpuram)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+TC_UC_008,Select 'TBC(MayurVihar)' from PRACTICE dropdown,positive,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Select 'TBC(MayurVihar)' in 'PRACTICE'","- 'PRACTICE' = 'TBC(MayurVihar)'
+- no server error",ddlPractice element options,no,PASSED,PASSED,
+TC_UC_009,Enter valid staff name in search field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'John Doe' in 'Click to search staff…'",- no server error,Valid input should not cause any errors,no,PASSED,PASSED,
+TC_UC_010,Enter empty value in search field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '' in 'Click to search staff…'",- no server error,Empty input should not cause any errors,no,PASSED,PASSED,
+TC_UC_011,Enter maximum length string in search field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter 'A very long staff name that exceeds normal expectations' in 'Click to search staff…'",- no server error,Boundary test for maximum input length,no,PASSED,PASSED,
+TC_UC_012,Enter special characters in search field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '!@#$%^&*()' in 'Click to search staff…'",- no server error,Special characters should not cause any errors,no,PASSED,PASSED,
+TC_UC_013,Valid input for 'REMINDER FOR ME',smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '2023-10-15' in 'REMINDER FOR ME'
+3. Click 'Send'",- no server error,no_server_error,no,PASSED,PASSED,
+TC_UC_014,Empty 'REMINDER FOR ME' field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Clear 'REMINDER FOR ME'
+3. Click 'Send'",- no server error,no_server_error,no,PASSED,PASSED,
+TC_UC_015,Boundary test for 'REMINDER FOR ME' field with maximum length,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '2023-12-31' in 'REMINDER FOR ME'
+3. Click 'Send'",- no server error,no_server_error,no,PASSED,PASSED,
+TC_UC_016,Invalid date format in 'REMINDER FOR ME' field,smoke,"1. Open http://localhost:2786/EPR/UniversalComm.aspx
+2. Enter '2023-10-15' in 'REMINDER FOR ME'
+3. Click 'Send'",- no server error,no_server_error,no,PASSED,PASSED,

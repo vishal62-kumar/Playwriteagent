@@ -1,0 +1,2496 @@
+{
+  "finished_at": "2026-10-31T12:37:54",
+  "results": [
+    {
+      "test": "test_TC_DRE_011[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_011[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_011",
+      "title": "Enter a valid patient name",
+      "type": "smoke",
+      "basis": "Valid input for txtPatientName",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.66,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter patient name' (txtPatientName) with 'John Doe'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_012[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_012[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_012",
+      "title": "Enter a very long patient name",
+      "type": "smoke",
+      "basis": "Boundary test for txtPatientName",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 3.69,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter patient name' (txtPatientName) with 'A very long patient name that exceeds typical length expectations'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_013[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_013[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_013",
+      "title": "Enter a patient name with special characters",
+      "type": "smoke",
+      "basis": "Special characters in txtPatientName",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.65,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter patient name' (txtPatientName) with 'John Doe!@#'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_014[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_014[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_014",
+      "title": "Enter age below minimum boundary",
+      "type": "negative",
+      "basis": "rvAge validator fires",
+      "expected": "message 'Age must be between 1 and 120' appears; no server error",
+      "writes_data": false,
+      "duration": 1.63,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter age' (txtAge) with '0'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Age must be between 1 and 120'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_015[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_015[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_015",
+      "title": "Enter age above maximum boundary",
+      "type": "negative",
+      "basis": "rvAge validator fires",
+      "expected": "message 'Age must be between 1 and 120' appears; no server error",
+      "writes_data": false,
+      "duration": 0.97,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter age' (txtAge) with '121'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Age must be between 1 and 120'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_016[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_016[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_016",
+      "title": "Enter valid age within range",
+      "type": "positive",
+      "basis": "rvAge validator passes",
+      "expected": "no 'Age must be between 1 and 120' error; no server error",
+      "writes_data": false,
+      "duration": 14.78,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter patient name' (txtPatientName) with 'John Doe'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Enter age' (txtAge) with '25'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Enter mobile number' (txtMob) with '1234567890'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "select 'TBC(Shahdara)' in 'Practice' (ddlPractice)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "select 'Network Doctors' in 'Referral Source' (DdlReferralSource)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "select 'TB' in 'Disease / Program' (ddldisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 8,
+          "action": "select 'On Program' in 'Program Status' (ddlPatientStatus)",
+          "status": "failed",
+          "detail": "Step 8 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_016_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 8 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+    },
+    {
+      "test": "test_TC_DRE_017[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_017[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_017",
+      "title": "Enter valid 10 digit mobile number in alternate mobile field",
+      "type": "positive",
+      "basis": "RegularExpressionValidator1 passes for valid input",
+      "expected": "no 'Enter valid 10 digit mobile number' error; no server error",
+      "writes_data": false,
+      "duration": 1.54,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter patient name' (txtPatientName) with 'John Doe'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Enter mobile number' (txtAltrnatemob) with '1234567890'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect NO validation 'Enter valid 10 digit mobile number'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_018[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_018[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_018",
+      "title": "Enter boundary value of 10 digits in alternate mobile field",
+      "type": "boundary",
+      "basis": "RegularExpressionValidator1 passes for boundary input",
+      "expected": "no 'Enter valid 10 digit mobile number' error; no server error",
+      "writes_data": false,
+      "duration": 4.15,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter patient name' (txtPatientName) with 'John Doe'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Enter mobile number' (txtAltrnatemob) with '0987654321'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect NO validation 'Enter valid 10 digit mobile number'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_019[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_019[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_019",
+      "title": "Verify 'Added On' field remains unchanged after form submission",
+      "type": "ui",
+      "basis": "txtAddedOn is not modifiable and retains its initial value",
+      "expected": "'Added On' = '2026-10-31'; no server error",
+      "writes_data": false,
+      "duration": 2.99,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Added On' (txtAddedOn) = '2026-10-31'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_020[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_020[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_020",
+      "title": "Select valid practice option",
+      "type": "positive",
+      "basis": "ddlPractice options",
+      "expected": "'Practice' = 'TBC(Shahdara)'; no server error",
+      "writes_data": false,
+      "duration": 1.03,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'TBC(Shahdara)' in 'Practice' (ddlPractice)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Practice' (ddlPractice) = 'TBC(Shahdara)'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_021[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_021[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_021",
+      "title": "Select a valid referral source",
+      "type": "positive",
+      "basis": "Valid selection of referral source",
+      "expected": "'Referral Source' = 'Network Doctors'; no server error",
+      "writes_data": false,
+      "duration": 1.09,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Network Doctors' in 'Referral Source' (DdlReferralSource)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Referral Source' (DdlReferralSource) = 'Network Doctors'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_022[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_022[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_022",
+      "title": "Select the last option in referral source",
+      "type": "boundary",
+      "basis": "Boundary test for referral source options",
+      "expected": "'Referral Source' = 'ChatBot'; no server error",
+      "writes_data": false,
+      "duration": 0.96,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'ChatBot' in 'Referral Source' (DdlReferralSource)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Referral Source' (DdlReferralSource) = 'ChatBot'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_023[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_023[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_023",
+      "title": "Select a middle option in referral source",
+      "type": "ui",
+      "basis": "UI test for selecting a middle option",
+      "expected": "'Referral Source' = 'Internet'; no server error",
+      "writes_data": false,
+      "duration": 1.1,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Internet' in 'Referral Source' (DdlReferralSource)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Referral Source' (DdlReferralSource) = 'Internet'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_024[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_024[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_024",
+      "title": "Select a valid disease/program option",
+      "type": "positive",
+      "basis": "Valid selection of a disease/program option",
+      "expected": "'Disease / Program' = 'TB'; no server error",
+      "writes_data": false,
+      "duration": 0.93,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'TB' in 'Disease / Program' (ddldisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Disease / Program' (ddldisease) = 'TB'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_025[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_025[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_025",
+      "title": "Select the 'No Program' option",
+      "type": "positive",
+      "basis": "Valid selection of 'No Program' option",
+      "expected": "'Disease / Program' = 'No Program'; no server error",
+      "writes_data": false,
+      "duration": 1.02,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'No Program' in 'Disease / Program' (ddldisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Disease / Program' (ddldisease) = 'No Program'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_026[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_026[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_026",
+      "title": "Select the 'TB Support(No ATT)' option",
+      "type": "positive",
+      "basis": "Valid selection of 'TB Support(No ATT)' option",
+      "expected": "'Disease / Program' = 'TB Support(No ATT)'; no server error",
+      "writes_data": false,
+      "duration": 0.91,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'TB Support(No ATT)' in 'Disease / Program' (ddldisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Disease / Program' (ddldisease) = 'TB Support(No ATT)'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_027[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_027[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_027",
+      "title": "Select a valid program status",
+      "type": "positive",
+      "basis": "ddlPatientStatus element options",
+      "expected": "'Program Status' = 'On Program'; no server error",
+      "writes_data": false,
+      "duration": 13.6,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'On Program' in 'Program Status' (ddlPatientStatus)",
+          "status": "failed",
+          "detail": "Step 2 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_027_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 2 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+    },
+    {
+      "test": "test_TC_DRE_028[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_028[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_028",
+      "title": "Select a boundary option for program status",
+      "type": "boundary",
+      "basis": "ddlPatientStatus element options",
+      "expected": "'Program Status' = 'Died'; no server error",
+      "writes_data": false,
+      "duration": 13.74,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Died' in 'Program Status' (ddlPatientStatus)",
+          "status": "failed",
+          "detail": "Step 2 'select 'Died' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_028_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 2 'select 'Died' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+    },
+    {
+      "test": "test_TC_DRE_029[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_029[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_029",
+      "title": "Select another valid program status",
+      "type": "positive",
+      "basis": "ddlPatientStatus element options",
+      "expected": "'Program Status' = 'Cured'; no server error",
+      "writes_data": false,
+      "duration": 13.84,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Cured' in 'Program Status' (ddlPatientStatus)",
+          "status": "failed",
+          "detail": "Step 2 'select 'Cured' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_029_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 2 'select 'Cured' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+    },
+    {
+      "test": "test_TC_DRE_030[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_030[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_030",
+      "title": "Valid future date within one year",
+      "type": "smoke",
+      "basis": "client_script_validation",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.72,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Appointment & Time' (txtFollowUpDate) with '2024-10-30'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Back date not allowed"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_031[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_031[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_031",
+      "title": "Date in the past",
+      "type": "negative",
+      "basis": "client_script_validation",
+      "expected": "message 'Follow-up date/time must be within future 1 year' appears; no server error",
+      "writes_data": false,
+      "duration": 5.99,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Appointment & Time' (txtFollowUpDate) with '2023-10-01'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect message 'Follow-up date/time must be within future 1 year'",
+          "status": "failed",
+          "detail": "Expected the message 'Follow-up date/time must be within future 1 year' but it never appeared. Pop-ups seen: ['Back date not allowed']."
+        }
+      ],
+      "dialogs": [
+        "Back date not allowed"
+      ],
+      "screenshot": "screenshots/test_TC_DRE_031_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Follow-up date/time must be within future 1 year' but it never appeared. Pop-ups seen: ['Back date not allowed']."
+    },
+    {
+      "test": "test_TC_DRE_032[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_032[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_032",
+      "title": "Date exactly one year in the future",
+      "type": "smoke",
+      "basis": "client_script_validation",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.77,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Appointment & Time' (txtFollowUpDate) with '2024-10-31'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Back date not allowed"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_033[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_033[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_033",
+      "title": "Date more than one year in the future",
+      "type": "negative",
+      "basis": "client_script_validation",
+      "expected": "message 'Follow-up date/time must be within future 1 year' appears; no server error",
+      "writes_data": false,
+      "duration": 5.88,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Appointment & Time' (txtFollowUpDate) with '2024-11-01'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect message 'Follow-up date/time must be within future 1 year'",
+          "status": "failed",
+          "detail": "Expected the message 'Follow-up date/time must be within future 1 year' but it never appeared. Pop-ups seen: ['Back date not allowed']."
+        }
+      ],
+      "dialogs": [
+        "Back date not allowed"
+      ],
+      "screenshot": "screenshots/test_TC_DRE_033_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Follow-up date/time must be within future 1 year' but it never appeared. Pop-ups seen: ['Back date not allowed']."
+    },
+    {
+      "test": "test_TC_DRE_034[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_034[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_034",
+      "title": "Select a valid appointment time",
+      "type": "positive",
+      "basis": "Valid option selection in ddlTime",
+      "expected": "'Appointment & Time' = '9:00 AM'; no server error",
+      "writes_data": false,
+      "duration": 0.96,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select '9:00 AM' in 'Appointment & Time' (ddlTime)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Appointment & Time' (ddlTime) = '9:00 AM'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_035[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_035[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_035",
+      "title": "Select the default 'Select Time' option",
+      "type": "boundary",
+      "basis": "Boundary condition for ddlTime",
+      "expected": "'Appointment & Time' = 'Select Time'; no server error",
+      "writes_data": false,
+      "duration": 3.15,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Select Time' in 'Appointment & Time' (ddlTime)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Appointment & Time' (ddlTime) = 'Select Time'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_036[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_036[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_036",
+      "title": "Select the last available appointment time",
+      "type": "boundary",
+      "basis": "Boundary condition for ddlTime",
+      "expected": "'Appointment & Time' = '1:30 PM'; no server error",
+      "writes_data": false,
+      "duration": 1.02,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select '1:30 PM' in 'Appointment & Time' (ddlTime)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Appointment & Time' (ddlTime) = '1:30 PM'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_037[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_037[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_037",
+      "title": "Select a valid appointment time",
+      "type": "positive",
+      "basis": "Valid option selection in ddlTime",
+      "expected": "'Appointment & Time' = '9:00 AM'; no server error",
+      "writes_data": false,
+      "duration": 0.94,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select '9:00 AM' in 'Appointment & Time' (ddlTime)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Appointment & Time' (ddlTime) = '9:00 AM'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_038[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_038[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_038",
+      "title": "Enter a valid referral note",
+      "type": "smoke",
+      "basis": "Valid input for txtReferralNote",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.59,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter referral note' (txtReferralNote) with 'Patient requires follow-up consultation.'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_039[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_039[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_039",
+      "title": "Enter an empty referral note",
+      "type": "smoke",
+      "basis": "No specific validator for txtReferralNote",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 2.78,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "clear 'Enter referral note' (txtReferralNote)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_040[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_040[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_040",
+      "title": "Enter a long referral note",
+      "type": "smoke",
+      "basis": "Boundary test for txtReferralNote",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 2.73,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter referral note' (txtReferralNote) with 'This is a very long referral note intended to test the boundary conditions of the input field. It should be able to handle a large amount of text without any issues.'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_041[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_041[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_041",
+      "title": "Enter a referral note with special characters",
+      "type": "smoke",
+      "basis": "Special character handling for txtReferralNote",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.67,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter referral note' (txtReferralNote) with 'Referral note with special characters: !@#$%^&*()'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_042[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_042[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_042",
+      "title": "Upload a valid document",
+      "type": "smoke",
+      "basis": "Successful upload and save of document",
+      "expected": "no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    },
+    {
+      "test": "test_TC_DRE_043[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_043[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_043",
+      "title": "Attempt to upload no document",
+      "type": "negative",
+      "basis": "Client-side validation for no document selected",
+      "expected": "message 'Please select at least one document.' appears; no server error",
+      "writes_data": false,
+      "duration": 8.03,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect message 'Please select at least one document.'",
+          "status": "failed",
+          "detail": "Expected the message 'Please select at least one document.' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_043_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Please select at least one document.' but it never appeared."
+    },
+    {
+      "test": "test_TC_DRE_044[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_044[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_044",
+      "title": "Upload a document and simulate server error",
+      "type": "negative",
+      "basis": "Server error during document upload",
+      "expected": "message 'Server error occurred while saving referral.' appears; no server error",
+      "writes_data": false,
+      "duration": 6.12,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "upload qa_upload_sample.txt to 'Upload Documents' (imgupload)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Server error occurred while saving referral.'",
+          "status": "failed",
+          "detail": "Expected the message 'Server error occurred while saving referral.' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_044_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Server error occurred while saving referral.' but it never appeared."
+    },
+    {
+      "test": "test_TC_DRE_045[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_045[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_045",
+      "title": "Upload a document with invalid file size",
+      "type": "boundary",
+      "basis": "Client-side validation for file size",
+      "expected": "message 'Upload failed. Please check the file size and try again.' appears; no server error",
+      "writes_data": false,
+      "duration": 6.14,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "upload qa_upload_sample.txt to 'Upload Documents' (imgupload)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Upload failed. Please check the file size and try again.'",
+          "status": "failed",
+          "detail": "Expected the message 'Upload failed. Please check the file size and try again.' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_045_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Upload failed. Please check the file size and try again.' but it never appeared."
+    },
+    {
+      "test": "test_TC_DRE_046[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_046[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_046",
+      "title": "Enter a valid address",
+      "type": "smoke",
+      "basis": "Valid input for txtAddress",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.78,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter address' (txtAddress) with '123 Main St, Springfield'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_047[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_047[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_047",
+      "title": "Enter address with special characters",
+      "type": "smoke",
+      "basis": "Boundary test for txtAddress",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 2.81,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter address' (txtAddress) with '!@#$%^&*()_+|'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_048[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_048[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_048",
+      "title": "Enter a very long address",
+      "type": "smoke",
+      "basis": "Boundary test for txtAddress",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.76,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter address' (txtAddress) with '123 Main St, Springfield, IL, 62704, United States of America, North America, Earth, Solar System, Milky Way Galaxy, Universe'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_049[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_049[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_049",
+      "title": "Positive scenario: Valid input for 'Search area'",
+      "type": "smoke",
+      "basis": "Valid input for 'Search area'",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.82,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search area' (txtArea) with 'Downtown'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_050[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_050[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_050",
+      "title": "Boundary scenario: Maximum length input for 'Search area'",
+      "type": "smoke",
+      "basis": "Boundary test for 'Search area' field",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 1.07,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search area' (txtArea) with 'A very long area name that exceeds typical length'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_051[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_051[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_051",
+      "title": "Negative scenario: Invalid characters in 'Search area'",
+      "type": "smoke",
+      "basis": "No specific validator for invalid characters, check for server error",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.83,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search area' (txtArea) with \"<script>alert('test')</script>\"",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_052[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_052[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_052",
+      "title": "Valid zip code input",
+      "type": "smoke",
+      "basis": "Valid input for zip code",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.73,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter zip code' (txtpincode) with '12345'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_053[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_053[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_053",
+      "title": "Empty zip code input",
+      "type": "smoke",
+      "basis": "No specific validator for empty zip code, check for server error",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.71,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "clear 'Enter zip code' (txtpincode)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_054[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_054[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_054",
+      "title": "Zip code with special characters",
+      "type": "smoke",
+      "basis": "Check for server error with invalid characters",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 3.33,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter zip code' (txtpincode) with '1234@'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_055[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_055[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_055",
+      "title": "Boundary test for zip code length",
+      "type": "smoke",
+      "basis": "Check for server error with maximum length input",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.66,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter zip code' (txtpincode) with '1234567890'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_056[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_056[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_056",
+      "title": "Fill 'Search city' with a valid city name",
+      "type": "smoke",
+      "basis": "Valid input for 'Search city'",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.65,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search city' (txtcity) with 'New York'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_057[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_057[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_057",
+      "title": "Fill 'Search city' with an empty value",
+      "type": "negative",
+      "basis": "Empty input for 'Search city'",
+      "expected": "message 'City is required' appears; no server error",
+      "writes_data": false,
+      "duration": 5.87,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search city' (txtcity) with ''",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect message 'City is required'",
+          "status": "failed",
+          "detail": "Expected the message 'City is required' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_057_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'City is required' but it never appeared."
+    },
+    {
+      "test": "test_TC_DRE_058[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_058[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_058",
+      "title": "Fill 'Search city' with a very long city name",
+      "type": "smoke",
+      "basis": "Boundary test for 'Search city'",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.58,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search city' (txtcity) with 'A very long city name that exceeds typical length expectations'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_059[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_059[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_059",
+      "title": "Fill 'Search city' with special characters",
+      "type": "smoke",
+      "basis": "Special characters in 'Search city'",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.71,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search city' (txtcity) with '@#$%^&*()'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_060[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_060[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_060",
+      "title": "Enter a valid state name in the 'Search state' field",
+      "type": "smoke",
+      "basis": "Valid input in the 'Search state' field",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.66,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search state' (txtstate) with 'California'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_061[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_061[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_061",
+      "title": "Enter an invalid state name in the 'Search state' field",
+      "type": "smoke",
+      "basis": "Invalid input in the 'Search state' field",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.6,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search state' (txtstate) with '123InvalidState'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_062[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_062[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_062",
+      "title": "Enter a boundary value (empty) in the 'Search state' field",
+      "type": "smoke",
+      "basis": "Boundary test with empty input in the 'Search state' field",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 3.41,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search state' (txtstate) with ''",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_063[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_063[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_063",
+      "title": "Enter a boundary value (long string) in the 'Search state' field",
+      "type": "smoke",
+      "basis": "Boundary test with long input in the 'Search state' field",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.77,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search state' (txtstate) with 'A very long state name that exceeds normal length expectations'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_064[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_064[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_064",
+      "title": "Valid country name input",
+      "type": "smoke",
+      "basis": "no_server_error",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.67,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search country' (txtcountry) with 'India'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_065[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_065[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_065",
+      "title": "Empty country name input",
+      "type": "smoke",
+      "basis": "no_server_error",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 2.69,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "clear 'Search country' (txtcountry)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_066[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_066[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_066",
+      "title": "Boundary test with maximum length input",
+      "type": "smoke",
+      "basis": "no_server_error",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.66,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search country' (txtcountry) with 'United States of America'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_067[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_067[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_067",
+      "title": "Special characters in country name",
+      "type": "smoke",
+      "basis": "no_server_error",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.67,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Search country' (txtcountry) with \"Côte d'Ivoire\"",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_068[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_068[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_068",
+      "title": "Positive test with valid patient data",
+      "type": "positive",
+      "basis": "code_behind_handlers for successful referral save",
+      "expected": "message 'Referral saved successfully!' appears; no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    },
+    {
+      "test": "test_TC_DRE_069[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_069[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_069",
+      "title": "Boundary test with maximum age",
+      "type": "smoke",
+      "basis": "rvAge validator passes",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 2.68,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter patient name' (txtPatientName) with 'Max Age'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "tick 'Other' (rblGender_2)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Enter age' (txtAge) with '120'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "fill 'Enter mobile number' (txtMob) with '0987654321'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "select 'TBC(Shahdara)' in 'Practice' (ddlPractice)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "select 'Internet' in 'Referral Source' (DdlReferralSource)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 8,
+          "action": "select 'No Program' in 'Disease / Program' (ddldisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 9,
+          "action": "select 'Consultation Only' in 'Program Status' (ddlPatientStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 10,
+          "action": "fill 'Enter address' (txtAddress) with '789 Pine St'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 11,
+          "action": "fill 'Search area' (txtArea) with 'Suburb'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 12,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 13,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_070[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_070[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_070",
+      "title": "UI test for practice dropdown",
+      "type": "ui",
+      "basis": "ddlPractice element",
+      "expected": "'Practice' = 'TBC(Shahdara)'; no server error",
+      "writes_data": false,
+      "duration": 1.48,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'TBC(Shahdara)' in 'Practice' (ddlPractice)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Practice' (ddlPractice) = 'TBC(Shahdara)'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_071[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_071[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_071",
+      "title": "Valid end-to-end submission",
+      "type": "positive",
+      "basis": "code_behind_handlers",
+      "expected": "message 'Referral saved successfully!' appears; no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    },
+    {
+      "test": "test_TC_DRE_072[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_072[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_072",
+      "title": "Dropdown selection for 'Referral Source'",
+      "type": "ui",
+      "basis": "DdlReferralSource",
+      "expected": "'Referral Source' = 'Internet'; no server error",
+      "writes_data": false,
+      "duration": 1.12,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Internet' in 'Referral Source' (DdlReferralSource)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'Referral Source' (DdlReferralSource) = 'Internet'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_073[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261031_123503_full_page/test_reporting_doctorreferralentry_20261031_123503.py::test_TC_DRE_073[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261031_123503_full_page\\test_reporting_doctorreferralentry_20261031_123503.py",
+      "id": "TC_DRE_073",
+      "title": "Save Referral with all required fields filled correctly",
+      "type": "positive",
+      "basis": "code_behind_handlers and client_script_validation",
+      "expected": "message 'Referral saved successfully!' appears; no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    }
+  ]
+}

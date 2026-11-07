@@ -1,0 +1,231 @@
+{
+  "page": "EPR/PatientCommunication",
+  "url": "http://localhost:2786/EPR/PatientCommunication.aspx",
+  "focus": "",
+  "generated_at": "2026-10-30T14:11:49",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-30T14:11:40",
+  "scenarios": [
+    {
+      "title": "Submit valid communication note",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "message_shown proves successful submission",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "Follow-up required on patient status."
+        },
+        {
+          "action": "click",
+          "element": "btnsave"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Communication added sucessfully."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PC_001",
+      "group": "txtCommunication"
+    },
+    {
+      "title": "Submit empty communication note",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "client_script_validation shows alert for empty input",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtCommunication"
+        },
+        {
+          "action": "click",
+          "element": "btnsave"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "dropped ungrounded expectation: message '-Please enter communication note.' does not appear in the page's code",
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_PC_002",
+      "group": "txtCommunication"
+    },
+    {
+      "title": "Submit communication note with maximum length",
+      "type": "boundary",
+      "writes_data": true,
+      "basis": "message_shown proves successful submission",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "A"
+        },
+        {
+          "action": "click",
+          "element": "btnsave"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Communication added sucessfully."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PC_003",
+      "group": "txtCommunication"
+    },
+    {
+      "title": "Submit communication note with special characters",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "message_shown proves successful submission",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "Patient's status: stable. Follow-up @ 3pm!"
+        },
+        {
+          "action": "click",
+          "element": "btnsave"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Communication added sucessfully."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PC_004",
+      "group": "txtCommunication"
+    },
+    {
+      "title": "Check 'Action Due' checkbox",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "Initial value of checkbox is 'on', so checking it should not change its state.",
+      "steps": [
+        {
+          "action": "check",
+          "element": "chkDueAction"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_checked",
+          "element": "chkDueAction"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PC_005",
+      "group": "Action Due"
+    },
+    {
+      "title": "Uncheck 'Action Due' checkbox",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "The checkbox should be able to be unchecked.",
+      "steps": [
+        {
+          "action": "uncheck",
+          "element": "chkDueAction"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_unchecked",
+          "element": "chkDueAction"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PC_006",
+      "group": "Action Due"
+    },
+    {
+      "title": "Toggle 'Action Due' checkbox twice",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "Toggling the checkbox twice should return it to its initial state.",
+      "steps": [
+        {
+          "action": "uncheck",
+          "element": "chkDueAction"
+        },
+        {
+          "action": "check",
+          "element": "chkDueAction"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_checked",
+          "element": "chkDueAction"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PC_007",
+      "group": "Action Due"
+    },
+    {
+      "title": "Ensure 'Action Due' checkbox does not affect server state",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "No server-side validation or state change is expected from toggling the checkbox.",
+      "steps": [
+        {
+          "action": "uncheck",
+          "element": "chkDueAction"
+        },
+        {
+          "action": "check",
+          "element": "chkDueAction"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_PC_008",
+      "group": "Action Due"
+    }
+  ],
+  "rejected": [],
+  "groups": [
+    "txtCommunication",
+    "Action Due"
+  ]
+}

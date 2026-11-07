@@ -1,0 +1,60 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_EA_022,Check the 'on' checkbox,positive,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'","- 'on' is ticked
+- no server error",element_value proves the checkbox is checked,no,PASSED,PASSED,
+TC_EA_023,Uncheck the 'on' checkbox,negative,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Untick 'on'","- 'on' is unticked
+- no server error",element_value proves the checkbox is unchecked,no,PASSED,PASSED,
+TC_EA_024,Toggle the 'on' checkbox twice,boundary,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'
+3. Untick 'on'","- 'on' is unticked
+- no server error",element_value proves the checkbox returns to initial state,no,PASSED,PASSED,
+TC_EA_025,Clear selection,ui,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'
+3. Click 'Clear Selection'","- 'on' is unticked
+- no server error",btnClearSelection element,no,PASSED,PASSED,
+TC_EA_026,Search with valid date range,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '01/10/2023' in 'dd/mm/yyyy'
+3. Enter '31/10/2023' in 'dd/mm/yyyy'
+4. Click 'Search'",- no server error,btnSearch element,no,PASSED,PASSED,
+TC_EA_027,Search with invalid date range,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '31/10/2023' in 'dd/mm/yyyy'
+3. Enter '01/10/2023' in 'dd/mm/yyyy'
+4. Click 'Search'",- no server error,btnSearch element,no,PASSED,PASSED,
+TC_EA_028,Export CSV,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Click 'Export CSV'",- no server error,btnExportCSV element,no,PASSED,PASSED,
+TC_EA_029,Submit allocation without selecting user,negative,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Tick 'on'
+3. Click 'Submit Allocation'","- message 'Please Select Allocated To User for all checked rows.' appears
+- no server error",code-behind handler checks for selected user,no,PASSED,PASSED,
+TC_EA_030,Submit allocation with unselected checkbox,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Untick 'on'
+3. Click 'Submit Allocation'",- no server error,code-behind handler requires checkbox to be checked,no,PASSED,PASSED,
+TC_EA_031,Submit allocation with maximum length date,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '01/01/2023' in 'dd/mm/yyyy'
+3. Enter '31/12/2023' in 'dd/mm/yyyy'
+4. Click 'Search'",- no server error,txtfrom and txtto fields have maxlength of 10,no,PASSED,PASSED,
+TC_EA_032,Valid date input for 'dd/mm/yyyy' field,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '15/10/2023' in 'dd/mm/yyyy'",- no server error,Valid date format,no,PASSED,PASSED,
+TC_EA_033,Invalid date format input for 'dd/mm/yyyy' field,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '2023-10-15' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Invalid date format,no,PASSED,PASSED,
+TC_EA_034,Boundary test with maximum length input for 'dd/mm/yyyy' field,boundary,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '31/12/2023' in 'dd/mm/yyyy'","- 'dd/mm/yyyy' = '31/12/2023'
+- no server error",Maximum length of input,no,PASSED,PASSED,
+TC_EA_035,Empty input for 'dd/mm/yyyy' field,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Clear 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Empty input,no,PASSED,PASSED,
+TC_EA_036,Positive test with valid date format,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '15/10/2023' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Valid date format is accepted,no,PASSED,PASSED,
+TC_EA_037,Negative test with invalid date format,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '2023-10-15' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Invalid date format should not be accepted,no,PASSED,PASSED,
+TC_EA_038,Boundary test with maximum length date,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '31/12/2023' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,Date field accepts maximum length input,no,PASSED,PASSED,
+TC_EA_039,Negative test with over maximum length input,negative,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '31/12/2023extra' in 'dd/mm/yyyy'
+3. Click 'Search'","- 'dd/mm/yyyy' = '31/12/2023'
+- no server error",Input longer than maximum length is truncated,no,PASSED,PASSED,

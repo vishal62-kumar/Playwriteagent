@@ -1,0 +1,197 @@
+{
+  "page": "Contacts/PracticeReferralDoctor",
+  "url": "http://localhost:2786/Contacts/PracticeReferralDoctor.aspx",
+  "focus": "team member",
+  "generated_at": "2026-10-24T13:20:04",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-24T13:19:51",
+  "scenarios": [
+    {
+      "title": "Select 'Team Member' as Source Type",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "ddlSourceType element",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Team Member"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlSourceType",
+          "value": "Team Member"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_001"
+    },
+    {
+      "title": "Attempt to submit form without selecting Source Type",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation for source type",
+      "steps": [
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Source type is required."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_002"
+    },
+    {
+      "title": "Select 'Team Member' and submit form",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "client_script_validation and code_behind_handlers",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Team Member"
+        },
+        {
+          "action": "fill",
+          "element": "txtfname",
+          "value": "John"
+        },
+        {
+          "action": "fill",
+          "element": "txtlname",
+          "value": "Doe"
+        },
+        {
+          "action": "check",
+          "element": "rbtmale"
+        },
+        {
+          "action": "fill",
+          "element": "txtmobile",
+          "value": "1234567890"
+        },
+        {
+          "action": "fill",
+          "element": "txtNewPassword",
+          "value": "password123"
+        },
+        {
+          "action": "fill",
+          "element": "txtclinic",
+          "value": "Health Clinic"
+        },
+        {
+          "action": "fill",
+          "element": "txtArea",
+          "value": "Downtown"
+        },
+        {
+          "action": "fill",
+          "element": "txtaddress",
+          "value": "123 Main St"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Doctor added successfully."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_003"
+    },
+    {
+      "title": "Boundary test for Source Type selection",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "ddlSourceType element",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "-- Select source --"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlSourceType",
+          "value": "-- Select source --"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_004"
+    },
+    {
+      "title": "Verify 'Team Member' option is available in Source Type dropdown",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "ddlSourceType element",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlSourceType",
+          "value": "Team Member"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlSourceType",
+          "value": "Team Member"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_PRD_005"
+    }
+  ],
+  "rejected": [
+    {
+      "scenario": {
+        "title": "Check if 'Team Member' option is available in Source Type dropdown",
+        "type": "ui",
+        "writes_data": false,
+        "basis": "ddlSourceType element",
+        "steps": [],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "ddlSourceType",
+            "value": "Team Member"
+          }
+        ]
+      },
+      "problems": [
+        "scenario has no steps",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    }
+  ]
+}

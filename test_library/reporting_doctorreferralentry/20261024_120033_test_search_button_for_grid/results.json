@@ -1,0 +1,235 @@
+{
+  "finished_at": "2026-10-24T12:14:46",
+  "results": [
+    {
+      "test": "test_TC_DRE_006[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261024_120033_test_search_button_for_grid/test_reporting_doctorreferralentry_20261024_120033.py::test_TC_DRE_006[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261024_120033_test_search_button_for_grid\\test_reporting_doctorreferralentry_20261024_120033.py",
+      "id": "TC_DRE_006",
+      "title": "Search with valid date range",
+      "type": "smoke",
+      "basis": "no_server_error",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 1.37,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "click '📅 Added On' (toggleAddedOn)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click '🔍 Search' (btnFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Please select From date"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_007[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261024_120033_test_search_button_for_grid/test_reporting_doctorreferralentry_20261024_120033.py::test_TC_DRE_007[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261024_120033_test_search_button_for_grid\\test_reporting_doctorreferralentry_20261024_120033.py",
+      "id": "TC_DRE_007",
+      "title": "Search with invalid date format",
+      "type": "negative",
+      "basis": "message_shown",
+      "expected": "message 'Invalid From Date format' appears; no server error",
+      "writes_data": false,
+      "duration": 6.33,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "click '📅 Added On' (toggleAddedOn)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click '🔍 Search' (btnFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Invalid From Date format'",
+          "status": "failed",
+          "detail": "Expected the message 'Invalid From Date format' but it never appeared. Pop-ups seen: ['Please select From date', \"DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4\"]."
+        }
+      ],
+      "dialogs": [
+        "Please select From date",
+        "DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4",
+        "DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4"
+      ],
+      "screenshot": "screenshots/test_TC_DRE_007_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Invalid From Date format' but it never appeared. Pop-ups seen: ['Please select From date', \"DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4\"]."
+    },
+    {
+      "test": "test_TC_DRE_008[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261024_120033_test_search_button_for_grid/test_reporting_doctorreferralentry_20261024_120033.py::test_TC_DRE_008[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261024_120033_test_search_button_for_grid\\test_reporting_doctorreferralentry_20261024_120033.py",
+      "id": "TC_DRE_008",
+      "title": "Search with from date greater than to date",
+      "type": "negative",
+      "basis": "message_shown",
+      "expected": "message 'From Date cannot be greater than To Date' appears; no server error",
+      "writes_data": false,
+      "duration": 6.16,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "click '📅 Added On' (toggleAddedOn)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click '🔍 Search' (btnFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'From Date cannot be greater than To Date'",
+          "status": "failed",
+          "detail": "Expected the message 'From Date cannot be greater than To Date' but it never appeared. Pop-ups seen: ['Please select From date', \"DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4\"]."
+        }
+      ],
+      "dialogs": [
+        "Please select From date",
+        "DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4",
+        "DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4"
+      ],
+      "screenshot": "screenshots/test_TC_DRE_008_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'From Date cannot be greater than To Date' but it never appeared. Pop-ups seen: ['Please select From date', \"DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4\"]."
+    },
+    {
+      "test": "test_TC_DRE_009[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261024_120033_test_search_button_for_grid/test_reporting_doctorreferralentry_20261024_120033.py::test_TC_DRE_009[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261024_120033_test_search_button_for_grid\\test_reporting_doctorreferralentry_20261024_120033.py",
+      "id": "TC_DRE_009",
+      "title": "Search with empty date fields",
+      "type": "smoke",
+      "basis": "no_server_error",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 1.08,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "click '📅 Added On' (toggleAddedOn)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click '🔍 Search' (btnFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Please select From date"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_010[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261024_120033_test_search_button_for_grid/test_reporting_doctorreferralentry_20261024_120033.py::test_TC_DRE_010[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261024_120033_test_search_button_for_grid\\test_reporting_doctorreferralentry_20261024_120033.py",
+      "id": "TC_DRE_010",
+      "title": "Search with maximum date range",
+      "type": "smoke",
+      "basis": "no_server_error",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 2.39,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "click '📅 Added On' (toggleAddedOn)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click '🔍 Search' (btnFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [
+        "Please select From date",
+        "DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4"
+      ],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    }
+  ]
+}

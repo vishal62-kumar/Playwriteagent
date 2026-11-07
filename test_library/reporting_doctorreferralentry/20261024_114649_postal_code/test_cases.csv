@@ -1,0 +1,17 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_DRE_001,Positive test with valid postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '123456' in 'Enter zip code'
+3. Click 'Save Referral'",- no server error,"No specific validator for postal code, assume valid input",no,PASSED,PASSED,
+TC_DRE_002,Negative test with empty postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Clear 'Enter zip code'
+3. Click 'Save Referral'",- no server error,"No specific validator for postal code, assume empty input is invalid",no,PASSED,PASSED,
+TC_DRE_003,Boundary test with maximum length postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '1234567890' in 'Enter zip code'
+3. Click 'Save Referral'",- no server error,Assume postal code can be up to 10 characters,no,PASSED,PASSED,
+TC_DRE_004,Negative test with non-numeric postal code,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'ABCDE' in 'Enter zip code'
+3. Click 'Save Referral'",- no server error,"No specific validator for postal code, assume non-numeric input is invalid",no,PASSED,PASSED,
+TC_DRE_005,Boundary test with over maximum length mobile number,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '123456789012345' in 'Enter mobile number'
+3. Click 'Save Referral'","- validation 'Enter valid 10 digit mobile number' is shown
+- no server error",revMobile validator fires for mobile number longer than 10 digits,no,FAILED,APP_DEFECT,"Expected validation message 'Enter valid 10 digit mobile number' (revMobile) to appear, but it did not."

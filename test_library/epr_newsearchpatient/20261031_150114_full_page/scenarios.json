@@ -1,0 +1,881 @@
+{
+  "page": "EPR/newsearchpatient",
+  "url": "http://localhost:2786/EPR/newsearchpatient.aspx",
+  "focus": "",
+  "generated_at": "2026-10-31T15:01:14",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-31T15:00:28",
+  "scenarios": [
+    {
+      "title": "Search with valid name",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid input in txtSearch field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtSearch",
+          "value": "Divya"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_001",
+      "group": "Type name, KMed ID, mobile no, Abha ID, Nikshay ID..."
+    },
+    {
+      "title": "Search with valid KMed ID",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid input in txtSearch field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtSearch",
+          "value": "2609230201"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_002",
+      "group": "Type name, KMed ID, mobile no, Abha ID, Nikshay ID..."
+    },
+    {
+      "title": "Search with invalid input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Invalid input in txtSearch field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtSearch",
+          "value": "InvalidInput123"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_003",
+      "group": "Type name, KMed ID, mobile no, Abha ID, Nikshay ID..."
+    },
+    {
+      "title": "Search with boundary input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Boundary input in txtSearch field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtSearch",
+          "value": "A very long input string that exceeds typical search lengths"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_004",
+      "group": "Type name, KMed ID, mobile no, Abha ID, Nikshay ID..."
+    },
+    {
+      "title": "Positive test with valid filter selection",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "filterStatus element",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterStatus",
+          "value": "On Program"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "filterStatus",
+          "value": "On Program"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_NEWS_005",
+      "group": "YYYY-MM-DD"
+    },
+    {
+      "title": "Negative test with invalid filter selection",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "filterProgram element",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterProgram",
+          "value": "Died"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "filterProgram",
+          "value": "Died"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_NEWS_006",
+      "group": "YYYY-MM-DD"
+    },
+    {
+      "title": "Boundary test with maximum length search term",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "txtSearch element",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtSearch",
+          "value": "A very long search term that exceeds normal length"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtSearch",
+          "value": "A very long search term that exceeds normal length"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_NEWS_007",
+      "group": "YYYY-MM-DD"
+    },
+    {
+      "title": "UI test for clearing filters",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "btnClearFilter element",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterStatus",
+          "value": "Cured"
+        },
+        {
+          "action": "click",
+          "element": "btnClearFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "filterStatus",
+          "value": "All Status"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_NEWS_008",
+      "group": "YYYY-MM-DD"
+    },
+    {
+      "title": "Valid status selection and filter application",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid dropdown selection",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterStatus",
+          "value": "On Program"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_009",
+      "group": "YYYY-MM-DD"
+    },
+    {
+      "title": "Boundary test for status selection",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Boundary dropdown selection",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterStatus",
+          "value": "Died"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_010",
+      "group": "YYYY-MM-DD"
+    },
+    {
+      "title": "Clear filter action",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Clear button functionality",
+      "steps": [
+        {
+          "action": "click",
+          "element": "btnClearFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_011",
+      "group": "YYYY-MM-DD"
+    },
+    {
+      "title": "Select 'All Status' from filterStatus dropdown",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "filterStatus element options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterStatus",
+          "value": "All Status"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_012",
+      "group": "All Status On Program Cured Review After Report OPD/Other Treatment Consultation"
+    },
+    {
+      "title": "Select 'On Program' from filterStatus dropdown",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "filterStatus element options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterStatus",
+          "value": "On Program"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "dropped expectation: message 'ON PROGRAM' is already visible before the test acts, so it proves nothing",
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_013",
+      "group": "All Status On Program Cured Review After Report OPD/Other Treatment Consultation"
+    },
+    {
+      "title": "Select 'Cured' from filterStatus dropdown",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "filterStatus element options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterStatus",
+          "value": "Cured"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_014",
+      "group": "All Status On Program Cured Review After Report OPD/Other Treatment Consultation"
+    },
+    {
+      "title": "Select 'Died' from filterStatus dropdown",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "filterStatus element options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterStatus",
+          "value": "Died"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_015",
+      "group": "All Status On Program Cured Review After Report OPD/Other Treatment Consultation"
+    },
+    {
+      "title": "Select 'All Programs' from filterProgram",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "element_value reflects the selected option",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterProgram",
+          "value": "All Programs"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "filterProgram",
+          "value": "All Programs"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_NEWS_016",
+      "group": "All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre"
+    },
+    {
+      "title": "Select 'On Treatment' from filterProgram",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "element_value reflects the selected option",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterProgram",
+          "value": "On Treatment"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "filterProgram",
+          "value": "On Treatment"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_NEWS_017",
+      "group": "All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre"
+    },
+    {
+      "title": "Select 'Treatment Interrupted' from filterProgram",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "element_value reflects the selected option",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterProgram",
+          "value": "Treatment Interrupted"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "filterProgram",
+          "value": "Treatment Interrupted"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_NEWS_018",
+      "group": "All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre"
+    },
+    {
+      "title": "Select 'Died' from filterProgram",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "element_value reflects the selected option",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterProgram",
+          "value": "Died"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "filterProgram",
+          "value": "Died"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_NEWS_019",
+      "group": "All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre"
+    },
+    {
+      "title": "Select 'All Diseases' from filterDisease dropdown",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "filterDisease element",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterDisease",
+          "value": "All Diseases"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_020",
+      "group": "All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup"
+    },
+    {
+      "title": "Select 'TB with Diabetes' from filterDisease dropdown",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "filterDisease element",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterDisease",
+          "value": "TB with Diabetes"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_021",
+      "group": "All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup"
+    },
+    {
+      "title": "Select 'No Program' from filterDisease dropdown",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "filterDisease element",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterDisease",
+          "value": "No Program"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_022",
+      "group": "All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup"
+    },
+    {
+      "title": "Select 'TB Support(No ATT)' from filterDisease dropdown",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "filterDisease element",
+      "steps": [
+        {
+          "action": "select",
+          "element": "filterDisease",
+          "value": "TB Support(No ATT)"
+        },
+        {
+          "action": "click",
+          "element": "btnApplyFilter"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_NEWS_023",
+      "group": "All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup"
+    }
+  ],
+  "rejected": [
+    {
+      "scenario": {
+        "title": "Positive test with valid date format",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "filterFromDate element",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterFromDate",
+            "value": "2023-10-15"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "filterFromDate",
+            "value": "2023-10-15"
+          },
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterFromDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Negative test with invalid date format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "filterFromDate element",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterFromDate",
+            "value": "15-10-2023"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "filterFromDate",
+            "value": "15-10-2023"
+          },
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterFromDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary test with empty date",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "filterFromDate element",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "filterFromDate"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "filterFromDate",
+            "value": ""
+          },
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterFromDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary test with maximum length date",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "filterFromDate element",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterFromDate",
+            "value": "2023-12-31"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "filterFromDate",
+            "value": "2023-12-31"
+          },
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterFromDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Valid date input for 'filterToDate'",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "Valid date format",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterToDate",
+            "value": "2023-10-15"
+          },
+          {
+            "action": "click",
+            "element": "btnApplyFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid date format input for 'filterToDate'",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "Invalid date format",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterToDate",
+            "value": "15-10-2023"
+          },
+          {
+            "action": "click",
+            "element": "btnApplyFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Empty input for 'filterToDate'",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "Empty input",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "filterToDate"
+          },
+          {
+            "action": "click",
+            "element": "btnApplyFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary date input for 'filterToDate'",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "Boundary date value",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "filterToDate",
+            "value": "0001-01-01"
+          },
+          {
+            "action": "click",
+            "element": "btnApplyFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'filterToDate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid status selection and filter application",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "Invalid dropdown selection",
+        "steps": [
+          {
+            "action": "select",
+            "element": "filterStatus",
+            "value": "Invalid Status"
+          },
+          {
+            "action": "click",
+            "element": "btnApplyFilter"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: option 'Invalid Status' is not in 'filterStatus'. Real options: ['On Program', 'Cured', 'Review After Report', 'OPD/Other Treatment', 'Consultation Only', 'No Program Disease', 'Died']"
+      ]
+    }
+  ],
+  "groups": [
+    "Type name, KMed ID, mobile no, Abha ID, Nikshay ID...",
+    "YYYY-MM-DD",
+    "All Status On Program Cured Review After Report OPD/Other Treatment Consultation",
+    "All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre",
+    "All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup"
+  ]
+}

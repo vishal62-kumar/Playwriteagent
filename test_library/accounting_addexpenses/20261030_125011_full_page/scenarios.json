@@ -1,0 +1,1377 @@
+{
+  "page": "Accounting/AddExpenses",
+  "url": "http://localhost:2786/Accounting/AddExpenses.aspx",
+  "focus": "",
+  "generated_at": "2026-10-30T12:50:11",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-30T12:48:58",
+  "scenarios": [
+    {
+      "title": "Submit with invalid expense amount format",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "revtxtexpenseamount validator fires",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "1000abc"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Monthly tea expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_fires",
+          "validator": "revtxtexpenseamount"
+        },
+        {
+          "type": "message_shown",
+          "value": "Please enter valid Expense Amount use only numeric characters "
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_006",
+      "group": "Date"
+    },
+    {
+      "title": "Submit with empty expense amount",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "rfvtxtexpenseamount validator fires",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtexpenseamount"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Monthly tea expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_fires",
+          "validator": "rfvtxtexpenseamount"
+        },
+        {
+          "type": "message_shown",
+          "value": "Please enter Expense Amount"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_007",
+      "group": "Date"
+    },
+    {
+      "title": "Submit with empty expense type",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "rfvtxtexpensetype validator fires",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "1000"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Select Expense Type"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Monthly tea expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_fires",
+          "validator": "rfvtxtexpensetype"
+        },
+        {
+          "type": "message_shown",
+          "value": "Please Select Expense Type"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_008",
+      "group": "Date"
+    },
+    {
+      "title": "Submit with maximum allowed expense amount",
+      "type": "boundary",
+      "writes_data": true,
+      "basis": "Expense amount boundary condition",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "50000"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Office Maintenance"
+        },
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Office maintenance expenses"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Added Successfully"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_009",
+      "group": "Date"
+    },
+    {
+      "title": "Submit valid expense amount",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "validator_passes for revtxtexpenseamount",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "1000"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_passes",
+          "validator": "revtxtexpenseamount"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_010",
+      "group": "Expense Amount"
+    },
+    {
+      "title": "Submit empty expense amount",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "validator_fires for rfvtxtexpenseamount",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtexpenseamount"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_fires",
+          "validator": "rfvtxtexpenseamount"
+        },
+        {
+          "type": "message_shown",
+          "value": "Please enter Expense Amount"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_011",
+      "group": "Expense Amount"
+    },
+    {
+      "title": "Submit non-numeric expense amount",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "validator_fires for revtxtexpenseamount",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "abc"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_fires",
+          "validator": "revtxtexpenseamount"
+        },
+        {
+          "type": "message_shown",
+          "value": "Please enter valid Expense Amount use only numeric characters "
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_012",
+      "group": "Expense Amount"
+    },
+    {
+      "title": "Submit expense amount exceeding maximum limit",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "client_script_validation for amount > 50000",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpenseamount",
+          "value": "60000"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Amount cannot exceed 50,000 at one time."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_013",
+      "group": "Expense Amount"
+    },
+    {
+      "title": "Select a valid expense type",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "The selection of a valid option is a standard operation for dropdowns.",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlexpensetype",
+          "value": "Tea Club"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_014",
+      "group": "Expense Type"
+    },
+    {
+      "title": "Select the default option 'Select Expense Type'",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "The required validator should fire if the default option is selected.",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Select Expense Type"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_fires",
+          "validator": "rfvtxtexpensetype"
+        },
+        {
+          "type": "message_shown",
+          "value": "Please Select Expense Type"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_015",
+      "group": "Expense Type"
+    },
+    {
+      "title": "Select a duplicate option 'Labour Charges'",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "The dropdown allows selecting duplicate options, but the UI should handle it gracefully.",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Labour Charges"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlexpensetype",
+          "value": "Labour Charges"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_016",
+      "group": "Expense Type"
+    },
+    {
+      "title": "Select each valid expense type option",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "Ensure all options can be selected without error.",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Office Maintenance"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Office Bill (Electricity, Water, Internet, etc.)"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Office Cleaning / Pest Control"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Medicines"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Miscellaneous"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Office Furniture"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Transport Charges"
+        },
+        {
+          "action": "select",
+          "element": "ddlexpensetype",
+          "value": "Labour Charges"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlexpensetype",
+          "value": "Labour Charges"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_017",
+      "group": "Expense Type"
+    },
+    {
+      "title": "Submit with valid description",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "code_behind_handlers",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Office supplies purchase"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Added Successfully"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_018",
+      "group": "Description"
+    },
+    {
+      "title": "Submit with empty description",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtexpensedescription"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Description is mandatory."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_019",
+      "group": "Description"
+    },
+    {
+      "title": "Submit with maximum length description",
+      "type": "boundary",
+      "writes_data": true,
+      "basis": "code_behind_handlers",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "A very long description that is exactly at the boundary of what is acceptable for this field"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Added Successfully"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_020",
+      "group": "Description"
+    },
+    {
+      "title": "Submit with special characters in description",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "code_behind_handlers",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtexpensedescription",
+          "value": "Purchase of office chairs & tables @ 50% discount!"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Expense Added Successfully"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_021",
+      "group": "Description"
+    },
+    {
+      "title": "Upload a single valid file",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "upload",
+          "element": "fubillimage"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_022",
+      "group": "No file chosen"
+    },
+    {
+      "title": "Upload multiple files within limit",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "upload",
+          "element": "fubillimage"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_023",
+      "group": "No file chosen"
+    },
+    {
+      "title": "Attempt to upload more than the allowed number of files",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "upload",
+          "element": "fubillimage"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "You can only have a maximum of 5 files total (including existing files)."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_024",
+      "group": "No file chosen"
+    },
+    {
+      "title": "Upload no file",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "client_script_validation",
+      "steps": [
+        {
+          "action": "upload",
+          "element": "fubillimage"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "fubillimage",
+          "value": "No file chosen"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_025",
+      "group": "No file chosen"
+    },
+    {
+      "title": "Search with valid expense name",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid input should not cause any errors",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtSearchExpense",
+          "value": "Tea Club"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_026",
+      "group": "Search expenses..."
+    },
+    {
+      "title": "Search with empty input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Empty input should not cause any errors",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtSearchExpense"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_027",
+      "group": "Search expenses..."
+    },
+    {
+      "title": "Search with special characters",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Special characters should not cause any errors",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtSearchExpense",
+          "value": "!@#$%^&*()"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_028",
+      "group": "Search expenses..."
+    },
+    {
+      "title": "Search with long input exceeding typical length",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Long input should not cause any errors",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtSearchExpense",
+          "value": "a very long expense name that exceeds typical length"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_029",
+      "group": "Search expenses..."
+    },
+    {
+      "title": "Valid date input",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "validator_passes for a valid date format",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "15/08/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_passes",
+          "validator": "revtxtdate"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_030",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Boundary test for maximum length",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "Maximum length of the date field",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "01/01/20231"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtfrom",
+          "value": "01/01/2023"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_031",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Invalid date format in search",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "validator_fires for an invalid date format",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "15-08-2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_032",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Empty date input in search",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "validator_fires for a required field",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtfrom"
+        },
+        {
+          "action": "click",
+          "element": "btnSearchExpense"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_AE_033",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Valid date input in 'dd/mm/yyyy' format",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "revtxtdate validator passes",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "15/09/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_passes",
+          "validator": "revtxtdate"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_034",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Boundary test for maximum length of date input",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "revtxtdate validator passes",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "31/12/9999"
+        },
+        {
+          "action": "click",
+          "element": "btnSubmit"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "validator_passes",
+          "validator": "revtxtdate"
+        },
+        {
+          "type": "element_value",
+          "element": "txtto",
+          "value": "31/12/9999"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_AE_035",
+      "group": "dd/mm/yyyy"
+    }
+  ],
+  "rejected": [
+    {
+      "scenario": {
+        "title": "Submit with valid date format",
+        "type": "positive",
+        "writes_data": true,
+        "basis": "revtxtdate validator passes",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtdate",
+            "value": "15/09/2023"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtdate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Submit with invalid date format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "revtxtdate validator fires",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtdate",
+            "value": "2023-09-15"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter valid Date"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtdate' is disabled/read-only",
+        "value '30/10/2026' MATCHES the pattern of 'revtxtdate' (^(([0-9])|([0-2][0-9])|(3[0-1]))\\/(([1-9])|(0[1-9])|(1[0-2]))\\/(([0-9][0-9])|([1-2][0,9][0-9][0-9]))$), so it will not fire",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Submit with empty date field",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvtxtdate validator fires",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtdate"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter Date"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtdate' is disabled/read-only",
+        "required validator 'rfvtxtdate' cannot fire: field 'txtdate' has value '30/10/2026'",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Submit with a date that is not allowed",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "cvtxtdate validator fires",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtdate",
+            "value": "01/01/1900"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "cvtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "This date is not allowed."
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtdate' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Submit with valid expense amount and type",
+        "type": "positive",
+        "writes_data": true,
+        "basis": "rfvtxtexpenseamount and rfvtxtexpensetype validators pass",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtexpenseamount",
+            "value": "1000"
+          },
+          {
+            "action": "select",
+            "element": "ddlexpensetype",
+            "value": "Tea Club"
+          },
+          {
+            "action": "fill",
+            "element": "txtexpensedescription",
+            "value": "Monthly tea expenses"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "rfvtxtexpenseamount"
+          },
+          {
+            "type": "validator_passes",
+            "validator": "rfvtxtexpensetype"
+          },
+          {
+            "type": "message_shown",
+            "value": "Expense Added Successfully"
+          },
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "required validator 'rfvtxtexpensetype' WILL fire: field 'ddlexpensetype' is empty"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid date format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for an invalid date format",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtfrom",
+            "value": "2023-08-15"
+          },
+          {
+            "action": "click",
+            "element": "btnSearchExpense"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter valid Date"
+          }
+        ]
+      },
+      "problems": [
+        "value '30/10/2026' MATCHES the pattern of 'revtxtdate' (^(([0-9])|([0-2][0-9])|(3[0-1]))\\/(([1-9])|(0[1-9])|(1[0-2]))\\/(([0-9][0-9])|([1-2][0,9][0-9][0-9]))$), so it will not fire",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Empty date input",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "validator_fires for a required field",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtfrom"
+          },
+          {
+            "action": "click",
+            "element": "btnSearchExpense"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter Date"
+          }
+        ]
+      },
+      "problems": [
+        "required validator 'rfvtxtdate' cannot fire: field 'txtdate' has value '30/10/2026'",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Valid date input in 'dd/mm/yyyy' format",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "revtxtdate validator passes",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtto",
+            "value": "15/09/2023"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "revtxtdate"
+          }
+        ]
+      },
+      "problems": [
+        "validator_passes 'revtxtdate': no button is clicked, so validation never runs",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid date input with incorrect format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "revtxtdate validator fires",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtto",
+            "value": "2023/09/15"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter valid Date"
+          }
+        ]
+      },
+      "problems": [
+        "value '30/10/2026' MATCHES the pattern of 'revtxtdate' (^(([0-9])|([0-2][0-9])|(3[0-1]))\\/(([1-9])|(0[1-9])|(1[0-2]))\\/(([0-9][0-9])|([1-2][0,9][0-9][0-9]))$), so it will not fire",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Empty date input",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvtxtdate validator fires",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtto"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter Date"
+          }
+        ]
+      },
+      "problems": [
+        "required validator 'rfvtxtdate' cannot fire: field 'txtdate' has value '30/10/2026'",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary test for maximum length of date input",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "revtxtdate validator passes",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtto",
+            "value": "31/12/9999"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_passes",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "element_value",
+            "element": "txtto",
+            "value": "31/12/9999"
+          }
+        ]
+      },
+      "problems": [
+        "validator_passes 'revtxtdate': no button is clicked, so validation never runs",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Invalid date input with incorrect format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "revtxtdate validator fires",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtto",
+            "value": "2023/09/15"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "revtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter valid Date"
+          }
+        ]
+      },
+      "problems": [
+        "value '30/10/2026' MATCHES the pattern of 'revtxtdate' (^(([0-9])|([0-2][0-9])|(3[0-1]))\\/(([1-9])|(0[1-9])|(1[0-2]))\\/(([0-9][0-9])|([1-2][0,9][0-9][0-9]))$), so it will not fire"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Empty date input",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "rfvtxtdate validator fires",
+        "steps": [
+          {
+            "action": "clear",
+            "element": "txtdate"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmit"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "validator_fires",
+            "validator": "rfvtxtdate"
+          },
+          {
+            "type": "message_shown",
+            "value": "Please enter Date"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtdate' is disabled/read-only",
+        "required validator 'rfvtxtdate' cannot fire: field 'txtdate' has value '30/10/2026'"
+      ]
+    }
+  ],
+  "groups": [
+    "Date",
+    "Expense Amount",
+    "Expense Type",
+    "Description",
+    "No file chosen",
+    "Search expenses...",
+    "dd/mm/yyyy"
+  ]
+}

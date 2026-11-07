@@ -1,0 +1,18 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_DRE_006,Search with valid date range,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click '📅 Added On'
+3. Click '🔍 Search'",- no server error,no_server_error,no,PASSED,PASSED,
+TC_DRE_007,Search with invalid date format,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click '📅 Added On'
+3. Click '🔍 Search'","- message 'Invalid From Date format' appears
+- no server error",message_shown,no,FAILED,APP_DEFECT,"Expected the message 'Invalid From Date format' but it never appeared. Pop-ups seen: ['Please select From date', ""DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4""]."
+TC_DRE_008,Search with from date greater than to date,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click '📅 Added On'
+3. Click '🔍 Search'","- message 'From Date cannot be greater than To Date' appears
+- no server error",message_shown,no,FAILED,APP_DEFECT,"Expected the message 'From Date cannot be greater than To Date' but it never appeared. Pop-ups seen: ['Please select From date', ""DataTables warning: table id=tblRecord - Requested unknown parameter '0' for row 0, column 0. For more information about this error, please see http://datatables.net/tn/4""]."
+TC_DRE_009,Search with empty date fields,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click '📅 Added On'
+3. Click '🔍 Search'",- no server error,no_server_error,no,PASSED,PASSED,
+TC_DRE_010,Search with maximum date range,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click '📅 Added On'
+3. Click '🔍 Search'",- no server error,no_server_error,no,PASSED,PASSED,

@@ -1,0 +1,26 @@
+﻿Test ID,Scenario,Type,Status,Category,Reason,Expected,Basis,Failed Step,Duration (s)
+TC_NEWS_025,Search with invalid KMed ID,negative,FAILED,APP_DEFECT,Expected the message 'Unable to identify this patient/prospect. Please refresh the page and try again.' but it never appeared.,message 'Unable to identify this patient/prospect. Please refresh the page and try again.' appears; no server error,Invalid input for txtSearch,expect message 'Unable to identify this patient/prospect. Please refresh the page and try again.',6.44
+TC_NEWS_029,Negative case: Invalid filter combination,negative,FAILED,APP_DEFECT,Expected the message 'Unable to identify this patient/prospect. Please refresh the page and try again.' but it never appeared.,message 'Unable to identify this patient/prospect. Please refresh the page and try again.' appears; no server error,Invalid combination of filter options,expect message 'Unable to identify this patient/prospect. Please refresh the page and try again.',14.16
+TC_NEWS_024,Search with valid KMed ID,smoke,PASSED,PASSED,,no server error,Valid input for txtSearch,,1.2
+TC_NEWS_026,Search with valid mobile number,smoke,PASSED,PASSED,,no server error,Valid input for txtSearch,,1.2
+TC_NEWS_027,Search with empty input,smoke,PASSED,PASSED,,no server error,Empty input for txtSearch,,1.26
+TC_NEWS_028,Positive case: Valid filter selection,smoke,PASSED,PASSED,,no server error,Valid selection of filter options,,2.86
+TC_NEWS_030,Boundary case: Maximum entries selection,smoke,PASSED,PASSED,,no server error,Maximum entries selection in dropdown,,2.21
+TC_NEWS_031,UI case: Clear filter,ui,PASSED,PASSED,,'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' = 'All Status'; 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'All Programs'; 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'All Diseases'; no server error,Clear filter button functionality,,20.76
+TC_NEWS_032,Select 'On Program' status and apply filter,smoke,PASSED,PASSED,,no server error,Valid selection of filterStatus,,9.29
+TC_NEWS_033,Select 'All Programs' and apply filter,smoke,PASSED,PASSED,,no server error,Valid selection of filterProgram,,5.99
+TC_NEWS_034,Select 'TB' disease and apply filter,smoke,PASSED,PASSED,,no server error,Valid selection of filterDisease,,6.17
+TC_NEWS_035,Select 'Consultation Only' status and apply filter,smoke,PASSED,PASSED,,no server error,Valid selection of filterStatus,,3.36
+TC_NEWS_036,Select 'Died' program and apply filter,smoke,PASSED,PASSED,,no server error,Valid selection of filterProgram,,4.14
+TC_NEWS_037,Select 'All Status' from filterStatus dropdown,smoke,PASSED,PASSED,,no server error,filterStatus element with 'All Status' option,,2.87
+TC_NEWS_038,Select 'On Program' from filterStatus dropdown,smoke,PASSED,PASSED,,no server error,filterStatus element with 'On Program' option,,5.27
+TC_NEWS_039,Select 'Cured' from filterStatus dropdown,smoke,PASSED,PASSED,,no server error,filterStatus element with 'Cured' option,,7.62
+TC_NEWS_040,Select 'Review After Report' from filterStatus dropdown,smoke,PASSED,PASSED,,no server error,filterStatus element with 'Review After Report' option,,6.63
+TC_NEWS_041,Select 'All Programs' from filterProgram dropdown,positive,PASSED,PASSED,,'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'All Programs'; no server error,element_value reflects the selected option,,4.39
+TC_NEWS_042,Select 'On Treatment' from filterProgram dropdown,positive,PASSED,PASSED,,'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'On Treatment'; no server error,element_value reflects the selected option,,2.13
+TC_NEWS_043,Select 'Treatment Interrupted' from filterProgram dropdown,positive,PASSED,PASSED,,'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Treatment Interrupted'; no server error,element_value reflects the selected option,,3.32
+TC_NEWS_044,Select 'Died' from filterProgram dropdown,positive,PASSED,PASSED,,'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Died'; no server error,element_value reflects the selected option,,5.22
+TC_NEWS_045,Select 'All Diseases' from filterDisease dropdown,positive,PASSED,PASSED,,'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'All Diseases'; no server error,element_value on filterDisease,,4.57
+TC_NEWS_046,Select 'TB with Diabetes' from filterDisease dropdown,positive,PASSED,PASSED,,'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'TB with Diabetes'; no server error,element_value on filterDisease,,3.87
+TC_NEWS_047,Select 'Diabetes' from filterDisease dropdown,positive,PASSED,PASSED,,'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'Diabetes'; no server error,element_value on filterDisease,,3.22
+TC_NEWS_048,Select 'No Program' from filterDisease dropdown,positive,PASSED,PASSED,,'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'No Program'; no server error,element_value on filterDisease,,3.31

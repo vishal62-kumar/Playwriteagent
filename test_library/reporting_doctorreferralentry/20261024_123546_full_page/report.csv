@@ -1,0 +1,5 @@
+﻿Test ID,Scenario,Type,Status,Category,Reason,Expected,Basis,Failed Step,Duration (s)
+TC_DRE_001,Positive test with valid postal code,smoke,PASSED,PASSED,,no server error,"No specific validator for postal code, assume valid input",,0.85
+TC_DRE_002,Negative test with empty postal code,smoke,PASSED,PASSED,,no server error,"No specific validator for postal code, assume empty input is invalid",,0.83
+TC_DRE_003,Boundary test with maximum length postal code,smoke,PASSED,PASSED,,no server error,Assume postal code can be up to 10 characters,,0.89
+TC_DRE_004,Negative test with non-numeric postal code,smoke,PASSED,PASSED,,no server error,"No specific validator for postal code, assume non-numeric input is invalid",,0.83

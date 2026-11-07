@@ -1,0 +1,19 @@
+﻿Test ID,Scenario,Type,Status,Category,Reason,Expected,Basis,Failed Step,Duration (s)
+TC_EA_022,Check the 'on' checkbox,positive,PASSED,PASSED,,'on' is ticked; no server error,element_value proves the checkbox is checked,,0.9
+TC_EA_023,Uncheck the 'on' checkbox,negative,PASSED,PASSED,,'on' is unticked; no server error,element_value proves the checkbox is unchecked,,0.73
+TC_EA_024,Toggle the 'on' checkbox twice,boundary,PASSED,PASSED,,'on' is unticked; no server error,element_value proves the checkbox returns to initial state,,1.18
+TC_EA_025,Clear selection,ui,PASSED,PASSED,,'on' is unticked; no server error,btnClearSelection element,,1.26
+TC_EA_026,Search with valid date range,smoke,PASSED,PASSED,,no server error,btnSearch element,,1.0
+TC_EA_027,Search with invalid date range,smoke,PASSED,PASSED,,no server error,btnSearch element,,0.91
+TC_EA_028,Export CSV,smoke,PASSED,PASSED,,no server error,btnExportCSV element,,0.88
+TC_EA_029,Submit allocation without selecting user,negative,PASSED,PASSED,,message 'Please Select Allocated To User for all checked rows.' appears; no server error,code-behind handler checks for selected user,,1.53
+TC_EA_030,Submit allocation with unselected checkbox,smoke,PASSED,PASSED,,no server error,code-behind handler requires checkbox to be checked,,1.45
+TC_EA_031,Submit allocation with maximum length date,smoke,PASSED,PASSED,,no server error,txtfrom and txtto fields have maxlength of 10,,0.95
+TC_EA_032,Valid date input for 'dd/mm/yyyy' field,smoke,PASSED,PASSED,,no server error,Valid date format,,0.48
+TC_EA_033,Invalid date format input for 'dd/mm/yyyy' field,smoke,PASSED,PASSED,,no server error,Invalid date format,,0.93
+TC_EA_034,Boundary test with maximum length input for 'dd/mm/yyyy' field,boundary,PASSED,PASSED,,'dd/mm/yyyy' = '31/12/2023'; no server error,Maximum length of input,,0.58
+TC_EA_035,Empty input for 'dd/mm/yyyy' field,smoke,PASSED,PASSED,,no server error,Empty input,,0.97
+TC_EA_036,Positive test with valid date format,smoke,PASSED,PASSED,,no server error,Valid date format is accepted,,0.93
+TC_EA_037,Negative test with invalid date format,smoke,PASSED,PASSED,,no server error,Invalid date format should not be accepted,,0.97
+TC_EA_038,Boundary test with maximum length date,smoke,PASSED,PASSED,,no server error,Date field accepts maximum length input,,0.98
+TC_EA_039,Negative test with over maximum length input,negative,PASSED,PASSED,,'dd/mm/yyyy' = '31/12/2023'; no server error,Input longer than maximum length is truncated,,0.96

@@ -1,0 +1,678 @@
+{
+  "page": "EPR/ReferralCommunicationLogs",
+  "url": "http://localhost:2786/EPR/ReferralCommunicationLogs.aspx",
+  "focus": "",
+  "generated_at": "2026-10-31T12:06:08",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-31T12:05:42",
+  "scenarios": [
+    {
+      "title": "Submit valid communication note",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "code_behind_handlers shows success message on valid input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "This is a valid communication note."
+        },
+        {
+          "action": "click",
+          "element": "btnSaveAjax"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Submitted successfully!"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_001",
+      "group": "Type your communication note — e.g."
+    },
+    {
+      "title": "Submit empty communication note",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "code_behind_handlers shows error message on empty input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": ""
+        },
+        {
+          "action": "click",
+          "element": "btnSaveAjax"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Please Write Communication"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_002",
+      "group": "Type your communication note — e.g."
+    },
+    {
+      "title": "Submit communication note with maximum length",
+      "type": "boundary",
+      "writes_data": true,
+      "basis": "code_behind_handlers shows success message on valid input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "a"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveAjax"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Submitted successfully!"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_003",
+      "group": "Type your communication note — e.g."
+    },
+    {
+      "title": "Submit communication note with special characters",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "code_behind_handlers shows success message on valid input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "!@#$%^&*()_+-=[]{}|;':,.<>?/~`"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveAjax"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Submitted successfully!"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_004",
+      "group": "Type your communication note — e.g."
+    },
+    {
+      "title": "Select a valid option from 'ASSIGN TO'",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "ddlPendingStatus options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPendingStatus",
+          "value": "Sundeep Saini"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPendingStatus",
+          "value": "Sundeep Saini"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_005",
+      "group": "ASSIGN TO"
+    },
+    {
+      "title": "Select another valid option from 'ASSIGN TO'",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "ddlPendingStatus options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPendingStatus",
+          "value": "Dr Sunita Rani Cheif Medical Officer"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPendingStatus",
+          "value": "Dr Sunita Rani Cheif Medical Officer"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_006",
+      "group": "ASSIGN TO"
+    },
+    {
+      "title": "Boundary test: Select the last option from 'ASSIGN TO'",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "ddlPendingStatus options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPendingStatus",
+          "value": "Bhawna nagpal PHARMACY EXCECUTIVE"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPendingStatus",
+          "value": "Bhawna nagpal PHARMACY EXCECUTIVE"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_007",
+      "group": "ASSIGN TO"
+    },
+    {
+      "title": "Boundary test: Select the first option from 'ASSIGN TO'",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "ddlPendingStatus options",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPendingStatus",
+          "value": "Sundeep Saini"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "ddlPendingStatus",
+          "value": "Sundeep Saini"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_008",
+      "group": "ASSIGN TO"
+    },
+    {
+      "title": "Check 'Action Due' checkbox",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "element_value proves checkbox can be checked",
+      "steps": [
+        {
+          "action": "check",
+          "element": "chkDueAction"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_checked",
+          "element": "chkDueAction"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_009",
+      "group": "Action Due"
+    },
+    {
+      "title": "Uncheck 'Action Due' checkbox",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "element_value proves checkbox can be unchecked",
+      "steps": [
+        {
+          "action": "uncheck",
+          "element": "chkDueAction"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_unchecked",
+          "element": "chkDueAction"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_010",
+      "group": "Action Due"
+    },
+    {
+      "title": "Submit communication with valid data",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "message_shown proves successful submission",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "Follow-up communication note"
+        },
+        {
+          "action": "select",
+          "element": "ddlPendingStatus",
+          "value": "Sundeep Saini"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveAjax"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Submitted successfully!"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_011",
+      "group": "Action Due"
+    },
+    {
+      "title": "Check required field validation for communication note",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "message_shown proves validation error",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPendingStatus",
+          "value": "Sundeep Saini"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveAjax"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Please Write Communication"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_012",
+      "group": "Action Due"
+    },
+    {
+      "title": "Boundary test for communication note length",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "no_server_error proves handling of long input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "A"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_RCL_013",
+      "group": "Action Due"
+    },
+    {
+      "title": "Positive scenario: Valid communication and assignment",
+      "type": "positive",
+      "writes_data": true,
+      "basis": "btnSaveAjax handler shows success message",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "Follow-up on patient progress."
+        },
+        {
+          "action": "select",
+          "element": "ddlPendingStatus",
+          "value": "Sundeep Saini"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveAjax"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Submitted successfully!"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_014",
+      "group": "yyyy-mm-dd"
+    },
+    {
+      "title": "Negative scenario: Missing communication note",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "btnSaveAjax handler shows error message",
+      "steps": [
+        {
+          "action": "select",
+          "element": "ddlPendingStatus",
+          "value": "Sundeep Saini"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveAjax"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Please Write Communication"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_015",
+      "group": "yyyy-mm-dd"
+    },
+    {
+      "title": "Boundary scenario: Maximum length communication note",
+      "type": "boundary",
+      "writes_data": true,
+      "basis": "btnSaveAjax handler shows success message",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "A"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Submitted successfully!"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_016",
+      "group": "yyyy-mm-dd"
+    },
+    {
+      "title": "UI scenario: Assign user without follow-up date",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "client_script_validation shows message",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "Check assignment without date."
+        },
+        {
+          "action": "select",
+          "element": "ddlPendingStatus",
+          "value": "Sundeep Saini"
+        },
+        {
+          "action": "click",
+          "element": "btnSaveAjax"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Submitted successfully!"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_RCL_017",
+      "group": "yyyy-mm-dd"
+    },
+    {
+      "title": "Boundary scenario: No user assigned with follow-up date",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "client_script_validation shows message",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtCommunication",
+          "value": "Follow-up required."
+        },
+        {
+          "action": "click",
+          "element": "btnSaveAjax"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "dropped ungrounded expectation: message 'Please assign a user when follow-up date is set.' does not appear in the page's code",
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_RCL_018",
+      "group": "yyyy-mm-dd"
+    }
+  ],
+  "rejected": [
+    {
+      "scenario": {
+        "title": "Verify 'Action Due' checkbox initial state",
+        "type": "ui",
+        "writes_data": false,
+        "basis": "element_value proves initial state of checkbox",
+        "steps": [],
+        "assertions": [
+          {
+            "type": "element_checked",
+            "element": "chkDueAction"
+          }
+        ]
+      },
+      "problems": [
+        "scenario has no steps",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Verify 'Action Due' checkbox initial state",
+        "type": "ui",
+        "writes_data": false,
+        "basis": "element_checked proves initial state of checkbox",
+        "steps": [],
+        "assertions": [
+          {
+            "type": "element_checked",
+            "element": "chkDueAction"
+          }
+        ]
+      },
+      "problems": [
+        "scenario has no steps"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Positive scenario: Valid follow-up date",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "followUpDateProxy is a valid date format",
+        "steps": [
+          {
+            "action": "click",
+            "element": "followUpDateProxy"
+          },
+          {
+            "action": "fill",
+            "element": "followUpDateProxy",
+            "value": "2023-10-15"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "followUpDateProxy",
+            "value": "2023-10-15"
+          }
+        ]
+      },
+      "problems": [
+        "step 2: 'followUpDateProxy' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Negative scenario: Invalid date format",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "followUpDateProxy does not accept invalid date format",
+        "steps": [
+          {
+            "action": "click",
+            "element": "followUpDateProxy"
+          },
+          {
+            "action": "fill",
+            "element": "followUpDateProxy",
+            "value": "15-10-2023"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "followUpDateProxy",
+            "value": ""
+          }
+        ]
+      },
+      "problems": [
+        "step 2: 'followUpDateProxy' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary scenario: Empty follow-up date",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "followUpDateProxy accepts empty value",
+        "steps": [
+          {
+            "action": "click",
+            "element": "followUpDateProxy"
+          },
+          {
+            "action": "clear",
+            "element": "followUpDateProxy"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "followUpDateProxy",
+            "value": ""
+          }
+        ]
+      },
+      "problems": [
+        "step 2: 'followUpDateProxy' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary scenario: Maximum length date",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "followUpDateProxy accepts maximum length date",
+        "steps": [
+          {
+            "action": "click",
+            "element": "followUpDateProxy"
+          },
+          {
+            "action": "fill",
+            "element": "followUpDateProxy",
+            "value": "2023-12-31"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "followUpDateProxy",
+            "value": "2023-12-31"
+          }
+        ]
+      },
+      "problems": [
+        "step 2: 'followUpDateProxy' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    }
+  ],
+  "groups": [
+    "Type your communication note — e.g.",
+    "ASSIGN TO",
+    "Action Due",
+    "yyyy-mm-dd"
+  ]
+}

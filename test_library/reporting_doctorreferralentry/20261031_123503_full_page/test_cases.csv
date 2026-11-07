@@ -1,0 +1,214 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_DRE_011,Enter a valid patient name,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'",- no server error,Valid input for txtPatientName,no,not run,,
+TC_DRE_012,Enter a very long patient name,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'A very long patient name that exceeds typical length expectations' in 'Enter patient name'",- no server error,Boundary test for txtPatientName,no,not run,,
+TC_DRE_013,Enter a patient name with special characters,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe!@#' in 'Enter patient name'",- no server error,Special characters in txtPatientName,no,not run,,
+TC_DRE_014,Enter age below minimum boundary,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '0' in 'Enter age'
+3. Click 'Save Referral'","- message 'Age must be between 1 and 120' appears
+- no server error",rvAge validator fires,no,not run,,
+TC_DRE_015,Enter age above maximum boundary,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '121' in 'Enter age'
+3. Click 'Save Referral'","- message 'Age must be between 1 and 120' appears
+- no server error",rvAge validator fires,no,not run,,
+TC_DRE_016,Enter valid age within range,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Enter '25' in 'Enter age'
+4. Enter '1234567890' in 'Enter mobile number'
+5. Select 'TBC(Shahdara)' in 'Practice'
+6. Select 'Network Doctors' in 'Referral Source'
+7. Select 'TB' in 'Disease / Program'
+8. Select 'On Program' in 'Program Status'
+9. Enter '123 Main St' in 'Enter address'
+10. Enter 'Downtown' in 'Search area'
+11. Click 'Save Referral'","- no 'Age must be between 1 and 120' error
+- no server error",rvAge validator passes,no,not run,,
+TC_DRE_017,Enter valid 10 digit mobile number in alternate mobile field,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Enter '1234567890' in 'Enter mobile number'
+4. Click 'Save Referral'","- no 'Enter valid 10 digit mobile number' error
+- no server error",RegularExpressionValidator1 passes for valid input,no,not run,,
+TC_DRE_018,Enter boundary value of 10 digits in alternate mobile field,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Enter '0987654321' in 'Enter mobile number'
+4. Click 'Save Referral'","- no 'Enter valid 10 digit mobile number' error
+- no server error",RegularExpressionValidator1 passes for boundary input,no,not run,,
+TC_DRE_019,Verify 'Added On' field remains unchanged after form submission,ui,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click 'Save Referral'","- 'Added On' = '2026-10-31'
+- no server error",txtAddedOn is not modifiable and retains its initial value,no,not run,,
+TC_DRE_020,Select valid practice option,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'TBC(Shahdara)' in 'Practice'","- 'Practice' = 'TBC(Shahdara)'
+- no server error",ddlPractice options,no,not run,,
+TC_DRE_021,Select a valid referral source,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Network Doctors' in 'Referral Source'","- 'Referral Source' = 'Network Doctors'
+- no server error",Valid selection of referral source,no,not run,,
+TC_DRE_022,Select the last option in referral source,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'ChatBot' in 'Referral Source'","- 'Referral Source' = 'ChatBot'
+- no server error",Boundary test for referral source options,no,not run,,
+TC_DRE_023,Select a middle option in referral source,ui,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Internet' in 'Referral Source'","- 'Referral Source' = 'Internet'
+- no server error",UI test for selecting a middle option,no,not run,,
+TC_DRE_024,Select a valid disease/program option,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'TB' in 'Disease / Program'","- 'Disease / Program' = 'TB'
+- no server error",Valid selection of a disease/program option,no,not run,,
+TC_DRE_025,Select the 'No Program' option,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'No Program' in 'Disease / Program'","- 'Disease / Program' = 'No Program'
+- no server error",Valid selection of 'No Program' option,no,not run,,
+TC_DRE_026,Select the 'TB Support(No ATT)' option,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'TB Support(No ATT)' in 'Disease / Program'","- 'Disease / Program' = 'TB Support(No ATT)'
+- no server error",Valid selection of 'TB Support(No ATT)' option,no,not run,,
+TC_DRE_027,Select a valid program status,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'On Program' in 'Program Status'","- 'Program Status' = 'On Program'
+- no server error",ddlPatientStatus element options,no,not run,,
+TC_DRE_028,Select a boundary option for program status,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Died' in 'Program Status'","- 'Program Status' = 'Died'
+- no server error",ddlPatientStatus element options,no,not run,,
+TC_DRE_029,Select another valid program status,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Cured' in 'Program Status'","- 'Program Status' = 'Cured'
+- no server error",ddlPatientStatus element options,no,not run,,
+TC_DRE_030,Valid future date within one year,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '2024-10-30' in 'Appointment & Time'",- no server error,client_script_validation,no,not run,,
+TC_DRE_031,Date in the past,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '2023-10-01' in 'Appointment & Time'","- message 'Follow-up date/time must be within future 1 year' appears
+- no server error",client_script_validation,no,not run,,
+TC_DRE_032,Date exactly one year in the future,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '2024-10-31' in 'Appointment & Time'",- no server error,client_script_validation,no,not run,,
+TC_DRE_033,Date more than one year in the future,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '2024-11-01' in 'Appointment & Time'","- message 'Follow-up date/time must be within future 1 year' appears
+- no server error",client_script_validation,no,not run,,
+TC_DRE_034,Select a valid appointment time,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select '9:00 AM' in 'Appointment & Time'","- 'Appointment & Time' = '9:00 AM'
+- no server error",Valid option selection in ddlTime,no,not run,,
+TC_DRE_035,Select the default 'Select Time' option,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Select Time' in 'Appointment & Time'","- 'Appointment & Time' = 'Select Time'
+- no server error",Boundary condition for ddlTime,no,not run,,
+TC_DRE_036,Select the last available appointment time,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select '1:30 PM' in 'Appointment & Time'","- 'Appointment & Time' = '1:30 PM'
+- no server error",Boundary condition for ddlTime,no,not run,,
+TC_DRE_037,Select a valid appointment time,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select '9:00 AM' in 'Appointment & Time'","- 'Appointment & Time' = '9:00 AM'
+- no server error",Valid option selection in ddlTime,no,not run,,
+TC_DRE_038,Enter a valid referral note,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'Patient requires follow-up consultation.' in 'Enter referral note'",- no server error,Valid input for txtReferralNote,no,not run,,
+TC_DRE_039,Enter an empty referral note,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Clear 'Enter referral note'",- no server error,No specific validator for txtReferralNote,no,not run,,
+TC_DRE_040,Enter a long referral note,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'This is a very long referral note intended to test the boundary conditions of the input field. It should be able to handle a large amount of text without any issues.' in 'Enter referral note'",- no server error,Boundary test for txtReferralNote,no,not run,,
+TC_DRE_041,Enter a referral note with special characters,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'Referral note with special characters: !@#$%^&*()' in 'Enter referral note'",- no server error,Special character handling for txtReferralNote,no,not run,,
+TC_DRE_042,Upload a valid document,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Upload a sample file to 'Upload Documents'",- no server error,Successful upload and save of document,yes,not run,,
+TC_DRE_043,Attempt to upload no document,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Click 'Save Referral'","- message 'Please select at least one document.' appears
+- no server error",Client-side validation for no document selected,no,not run,,
+TC_DRE_044,Upload a document and simulate server error,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Upload a sample file to 'Upload Documents'
+3. Click 'Save Referral'","- message 'Server error occurred while saving referral.' appears
+- no server error",Server error during document upload,no,not run,,
+TC_DRE_045,Upload a document with invalid file size,boundary,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Upload a sample file to 'Upload Documents'
+3. Click 'Save Referral'","- message 'Upload failed. Please check the file size and try again.' appears
+- no server error",Client-side validation for file size,no,not run,,
+TC_DRE_046,Enter a valid address,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '123 Main St, Springfield' in 'Enter address'",- no server error,Valid input for txtAddress,no,not run,,
+TC_DRE_047,Enter address with special characters,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '!@#$%^&*()_+|' in 'Enter address'",- no server error,Boundary test for txtAddress,no,not run,,
+TC_DRE_048,Enter a very long address,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '123 Main St, Springfield, IL, 62704, United States of America, North America, Earth, Solar System, Milky Way Galaxy, Universe' in 'Enter address'",- no server error,Boundary test for txtAddress,no,not run,,
+TC_DRE_049,Positive scenario: Valid input for 'Search area',smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'Downtown' in 'Search area'",- no server error,Valid input for 'Search area',no,not run,,
+TC_DRE_050,Boundary scenario: Maximum length input for 'Search area',smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'A very long area name that exceeds typical length' in 'Search area'",- no server error,Boundary test for 'Search area' field,no,not run,,
+TC_DRE_051,Negative scenario: Invalid characters in 'Search area',smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter ""<script>alert('test')</script>"" in 'Search area'",- no server error,"No specific validator for invalid characters, check for server error",no,not run,,
+TC_DRE_052,Valid zip code input,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '12345' in 'Enter zip code'",- no server error,Valid input for zip code,no,not run,,
+TC_DRE_053,Empty zip code input,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Clear 'Enter zip code'",- no server error,"No specific validator for empty zip code, check for server error",no,not run,,
+TC_DRE_054,Zip code with special characters,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '1234@' in 'Enter zip code'",- no server error,Check for server error with invalid characters,no,not run,,
+TC_DRE_055,Boundary test for zip code length,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '1234567890' in 'Enter zip code'",- no server error,Check for server error with maximum length input,no,not run,,
+TC_DRE_056,Fill 'Search city' with a valid city name,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'New York' in 'Search city'",- no server error,Valid input for 'Search city',no,not run,,
+TC_DRE_057,Fill 'Search city' with an empty value,negative,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '' in 'Search city'","- message 'City is required' appears
+- no server error",Empty input for 'Search city',no,not run,,
+TC_DRE_058,Fill 'Search city' with a very long city name,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'A very long city name that exceeds typical length expectations' in 'Search city'",- no server error,Boundary test for 'Search city',no,not run,,
+TC_DRE_059,Fill 'Search city' with special characters,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '@#$%^&*()' in 'Search city'",- no server error,Special characters in 'Search city',no,not run,,
+TC_DRE_060,Enter a valid state name in the 'Search state' field,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'California' in 'Search state'",- no server error,Valid input in the 'Search state' field,no,not run,,
+TC_DRE_061,Enter an invalid state name in the 'Search state' field,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '123InvalidState' in 'Search state'",- no server error,Invalid input in the 'Search state' field,no,not run,,
+TC_DRE_062,Enter a boundary value (empty) in the 'Search state' field,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter '' in 'Search state'",- no server error,Boundary test with empty input in the 'Search state' field,no,not run,,
+TC_DRE_063,Enter a boundary value (long string) in the 'Search state' field,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'A very long state name that exceeds normal length expectations' in 'Search state'",- no server error,Boundary test with long input in the 'Search state' field,no,not run,,
+TC_DRE_064,Valid country name input,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'India' in 'Search country'",- no server error,no_server_error,no,not run,,
+TC_DRE_065,Empty country name input,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Clear 'Search country'",- no server error,no_server_error,no,not run,,
+TC_DRE_066,Boundary test with maximum length input,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'United States of America' in 'Search country'",- no server error,no_server_error,no,not run,,
+TC_DRE_067,Special characters in country name,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter ""Côte d'Ivoire"" in 'Search country'",- no server error,no_server_error,no,not run,,
+TC_DRE_068,Positive test with valid patient data,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Tick 'Male'
+4. Enter '30' in 'Enter age'
+5. Enter '1234567890' in 'Enter mobile number'
+6. Select 'TBC(Shahdara)' in 'Practice'
+7. Select 'Network Doctors' in 'Referral Source'
+8. Select 'TB' in 'Disease / Program'
+9. Select 'On Program' in 'Program Status'
+10. Enter '123 Main St' in 'Enter address'
+11. Enter 'Downtown' in 'Search area'
+12. Click 'Save Referral'","- message 'Referral saved successfully!' appears
+- no server error",code_behind_handlers for successful referral save,yes,not run,,
+TC_DRE_069,Boundary test with maximum age,smoke,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'Max Age' in 'Enter patient name'
+3. Tick 'Other'
+4. Enter '120' in 'Enter age'
+5. Enter '0987654321' in 'Enter mobile number'
+6. Select 'TBC(Shahdara)' in 'Practice'
+7. Select 'Internet' in 'Referral Source'
+8. Select 'No Program' in 'Disease / Program'
+9. Select 'Consultation Only' in 'Program Status'
+10. Enter '789 Pine St' in 'Enter address'
+11. Enter 'Suburb' in 'Search area'
+12. Click 'Save Referral'",- no server error,rvAge validator passes,no,not run,,
+TC_DRE_070,UI test for practice dropdown,ui,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'TBC(Shahdara)' in 'Practice'","- 'Practice' = 'TBC(Shahdara)'
+- no server error",ddlPractice element,no,not run,,
+TC_DRE_071,Valid end-to-end submission,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Tick 'Male'
+4. Enter '30' in 'Enter age'
+5. Enter '1234567890' in 'Enter mobile number'
+6. Select 'TBC(Shahdara)' in 'Practice'
+7. Select 'Network Doctors' in 'Referral Source'
+8. Select 'TB' in 'Disease / Program'
+9. Select 'On Program' in 'Program Status'
+10. Enter '123 Main St' in 'Enter address'
+11. Enter 'Downtown' in 'Search area'
+12. Click 'Save Referral'","- message 'Referral saved successfully!' appears
+- no server error",code_behind_handlers,yes,not run,,
+TC_DRE_072,Dropdown selection for 'Referral Source',ui,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Select 'Internet' in 'Referral Source'","- 'Referral Source' = 'Internet'
+- no server error",DdlReferralSource,no,not run,,
+TC_DRE_073,Save Referral with all required fields filled correctly,positive,"1. Open http://localhost:2786/Reporting/DoctorReferralEntry.aspx
+2. Enter 'John Doe' in 'Enter patient name'
+3. Tick 'Male'
+4. Enter '30' in 'Enter age'
+5. Enter '1234567890' in 'Enter mobile number'
+6. Select 'Network Doctors' in 'Referral Source'
+7. Select 'TB' in 'Disease / Program'
+8. Select 'On Program' in 'Program Status'
+9. Enter '123 Main St' in 'Enter address'
+10. Enter 'Downtown' in 'Search area'
+11. Click 'Save Referral'","- message 'Referral saved successfully!' appears
+- no server error",code_behind_handlers and client_script_validation,yes,not run,,

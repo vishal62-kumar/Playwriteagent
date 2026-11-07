@@ -1,0 +1,4052 @@
+{
+  "page": "Accounting/AddExpenses",
+  "url": "http://localhost:2786/Accounting/AddExpenses.aspx",
+  "scanned_at": "2026-10-31T13:56:00",
+  "elements": {
+    "lnkusername": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_lnkusername\"]"
+      },
+      "label": "Sundeep Saini",
+      "text": "Sundeep Saini",
+      "client_id": "ctl00_lnkusername",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "lnkhome": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_lnkhome\"]"
+      },
+      "label": "Home",
+      "text": "Home",
+      "client_id": "ctl00_lnkhome",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": false,
+      "group": ""
+    },
+    "practiceTrigger": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practiceTrigger\"]"
+      },
+      "label": "TBC(Shahdara)",
+      "text": "TBC(Shahdara)",
+      "client_id": "practiceTrigger",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "clearAllBtn": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"clearAllBtn\"]"
+      },
+      "label": "Clear All",
+      "text": "Clear All",
+      "client_id": "clearAllBtn",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "applyPracticeBtn": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"applyPracticeBtn\"]"
+      },
+      "label": "Apply",
+      "text": "Apply",
+      "client_id": "applyPracticeBtn",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "practice_all": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_all\"]"
+      },
+      "label": "All Practices",
+      "text": "all",
+      "client_id": "practice_all",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "all",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_4": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_4\"]"
+      },
+      "label": "TBC(Keshavpuram)",
+      "text": "4",
+      "client_id": "practice_4",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "4",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_8": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_8\"]"
+      },
+      "label": "TBC(MayurVihar)",
+      "text": "8",
+      "client_id": "practice_8",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "8",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_2": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_2\"]"
+      },
+      "label": "TBC(Shahdara)",
+      "text": "2",
+      "client_id": "practice_2",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "2",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": true
+    },
+    "practice_10": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_10\"]"
+      },
+      "label": "TBC(Tigri)",
+      "text": "10",
+      "client_id": "practice_10",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "10",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_9": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_9\"]"
+      },
+      "label": "TBC(UttamNagar)",
+      "text": "9",
+      "client_id": "practice_9",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "9",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "link_logout": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Logout"
+      },
+      "label": "Logout",
+      "text": "Logout",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_visit": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Visit"
+      },
+      "label": "Visit",
+      "text": "Visit",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_registration": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Patient Registration"
+      },
+      "label": "Patient Registration",
+      "text": "Patient Registration",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_task_and_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Task And Messages"
+      },
+      "label": "Task And Messages",
+      "text": "Task And Messages",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_shared_emrs": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Shared EMRs"
+      },
+      "label": "Shared EMRs",
+      "text": "Shared EMRs",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_accounting": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Accounting"
+      },
+      "label": "Accounting",
+      "text": "Accounting",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_contacts": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Contacts"
+      },
+      "label": "Contacts",
+      "text": "Contacts",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_reports": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Reports"
+      },
+      "label": "Reports",
+      "text": "Reports",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_administration": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Administration"
+      },
+      "label": "Administration",
+      "text": "Administration",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_my_account": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "My Account"
+      },
+      "label": "My Account",
+      "text": "My Account",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Lab"
+      },
+      "label": "Lab",
+      "text": "Lab",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_pharmacy": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Pharmacy"
+      },
+      "label": "Pharmacy",
+      "text": "Pharmacy",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Inventory"
+      },
+      "label": "Inventory",
+      "text": "Inventory",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_chief_complaints": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Chief Complaints"
+      },
+      "label": "Chief Complaints",
+      "text": "Chief Complaints",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_examination": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Examination"
+      },
+      "label": "Examination",
+      "text": "Examination",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_test": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Test"
+      },
+      "label": "Test",
+      "text": "Test",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_medicine": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Medicine"
+      },
+      "label": "Medicine",
+      "text": "Medicine",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_allergies_and_history": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Allergies And History"
+      },
+      "label": "Allergies And History",
+      "text": "Allergies And History",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_documents": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Documents"
+      },
+      "label": "Documents",
+      "text": "Documents",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_investigation_plan": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Investigation Plan"
+      },
+      "label": "Investigation Plan",
+      "text": "Investigation Plan",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_treatment_plan": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Treatment Plan"
+      },
+      "label": "Treatment Plan",
+      "text": "Treatment Plan",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_share_emr": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Share EMR"
+      },
+      "label": "Share EMR",
+      "text": "Share EMR",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_schedule": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Schedule"
+      },
+      "label": "Schedule",
+      "text": "Schedule",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_advice": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Advice"
+      },
+      "label": "Advice",
+      "text": "Advice",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_fatiguescore": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "FatigueScore"
+      },
+      "label": "FatigueScore",
+      "text": "FatigueScore",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_diabetes_symptoms_score": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Diabetes Symptoms Score"
+      },
+      "label": "Diabetes Symptoms Score",
+      "text": "Diabetes Symptoms Score",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_satisfaction_score": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Patient Satisfaction Score"
+      },
+      "label": "Patient Satisfaction Score",
+      "text": "Patient Satisfaction Score",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_quick_view": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Quick View"
+      },
+      "label": "Quick View",
+      "text": "Quick View",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_patient": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Patient"
+      },
+      "label": "Add Patient",
+      "text": "Add Patient",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_task_for_me": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Task For Me"
+      },
+      "label": "Task For Me",
+      "text": "Task For Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_assign_task": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Assign Task"
+      },
+      "label": "Assign Task",
+      "text": "Assign Task",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inbox": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inbox"
+      },
+      "label": "Inbox",
+      "text": "Inbox",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_compose_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Compose Messages"
+      },
+      "label": "Compose Messages",
+      "text": "Compose Messages",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_sent_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Sent Messages"
+      },
+      "label": "Sent Messages",
+      "text": "Sent Messages",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_all_emrs_shared_by_me": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "All EMRs Shared By Me"
+      },
+      "label": "All EMRs Shared By Me",
+      "text": "All EMRs Shared By Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_all_emrs_share_to_me": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "All EMRs Share To Me"
+      },
+      "label": "All EMRs Share To Me",
+      "text": "All EMRs Share To Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_expense": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Expense"
+      },
+      "label": "Add Expense",
+      "text": "Add Expense",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_bill": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Bill"
+      },
+      "label": "Add Bill",
+      "text": "Add Bill",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_expense_allocation": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Expense Allocation"
+      },
+      "label": "Expense Allocation",
+      "text": "Expense Allocation",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_directory": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Directory"
+      },
+      "label": "KMed Directory",
+      "text": "KMed Directory",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_network_request": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Network Request"
+      },
+      "label": "Network Request",
+      "text": "Network Request",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_my_phone_book": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "My Phone Book"
+      },
+      "label": "My Phone Book",
+      "text": "My Phone Book",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_referral_doctor": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Referral Doctor"
+      },
+      "label": "Add Referral Doctor",
+      "text": "Add Referral Doctor",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_bulk_referral_doctor": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Bulk Referral Doctor"
+      },
+      "label": "Add Bulk Referral Doctor",
+      "text": "Add Bulk Referral Doctor",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_emr_reports": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Patient EMR Reports"
+      },
+      "label": "Patient EMR Reports",
+      "text": "Patient EMR Reports",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_schedule_audit": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Schedule Audit"
+      },
+      "label": "Schedule Audit",
+      "text": "Schedule Audit",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_bill_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Bill Report"
+      },
+      "label": "Bill Report",
+      "text": "Bill Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lab Report"
+      },
+      "label": "Lab Report",
+      "text": "Lab Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_pharmacy_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Pharmacy Report"
+      },
+      "label": "Pharmacy Report",
+      "text": "Pharmacy Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inventory Report"
+      },
+      "label": "Inventory Report",
+      "text": "Inventory Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_user_dashboard": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "User Dashboard"
+      },
+      "label": "User Dashboard",
+      "text": "User Dashboard",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_daily_visit_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Daily Visit Report"
+      },
+      "label": "Daily Visit Report",
+      "text": "Daily Visit Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_referral_doctor_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Referral Doctor Report"
+      },
+      "label": "Referral Doctor Report",
+      "text": "Referral Doctor Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_action_wall": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Action Wall"
+      },
+      "label": "Action Wall",
+      "text": "Action Wall",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_defaulter_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Defaulter Report"
+      },
+      "label": "Defaulter Report",
+      "text": "Defaulter Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_defaulter_report_old": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Defaulter Report (old)"
+      },
+      "label": "Defaulter Report (old)",
+      "text": "Defaulter Report (old)",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_patient_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Patient Report"
+      },
+      "label": "New Patient Report",
+      "text": "New Patient Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_referral_doctor_report_new": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Referral Doctor Report (new)"
+      },
+      "label": "Referral Doctor Report (new)",
+      "text": "Referral Doctor Report (new)",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_doctor_payment": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Doctor Payment"
+      },
+      "label": "Doctor Payment",
+      "text": "Doctor Payment",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lead_prospect_page": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lead Prospect Page"
+      },
+      "label": "Lead Prospect Page",
+      "text": "Lead Prospect Page",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_follow_up_reminders": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Follow-Up Reminders"
+      },
+      "label": "Follow-Up Reminders",
+      "text": "Follow-Up Reminders",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_workstatus_and_escalation_repo": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "WorkStatus And Escalation Report"
+      },
+      "label": "WorkStatus And Escalation Report",
+      "text": "WorkStatus And Escalation Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_reports_analytics": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Reports & Analytics"
+      },
+      "label": "Reports & Analytics",
+      "text": "Reports & Analytics",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_doctor_communication_day_track": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Doctor Communication Day Track"
+      },
+      "label": "Doctor Communication Day Track",
+      "text": "Doctor Communication Day Track",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Team Member"
+      },
+      "label": "Team Member",
+      "text": "Team Member",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_practice_location": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Practice Location"
+      },
+      "label": "Practice Location",
+      "text": "Practice Location",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_dash_board_preference": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Dash Board Preference"
+      },
+      "label": "Dash Board Preference",
+      "text": "Dash Board Preference",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_payment": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Payment"
+      },
+      "label": "Payment",
+      "text": "Payment",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_edit_profile": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Edit Profile"
+      },
+      "label": "Edit Profile",
+      "text": "Edit Profile",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_change_password": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Change Password"
+      },
+      "label": "Change Password",
+      "text": "Change Password",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_invoices": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Invoices"
+      },
+      "label": "KMed Invoices",
+      "text": "KMed Invoices",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_support": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Support"
+      },
+      "label": "KMed Support",
+      "text": "KMed Support",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_getting_started": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Getting Started"
+      },
+      "label": "Getting Started",
+      "text": "Getting Started",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab_task": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lab Task"
+      },
+      "label": "Lab Task",
+      "text": "Lab Task",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_test_done": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Test Done"
+      },
+      "label": "Test Done",
+      "text": "Test Done",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_prescriptions": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Prescriptions"
+      },
+      "label": "Prescriptions",
+      "text": "Prescriptions",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_dispensed_medicine": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Dispensed Medicine"
+      },
+      "label": "Dispensed Medicine",
+      "text": "Dispensed Medicine",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_item_master": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Item Master"
+      },
+      "label": "Item Master",
+      "text": "Item Master",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_supplier_master": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Supplier Master"
+      },
+      "label": "Supplier Master",
+      "text": "Supplier Master",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_transaction_details": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Transaction Details"
+      },
+      "label": "Transaction Details",
+      "text": "Transaction Details",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_2": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Inventory"
+      },
+      "label": "Inventory",
+      "text": "Inventory",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_inventory_transaction": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Inventory Transaction"
+      },
+      "label": "New Inventory Transaction",
+      "text": "New Inventory Transaction",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_transaction_receipt": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inventory Transaction Receipt"
+      },
+      "label": "Inventory Transaction Receipt",
+      "text": "Inventory Transaction Receipt",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_inventory_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Inventory Report"
+      },
+      "label": "New Inventory Report",
+      "text": "New Inventory Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "txtdate": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtdate\"]"
+      },
+      "label": "Date",
+      "text": "31/10/2026",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtdate",
+      "visible": true,
+      "enabled": true,
+      "readonly": true,
+      "initial_value": "31/10/2026",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtexpenseamount": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtexpenseamount\"]"
+      },
+      "label": "Expense Amount",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtexpenseamount",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": 12,
+      "in_page_source": true
+    },
+    "ddlexpensetype": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_ddlexpensetype\"]"
+      },
+      "label": "Expense Type",
+      "text": "Select Expense Type Tea Club Office Maintenance Office Bill (Electricity, Water,",
+      "client_id": "ctl00_ContentOverUpdatePanel_ddlexpensetype",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "",
+          "label": "Select Expense Type"
+        },
+        {
+          "value": "1",
+          "label": "Tea Club"
+        },
+        {
+          "value": "2",
+          "label": "Office Maintenance"
+        },
+        {
+          "value": "3",
+          "label": "Office Bill (Electricity, Water, Internet, etc.)"
+        },
+        {
+          "value": "4",
+          "label": "Office Cleaning / Pest Control"
+        },
+        {
+          "value": "5",
+          "label": "Medicines"
+        },
+        {
+          "value": "6",
+          "label": "Miscellaneous"
+        },
+        {
+          "value": "7",
+          "label": "Office Furniture"
+        },
+        {
+          "value": "8",
+          "label": "Transport Charges"
+        },
+        {
+          "value": "9",
+          "label": "Labour Charges"
+        },
+        {
+          "value": "10",
+          "label": "Labour Charges"
+        }
+      ]
+    },
+    "txtexpensedescription": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtexpensedescription\"]"
+      },
+      "label": "Description",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtexpensedescription",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "textmode": "MultiLine"
+    },
+    "button_choose_files": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "Choose Files"
+      },
+      "label": "Choose Files",
+      "text": "Choose Files",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "fubillimage": {
+      "kind": "file",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_fubillimage\"]"
+      },
+      "label": "No file chosen",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_fubillimage",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "btnSubmit": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnSubmit\"]"
+      },
+      "label": "Submit",
+      "text": "Submit",
+      "client_id": "btnSubmit",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Submit",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "saveExpense()"
+    },
+    "btnClearExpense": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnClearExpense\"]"
+      },
+      "label": "Clear",
+      "text": "Clear",
+      "client_id": "btnClearExpense",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Clear",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "clearForm()"
+    },
+    "btnUpdate": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnUpdate\"]"
+      },
+      "label": "Update",
+      "text": "Update",
+      "client_id": "btnUpdate",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Update",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "saveExpense()"
+    },
+    "btnExportCSV": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnExportCSV\"]"
+      },
+      "label": "Export CSV",
+      "text": "Export CSV",
+      "client_id": "btnExportCSV",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Export CSV",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "exportToExcel()"
+    },
+    "txtSearchExpense": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtSearchExpense\"]"
+      },
+      "label": "Search expenses...",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtSearchExpense",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtfrom": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtfrom\"]"
+      },
+      "label": "dd/mm/yyyy",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtfrom",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": 10,
+      "in_page_source": true
+    },
+    "txtto": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtto\"]"
+      },
+      "label": "dd/mm/yyyy",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtto",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": 10,
+      "in_page_source": true
+    },
+    "button_expense_types": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "Expense Types ▾"
+      },
+      "label": "Expense Types ▾",
+      "text": "Expense Types ▾",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "checkbox_1": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tea Club"
+      },
+      "label": "Tea Club",
+      "text": "1",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "1",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_2": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Office Maintenance"
+      },
+      "label": "Office Maintenance",
+      "text": "2",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "2",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_3": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Office Bill (Electricity, Water, Internet, etc.)"
+      },
+      "label": "Office Bill (Electricity, Water, Internet, etc.)",
+      "text": "3",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "3",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_4": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Office Cleaning / Pest Control"
+      },
+      "label": "Office Cleaning / Pest Control",
+      "text": "4",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "4",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_5": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Medicines"
+      },
+      "label": "Medicines",
+      "text": "5",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "5",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_6": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Miscellaneous"
+      },
+      "label": "Miscellaneous",
+      "text": "6",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "6",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_7": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Office Furniture"
+      },
+      "label": "Office Furniture",
+      "text": "7",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "7",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_8": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Transport Charges"
+      },
+      "label": "Transport Charges",
+      "text": "8",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "8",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "button_app_user": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "App User ▼"
+      },
+      "label": "App User ▼",
+      "text": "App User ▼",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "checkbox_239": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "00000000 0000000000"
+      },
+      "label": "00000000 0000000000",
+      "text": "239",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "239",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_20": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Abhishek Jain Sr. Engineer"
+      },
+      "label": "Abhishek Jain Sr. Engineer",
+      "text": "20",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "20",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_298": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Afsar Mohd"
+      },
+      "label": "Afsar Mohd",
+      "text": "298",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "298",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_26": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Ahsan Ahmad"
+      },
+      "label": "Ahsan Ahmad",
+      "text": "26",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "26",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_46": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Aijaz Nabi Manager Admin"
+      },
+      "label": "Aijaz Nabi Manager Admin",
+      "text": "46",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "46",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_303": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Akansha Lab technician"
+      },
+      "label": "Akansha Lab technician",
+      "text": "303",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "303",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_126": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Amaan Rais"
+      },
+      "label": "Amaan Rais",
+      "text": "126",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "126",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_243": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Aman Aman"
+      },
+      "label": "Aman Aman",
+      "text": "243",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "243",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_132": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Amir Khan Sr. Bd Exce."
+      },
+      "label": "Amir Khan Sr. Bd Exce.",
+      "text": "132",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "132",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_133": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Anam Qureshi Pt. Counsellor"
+      },
+      "label": "Anam Qureshi Pt. Counsellor",
+      "text": "133",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "133",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_7_2": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Anand Manocha"
+      },
+      "label": "Anand Manocha",
+      "text": "7",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "7",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_227": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Anjali Mandrai"
+      },
+      "label": "Anjali Mandrai",
+      "text": "227",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "227",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_318": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Anjali Calling"
+      },
+      "label": "Anjali Calling",
+      "text": "318",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "318",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_50": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Ashwani Kumar"
+      },
+      "label": "Ashwani Kumar",
+      "text": "50",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "50",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_67": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Bhawna nagpal PHARMACY EXCECUTIVE"
+      },
+      "label": "Bhawna nagpal PHARMACY EXCECUTIVE",
+      "text": "67",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "67",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_292": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Chhavi Physiotherapist"
+      },
+      "label": "Chhavi Physiotherapist",
+      "text": "292",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "292",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_311": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Deepak Panday"
+      },
+      "label": "Deepak Panday",
+      "text": "311",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "311",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_310": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Devesh Kumar"
+      },
+      "label": "Devesh Kumar",
+      "text": "310",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "310",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_275": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Dietician KMedNet"
+      },
+      "label": "Dietician KMedNet",
+      "text": "275",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "275",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_5_2": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Dr Sunita Rani Cheif Medical Officer"
+      },
+      "label": "Dr Sunita Rani Cheif Medical Officer",
+      "text": "5",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "5",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_187": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Faisal Saifi Clinic Manager"
+      },
+      "label": "Faisal Saifi Clinic Manager",
+      "text": "187",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "187",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_146": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Ganga Verma training manager"
+      },
+      "label": "Ganga Verma training manager",
+      "text": "146",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "146",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_261": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Gaurav Marketing"
+      },
+      "label": "Gaurav Marketing",
+      "text": "261",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "261",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_299": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Harsh Pt. Coordinator"
+      },
+      "label": "Harsh Pt. Coordinator",
+      "text": "299",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "299",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_33": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Himani Saini kohat"
+      },
+      "label": "Himani Saini kohat",
+      "text": "33",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "33",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_226": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Himanshi Bagiri"
+      },
+      "label": "Himanshi Bagiri",
+      "text": "226",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "226",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_181": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Himanshu verma Medical Officer"
+      },
+      "label": "Himanshu verma Medical Officer",
+      "text": "181",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "181",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_225": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Hritik Sharma"
+      },
+      "label": "Hritik Sharma",
+      "text": "225",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "225",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_119": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Jitender Sr. Bd Exce."
+      },
+      "label": "Jitender Sr. Bd Exce.",
+      "text": "119",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "119",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_297": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Jyoti Saini"
+      },
+      "label": "Jyoti Saini",
+      "text": "297",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "297",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_96": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Kanika Sharda"
+      },
+      "label": "Kanika Sharda",
+      "text": "96",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "96",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_93": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Komal Bansal"
+      },
+      "label": "Komal Bansal",
+      "text": "93",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "93",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_95": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Krish Saini"
+      },
+      "label": "Krish Saini",
+      "text": "95",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "95",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_22": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Lakshmi Verma"
+      },
+      "label": "Lakshmi Verma",
+      "text": "22",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "22",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_6_2": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Lata Arya"
+      },
+      "label": "Lata Arya",
+      "text": "6",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "6",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_47": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Manisha Kaur"
+      },
+      "label": "Manisha Kaur",
+      "text": "47",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "47",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_178": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Manisha Call Center Exce."
+      },
+      "label": "Manisha Call Center Exce.",
+      "text": "178",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "178",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_284": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Manisha Cce"
+      },
+      "label": "Manisha Cce",
+      "text": "284",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "284",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_288": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Manoj Kumar"
+      },
+      "label": "Manoj Kumar",
+      "text": "288",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "288",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_289": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Manoj Kumar assistant manager"
+      },
+      "label": "Manoj Kumar assistant manager",
+      "text": "289",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "289",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_92": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Mansi yadav Call Center Exce."
+      },
+      "label": "Mansi yadav Call Center Exce.",
+      "text": "92",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "92",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_314": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Mayank Singhal"
+      },
+      "label": "Mayank Singhal",
+      "text": "314",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "314",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_168": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Meenakshi Panchal Lab. Technician"
+      },
+      "label": "Meenakshi Panchal Lab. Technician",
+      "text": "168",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "168",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_51": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Mohd Shuaib"
+      },
+      "label": "Mohd Shuaib",
+      "text": "51",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "51",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_102": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Mohd Danish Medical Officer"
+      },
+      "label": "Mohd Danish Medical Officer",
+      "text": "102",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "102",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_82": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Monika singh Sr. Call Center Exce."
+      },
+      "label": "Monika singh Sr. Call Center Exce.",
+      "text": "82",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "82",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_83": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Muskan Receptionist"
+      },
+      "label": "Muskan Receptionist",
+      "text": "83",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "83",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_103": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Nadeem Shabnam"
+      },
+      "label": "Nadeem Shabnam",
+      "text": "103",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "103",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_25": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Naushad Khan"
+      },
+      "label": "Naushad Khan",
+      "text": "25",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "25",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_274": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Naveen Marketing"
+      },
+      "label": "Naveen Marketing",
+      "text": "274",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "274",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_183": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Nawazish Zaidi Xray Technician"
+      },
+      "label": "Nawazish Zaidi Xray Technician",
+      "text": "183",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "183",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_211": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Nisha Yadav Front Office Exce."
+      },
+      "label": "Nisha Yadav Front Office Exce.",
+      "text": "211",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "211",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_195": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Nisha Zaidi Receptionist"
+      },
+      "label": "Nisha Zaidi Receptionist",
+      "text": "195",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "195",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_237": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Nishant Kumar"
+      },
+      "label": "Nishant Kumar",
+      "text": "237",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "237",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_188": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Not in use"
+      },
+      "label": "Not in use",
+      "text": "188",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "188",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_37": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Pooja Saini"
+      },
+      "label": "Pooja Saini",
+      "text": "37",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "37",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_189": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Priyanka Saini Dietitian"
+      },
+      "label": "Priyanka Saini Dietitian",
+      "text": "189",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "189",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_257": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Rakesh Rakesh marketing"
+      },
+      "label": "Rakesh Rakesh marketing",
+      "text": "257",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "257",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_39": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Rakhi Saini"
+      },
+      "label": "Rakhi Saini",
+      "text": "39",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "39",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_271": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Ranveer Marketing"
+      },
+      "label": "Ranveer Marketing",
+      "text": "271",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "271",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_145": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Reetu Verma Call Center Exce."
+      },
+      "label": "Reetu Verma Call Center Exce.",
+      "text": "145",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "145",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_134": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Richa Sharma Call Center Manager"
+      },
+      "label": "Richa Sharma Call Center Manager",
+      "text": "134",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "134",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_86": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Ritesh Kumar"
+      },
+      "label": "Ritesh Kumar",
+      "text": "86",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "86",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_150": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sachin Kaushik"
+      },
+      "label": "Sachin Kaushik",
+      "text": "150",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "150",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_42": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sangeeta Chindaliya"
+      },
+      "label": "Sangeeta Chindaliya",
+      "text": "42",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "42",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_253": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sarfraz Hybrid marketing"
+      },
+      "label": "Sarfraz Hybrid marketing",
+      "text": "253",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "253",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_149": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Satish Kaushik"
+      },
+      "label": "Satish Kaushik",
+      "text": "149",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "149",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_283": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Shivangi Yadav"
+      },
+      "label": "Shivangi Yadav",
+      "text": "283",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "283",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_309": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Shivanshu Hybrid marketing"
+      },
+      "label": "Shivanshu Hybrid marketing",
+      "text": "309",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "309",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_242": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Suman Suman"
+      },
+      "label": "Suman Suman",
+      "text": "242",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "242",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_4_2": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sundeep Saini"
+      },
+      "label": "Sundeep Saini",
+      "text": "4",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "4",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_192": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tannu Das Pt. Coordinator"
+      },
+      "label": "Tannu Das Pt. Coordinator",
+      "text": "192",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "192",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_121": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tara Shaikh Receptionist"
+      },
+      "label": "Tara Shaikh Receptionist",
+      "text": "121",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "121",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_319": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tarique Tarique marketing"
+      },
+      "label": "Tarique Tarique marketing",
+      "text": "319",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "319",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_255": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tarun Hybrid marketing"
+      },
+      "label": "Tarun Hybrid marketing",
+      "text": "255",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "255",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_184": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tech@ Medcross"
+      },
+      "label": "Tech@ Medcross",
+      "text": "184",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "184",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_304": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tinkush Marketing"
+      },
+      "label": "Tinkush Marketing",
+      "text": "304",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "304",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_233": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Training @ Medcross ."
+      },
+      "label": "Training @ Medcross .",
+      "text": "233",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "233",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_131": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Vishal Singh"
+      },
+      "label": "Vishal Singh",
+      "text": "131",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "131",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "ddlAppUser": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_ddlAppUser\"]"
+      },
+      "label": "App User ▼",
+      "text": "Select App User 00000000 0000000000 Abhishek Jain Sr. Engineer Afsar Mohd Ahsan ",
+      "client_id": "ctl00_ContentOverUpdatePanel_ddlAppUser",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "",
+          "label": "Select App User"
+        },
+        {
+          "value": "239",
+          "label": "00000000 0000000000"
+        },
+        {
+          "value": "20",
+          "label": "Abhishek Jain Sr. Engineer"
+        },
+        {
+          "value": "298",
+          "label": "Afsar Mohd"
+        },
+        {
+          "value": "26",
+          "label": "Ahsan Ahmad"
+        },
+        {
+          "value": "46",
+          "label": "Aijaz Nabi Manager Admin"
+        },
+        {
+          "value": "303",
+          "label": "Akansha Lab technician"
+        },
+        {
+          "value": "126",
+          "label": "Amaan Rais"
+        },
+        {
+          "value": "243",
+          "label": "Aman Aman"
+        },
+        {
+          "value": "132",
+          "label": "Amir Khan Sr. Bd Exce."
+        },
+        {
+          "value": "133",
+          "label": "Anam Qureshi Pt. Counsellor"
+        },
+        {
+          "value": "7",
+          "label": "Anand Manocha"
+        },
+        {
+          "value": "227",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "318",
+          "label": "Anjali Calling"
+        },
+        {
+          "value": "50",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "67",
+          "label": "Bhawna nagpal PHARMACY EXCECUTIVE"
+        },
+        {
+          "value": "292",
+          "label": "Chhavi Physiotherapist"
+        },
+        {
+          "value": "311",
+          "label": "Deepak Panday"
+        },
+        {
+          "value": "310",
+          "label": "Devesh Kumar"
+        },
+        {
+          "value": "275",
+          "label": "Dietician KMedNet"
+        },
+        {
+          "value": "5",
+          "label": "Dr Sunita Rani Cheif Medical Officer"
+        },
+        {
+          "value": "187",
+          "label": "Faisal Saifi Clinic Manager"
+        },
+        {
+          "value": "146",
+          "label": "Ganga Verma training manager"
+        },
+        {
+          "value": "261",
+          "label": "Gaurav Marketing"
+        },
+        {
+          "value": "299",
+          "label": "Harsh Pt. Coordinator"
+        },
+        {
+          "value": "182",
+          "label": "Hema Sharma Data Entry Operator"
+        },
+        {
+          "value": "218",
+          "label": "Hema Sharma Data Entry Operator"
+        },
+        {
+          "value": "33",
+          "label": "Himani Saini kohat"
+        },
+        {
+          "value": "226",
+          "label": "Himanshi Bagiri"
+        },
+        {
+          "value": "181",
+          "label": "Himanshu verma Medical Officer"
+        }
+      ]
+    },
+    "btnSearchExpense": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnSearchExpense\"]"
+      },
+      "label": "Search",
+      "text": "Search",
+      "client_id": "btnSearchExpense",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Search",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "filterExpenses()"
+    },
+    "btnClearSearch": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnClearSearch\"]"
+      },
+      "label": "Clear",
+      "text": "Clear",
+      "client_id": "btnClearSearch",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Clear",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "clearFilters()"
+    },
+    "select_10_25_50_100": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "select[name=\"tblExpenses_length\"]"
+      },
+      "label": "Show 10 25 50 100 entries",
+      "text": "10 25 50 100",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "10",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "25",
+          "label": "25"
+        },
+        {
+          "value": "50",
+          "label": "50"
+        },
+        {
+          "value": "100",
+          "label": "100"
+        }
+      ]
+    },
+    "tblExpenses_previous": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblExpenses_previous\"]"
+      },
+      "label": "Previous",
+      "text": "Previous",
+      "client_id": "tblExpenses_previous",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_1": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "1"
+      },
+      "label": "1",
+      "text": "1",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "2"
+      },
+      "label": "2",
+      "text": "2",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_3": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "3"
+      },
+      "label": "3",
+      "text": "3",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "tblExpenses_next": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblExpenses_next\"]"
+      },
+      "label": "Next",
+      "text": "Next",
+      "client_id": "tblExpenses_next",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_download": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Download"
+      },
+      "label": "Download",
+      "text": "Download",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_rotate": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Rotate"
+      },
+      "label": "Rotate",
+      "text": "Rotate",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_close": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Close"
+      },
+      "label": "Close",
+      "text": "Close",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_item": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "❮"
+      },
+      "label": "❮",
+      "text": "❮",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_item_2": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "❯"
+      },
+      "label": "❯",
+      "text": "❯",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    }
+  },
+  "validators": {
+    "rfvtxtdate": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvtxtdate",
+      "control": "txtdate",
+      "control_client_id": "ctl00_ContentOverUpdatePanel_txtdate",
+      "message": "Please enter Date",
+      "expression": "",
+      "group": "AddExpenses",
+      "initial_value": "",
+      "client_side": true
+    },
+    "revtxtdate": {
+      "kind": "regex",
+      "client_id": "ctl00_ContentOverUpdatePanel_revtxtdate",
+      "control": "txtdate",
+      "control_client_id": "ctl00_ContentOverUpdatePanel_txtdate",
+      "message": "Please enter valid Date",
+      "expression": "^(([0-9])|([0-2][0-9])|(3[0-1]))\\/(([1-9])|(0[1-9])|(1[0-2]))\\/(([0-9][0-9])|([1-2][0,9][0-9][0-9]))$",
+      "group": "AddExpenses",
+      "initial_value": "",
+      "client_side": true
+    },
+    "cvtxtdate": {
+      "kind": "custom",
+      "client_id": "ctl00_ContentOverUpdatePanel_cvtxtdate",
+      "control": "txtdate",
+      "control_client_id": "ctl00_ContentOverUpdatePanel_txtdate",
+      "message": "This date is not allowed.",
+      "expression": "",
+      "group": "AddExpenses",
+      "initial_value": "",
+      "client_side": true
+    },
+    "rfvtxtexpenseamount": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvtxtexpenseamount",
+      "control": "txtexpenseamount",
+      "control_client_id": "ctl00_ContentOverUpdatePanel_txtexpenseamount",
+      "message": "Please enter Expense Amount",
+      "expression": "",
+      "group": "AddExpenses",
+      "initial_value": "",
+      "client_side": true
+    },
+    "revtxtexpenseamount": {
+      "kind": "regex",
+      "client_id": "ctl00_ContentOverUpdatePanel_revtxtexpenseamount",
+      "control": "txtexpenseamount",
+      "control_client_id": "ctl00_ContentOverUpdatePanel_txtexpenseamount",
+      "message": "Please enter valid Expense Amount use only numeric characters ",
+      "expression": "^\\d+(\\.\\d{1,2})?$",
+      "group": "AddExpenses",
+      "initial_value": "",
+      "client_side": true
+    },
+    "rfvtxtexpensetype": {
+      "kind": "required",
+      "client_id": "ctl00_ContentOverUpdatePanel_rfvtxtexpensetype",
+      "control": "ddlexpensetype",
+      "control_client_id": "ctl00_ContentOverUpdatePanel_ddlexpensetype",
+      "message": "Please Select Expense Type",
+      "expression": "",
+      "group": "AddExpenses",
+      "initial_value": "",
+      "client_side": true
+    }
+  },
+  "known_messages": [
+    "Boolean Number String Function Array Date RegExp Object Error",
+    "DD/MM/YYYY HH:mm",
+    "Edited Date:",
+    "Error fetching expenses:",
+    "Error fetching summaries:",
+    "Error initializing grid:",
+    "Error loading grid:",
+    "Expense Added Successfully",
+    "Expense Amount cannot exceed 50,000 at one time.",
+    "Expense Amount must be greater than zero.",
+    "Expense Description is mandatory.",
+    "Expense Updated Successfully",
+    "Invalid JSON:",
+    "Invalid XML:",
+    "No Transport",
+    "No conversion from",
+    "No data available to export.",
+    "No expenses found",
+    "No file chosen",
+    "Permission Denied",
+    "Please Select Expense Type",
+    "Please enter Date",
+    "Please enter Expense Amount",
+    "Please enter valid Date",
+    "Please enter valid Expense Amount use only numeric characters ",
+    "Select AppUser",
+    "Server error occurred",
+    "Syntax error, unrecognized expression:",
+    "This date is not allowed.",
+    "Unknown error",
+    "View 2",
+    "Warning: The entered amount (₹",
+    "Warning: The net increase (₹",
+    "You can only have a maximum of 5 files total (including existing files)."
+  ],
+  "page_text": "KMedNet\nCOMPLETE PRACTICE SOLUTION\nU\nSundeep Saini\n \nHome\nTBC(Shahdara)\n \nLogout\nVisit\n\t\t\nPatient Registration\n\t\t\nTask And Messages\n\t\t\nShared EMRs\n\t\t\nAccounting\n\t\t\nContacts\n\t\t\nReports\n\t\t\nAdministration\n\t\t\nMy Account\n\t\t\nLab\n\t\t\nPharmacy\n\t\t\nInventory\nAdd Practice Expenses\nEXPENSE DETAILS\nDate *\nExpense Amount *\nExpense Type *\nSelect Expense Type\nTea Club\nOffice Maintenance\nOffice Bill (Electricity, Water, Internet, etc.)\nOffice Cleaning / Pest Control\nMedicines\nMiscellaneous\nOffice Furniture\nTransport Charges\nLabour Charges\nLabour Charges\nDescription*\nBILL ATTACHMENTS\nBill Attachments\n(Max 5 images ) PDF/jpg/png/jpeg\nChoose Files No file chosen\nFrom:\nTo:\nExpense Types\n▾\nApp User\n▼\nPREVIOUS BALANCE AMT.\n₹0.00\nCURR.MONTH ALLOTED\n₹0.00\nCURR.MONTH SPENT\n₹1,000.00\nREMAINING BALANCE\n₹-1,000.00\nShow \n10\n25\n50\n100\n entries\nDATE\tEXPENSE TYPE\tDESCRIPTION\tADDED BY\tBILL ATTACHMENTS\tDESIGNATION\tEXPENSE AMOUNT\tEDIT LOG\tACTION\n30/10/2026\tTea Club\tMonthly tea expenses\tSundeep Saini\t-\tDoctor\t 1000.00\t\tEdit\n24/08/2026\tTea Club\t\tSundeep Saini\t-\tDoctor\t 100.00\t\tEdit\n05/02/2015\tTransport Charges\tmonthly expense advance to naushad\tSundeep Saini\t-\tDoctor\t 1000.00\t\tEdit\n05/02/2015\tOffice Maintenance\tmedicine purchage by azim\tSundeep Saini\t-\tDoctor\t 22000.00\t\tEdit\n01/02/2015\tTransport Charges\tladoo referral amount\tSundeep Saini\t-\tDoctor\t 500.00\t\tEdit\n31/01/2015\tTransport Charges\tnaushad daily expense\tSundeep Saini\t-\tDoctor\t 2500.00\t\tEdit\n31/01/2015\tOffice Bill (Electricity, Water, Internet, etc.)\tSalary lata\tSundeep Saini\t-\tDoctor\t 2000.00\t\tEdit\n09/01/2015\tOffice Maintenance\tmedicine previous month by azim ,cough syrup\tSundeep Saini\t-\tDoctor\t 1280.00\t\tEdit\n08/01/2015\tOffice Maintenance\tmedicine y azim\tSundeep Saini\t-\tDoctor\t 11800.00\t\tEdit\n08/01/2015\tOffice Bill (Electricity, Water, Internet, etc.)\tsalary dr minocha 15 jan to 15 feb\tSundeep Saini\t-\tDoctor\t 10000.00\t\tEdit\nShowing 1 to 10 of 26 entries\nPrevious123Next\n© 2026 KMedNet · All rights reserved",
+  "source": {
+    "found": true,
+    "aspx_path": "C:\\medcrossproject\\practice\\Accounting\\AddExpenses.aspx",
+    "code_behind_path": "C:\\medcrossproject\\practice\\Accounting\\AddExpenses.aspx.cs",
+    "handlers": {
+      "Page_Load": "void Page_Load(object sender, EventArgs e)\n        {\n            ImageNDocServiceUrl = System.Configuration.ConfigurationManager.AppSettings[\"ImageNDocService\"] ?? \"\";\n            \n            lblMessage.Text = \"\";\n            lblMessage.ForeColor = System.Drawing.Color.Empty;\n            lblMessage.CssClass = \"blank\";\n            \n            AppBaseFunctions.DateCulture();\n            if (!Page.IsPostBack)\n            {\n                DBHelper dbHelper = new DBHelper();\n                string sqlGetTypes = \"SELECT row_id, new_expense_type FROM ExpenseType ORDER BY row_id ASC\";\n                DataSet dsTypes = dbHelper.ExecuteDataSet(sqlGetTypes, null, CommandType.Text);\n                AppBaseFunctions.populateDropDown(ddlexpensetype, dsTypes, \"new_expense_type\", \"row_id\", true, \"Select Expense Type\");\n                \n                string practiceId = HttpContext.Current.Session[\"practice_id\"].ToString();\n                string sqlGetUsers = \"SELECT row_id, firstname + ' ' + lastname AS username FROM Appuser WHERE ('\" + practiceId + \"' = '0' OR '\" + practiceId + \"' = '' OR practice_id IN (SELECT TRY_CAST(value AS numeric) FROM dbo.SplitString('\" + practiceId + \"', ','))) ORDER BY firstname ASC\";\n                DataSet dsUsers = dbHelper.ExecuteDataSet(sqlGetUsers, null, CommandType.Text);\n                AppBaseFunctions.populateDropDown(ddlAppUser, dsUsers, \"username\", \"row_id\", true, \"Select App User\");\n                \n                txtdate.Text = System.DateTime.Now.ToString(\"dd/MM/yyyy\");        \n            }\n        }"
+    },
+    "script_files": [
+      "C:\\medcrossproject\\practice\\DataTable\\Script\\jquery-1.10.2.js",
+      "<inline scripts in .aspx>"
+    ],
+    "script_rules": "function doScrollCheck() {\n\t\t\t\t\tif ( !jQuery.isReady ) {\n\n\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\t// Use the trick by Diego Perini\n\t\t\t\t\t\t\t// http://javascript.nwbox.com/IEContentLoaded/\n\t\t\t\t\t\t\ttop.doScroll(\"left\");\n\t\t\t\t\t\t} catch(e) {\n\t\t\t\t\t\t\treturn setTimeout( doScrollCheck, 50 );\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// detach all dom ready events\n\t\t\t\t\t\tdetach();\n\n\t\t\t\t\t\t// and execute any waiting functions\n\t\t\t\t\t\tjQuery.ready();\n\t\t\t\t\t}\n\t\t\t\t}\n\nfunction siblingCheck( a, b ) {\n\tvar cur = b && a,\n\t\tdiff = cur && a.nodeType === 1 && b.nodeType === 1 &&\n\t\t\t( ~b.sourceIndex || MAX_NEGATIVE ) -\n\t\t\t( ~a.sourceIndex || MAX_NEGATIVE );\n\n\t// Use IE sourceIndex if available on both nodes\n\tif ( diff ) {\n\t\treturn diff;\n\t}\n\n\t// Check if b follows a\n\tif ( cur ) {\n\t\twhile ( (cur = cur.nextSibling) ) {\n\t\t\tif ( cur === b ) {\n\t\t\t\treturn -1;\n\t\t\t}\n\t\t}\n\t}\n\n\treturn a ? 1 : -1;\n}\n\nfunction fixDefaultChecked( elem ) {\n\tif ( manipulation_rcheckableType.test( elem.type ) ) {\n\t\telem.defaultChecked = elem.checked;\n\t}\n}\n\nfunction validateFileCount(input) {\n            var existingStr = $('#hfExistingBillImagePath').val();\n            var existingCount = existingStr ? existingStr.split(/[,|]/).filter(function(e){ return e; }).length : 0;\n            var currentPending = pendingDt.files.length;\n            var maxAllowed = 5 - existingCount - currentPending;\n            \n            if (input.files.length > maxAllowed && maxAllowed >= 0) {\n                alert(\"You can only have a maximum of 5 files total (including existing files).\");\n            }\n            \n            var addedCount = 0;\n            for (var i = 0; i < input.files.length; i++) {\n                if (addedCount < maxAllowed) {\n                    pendingDt.items.add(input.files[i]);\n                    addedCount++;\n                }\n            }\n            \n            input.files = pendingDt.files;\n            renderEditImageLinks();\n        }\n\nfunction saveExpense() {\n            // Validate client-side first\n            if (typeof Page_ClientValidate === 'function' && !Page_ClientValidate(\"AddExpenses\")) {\n                return false;\n            }\n            \n            var amount = parseFloat($('#<%= txtexpenseamount.ClientID %>').val());\n            if (isNaN(amount) || amount <= 0) {\n                $('#<%= lblMessage.ClientID %>').text('Expense Amount must be greater than zero.').css('color', 'red');\n                return false;\n            }\n\n            if (amount > 50000) {\n                $('#<%= lblMessage.ClientID %>').text('Expense Amount cannot exceed 50,000 at one time.').css('color', 'red');\n                return false;\n            }\n\n            var description = $('#<%= txtexpensedescription.ClientID %>').val().trim();\n            if (description === \"\") {\n                $('#<%= lblMessage.ClientID %>').text('Expense Description is mandatory.').css('color', 'red');\n                return false;\n            }\n\n            var rowId = parseInt($('#hfRowId').val() || '0');\n            var oldAmount = parseFloat($('#hfOldAmount').val() || '0');\n            var netAmount = rowId > 0 ? (amount - oldAmount) : amount;\n            \n            var remBalStr = $('#<%= lblRemainingBalance.ClientID %>').text().replace(/[^0-9.-]+/g, \"\");\n            var remainingBalance = parseFloat(remBalStr);\n            \n            if (!isNaN(remainingBalance) && netAmount > remainingBalance) {\n                var msg = rowId > 0 \n                    ? \"Warning: The net increase (₹\" + netAmount + \") exceeds your Remaining Balance (₹\" + remainingBalance + \").\\n\\nDo you want to continue saving this expense?\"\n                    : \"Warning: The entered amount (₹\" + amount + \") exceeds your Remaining Balance (₹\" + remainingBalance + \").\\n\\nDo you want to continue saving this expense?\";\n                var proceed = confirm(msg);\n                if (!proceed) {\n                    return false;\n                }\n            }\n\n            var formData = new FormData();\n            formData.append('method', 'saveExpense');\n            \n            var expenseDateStr = $('#<%= txtdate.ClientID %>').val();\n            var addedOn = null;\n            if (expenseDateStr) {\n                var mmnt = moment(expenseDateStr, 'DD/MM/YYYY');\n                if (mmnt.isValid()) {\n                    addedOn = mmnt.format('YYYY-MM-DDTHH:mm:ss');\n                }\n            }\n\n            var model = {\n                RowId: parseInt($('#hfRowId').val() || '0'),\n                AddedOn: addedOn,\n                Amount: amount,\n                ExpenseType: parseInt($('#<%= ddlexpensetype.ClientID %>').val() || '0'),\n                Description: $('#<%= txtexpensedescription.ClientID %>').val(),\n                PracticeId: 0,\n                ExistingBillImagePath: $('#hfExistingBillImagePath').val() || '',\n                OldAmount: $('#hfOldAmount').val() ? parseFloat($('#hfOldAmount').val()) : null,\n                OldExpenseType: $('#hfOldExpenseType').val() ? parseInt($('#hfOldExpenseType').val()) : null,\n                OldDescription: $('#hfOldDescription').val() || null\n            };\n            \n            formData.append('model', JSON.stringify(model));\n            \n            var fileUpload = document.getElementById('<%= fubillimage.ClientID %>');\n            if (fileUpload && fileUpload.files.length > 0) {\n                for (var i = 0; i < fileUpload.files.length; i++) {\n                    formData.append('file_' + i, fileUpload.files[i]);\n                }\n            }\n\n            var btnId = model.RowId > 0 ? '#btnUpdate' : '#btnSubmit';\n            var origText = $(btnId).val();\n            $(btnId).val('Saving...').prop('disabled', true);\n\n            $.ajax({\n                type: 'POST',\n                url: '../GenericHandlers/AddExpensesHandler.ashx',\n                data: formData,\n                contentType: false,\n                processData: false,\n                success: function(response) {\n                    if (response.ok) {\n                        $('#<%= lblMessage.ClientID %>').text(model.RowId > 0 ? 'Expense Updated Successfully' : 'Expense Added Successfully').css('color', 'green').addClass('Message');\n                        clearForm(true);\n                        getExpenses();\n                        \n                        // Hide the message after 3 seconds\n                        setTimeout(function() {\n                            $('#<%= lblMessage.ClientID %>').text('').removeClass('Message');\n                        }, 3000);\n                    } else {\n                        $('#<%= lblMessage.ClientID %>').text('Error: ' + response.error).css('color', 'red');\n                    }\n                },\n                error: function(err) {\n                    $('#<%= lblMessage.ClientID %>').text('Server error occurred').css('color', 'red');\n                },\n                complete: function() {\n           \n\n"
+  },
+  "stats": {
+    "elements": 211,
+    "validators": 6,
+    "skipped_not_unique": [
+      "Search Patient",
+      "Search...",
+      "Select all",
+      "Clear",
+      "9",
+      "10",
+      "Search...",
+      "Select all",
+      "Clear",
+      "182",
+      "218",
+      "241",
+      "40",
+      "28",
+      "19",
+      "238",
+      "240",
+      "Edit",
+      "Edit",
+      "Edit",
+      "Edit",
+      "Edit",
+      "Edit",
+      "Edit",
+      "Edit",
+      "Edit",
+      "Edit"
+    ]
+  }
+}

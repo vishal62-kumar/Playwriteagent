@@ -1,0 +1,177 @@
+{
+  "finished_at": "2026-10-24T12:35:52",
+  "results": [
+    {
+      "test": "test_TC_DRE_001[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261024_123546_full_page/test_reporting_doctorreferralentry_20261024_123546.py::test_TC_DRE_001[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261024_123546_full_page\\test_reporting_doctorreferralentry_20261024_123546.py",
+      "id": "TC_DRE_001",
+      "title": "Positive test with valid postal code",
+      "type": "smoke",
+      "basis": "No specific validator for postal code, assume valid input",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.85,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter zip code' (txtpincode) with '123456'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_002[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261024_123546_full_page/test_reporting_doctorreferralentry_20261024_123546.py::test_TC_DRE_002[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261024_123546_full_page\\test_reporting_doctorreferralentry_20261024_123546.py",
+      "id": "TC_DRE_002",
+      "title": "Negative test with empty postal code",
+      "type": "smoke",
+      "basis": "No specific validator for postal code, assume empty input is invalid",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.83,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "clear 'Enter zip code' (txtpincode)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_003[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261024_123546_full_page/test_reporting_doctorreferralentry_20261024_123546.py::test_TC_DRE_003[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261024_123546_full_page\\test_reporting_doctorreferralentry_20261024_123546.py",
+      "id": "TC_DRE_003",
+      "title": "Boundary test with maximum length postal code",
+      "type": "smoke",
+      "basis": "Assume postal code can be up to 10 characters",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.89,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter zip code' (txtpincode) with '1234567890'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_DRE_004[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261024_123546_full_page/test_reporting_doctorreferralentry_20261024_123546.py::test_TC_DRE_004[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261024_123546_full_page\\test_reporting_doctorreferralentry_20261024_123546.py",
+      "id": "TC_DRE_004",
+      "title": "Negative test with non-numeric postal code",
+      "type": "smoke",
+      "basis": "No specific validator for postal code, assume non-numeric input is invalid",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.83,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter zip code' (txtpincode) with 'ABCDE'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Save Referral' (btnSaveReferral)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    }
+  ]
+}

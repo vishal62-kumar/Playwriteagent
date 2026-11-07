@@ -1,0 +1,4020 @@
+{
+  "page": "Doctor/Home.aspx",
+  "url": "http://localhost:2786/Doctor/Home.aspx",
+  "scanned_at": "2026-10-24T11:43:30",
+  "elements": {
+    "lnkusername": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_lnkusername\"]"
+      },
+      "label": "Sundeep Saini",
+      "text": "Sundeep Saini",
+      "client_id": "ctl00_lnkusername",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "lnkhome": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_lnkhome\"]"
+      },
+      "label": "Home",
+      "text": "Home",
+      "client_id": "ctl00_lnkhome",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": false,
+      "group": ""
+    },
+    "practiceTrigger": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practiceTrigger\"]"
+      },
+      "label": "TBC(Shahdara)",
+      "text": "TBC(Shahdara)",
+      "client_id": "practiceTrigger",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "clearAllBtn": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"clearAllBtn\"]"
+      },
+      "label": "Clear All",
+      "text": "Clear All",
+      "client_id": "clearAllBtn",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "applyPracticeBtn": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"applyPracticeBtn\"]"
+      },
+      "label": "Apply",
+      "text": "Apply",
+      "client_id": "applyPracticeBtn",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "practice_all": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_all\"]"
+      },
+      "label": "All Practices",
+      "text": "all",
+      "client_id": "practice_all",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "all",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_4": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_4\"]"
+      },
+      "label": "TBC(Keshavpuram)",
+      "text": "4",
+      "client_id": "practice_4",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "4",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_8": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_8\"]"
+      },
+      "label": "TBC(MayurVihar)",
+      "text": "8",
+      "client_id": "practice_8",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "8",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_2": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_2\"]"
+      },
+      "label": "TBC(Shahdara)",
+      "text": "2",
+      "client_id": "practice_2",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "2",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": true
+    },
+    "practice_10": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_10\"]"
+      },
+      "label": "TBC(Tigri)",
+      "text": "10",
+      "client_id": "practice_10",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "10",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_9": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_9\"]"
+      },
+      "label": "TBC(UttamNagar)",
+      "text": "9",
+      "client_id": "practice_9",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "9",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "link_logout": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Logout"
+      },
+      "label": "Logout",
+      "text": "Logout",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_visit": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Visit"
+      },
+      "label": "Visit",
+      "text": "Visit",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_registration": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Patient Registration"
+      },
+      "label": "Patient Registration",
+      "text": "Patient Registration",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_task_and_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Task And Messages"
+      },
+      "label": "Task And Messages",
+      "text": "Task And Messages",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_shared_emrs": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Shared EMRs"
+      },
+      "label": "Shared EMRs",
+      "text": "Shared EMRs",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_accounting": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Accounting"
+      },
+      "label": "Accounting",
+      "text": "Accounting",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_contacts": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Contacts"
+      },
+      "label": "Contacts",
+      "text": "Contacts",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_reports": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Reports"
+      },
+      "label": "Reports",
+      "text": "Reports",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_administration": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Administration"
+      },
+      "label": "Administration",
+      "text": "Administration",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_my_account": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "My Account"
+      },
+      "label": "My Account",
+      "text": "My Account",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Lab"
+      },
+      "label": "Lab",
+      "text": "Lab",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_pharmacy": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Pharmacy"
+      },
+      "label": "Pharmacy",
+      "text": "Pharmacy",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Inventory"
+      },
+      "label": "Inventory",
+      "text": "Inventory",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_chief_complaints": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Chief Complaints"
+      },
+      "label": "Chief Complaints",
+      "text": "Chief Complaints",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_examination": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Examination"
+      },
+      "label": "Examination",
+      "text": "Examination",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_test": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Test"
+      },
+      "label": "Test",
+      "text": "Test",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_medicine": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Medicine"
+      },
+      "label": "Medicine",
+      "text": "Medicine",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_allergies_and_history": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Allergies And History"
+      },
+      "label": "Allergies And History",
+      "text": "Allergies And History",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_documents": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Documents"
+      },
+      "label": "Documents",
+      "text": "Documents",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_investigation_plan": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Investigation Plan"
+      },
+      "label": "Investigation Plan",
+      "text": "Investigation Plan",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_treatment_plan": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Treatment Plan"
+      },
+      "label": "Treatment Plan",
+      "text": "Treatment Plan",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_share_emr": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Share EMR"
+      },
+      "label": "Share EMR",
+      "text": "Share EMR",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_schedule": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Schedule"
+      },
+      "label": "Schedule",
+      "text": "Schedule",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_advice": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Advice"
+      },
+      "label": "Advice",
+      "text": "Advice",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_fatiguescore": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "FatigueScore"
+      },
+      "label": "FatigueScore",
+      "text": "FatigueScore",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_diabetes_symptoms_score": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Diabetes Symptoms Score"
+      },
+      "label": "Diabetes Symptoms Score",
+      "text": "Diabetes Symptoms Score",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_satisfaction_score": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Patient Satisfaction Score"
+      },
+      "label": "Patient Satisfaction Score",
+      "text": "Patient Satisfaction Score",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_quick_view": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Quick View"
+      },
+      "label": "Quick View",
+      "text": "Quick View",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_patient": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Patient"
+      },
+      "label": "Add Patient",
+      "text": "Add Patient",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_task_for_me": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Task For Me"
+      },
+      "label": "Task For Me",
+      "text": "Task For Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_assign_task": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Assign Task"
+      },
+      "label": "Assign Task",
+      "text": "Assign Task",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inbox": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inbox"
+      },
+      "label": "Inbox",
+      "text": "Inbox",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_compose_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Compose Messages"
+      },
+      "label": "Compose Messages",
+      "text": "Compose Messages",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_sent_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Sent Messages"
+      },
+      "label": "Sent Messages",
+      "text": "Sent Messages",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_all_emrs_shared_by_me": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "All EMRs Shared By Me"
+      },
+      "label": "All EMRs Shared By Me",
+      "text": "All EMRs Shared By Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_all_emrs_share_to_me": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "All EMRs Share To Me"
+      },
+      "label": "All EMRs Share To Me",
+      "text": "All EMRs Share To Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_expense": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Expense"
+      },
+      "label": "Add Expense",
+      "text": "Add Expense",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_bill": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Bill"
+      },
+      "label": "Add Bill",
+      "text": "Add Bill",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_expense_allocation": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Expense Allocation"
+      },
+      "label": "Expense Allocation",
+      "text": "Expense Allocation",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_directory": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Directory"
+      },
+      "label": "KMed Directory",
+      "text": "KMed Directory",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_network_request": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Network Request"
+      },
+      "label": "Network Request",
+      "text": "Network Request",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_my_phone_book": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "My Phone Book"
+      },
+      "label": "My Phone Book",
+      "text": "My Phone Book",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_referral_doctor": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Referral Doctor"
+      },
+      "label": "Add Referral Doctor",
+      "text": "Add Referral Doctor",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_bulk_referral_doctor": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Bulk Referral Doctor"
+      },
+      "label": "Add Bulk Referral Doctor",
+      "text": "Add Bulk Referral Doctor",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_emr_reports": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Patient EMR Reports"
+      },
+      "label": "Patient EMR Reports",
+      "text": "Patient EMR Reports",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_schedule_audit": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Schedule Audit"
+      },
+      "label": "Schedule Audit",
+      "text": "Schedule Audit",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_bill_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Bill Report"
+      },
+      "label": "Bill Report",
+      "text": "Bill Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lab Report"
+      },
+      "label": "Lab Report",
+      "text": "Lab Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_pharmacy_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Pharmacy Report"
+      },
+      "label": "Pharmacy Report",
+      "text": "Pharmacy Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inventory Report"
+      },
+      "label": "Inventory Report",
+      "text": "Inventory Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_user_dashboard": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "User Dashboard"
+      },
+      "label": "User Dashboard",
+      "text": "User Dashboard",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_daily_visit_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Daily Visit Report"
+      },
+      "label": "Daily Visit Report",
+      "text": "Daily Visit Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_referral_doctor_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Referral Doctor Report"
+      },
+      "label": "Referral Doctor Report",
+      "text": "Referral Doctor Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_action_wall": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Action Wall"
+      },
+      "label": "Action Wall",
+      "text": "Action Wall",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_defaulter_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Defaulter Report"
+      },
+      "label": "Defaulter Report",
+      "text": "Defaulter Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_defaulter_report_old": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Defaulter Report (old)"
+      },
+      "label": "Defaulter Report (old)",
+      "text": "Defaulter Report (old)",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_patient_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Patient Report"
+      },
+      "label": "New Patient Report",
+      "text": "New Patient Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_referral_doctor_report_new": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Referral Doctor Report (new)"
+      },
+      "label": "Referral Doctor Report (new)",
+      "text": "Referral Doctor Report (new)",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_doctor_payment": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Doctor Payment"
+      },
+      "label": "Doctor Payment",
+      "text": "Doctor Payment",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lead_prospect_page": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lead Prospect Page"
+      },
+      "label": "Lead Prospect Page",
+      "text": "Lead Prospect Page",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_follow_up_reminders": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Follow-Up Reminders"
+      },
+      "label": "Follow-Up Reminders",
+      "text": "Follow-Up Reminders",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_workstatus_and_escalation_repo": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "WorkStatus And Escalation Report"
+      },
+      "label": "WorkStatus And Escalation Report",
+      "text": "WorkStatus And Escalation Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_reports_analytics": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Reports & Analytics"
+      },
+      "label": "Reports & Analytics",
+      "text": "Reports & Analytics",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_doctor_communication_day_track": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Doctor Communication Day Track"
+      },
+      "label": "Doctor Communication Day Track",
+      "text": "Doctor Communication Day Track",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_practice_location": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Practice Location"
+      },
+      "label": "Practice Location",
+      "text": "Practice Location",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_dash_board_preference": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Dash Board Preference"
+      },
+      "label": "Dash Board Preference",
+      "text": "Dash Board Preference",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_payment": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Payment"
+      },
+      "label": "Payment",
+      "text": "Payment",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_edit_profile": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Edit Profile"
+      },
+      "label": "Edit Profile",
+      "text": "Edit Profile",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_change_password": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Change Password"
+      },
+      "label": "Change Password",
+      "text": "Change Password",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_invoices": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Invoices"
+      },
+      "label": "KMed Invoices",
+      "text": "KMed Invoices",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_support": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Support"
+      },
+      "label": "KMed Support",
+      "text": "KMed Support",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_getting_started": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Getting Started"
+      },
+      "label": "Getting Started",
+      "text": "Getting Started",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab_task": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lab Task"
+      },
+      "label": "Lab Task",
+      "text": "Lab Task",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_test_done": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Test Done"
+      },
+      "label": "Test Done",
+      "text": "Test Done",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_prescriptions": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Prescriptions"
+      },
+      "label": "Prescriptions",
+      "text": "Prescriptions",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_dispensed_medicine": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Dispensed Medicine"
+      },
+      "label": "Dispensed Medicine",
+      "text": "Dispensed Medicine",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_item_master": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Item Master"
+      },
+      "label": "Item Master",
+      "text": "Item Master",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_supplier_master": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Supplier Master"
+      },
+      "label": "Supplier Master",
+      "text": "Supplier Master",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_transaction_details": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Transaction Details"
+      },
+      "label": "Transaction Details",
+      "text": "Transaction Details",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_2": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Inventory"
+      },
+      "label": "Inventory",
+      "text": "Inventory",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_inventory_transaction": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Inventory Transaction"
+      },
+      "label": "New Inventory Transaction",
+      "text": "New Inventory Transaction",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_transaction_receipt": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inventory Transaction Receipt"
+      },
+      "label": "Inventory Transaction Receipt",
+      "text": "Inventory Transaction Receipt",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_inventory_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Inventory Report"
+      },
+      "label": "New Inventory Report",
+      "text": "New Inventory Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_s_sundeep_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "S Sundeep Team Member"
+      },
+      "label": "S Sundeep Team Member",
+      "text": "S Sundeep Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_dr_dr_sunita_rani_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "DR Dr Sunita Rani Team Member"
+      },
+      "label": "DR Dr Sunita Rani Team Member",
+      "text": "DR Dr Sunita Rani Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_l_lata_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "L Lata Team Member"
+      },
+      "label": "L Lata Team Member",
+      "text": "L Lata Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_a_anand_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "A Anand Team Member"
+      },
+      "label": "A Anand Team Member",
+      "text": "A Anand Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_aj_abhishek_jain_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "AJ Abhishek Jain Team Member"
+      },
+      "label": "AJ Abhishek Jain Team Member",
+      "text": "AJ Abhishek Jain Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_l_lakshmi_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "L Lakshmi Team Member"
+      },
+      "label": "L Lakshmi Team Member",
+      "text": "L Lakshmi Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_n_naushad_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "N Naushad Team Member"
+      },
+      "label": "N Naushad Team Member",
+      "text": "N Naushad Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_a_ahsan_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "A Ahsan Team Member"
+      },
+      "label": "A Ahsan Team Member",
+      "text": "A Ahsan Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_h_himani_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "H Himani Team Member"
+      },
+      "label": "H Himani Team Member",
+      "text": "H Himani Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_p_pooja_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "P Pooja Team Member"
+      },
+      "label": "P Pooja Team Member",
+      "text": "P Pooja Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_r_rakhi_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "R Rakhi Team Member"
+      },
+      "label": "R Rakhi Team Member",
+      "text": "R Rakhi Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_s_sangeeta_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "S Sangeeta Team Member"
+      },
+      "label": "S Sangeeta Team Member",
+      "text": "S Sangeeta Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_an_aijaz_nabi_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "AN Aijaz Nabi Team Member"
+      },
+      "label": "AN Aijaz Nabi Team Member",
+      "text": "AN Aijaz Nabi Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_a_ashwani_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "A Ashwani Team Member"
+      },
+      "label": "A Ashwani Team Member",
+      "text": "A Ashwani Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_m_mohd_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "M Mohd Team Member"
+      },
+      "label": "M Mohd Team Member",
+      "text": "M Mohd Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_bn_bhawna_nagpal_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "BN Bhawna nagpal Team Member"
+      },
+      "label": "BN Bhawna nagpal Team Member",
+      "text": "BN Bhawna nagpal Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_ms_monika_singh_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "MS Monika singh Team Member"
+      },
+      "label": "MS Monika singh Team Member",
+      "text": "MS Monika singh Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_m_muskan_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "M Muskan Team Member"
+      },
+      "label": "M Muskan Team Member",
+      "text": "M Muskan Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_r_ritesh_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "R Ritesh Team Member"
+      },
+      "label": "R Ritesh Team Member",
+      "text": "R Ritesh Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_my_mansi_yadav_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "MY Mansi yadav Team Member"
+      },
+      "label": "MY Mansi yadav Team Member",
+      "text": "MY Mansi yadav Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_k_komal_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "K Komal Team Member"
+      },
+      "label": "K Komal Team Member",
+      "text": "K Komal Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_k_krish_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "K Krish Team Member"
+      },
+      "label": "K Krish Team Member",
+      "text": "K Krish Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_k_kanika_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "K Kanika Team Member"
+      },
+      "label": "K Kanika Team Member",
+      "text": "K Kanika Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_md_mohd_danish_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "MD Mohd Danish Team Member"
+      },
+      "label": "MD Mohd Danish Team Member",
+      "text": "MD Mohd Danish Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_n_nadeem_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "N Nadeem Team Member"
+      },
+      "label": "N Nadeem Team Member",
+      "text": "N Nadeem Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_j_jitender_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "J Jitender Team Member"
+      },
+      "label": "J Jitender Team Member",
+      "text": "J Jitender Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_ts_tara_shaikh_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "TS Tara Shaikh Team Member"
+      },
+      "label": "TS Tara Shaikh Team Member",
+      "text": "TS Tara Shaikh Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_a_amaan_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "A Amaan Team Member"
+      },
+      "label": "A Amaan Team Member",
+      "text": "A Amaan Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_v_vishal_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "V Vishal Team Member"
+      },
+      "label": "V Vishal Team Member",
+      "text": "V Vishal Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_ak_amir_khan_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "AK Amir Khan Team Member"
+      },
+      "label": "AK Amir Khan Team Member",
+      "text": "AK Amir Khan Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_aq_anam_qureshi_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "AQ Anam Qureshi Team Member"
+      },
+      "label": "AQ Anam Qureshi Team Member",
+      "text": "AQ Anam Qureshi Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_rs_richa_sharma_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "RS Richa Sharma Team Member"
+      },
+      "label": "RS Richa Sharma Team Member",
+      "text": "RS Richa Sharma Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_rv_reetu_verma_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "RV Reetu Verma Team Member"
+      },
+      "label": "RV Reetu Verma Team Member",
+      "text": "RV Reetu Verma Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_gv_ganga_verma_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "GV Ganga Verma Team Member"
+      },
+      "label": "GV Ganga Verma Team Member",
+      "text": "GV Ganga Verma Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_s_satish_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "S Satish Team Member"
+      },
+      "label": "S Satish Team Member",
+      "text": "S Satish Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_s_sachin_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "S Sachin Team Member"
+      },
+      "label": "S Sachin Team Member",
+      "text": "S Sachin Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_mp_meenakshi_panchal_team_memb": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "MP Meenakshi Panchal Team Member"
+      },
+      "label": "MP Meenakshi Panchal Team Member",
+      "text": "MP Meenakshi Panchal Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_hv_himanshu_verma_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "HV Himanshu verma Team Member"
+      },
+      "label": "HV Himanshu verma Team Member",
+      "text": "HV Himanshu verma Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_nz_nawazish_zaidi_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "NZ Nawazish Zaidi Team Member"
+      },
+      "label": "NZ Nawazish Zaidi Team Member",
+      "text": "NZ Nawazish Zaidi Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_t_tech_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "T Tech@ Team Member"
+      },
+      "label": "T Tech@ Team Member",
+      "text": "T Tech@ Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_fs_faisal_saifi_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "FS Faisal Saifi Team Member"
+      },
+      "label": "FS Faisal Saifi Team Member",
+      "text": "FS Faisal Saifi Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_nu_not_in_use_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "NU Not in use Team Member"
+      },
+      "label": "NU Not in use Team Member",
+      "text": "NU Not in use Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_ps_priyanka_saini_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "PS Priyanka Saini Team Member"
+      },
+      "label": "PS Priyanka Saini Team Member",
+      "text": "PS Priyanka Saini Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_td_tannu_das_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "TD Tannu Das Team Member"
+      },
+      "label": "TD Tannu Das Team Member",
+      "text": "TD Tannu Das Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_nz_nisha_zaidi_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "NZ Nisha Zaidi Team Member"
+      },
+      "label": "NZ Nisha Zaidi Team Member",
+      "text": "NZ Nisha Zaidi Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_ny_nisha_yadav_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "NY Nisha Yadav Team Member"
+      },
+      "label": "NY Nisha Yadav Team Member",
+      "text": "NY Nisha Yadav Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_h_hritik_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "H Hritik Team Member"
+      },
+      "label": "H Hritik Team Member",
+      "text": "H Hritik Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_h_himanshi_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "H Himanshi Team Member"
+      },
+      "label": "H Himanshi Team Member",
+      "text": "H Himanshi Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_tm_training_medcross_team_memb": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "TM Training @ Medcross Team Member"
+      },
+      "label": "TM Training @ Medcross Team Member",
+      "text": "TM Training @ Medcross Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_n_nishant_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "N Nishant Team Member"
+      },
+      "label": "N Nishant Team Member",
+      "text": "N Nishant Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_0_00000000_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "0 00000000 Team Member"
+      },
+      "label": "0 00000000 Team Member",
+      "text": "0 00000000 Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_s_suman_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "S Suman Team Member"
+      },
+      "label": "S Suman Team Member",
+      "text": "S Suman Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_a_aman_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "A Aman Team Member"
+      },
+      "label": "A Aman Team Member",
+      "text": "A Aman Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_s_sarfraz_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "S Sarfraz Team Member"
+      },
+      "label": "S Sarfraz Team Member",
+      "text": "S Sarfraz Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_t_tarun_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "T Tarun Team Member"
+      },
+      "label": "T Tarun Team Member",
+      "text": "T Tarun Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_r_rakesh_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "R Rakesh Team Member"
+      },
+      "label": "R Rakesh Team Member",
+      "text": "R Rakesh Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_g_gaurav_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "G Gaurav Team Member"
+      },
+      "label": "G Gaurav Team Member",
+      "text": "G Gaurav Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_r_ranveer_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "R Ranveer Team Member"
+      },
+      "label": "R Ranveer Team Member",
+      "text": "R Ranveer Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_n_naveen_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "N Naveen Team Member"
+      },
+      "label": "N Naveen Team Member",
+      "text": "N Naveen Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_d_dietician_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "D Dietician Team Member"
+      },
+      "label": "D Dietician Team Member",
+      "text": "D Dietician Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_s_shivangi_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "S Shivangi Team Member"
+      },
+      "label": "S Shivangi Team Member",
+      "text": "S Shivangi Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_c_chhavi_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "C Chhavi Team Member"
+      },
+      "label": "C Chhavi Team Member",
+      "text": "C Chhavi Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_j_jyoti_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "J Jyoti Team Member"
+      },
+      "label": "J Jyoti Team Member",
+      "text": "J Jyoti Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_a_afsar_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "A Afsar Team Member"
+      },
+      "label": "A Afsar Team Member",
+      "text": "A Afsar Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_h_harsh_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "H Harsh Team Member"
+      },
+      "label": "H Harsh Team Member",
+      "text": "H Harsh Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_a_akansha_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "A Akansha Team Member"
+      },
+      "label": "A Akansha Team Member",
+      "text": "A Akansha Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_t_tinkush_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "T Tinkush Team Member"
+      },
+      "label": "T Tinkush Team Member",
+      "text": "T Tinkush Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_s_shivanshu_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "S Shivanshu Team Member"
+      },
+      "label": "S Shivanshu Team Member",
+      "text": "S Shivanshu Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_d_devesh_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "D Devesh Team Member"
+      },
+      "label": "D Devesh Team Member",
+      "text": "D Devesh Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_d_deepak_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "D Deepak Team Member"
+      },
+      "label": "D Deepak Team Member",
+      "text": "D Deepak Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_m_mayank_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "M Mayank Team Member"
+      },
+      "label": "M Mayank Team Member",
+      "text": "M Mayank Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_t_tarique_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "T Tarique Team Member"
+      },
+      "label": "T Tarique Team Member",
+      "text": "T Tarique Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_st_sundeep_saini_kohat_chest_a": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "ST Sundeep Saini kohat Chest and TB Team Member"
+      },
+      "label": "ST Sundeep Saini kohat Chest and TB Team Member",
+      "text": "ST Sundeep Saini kohat Chest and TB Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_np_nadeem_shabnam_pathologist_": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "NP Nadeem Shabnam Pathologist Team Member"
+      },
+      "label": "NP Nadeem Shabnam Pathologist Team Member",
+      "text": "NP Nadeem Shabnam Pathologist Team Member",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_prospect_24": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Prospect 24"
+      },
+      "label": "Prospect 24",
+      "text": "Prospect 24",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "button_referral_doctor_52": {
+      "kind": "button",
+      "selector": {
+        "by": "text",
+        "value": "Referral Doctor 52"
+      },
+      "label": "Referral Doctor 52",
+      "text": "Referral Doctor 52",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "select_10_25_50_100": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "select[name=\"tblCommunication_length\"]"
+      },
+      "label": "Show 10 25 50 100 entries",
+      "text": "10 25 50 100",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "10",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "25",
+          "label": "25"
+        },
+        {
+          "value": "50",
+          "label": "50"
+        },
+        {
+          "value": "100",
+          "label": "100"
+        }
+      ]
+    },
+    "link_2609030201": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "2609030201"
+      },
+      "label": "2609030201",
+      "text": "2609030201",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_nill": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Nill"
+      },
+      "label": "Nill",
+      "text": "Nill",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2609010201": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "2609010201"
+      },
+      "label": "2609010201",
+      "text": "2609010201",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_ikra": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Ikra"
+      },
+      "label": "Ikra",
+      "text": "Ikra",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2609230201": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "2609230201"
+      },
+      "label": "2609230201",
+      "text": "2609230201",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_divya": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Divya"
+      },
+      "label": "Divya",
+      "text": "Divya",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2512310201": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "2512310201"
+      },
+      "label": "2512310201",
+      "text": "2512310201",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_billu": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Billu ."
+      },
+      "label": "Billu .",
+      "text": "Billu .",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2607160205": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "2607160205"
+      },
+      "label": "2607160205",
+      "text": "2607160205",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_shehnaz": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Shehnaz"
+      },
+      "label": "Shehnaz",
+      "text": "Shehnaz",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2504260802": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "2504260802"
+      },
+      "label": "2504260802",
+      "text": "2504260802",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kailash": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Kailash ."
+      },
+      "label": "Kailash .",
+      "text": "Kailash .",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2512040401": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "2512040401"
+      },
+      "label": "2512040401",
+      "text": "2512040401",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_ashish_kumar_yadav": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Ashish Kumar yadav"
+      },
+      "label": "Ashish Kumar yadav",
+      "text": "Ashish Kumar yadav",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2512060801": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "2512060801"
+      },
+      "label": "2512060801",
+      "text": "2512060801",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_chandani": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Chandani"
+      },
+      "label": "Chandani",
+      "text": "Chandani",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2512110802": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "2512110802"
+      },
+      "label": "2512110802",
+      "text": "2512110802",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_sunita_kumari": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Sunita .kumari"
+      },
+      "label": "Sunita .kumari",
+      "text": "Sunita .kumari",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2512171001": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "2512171001"
+      },
+      "label": "2512171001",
+      "text": "2512171001",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_mufish_ahmad": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Mufish ahmad ."
+      },
+      "label": "Mufish ahmad .",
+      "text": "Mufish ahmad .",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "tblCommunication_previous": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblCommunication_previous\"]"
+      },
+      "label": "Previous",
+      "text": "Previous",
+      "client_id": "tblCommunication_previous",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_1": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "1"
+      },
+      "label": "1",
+      "text": "1",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "tblCommunication_next": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblCommunication_next\"]"
+      },
+      "label": "Next",
+      "text": "Next",
+      "client_id": "tblCommunication_next",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "select_102550100": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "select[name=\"tblLeadsCommunication_length\"]"
+      },
+      "label": "Show 102550100 entries",
+      "text": "102550100",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "10",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "25",
+          "label": "25"
+        },
+        {
+          "value": "50",
+          "label": "50"
+        },
+        {
+          "value": "100",
+          "label": "100"
+        }
+      ]
+    },
+    "tblLeadsCommunication_previous": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblLeadsCommunication_previous\"]"
+      },
+      "label": "Previous",
+      "text": "Previous",
+      "client_id": "tblLeadsCommunication_previous",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_1_2": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "1"
+      },
+      "label": "1",
+      "text": "1",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "tblLeadsCommunication_next": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblLeadsCommunication_next\"]"
+      },
+      "label": "Next",
+      "text": "Next",
+      "client_id": "tblLeadsCommunication_next",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "select_102550100_2": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "select[name=\"tblReferralCommunication_length\"]"
+      },
+      "label": "Show 102550100 entries",
+      "text": "102550100",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "10",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "25",
+          "label": "25"
+        },
+        {
+          "value": "50",
+          "label": "50"
+        },
+        {
+          "value": "100",
+          "label": "100"
+        }
+      ]
+    },
+    "tblReferralCommunication_previous": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblReferralCommunication_previous\"]"
+      },
+      "label": "Previous",
+      "text": "Previous",
+      "client_id": "tblReferralCommunication_previous",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_1_3": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "1"
+      },
+      "label": "1",
+      "text": "1",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "tblReferralCommunication_next": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblReferralCommunication_next\"]"
+      },
+      "label": "Next",
+      "text": "Next",
+      "client_id": "tblReferralCommunication_next",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_message_inbox": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Message Inbox"
+      },
+      "label": "Message Inbox",
+      "text": "Message Inbox",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Comment on EMR of Tabbassum by Sundeep"
+      },
+      "label": "Comment on EMR of Tabbassum by Sundeep",
+      "text": "Comment on EMR of Tabbassum by Sundeep",
+      "client_id": "link",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_2": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Task completed by Monika singh"
+      },
+      "label": "Task completed by Monika singh",
+      "text": "Task completed by Monika singh",
+      "client_id": "link",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_task_for_me_2": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Task For Me"
+      },
+      "label": "Task For Me",
+      "text": "Task For Me",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_3": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "h Mono"
+      },
+      "label": "h Mono",
+      "text": "h Mono",
+      "client_id": "link",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_4": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "H Mono Patient"
+      },
+      "label": "H Mono Patient",
+      "text": "H Mono Patient",
+      "client_id": "link",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_appointments_for_today": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Appointments For Today"
+      },
+      "label": "Appointments For Today",
+      "text": "Appointments For Today",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_followup_reminders": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "FollowUp Reminders"
+      },
+      "label": "FollowUp Reminders",
+      "text": "FollowUp Reminders",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    }
+  },
+  "validators": {},
+  "known_messages": [
+    "Home",
+    "dddd,dd MMMM yyyy"
+  ],
+  "page_text": "KMedNet\nCOMPLETE PRACTICE SOLUTION\nU\nSundeep Saini\n \nHome\nTBC(Shahdara)\n \nLogout\nVisit\n\t\t\nPatient Registration\n\t\t\nTask And Messages\n\t\t\nShared EMRs\n\t\t\nAccounting\n\t\t\nContacts\n\t\t\nReports\n\t\t\nAdministration\n\t\t\nMy Account\n\t\t\nLab\n\t\t\nPharmacy\n\t\t\nInventory\nSundeep Saini\nSaturday,24 October 2026\nMy Team\n87\nS\nSundeep\nTeam Member\nDR\nDr Sunita Rani\nTeam Member\nL\nLata\nTeam Member\nA\nAnand\nTeam Member\nSS\nSumit Saini\nTeam Member\nAJ\nAbhishek Jain\nTeam Member\nL\nLakshmi\nTeam Member\nN\nNaushad\nTeam Member\nA\nAhsan\nTeam Member\nSS\nSumit Saini\nTeam Member\nH\nHimani\nTeam Member\nP\nPooja\nTeam Member\nR\nRakhi\nTeam Member\nN\nNitin\nTeam Member\nS\nSangeeta\nTeam Member\nAN\nAijaz Nabi\nTeam Member\nM\nManisha\nTeam Member\nA\nAshwani\nTeam Member\nM\nMohd\nTeam Member\nBN\nBhawna nagpal\nTeam Member\nMS\nMonika singh\nTeam Member\nM\nMuskan\nTeam Member\nR\nRitesh\nTeam Member\nMY\nMansi yadav\nTeam Member\nK\nKomal\nTeam Member\nK\nKrish\nTeam Member\nK\nKanika\nTeam Member\nMD\nMohd Danish\nTeam Member\nN\nNadeem\nTeam Member\nJ\nJitender\nTeam Member\nTS\nTara Shaikh\nTeam Member\nA\nAmaan\nTeam Member\nV\nVishal\nTeam Member\nAK\nAmir Khan\nTeam Member\nAQ\nAnam Qureshi\nTeam Member\nRS\nRicha Sharma\nTeam Member\nRV\nReetu Verma\nTeam Member\nGV\nGanga Verma\nTeam Member\nS\nSatish\nTeam Member\nS\nSachin\nTeam Member\nMP\nMeenakshi Panchal\nTeam Member\nM\nManisha\nTeam Member\nHV\nHimanshu verma\nTeam Member\nHS\nHema Sharma\nTeam Member\nNZ\nNawazish Zaidi\nTeam Member\nT\nTech@\nTeam Member\nFS\nFaisal Saifi\nTeam Member\nNU\nNot in use\nTeam Member\nPS\nPriyanka Saini\nTeam Member\nTD\nTannu Das\nTeam Member\nNZ\nNisha Zaidi\nTeam Member\nNY\nNisha Yadav\nTeam Member\nHS\nHema Sharma\nTeam Member\nH\nHritik\nTeam Member\nH\nHimanshi\nTeam Member\nA\nAnjali\nTeam Member\nTM\nTraining @ Medcross\nTeam Member\nN\nNishant\nTeam Member\nU\nUma\nTeam Member\n0\n00000000\nTeam Member\nU\nUma\nTeam Member\nN\nNitin\nTeam Member\nS\nSuman\nTeam Member\nA\nAman\nTeam Member\nS\nSarfraz\nTeam Member\nT\nTarun\nTeam Member\nR\nRakesh\nTeam Member\nG\nGaurav\nTeam Member\nR\nRanveer\nTeam Member\nN\nNaveen\nTeam Member\nD\nDietician\nTeam Member\nS\nShivangi\nTeam Member\nM\nManisha\nTeam Member\nM\nManoj\nTeam Member\nM\nManoj\nTeam Member\nC\nChhavi\nTeam Member\nJ\nJyoti\nTeam Member\nA\nAfsar\nTeam Member\nH\nHarsh\nTeam Member\nA\nAkansha\nTeam Member\nT\nTinkush\nTeam Member\nS\nShivanshu\nTeam Member\nD\nDevesh\nTeam Member\nD\nDeepak\nTeam Member\nM\nMayank\nTeam Member\nA\nAnjali\nTeam Member\nT\nTarique\nTeam Member\nMy Network\n2\nST\nSundeep Saini kohat Chest and TB\nTeam Member\nNP\nNadeem Shabnam Pathologist\nTeam Member\nWelcome back,\nSundeep Saini\nSaturday, 24 October 2026\nCommunication\nTrack and manage all assigned communications\nPatient\n23\nProspect\n24\nReferral Doctor\n52\nShow \n10\n25\n50\n100\n entries\nSearch:\nKMED ID\tPATIENT NAME\tCOMMUNICATION\tASSIGNMENT\tADDED ON\tREMINDER\tSTATUS\tACTION\tREAD\n2609030201\tNill\t\nDr says Ki Patient Hai wighte loss Ho Raha hai Bol Raha haiKi Number Nahi hai aata hai To app k Pass Refer Karta Hu\n...more\t\nSundeep Saini\n→\nHimanshu Verma Medical Officer\n\t16-10-2026 12:53:45\t—\tAssigned by me\t\n2\n\t\n✓\n\n2609010201\tIkra\t\ntoooooooooooooooooooo\n\t\nSundeep Saini\n→\nAshwani Kumar\n\t1",
+  "source": {
+    "found": true,
+    "aspx_path": "C:\\medcrossproject\\admin\\Doctor\\Home.aspx",
+    "code_behind_path": "C:\\medcrossproject\\admin\\Doctor\\Home.aspx.cs",
+    "handlers": {
+      "Page_Load": "void Page_Load(object sender, EventArgs e)\n        {\n            AppBaseFunctions.DateCultureWithTime();\n            ((Label)Page.Master.FindControl(\"lblHeader\")).Text = \"Home\";\n            if (!Page.IsPostBack)\n            {\n                lblname.Text = Convert.ToString(Session[\"name\"]);\n                if (Session[\"image_url\"] != null)\n                    imguser.ImageUrl = System.Configuration.ConfigurationManager.AppSettings[\"ImageNDocService\"].ToString() + \"1\" + \"&filename=\" + Convert.ToString(Session[\"image_url\"]);\n                else\n                    imguser.ImageUrl = \"~/style/images/blankimage.JPG\";\n                DateTime dt = System.DateTime.Now;\n                Label1.Text = dt.ToString(\"dddd,dd MMMM yyyy\");\n            }\n\n            pnlMessage.Controls.Add(Page.LoadControl(\"../UserControls/Message.ascx\"));\n            pnlMessage.Controls.Add(Page.LoadControl(\"../UserControls/MyTicket.ascx\"));\n            pnlMessage.Controls.Add(Page.LoadControl(\"../UserControls/To_Do's.ascx\"));\n\n            //int appuserid = Convert.ToInt32(Session[\"appuser\"]);\n            //DBKMedNetDataContext DB = new DBKMedNetDataContext();\n            //var query = from x in DB.DashBoardPreferences.AsEnumerable()\n            //            where x.appuser_id == appuserid\n            //            select x;\n            //if (query.Count() > 0)\n            //{\n            //    foreach (DashBoardPreference dsbordpre in query)\n            //    {\n            //        string path = dsbordpre.DashBoardControl.control_path;\n            //        pnlMessage.Controls.Add(Page.LoadControl(path));\n            //    }\n            //}         \n\n            List<DashBoardControl> dashboardpath = new List<DashBoardControl>();\n            dashboardpath = DashBoardControl.GetDashBoardPathByDashBoardId(Convert.ToInt32(Session[\"appuser\"]));\n            int remember = 0;\n            for (int i = 0; i <= 10; i++)\n            {\n                //TableRow tr = table1.Rows[i];\n                TableRow tr = new TableRow();\n                table1.Rows.Add(tr);\n                for (int j = 0; j <= 1; j++)\n                {\n                    TableCell tc = new TableCell();\n                    tr.Cells.Add(tc);\n                    while (remember < dashboardpath.Count())\n                    {\n                        tc.Controls.Add(Page.LoadControl(dashboardpath.ElementAt(remember).control_path));\n                        remember++;\n                        break;\n                    }\n                }\n            }\n        }"
+    },
+    "script_files": [],
+    "script_rules": ""
+  },
+  "stats": {
+    "elements": 210,
+    "validators": 0,
+    "skipped_not_unique": [
+      "Search Patient",
+      "Team Member",
+      "SS Sumit Saini Team Member",
+      "SS Sumit Saini Team Member",
+      "N Nitin Team Member",
+      "M Manisha Team Member",
+      "M Manisha Team Member",
+      "HS Hema Sharma Team Member",
+      "HS Hema Sharma Team Member",
+      "A Anjali Team Member",
+      "U Uma Team Member",
+      "U Uma Team Member",
+      "N Nitin Team Member",
+      "M Manisha Team Member",
+      "M Manoj Team Member",
+      "M Manoj Team Member",
+      "A Anjali Team Member",
+      "Patient 23",
+      "Search:",
+      "Assigned by me",
+      "Assigned by me",
+      "Assigned by me",
+      "Assigned by me",
+      "Overdue",
+      "Assigned by me",
+      "Assigned to me",
+      "Assigned to me",
+      "Assigned to me",
+      "Assigned to me",
+      "2",
+      "3",
+      "Search:",
+      "Communication",
+      "Communication",
+      "Communication",
+      "Communication",
+      "Communication",
+      "Communication",
+      "Communication",
+      "Communication",
+      "Communication",
+      "Communication",
+      "2",
+      "3",
+      "Search:",
+      "Communication",
+      "Communication",
+      "Communication",
+      "Communication",
+      "Communication"
+    ]
+  }
+}

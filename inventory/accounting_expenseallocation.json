@@ -1,0 +1,4923 @@
+{
+  "page": "Accounting/ExpenseAllocation.aspx",
+  "url": "http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+  "scanned_at": "2026-10-31T13:47:02",
+  "elements": {
+    "lnkusername": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_lnkusername\"]"
+      },
+      "label": "Sundeep Saini",
+      "text": "Sundeep Saini",
+      "client_id": "ctl00_lnkusername",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "lnkhome": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_lnkhome\"]"
+      },
+      "label": "Home",
+      "text": "Home",
+      "client_id": "ctl00_lnkhome",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": false,
+      "group": ""
+    },
+    "practiceTrigger": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practiceTrigger\"]"
+      },
+      "label": "TBC(Shahdara)",
+      "text": "TBC(Shahdara)",
+      "client_id": "practiceTrigger",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "clearAllBtn": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"clearAllBtn\"]"
+      },
+      "label": "Clear All",
+      "text": "Clear All",
+      "client_id": "clearAllBtn",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "applyPracticeBtn": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"applyPracticeBtn\"]"
+      },
+      "label": "Apply",
+      "text": "Apply",
+      "client_id": "applyPracticeBtn",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "practice_all": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_all\"]"
+      },
+      "label": "All Practices",
+      "text": "all",
+      "client_id": "practice_all",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "all",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_4": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_4\"]"
+      },
+      "label": "TBC(Keshavpuram)",
+      "text": "4",
+      "client_id": "practice_4",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "4",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_8": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_8\"]"
+      },
+      "label": "TBC(MayurVihar)",
+      "text": "8",
+      "client_id": "practice_8",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "8",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_2": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_2\"]"
+      },
+      "label": "TBC(Shahdara)",
+      "text": "2",
+      "client_id": "practice_2",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "2",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": true
+    },
+    "practice_10": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_10\"]"
+      },
+      "label": "TBC(Tigri)",
+      "text": "10",
+      "client_id": "practice_10",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "10",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "practice_9": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"practice_9\"]"
+      },
+      "label": "TBC(UttamNagar)",
+      "text": "9",
+      "client_id": "practice_9",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "9",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "link_logout": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Logout"
+      },
+      "label": "Logout",
+      "text": "Logout",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_visit": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Visit"
+      },
+      "label": "Visit",
+      "text": "Visit",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_registration": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Patient Registration"
+      },
+      "label": "Patient Registration",
+      "text": "Patient Registration",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_task_and_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Task And Messages"
+      },
+      "label": "Task And Messages",
+      "text": "Task And Messages",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_shared_emrs": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Shared EMRs"
+      },
+      "label": "Shared EMRs",
+      "text": "Shared EMRs",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_accounting": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Accounting"
+      },
+      "label": "Accounting",
+      "text": "Accounting",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_contacts": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Contacts"
+      },
+      "label": "Contacts",
+      "text": "Contacts",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_reports": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Reports"
+      },
+      "label": "Reports",
+      "text": "Reports",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_administration": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Administration"
+      },
+      "label": "Administration",
+      "text": "Administration",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_my_account": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "My Account"
+      },
+      "label": "My Account",
+      "text": "My Account",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Lab"
+      },
+      "label": "Lab",
+      "text": "Lab",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_pharmacy": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Pharmacy"
+      },
+      "label": "Pharmacy",
+      "text": "Pharmacy",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Inventory"
+      },
+      "label": "Inventory",
+      "text": "Inventory",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_chief_complaints": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Chief Complaints"
+      },
+      "label": "Chief Complaints",
+      "text": "Chief Complaints",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_examination": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Examination"
+      },
+      "label": "Examination",
+      "text": "Examination",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_test": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Test"
+      },
+      "label": "Test",
+      "text": "Test",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_medicine": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Medicine"
+      },
+      "label": "Medicine",
+      "text": "Medicine",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_allergies_and_history": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Allergies And History"
+      },
+      "label": "Allergies And History",
+      "text": "Allergies And History",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_documents": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Documents"
+      },
+      "label": "Documents",
+      "text": "Documents",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_investigation_plan": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Investigation Plan"
+      },
+      "label": "Investigation Plan",
+      "text": "Investigation Plan",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_treatment_plan": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Treatment Plan"
+      },
+      "label": "Treatment Plan",
+      "text": "Treatment Plan",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_share_emr": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Share EMR"
+      },
+      "label": "Share EMR",
+      "text": "Share EMR",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_schedule": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Schedule"
+      },
+      "label": "Schedule",
+      "text": "Schedule",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_advice": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Advice"
+      },
+      "label": "Advice",
+      "text": "Advice",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_fatiguescore": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "FatigueScore"
+      },
+      "label": "FatigueScore",
+      "text": "FatigueScore",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_diabetes_symptoms_score": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Diabetes Symptoms Score"
+      },
+      "label": "Diabetes Symptoms Score",
+      "text": "Diabetes Symptoms Score",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_satisfaction_score": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Patient Satisfaction Score"
+      },
+      "label": "Patient Satisfaction Score",
+      "text": "Patient Satisfaction Score",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_quick_view": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Quick View"
+      },
+      "label": "Quick View",
+      "text": "Quick View",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_patient": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Patient"
+      },
+      "label": "Add Patient",
+      "text": "Add Patient",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_task_for_me": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Task For Me"
+      },
+      "label": "Task For Me",
+      "text": "Task For Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_assign_task": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Assign Task"
+      },
+      "label": "Assign Task",
+      "text": "Assign Task",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inbox": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inbox"
+      },
+      "label": "Inbox",
+      "text": "Inbox",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_compose_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Compose Messages"
+      },
+      "label": "Compose Messages",
+      "text": "Compose Messages",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_sent_messages": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Sent Messages"
+      },
+      "label": "Sent Messages",
+      "text": "Sent Messages",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_all_emrs_shared_by_me": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "All EMRs Shared By Me"
+      },
+      "label": "All EMRs Shared By Me",
+      "text": "All EMRs Shared By Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_all_emrs_share_to_me": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "All EMRs Share To Me"
+      },
+      "label": "All EMRs Share To Me",
+      "text": "All EMRs Share To Me",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_expense": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Expense"
+      },
+      "label": "Add Expense",
+      "text": "Add Expense",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_bill": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Bill"
+      },
+      "label": "Add Bill",
+      "text": "Add Bill",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_directory": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Directory"
+      },
+      "label": "KMed Directory",
+      "text": "KMed Directory",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_network_request": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Network Request"
+      },
+      "label": "Network Request",
+      "text": "Network Request",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_my_phone_book": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "My Phone Book"
+      },
+      "label": "My Phone Book",
+      "text": "My Phone Book",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_referral_doctor": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Referral Doctor"
+      },
+      "label": "Add Referral Doctor",
+      "text": "Add Referral Doctor",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_add_bulk_referral_doctor": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Add Bulk Referral Doctor"
+      },
+      "label": "Add Bulk Referral Doctor",
+      "text": "Add Bulk Referral Doctor",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_patient_emr_reports": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Patient EMR Reports"
+      },
+      "label": "Patient EMR Reports",
+      "text": "Patient EMR Reports",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_schedule_audit": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Schedule Audit"
+      },
+      "label": "Schedule Audit",
+      "text": "Schedule Audit",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_bill_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Bill Report"
+      },
+      "label": "Bill Report",
+      "text": "Bill Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lab Report"
+      },
+      "label": "Lab Report",
+      "text": "Lab Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_pharmacy_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Pharmacy Report"
+      },
+      "label": "Pharmacy Report",
+      "text": "Pharmacy Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inventory Report"
+      },
+      "label": "Inventory Report",
+      "text": "Inventory Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_user_dashboard": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "User Dashboard"
+      },
+      "label": "User Dashboard",
+      "text": "User Dashboard",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_daily_visit_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Daily Visit Report"
+      },
+      "label": "Daily Visit Report",
+      "text": "Daily Visit Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_referral_doctor_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Referral Doctor Report"
+      },
+      "label": "Referral Doctor Report",
+      "text": "Referral Doctor Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_action_wall": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Action Wall"
+      },
+      "label": "Action Wall",
+      "text": "Action Wall",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_defaulter_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Defaulter Report"
+      },
+      "label": "Defaulter Report",
+      "text": "Defaulter Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_defaulter_report_old": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Defaulter Report (old)"
+      },
+      "label": "Defaulter Report (old)",
+      "text": "Defaulter Report (old)",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_patient_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Patient Report"
+      },
+      "label": "New Patient Report",
+      "text": "New Patient Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_referral_doctor_report_new": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Referral Doctor Report (new)"
+      },
+      "label": "Referral Doctor Report (new)",
+      "text": "Referral Doctor Report (new)",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_doctor_payment": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Doctor Payment"
+      },
+      "label": "Doctor Payment",
+      "text": "Doctor Payment",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lead_prospect_page": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lead Prospect Page"
+      },
+      "label": "Lead Prospect Page",
+      "text": "Lead Prospect Page",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_follow_up_reminders": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Follow-Up Reminders"
+      },
+      "label": "Follow-Up Reminders",
+      "text": "Follow-Up Reminders",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_workstatus_and_escalation_repo": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "WorkStatus And Escalation Report"
+      },
+      "label": "WorkStatus And Escalation Report",
+      "text": "WorkStatus And Escalation Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_reports_analytics": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Reports & Analytics"
+      },
+      "label": "Reports & Analytics",
+      "text": "Reports & Analytics",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_doctor_communication_day_track": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Doctor Communication Day Track"
+      },
+      "label": "Doctor Communication Day Track",
+      "text": "Doctor Communication Day Track",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_team_member": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Team Member"
+      },
+      "label": "Team Member",
+      "text": "Team Member",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_practice_location": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Practice Location"
+      },
+      "label": "Practice Location",
+      "text": "Practice Location",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_dash_board_preference": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Dash Board Preference"
+      },
+      "label": "Dash Board Preference",
+      "text": "Dash Board Preference",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_payment": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Payment"
+      },
+      "label": "Payment",
+      "text": "Payment",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_edit_profile": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Edit Profile"
+      },
+      "label": "Edit Profile",
+      "text": "Edit Profile",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_change_password": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Change Password"
+      },
+      "label": "Change Password",
+      "text": "Change Password",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_invoices": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Invoices"
+      },
+      "label": "KMed Invoices",
+      "text": "KMed Invoices",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_kmed_support": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "KMed Support"
+      },
+      "label": "KMed Support",
+      "text": "KMed Support",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_getting_started": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Getting Started"
+      },
+      "label": "Getting Started",
+      "text": "Getting Started",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_lab_task": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Lab Task"
+      },
+      "label": "Lab Task",
+      "text": "Lab Task",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_test_done": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Test Done"
+      },
+      "label": "Test Done",
+      "text": "Test Done",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_prescriptions": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Prescriptions"
+      },
+      "label": "Prescriptions",
+      "text": "Prescriptions",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_dispensed_medicine": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Dispensed Medicine"
+      },
+      "label": "Dispensed Medicine",
+      "text": "Dispensed Medicine",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_item_master": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Item Master"
+      },
+      "label": "Item Master",
+      "text": "Item Master",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_supplier_master": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Supplier Master"
+      },
+      "label": "Supplier Master",
+      "text": "Supplier Master",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_transaction_details": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Transaction Details"
+      },
+      "label": "Transaction Details",
+      "text": "Transaction Details",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_2": {
+      "kind": "link",
+      "selector": {
+        "by": "role",
+        "role": "link",
+        "name": "Inventory"
+      },
+      "label": "Inventory",
+      "text": "Inventory",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_inventory_transaction": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Inventory Transaction"
+      },
+      "label": "New Inventory Transaction",
+      "text": "New Inventory Transaction",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_inventory_transaction_receipt": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "Inventory Transaction Receipt"
+      },
+      "label": "Inventory Transaction Receipt",
+      "text": "Inventory Transaction Receipt",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_new_inventory_report": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "New Inventory Report"
+      },
+      "label": "New Inventory Report",
+      "text": "New Inventory Report",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "chkSelect": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl02_chkSelect\"]"
+      },
+      "label": "on",
+      "text": "on",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl02_chkSelect",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "on",
+      "maxlength": null,
+      "in_page_source": true,
+      "checked": false
+    },
+    "ddlGridUser": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl02_ddlGridUser\"]"
+      },
+      "label": "₹0",
+      "text": "Select User Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketi",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl02_ddlGridUser",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "",
+          "label": "Select User"
+        },
+        {
+          "value": "20",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "107",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "285",
+          "label": "Adarsh Marketing"
+        },
+        {
+          "value": "298",
+          "label": "Afsar Mohd"
+        },
+        {
+          "value": "100",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "124",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "161",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "46",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "66",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "203",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "303",
+          "label": "Akansha Lab technician"
+        },
+        {
+          "value": "243",
+          "label": "Aman Aman"
+        },
+        {
+          "value": "132",
+          "label": "Amir khan Sr. bd exce."
+        },
+        {
+          "value": "268",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "287",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "133",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "141",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "7",
+          "label": "Anand Manocha"
+        },
+        {
+          "value": "318",
+          "label": "Anjali Calling"
+        },
+        {
+          "value": "227",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "230",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "200",
+          "label": "Anjali verma Pharmacy excecutive"
+        },
+        {
+          "value": "312",
+          "label": "Anjan Marketing"
+        },
+        {
+          "value": "286",
+          "label": "Ashish Marketing"
+        },
+        {
+          "value": "204",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "216",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "120",
+          "label": "Aslam (m) Sr. bd exce."
+        },
+        {
+          "value": "306",
+          "label": "Avinash Hybrid marketing"
+        },
+        {
+          "value": "244",
+          "label": "Avinash Kumar"
+        }
+      ]
+    },
+    "txtNewAllocation": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl02_txtNewAllocation\"]"
+      },
+      "label": "Enter amount",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl02_txtNewAllocation",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "txtRemark": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl02_txtRemark\"]"
+      },
+      "label": "Optional note",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl02_txtRemark",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true
+    },
+    "chkSelect_2": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl03_chkSelect\"]"
+      },
+      "label": "on",
+      "text": "on",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl03_chkSelect",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "on",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "ddlGridUser_2": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl03_ddlGridUser\"]"
+      },
+      "label": "₹0",
+      "text": "Select User Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketi",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl03_ddlGridUser",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "",
+          "label": "Select User"
+        },
+        {
+          "value": "20",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "107",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "285",
+          "label": "Adarsh Marketing"
+        },
+        {
+          "value": "298",
+          "label": "Afsar Mohd"
+        },
+        {
+          "value": "100",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "124",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "161",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "46",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "66",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "203",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "303",
+          "label": "Akansha Lab technician"
+        },
+        {
+          "value": "243",
+          "label": "Aman Aman"
+        },
+        {
+          "value": "132",
+          "label": "Amir khan Sr. bd exce."
+        },
+        {
+          "value": "268",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "287",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "133",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "141",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "7",
+          "label": "Anand Manocha"
+        },
+        {
+          "value": "318",
+          "label": "Anjali Calling"
+        },
+        {
+          "value": "227",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "230",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "200",
+          "label": "Anjali verma Pharmacy excecutive"
+        },
+        {
+          "value": "312",
+          "label": "Anjan Marketing"
+        },
+        {
+          "value": "286",
+          "label": "Ashish Marketing"
+        },
+        {
+          "value": "204",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "216",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "120",
+          "label": "Aslam (m) Sr. bd exce."
+        },
+        {
+          "value": "306",
+          "label": "Avinash Hybrid marketing"
+        },
+        {
+          "value": "244",
+          "label": "Avinash Kumar"
+        }
+      ]
+    },
+    "txtNewAllocation_2": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl03_txtNewAllocation\"]"
+      },
+      "label": "Enter amount",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl03_txtNewAllocation",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "txtRemark_2": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl03_txtRemark\"]"
+      },
+      "label": "Optional note",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl03_txtRemark",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "chkSelect_3": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl04_chkSelect\"]"
+      },
+      "label": "on",
+      "text": "on",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl04_chkSelect",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "on",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "ddlGridUser_3": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl04_ddlGridUser\"]"
+      },
+      "label": "₹0",
+      "text": "Select User Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketi",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl04_ddlGridUser",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "",
+          "label": "Select User"
+        },
+        {
+          "value": "20",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "107",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "285",
+          "label": "Adarsh Marketing"
+        },
+        {
+          "value": "298",
+          "label": "Afsar Mohd"
+        },
+        {
+          "value": "100",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "124",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "161",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "46",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "66",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "203",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "303",
+          "label": "Akansha Lab technician"
+        },
+        {
+          "value": "243",
+          "label": "Aman Aman"
+        },
+        {
+          "value": "132",
+          "label": "Amir khan Sr. bd exce."
+        },
+        {
+          "value": "268",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "287",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "133",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "141",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "7",
+          "label": "Anand Manocha"
+        },
+        {
+          "value": "318",
+          "label": "Anjali Calling"
+        },
+        {
+          "value": "227",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "230",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "200",
+          "label": "Anjali verma Pharmacy excecutive"
+        },
+        {
+          "value": "312",
+          "label": "Anjan Marketing"
+        },
+        {
+          "value": "286",
+          "label": "Ashish Marketing"
+        },
+        {
+          "value": "204",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "216",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "120",
+          "label": "Aslam (m) Sr. bd exce."
+        },
+        {
+          "value": "306",
+          "label": "Avinash Hybrid marketing"
+        },
+        {
+          "value": "244",
+          "label": "Avinash Kumar"
+        }
+      ]
+    },
+    "txtNewAllocation_3": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl04_txtNewAllocation\"]"
+      },
+      "label": "Enter amount",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl04_txtNewAllocation",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "txtRemark_3": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl04_txtRemark\"]"
+      },
+      "label": "Optional note",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl04_txtRemark",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "chkSelect_4": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl05_chkSelect\"]"
+      },
+      "label": "on",
+      "text": "on",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl05_chkSelect",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "on",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "ddlGridUser_4": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl05_ddlGridUser\"]"
+      },
+      "label": "₹0",
+      "text": "Select User Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketi",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl05_ddlGridUser",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "",
+          "label": "Select User"
+        },
+        {
+          "value": "20",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "107",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "285",
+          "label": "Adarsh Marketing"
+        },
+        {
+          "value": "298",
+          "label": "Afsar Mohd"
+        },
+        {
+          "value": "100",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "124",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "161",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "46",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "66",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "203",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "303",
+          "label": "Akansha Lab technician"
+        },
+        {
+          "value": "243",
+          "label": "Aman Aman"
+        },
+        {
+          "value": "132",
+          "label": "Amir khan Sr. bd exce."
+        },
+        {
+          "value": "268",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "287",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "133",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "141",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "7",
+          "label": "Anand Manocha"
+        },
+        {
+          "value": "318",
+          "label": "Anjali Calling"
+        },
+        {
+          "value": "227",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "230",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "200",
+          "label": "Anjali verma Pharmacy excecutive"
+        },
+        {
+          "value": "312",
+          "label": "Anjan Marketing"
+        },
+        {
+          "value": "286",
+          "label": "Ashish Marketing"
+        },
+        {
+          "value": "204",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "216",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "120",
+          "label": "Aslam (m) Sr. bd exce."
+        },
+        {
+          "value": "306",
+          "label": "Avinash Hybrid marketing"
+        },
+        {
+          "value": "244",
+          "label": "Avinash Kumar"
+        }
+      ]
+    },
+    "txtNewAllocation_4": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl05_txtNewAllocation\"]"
+      },
+      "label": "Enter amount",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl05_txtNewAllocation",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "txtRemark_4": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl05_txtRemark\"]"
+      },
+      "label": "Optional note",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl05_txtRemark",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "chkSelect_5": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl06_chkSelect\"]"
+      },
+      "label": "on",
+      "text": "on",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl06_chkSelect",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "on",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "ddlGridUser_5": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl06_ddlGridUser\"]"
+      },
+      "label": "₹0",
+      "text": "Select User Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketi",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl06_ddlGridUser",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "",
+          "label": "Select User"
+        },
+        {
+          "value": "20",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "107",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "285",
+          "label": "Adarsh Marketing"
+        },
+        {
+          "value": "298",
+          "label": "Afsar Mohd"
+        },
+        {
+          "value": "100",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "124",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "161",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "46",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "66",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "203",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "303",
+          "label": "Akansha Lab technician"
+        },
+        {
+          "value": "243",
+          "label": "Aman Aman"
+        },
+        {
+          "value": "132",
+          "label": "Amir khan Sr. bd exce."
+        },
+        {
+          "value": "268",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "287",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "133",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "141",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "7",
+          "label": "Anand Manocha"
+        },
+        {
+          "value": "318",
+          "label": "Anjali Calling"
+        },
+        {
+          "value": "227",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "230",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "200",
+          "label": "Anjali verma Pharmacy excecutive"
+        },
+        {
+          "value": "312",
+          "label": "Anjan Marketing"
+        },
+        {
+          "value": "286",
+          "label": "Ashish Marketing"
+        },
+        {
+          "value": "204",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "216",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "120",
+          "label": "Aslam (m) Sr. bd exce."
+        },
+        {
+          "value": "306",
+          "label": "Avinash Hybrid marketing"
+        },
+        {
+          "value": "244",
+          "label": "Avinash Kumar"
+        }
+      ]
+    },
+    "txtNewAllocation_5": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl06_txtNewAllocation\"]"
+      },
+      "label": "Enter amount",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl06_txtNewAllocation",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "txtRemark_5": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_gvAllocation_ctl06_txtRemark\"]"
+      },
+      "label": "Optional note",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_gvAllocation_ctl06_txtRemark",
+      "visible": true,
+      "enabled": false,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "btnSubmitAllocationGrid": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_btnSubmitAllocationGrid\"]"
+      },
+      "label": "Submit Allocation",
+      "text": "Submit Allocation",
+      "client_id": "ctl00_ContentOverUpdatePanel_btnSubmitAllocationGrid",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Submit Allocation",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": "ExpenseAllocation",
+      "server_handler": "btnSubmitAllocationGrid_Click"
+    },
+    "btnClearSelection": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_btnClearSelection\"]"
+      },
+      "label": "Clear Selection",
+      "text": "Clear Selection",
+      "client_id": "ctl00_ContentOverUpdatePanel_btnClearSelection",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Clear Selection",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null
+    },
+    "txtfrom": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtfrom\"]"
+      },
+      "label": "dd/mm/yyyy",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtfrom",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": 10,
+      "in_page_source": true
+    },
+    "txtto": {
+      "kind": "text",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_txtto\"]"
+      },
+      "label": "dd/mm/yyyy",
+      "text": "",
+      "client_id": "ctl00_ContentOverUpdatePanel_txtto",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": 10,
+      "in_page_source": true
+    },
+    "button_practice": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "Practice ▾"
+      },
+      "label": "Practice ▾",
+      "text": "Practice ▾",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "text_search_practice": {
+      "kind": "text",
+      "selector": {
+        "by": "placeholder",
+        "value": "Search practice..."
+      },
+      "label": "Search practice...",
+      "text": "",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "ddlPracticeFilter": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_ddlPracticeFilter\"]"
+      },
+      "label": "TBC(Shahdara) TBC(Keshavpuram) TBC(MayurVihar) TBC(UttamNagar) TBC(Tigri)",
+      "text": "TBC(Shahdara) TBC(Keshavpuram) TBC(MayurVihar) TBC(UttamNagar) TBC(Tigri)",
+      "client_id": "ctl00_ContentOverUpdatePanel_ddlPracticeFilter",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "2",
+          "label": "TBC(Shahdara)"
+        },
+        {
+          "value": "4",
+          "label": "TBC(Keshavpuram)"
+        },
+        {
+          "value": "8",
+          "label": "TBC(MayurVihar)"
+        },
+        {
+          "value": "9",
+          "label": "TBC(UttamNagar)"
+        },
+        {
+          "value": "10",
+          "label": "TBC(Tigri)"
+        }
+      ]
+    },
+    "ddlFilterUser": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"ctl00_ContentOverUpdatePanel_ddlFilterUser\"]"
+      },
+      "label": "All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing",
+      "text": "All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing",
+      "client_id": "ctl00_ContentOverUpdatePanel_ddlFilterUser",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": true,
+      "options": [
+        {
+          "value": "",
+          "label": "All Users"
+        },
+        {
+          "value": "20",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "107",
+          "label": "Abhishek jain Sr. engineer"
+        },
+        {
+          "value": "285",
+          "label": "Adarsh Marketing"
+        },
+        {
+          "value": "298",
+          "label": "Afsar Mohd"
+        },
+        {
+          "value": "100",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "124",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "161",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "46",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "66",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "203",
+          "label": "Aijaz nabi Manager admin"
+        },
+        {
+          "value": "303",
+          "label": "Akansha Lab technician"
+        },
+        {
+          "value": "243",
+          "label": "Aman Aman"
+        },
+        {
+          "value": "132",
+          "label": "Amir khan Sr. bd exce."
+        },
+        {
+          "value": "268",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "287",
+          "label": "Amit Marketing"
+        },
+        {
+          "value": "133",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "141",
+          "label": "Anam qureshi Pt. counsellor"
+        },
+        {
+          "value": "7",
+          "label": "Anand Manocha"
+        },
+        {
+          "value": "318",
+          "label": "Anjali Calling"
+        },
+        {
+          "value": "227",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "230",
+          "label": "Anjali Mandrai"
+        },
+        {
+          "value": "200",
+          "label": "Anjali verma Pharmacy excecutive"
+        },
+        {
+          "value": "312",
+          "label": "Anjan Marketing"
+        },
+        {
+          "value": "286",
+          "label": "Ashish Marketing"
+        },
+        {
+          "value": "204",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "216",
+          "label": "Ashwani Kumar"
+        },
+        {
+          "value": "120",
+          "label": "Aslam (m) Sr. bd exce."
+        },
+        {
+          "value": "306",
+          "label": "Avinash Hybrid marketing"
+        },
+        {
+          "value": "244",
+          "label": "Avinash Kumar"
+        }
+      ]
+    },
+    "button_user": {
+      "kind": "button",
+      "selector": {
+        "by": "role",
+        "role": "button",
+        "name": "User ▼"
+      },
+      "label": "User ▼",
+      "text": "User ▼",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "text_search_user": {
+      "kind": "text",
+      "selector": {
+        "by": "placeholder",
+        "value": "Search user..."
+      },
+      "label": "Search user...",
+      "text": "",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false
+    },
+    "checkbox_285": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Adarsh Marketing"
+      },
+      "label": "Adarsh Marketing",
+      "text": "285",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "285",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_298": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Afsar Mohd"
+      },
+      "label": "Afsar Mohd",
+      "text": "298",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "298",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_303": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Akansha Lab technician"
+      },
+      "label": "Akansha Lab technician",
+      "text": "303",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "303",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_243": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Aman Aman"
+      },
+      "label": "Aman Aman",
+      "text": "243",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "243",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_132": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Amir khan Sr. bd exce."
+      },
+      "label": "Amir khan Sr. bd exce.",
+      "text": "132",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "132",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_7": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Anand Manocha"
+      },
+      "label": "Anand Manocha",
+      "text": "7",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "7",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_318": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Anjali Calling"
+      },
+      "label": "Anjali Calling",
+      "text": "318",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "318",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_200": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Anjali verma Pharmacy excecutive"
+      },
+      "label": "Anjali verma Pharmacy excecutive",
+      "text": "200",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "200",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_312": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Anjan Marketing"
+      },
+      "label": "Anjan Marketing",
+      "text": "312",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "312",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_286": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Ashish Marketing"
+      },
+      "label": "Ashish Marketing",
+      "text": "286",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "286",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_120": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Aslam (m) Sr. bd exce."
+      },
+      "label": "Aslam (m) Sr. bd exce.",
+      "text": "120",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "120",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_306": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Avinash Hybrid marketing"
+      },
+      "label": "Avinash Hybrid marketing",
+      "text": "306",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "306",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_244": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Avinash Kumar"
+      },
+      "label": "Avinash Kumar",
+      "text": "244",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "244",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_81": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Bhawna singh Pharmacy excecutive"
+      },
+      "label": "Bhawna singh Pharmacy excecutive",
+      "text": "81",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "81",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_292": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Chhavi Physiotherapist"
+      },
+      "label": "Chhavi Physiotherapist",
+      "text": "292",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "292",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_229": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Danish Khan"
+      },
+      "label": "Danish Khan",
+      "text": "229",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "229",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_151": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Danish khan Lab. technician"
+      },
+      "label": "Danish khan Lab. technician",
+      "text": "151",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "151",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_310": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Devesh Kumar"
+      },
+      "label": "Devesh Kumar",
+      "text": "310",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "310",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_275": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Dietician Kmednet"
+      },
+      "label": "Dietician Kmednet",
+      "text": "275",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "275",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_212": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Dr deeksha tripathi Sr medical officer"
+      },
+      "label": "Dr deeksha tripathi Sr medical officer",
+      "text": "212",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "212",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_101": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Dr mohd danish Medical officer"
+      },
+      "label": "Dr mohd danish Medical officer",
+      "text": "101",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "101",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_232": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Dr pranav Sr medical officer"
+      },
+      "label": "Dr pranav Sr medical officer",
+      "text": "232",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "232",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_147": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Dr vikash Sr. medical officer"
+      },
+      "label": "Dr vikash Sr. medical officer",
+      "text": "147",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "147",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_186": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Dr. deepak kumar Sr. medical officer"
+      },
+      "label": "Dr. deepak kumar Sr. medical officer",
+      "text": "186",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "186",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_206": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Dr.deepak Kumar"
+      },
+      "label": "Dr.deepak Kumar",
+      "text": "206",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "206",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_70": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Faisal Saifi"
+      },
+      "label": "Faisal Saifi",
+      "text": "70",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "70",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_187": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Faisal saifi Clinic manager"
+      },
+      "label": "Faisal saifi Clinic manager",
+      "text": "187",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "187",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_146": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Ganga verma Training manager"
+      },
+      "label": "Ganga verma Training manager",
+      "text": "146",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "146",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_77": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Gaurav Kumar"
+      },
+      "label": "Gaurav Kumar",
+      "text": "77",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "77",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_261": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Gaurav Marketing"
+      },
+      "label": "Gaurav Marketing",
+      "text": "261",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "261",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_302": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Harsh Pt. co-ordinator"
+      },
+      "label": "Harsh Pt. co-ordinator",
+      "text": "302",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "302",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_226": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Himanshi Bagiri"
+      },
+      "label": "Himanshi Bagiri",
+      "text": "226",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "226",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_119": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Jitender Sr. bd exce."
+      },
+      "label": "Jitender Sr. bd exce.",
+      "text": "119",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "119",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_297": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Jyoti Saini"
+      },
+      "label": "Jyoti Saini",
+      "text": "297",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "297",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_315": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Karan Keshavpuram"
+      },
+      "label": "Karan Keshavpuram",
+      "text": "315",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "315",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_305": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Khushboo Receptionist"
+      },
+      "label": "Khushboo Receptionist",
+      "text": "305",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "305",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_3": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Kmednet Admin"
+      },
+      "label": "Kmednet Admin",
+      "text": "3",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "3",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_1": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Kmednet Service"
+      },
+      "label": "Kmednet Service",
+      "text": "1",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "1",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_95": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Krish Saini"
+      },
+      "label": "Krish Saini",
+      "text": "95",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "95",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_56": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Lakshmi Verma"
+      },
+      "label": "Lakshmi Verma",
+      "text": "56",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "56",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_185": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Lata arya Clinic manager"
+      },
+      "label": "Lata arya Clinic manager",
+      "text": "185",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "185",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_284": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Manisha Cce"
+      },
+      "label": "Manisha Cce",
+      "text": "284",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "284",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_199": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Manisha Lab technician"
+      },
+      "label": "Manisha Lab technician",
+      "text": "199",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "199",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_289": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Manoj Kumar assistant manager"
+      },
+      "label": "Manoj Kumar assistant manager",
+      "text": "289",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "289",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_209": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Mansi yadav Call centre executive"
+      },
+      "label": "Mansi yadav Call centre executive",
+      "text": "209",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "209",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_314": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Mayank Singhal"
+      },
+      "label": "Mayank Singhal",
+      "text": "314",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "314",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_168": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Meenakshi panchal Lab. technician"
+      },
+      "label": "Meenakshi panchal Lab. technician",
+      "text": "168",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "168",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_102": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Mohd danish Medical officer"
+      },
+      "label": "Mohd danish Medical officer",
+      "text": "102",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "102",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_202": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Monika Call cnt. executive"
+      },
+      "label": "Monika Call cnt. executive",
+      "text": "202",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "202",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_78": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Monika Kumari"
+      },
+      "label": "Monika Kumari",
+      "text": "78",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "78",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_115": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Monika thakur Sr. call center exce."
+      },
+      "label": "Monika thakur Sr. call center exce.",
+      "text": "115",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "115",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_207": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Monika thakur Sr.call centtre excutive"
+      },
+      "label": "Monika thakur Sr.call centtre excutive",
+      "text": "207",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "207",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_152": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Mukesh sharma Jpch"
+      },
+      "label": "Mukesh sharma Jpch",
+      "text": "152",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "152",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_83": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Muskan Receptionist"
+      },
+      "label": "Muskan Receptionist",
+      "text": "83",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "83",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_294": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Naitik Marketing"
+      },
+      "label": "Naitik Marketing",
+      "text": "294",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "294",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_274": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Naveen Marketing"
+      },
+      "label": "Naveen Marketing",
+      "text": "274",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "274",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_183": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Nawazish zaidi Xray technician"
+      },
+      "label": "Nawazish zaidi Xray technician",
+      "text": "183",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "183",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_79": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Nisha K"
+      },
+      "label": "Nisha K",
+      "text": "79",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "79",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_194": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Nisha mayur Pt. coordinator"
+      },
+      "label": "Nisha mayur Pt. coordinator",
+      "text": "194",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "194",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_211": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Nisha yadav Front office exce."
+      },
+      "label": "Nisha yadav Front office exce.",
+      "text": "211",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "211",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_195": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Nisha zaidi Receptionist"
+      },
+      "label": "Nisha zaidi Receptionist",
+      "text": "195",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "195",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_237": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Nishant Kumar"
+      },
+      "label": "Nishant Kumar",
+      "text": "237",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "237",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_117": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Pawan kumar Operational manager"
+      },
+      "label": "Pawan kumar Operational manager",
+      "text": "117",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "117",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_180": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Poonam kumari Receptionist"
+      },
+      "label": "Poonam kumari Receptionist",
+      "text": "180",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "180",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_201": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Priya rautela Lab. technician"
+      },
+      "label": "Priya rautela Lab. technician",
+      "text": "201",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "201",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_257": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Rakesh Rakesh marketing"
+      },
+      "label": "Rakesh Rakesh marketing",
+      "text": "257",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "257",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_60": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Rakhi Saini"
+      },
+      "label": "Rakhi Saini",
+      "text": "60",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "60",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_271": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Ranveer Marketing"
+      },
+      "label": "Ranveer Marketing",
+      "text": "271",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "271",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_118": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Reetu Call center exce."
+      },
+      "label": "Reetu Call center exce.",
+      "text": "118",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "118",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_208": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Reetu verma Call centre executive"
+      },
+      "label": "Reetu verma Call centre executive",
+      "text": "208",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "208",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_205": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Richa Sharma"
+      },
+      "label": "Richa Sharma",
+      "text": "205",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "205",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_224": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Ritu Pt.counsellor"
+      },
+      "label": "Ritu Pt.counsellor",
+      "text": "224",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "224",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_166": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Ritu Verma"
+      },
+      "label": "Ritu Verma",
+      "text": "166",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "166",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_55": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Saket Tripathi"
+      },
+      "label": "Saket Tripathi",
+      "text": "55",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "55",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_307": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sarfaraz Hybrid marketing"
+      },
+      "label": "Sarfaraz Hybrid marketing",
+      "text": "307",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "307",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_253": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sarfraz Hybrid marketing"
+      },
+      "label": "Sarfraz Hybrid marketing",
+      "text": "253",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "253",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_313": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Shivam Marketing"
+      },
+      "label": "Shivam Marketing",
+      "text": "313",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "313",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_283": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Shivangi Yadav"
+      },
+      "label": "Shivangi Yadav",
+      "text": "283",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "283",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_309": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Shivanshu Hybrid marketing"
+      },
+      "label": "Shivanshu Hybrid marketing",
+      "text": "309",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "309",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_300": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Shubash Marketing"
+      },
+      "label": "Shubash Marketing",
+      "text": "300",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "300",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_278": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Shubham Marketing"
+      },
+      "label": "Shubham Marketing",
+      "text": "278",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "278",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_156": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Shyam sunder Pharmacy excecutive"
+      },
+      "label": "Shyam sunder Pharmacy excecutive",
+      "text": "156",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "156",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_260": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Siddharth Marketing"
+      },
+      "label": "Siddharth Marketing",
+      "text": "260",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "260",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_242": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Suman Suman"
+      },
+      "label": "Suman Suman",
+      "text": "242",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "242",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_231": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sumit Saini"
+      },
+      "label": "Sumit Saini",
+      "text": "231",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "231",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_106": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sundeep saini Dto"
+      },
+      "label": "Sundeep saini Dto",
+      "text": "106",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "106",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_29": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sundeep Saini kohat"
+      },
+      "label": "Sundeep Saini kohat",
+      "text": "29",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "29",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_62": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sundeep1 Saini"
+      },
+      "label": "Sundeep1 Saini",
+      "text": "62",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "62",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_63": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sundeep2 Saini"
+      },
+      "label": "Sundeep2 Saini",
+      "text": "63",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "63",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_72": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sunita Rani"
+      },
+      "label": "Sunita Rani",
+      "text": "72",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "72",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_108": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Sunita rani Cheif medical officer"
+      },
+      "label": "Sunita rani Cheif medical officer",
+      "text": "108",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "108",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_296": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Suraj Kumar"
+      },
+      "label": "Suraj Kumar",
+      "text": "296",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "296",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_223": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Swapnil Pt.counsellor"
+      },
+      "label": "Swapnil Pt.counsellor",
+      "text": "223",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "223",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_192": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tannu das Pt. coordinator"
+      },
+      "label": "Tannu das Pt. coordinator",
+      "text": "192",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "192",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_319": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tarique Tarique marketing"
+      },
+      "label": "Tarique Tarique marketing",
+      "text": "319",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "319",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_255": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tarun Hybrid marketing"
+      },
+      "label": "Tarun Hybrid marketing",
+      "text": "255",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "255",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_184": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tech@ Medcross"
+      },
+      "label": "Tech@ Medcross",
+      "text": "184",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "184",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_304": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Tinkush Marketing"
+      },
+      "label": "Tinkush Marketing",
+      "text": "304",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "304",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_233": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Training @ medcross ."
+      },
+      "label": "Training @ medcross .",
+      "text": "233",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "233",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_270": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Veer Marketing"
+      },
+      "label": "Veer Marketing",
+      "text": "270",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "270",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_295": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Vijay Marketing"
+      },
+      "label": "Vijay Marketing",
+      "text": "295",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "295",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "checkbox_217": {
+      "kind": "checkbox",
+      "selector": {
+        "by": "label",
+        "value": "Vikash Bhardwaj"
+      },
+      "label": "Vikash Bhardwaj",
+      "text": "217",
+      "client_id": "",
+      "visible": false,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "217",
+      "maxlength": null,
+      "in_page_source": false,
+      "checked": false
+    },
+    "btnSearch": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnSearch\"]"
+      },
+      "label": "Search",
+      "text": "Search",
+      "client_id": "btnSearch",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Search",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "getAllocations()"
+    },
+    "btnClearSearch": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnClearSearch\"]"
+      },
+      "label": "Clear",
+      "text": "Clear",
+      "client_id": "btnClearSearch",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Clear",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "clearSearch()"
+    },
+    "btnExportCSV": {
+      "kind": "button",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"btnExportCSV\"]"
+      },
+      "label": "Export CSV",
+      "text": "Export CSV",
+      "client_id": "btnExportCSV",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "Export CSV",
+      "maxlength": null,
+      "in_page_source": true,
+      "causes_validation": null,
+      "group": null,
+      "server_handler": "exportToExcel()"
+    },
+    "select_10_25_50_100": {
+      "kind": "select",
+      "selector": {
+        "by": "css",
+        "value": "select[name=\"tblAllocations_length\"]"
+      },
+      "label": "Show 10 25 50 100 entries",
+      "text": "10 25 50 100",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "10",
+      "maxlength": null,
+      "in_page_source": false,
+      "options": [
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "25",
+          "label": "25"
+        },
+        {
+          "value": "50",
+          "label": "50"
+        },
+        {
+          "value": "100",
+          "label": "100"
+        }
+      ]
+    },
+    "tblAllocations_previous": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblAllocations_previous\"]"
+      },
+      "label": "Previous",
+      "text": "Previous",
+      "client_id": "tblAllocations_previous",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "link_1": {
+      "kind": "link",
+      "selector": {
+        "by": "text",
+        "value": "1"
+      },
+      "label": "1",
+      "text": "1",
+      "client_id": "",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    },
+    "tblAllocations_next": {
+      "kind": "link",
+      "selector": {
+        "by": "css",
+        "value": "[id=\"tblAllocations_next\"]"
+      },
+      "label": "Next",
+      "text": "Next",
+      "client_id": "tblAllocations_next",
+      "visible": true,
+      "enabled": true,
+      "readonly": false,
+      "initial_value": "",
+      "maxlength": null,
+      "in_page_source": false,
+      "causes_validation": null,
+      "group": null
+    }
+  },
+  "validators": {},
+  "known_messages": [
+    "ALTER TABLE ExpenseAllocation ADD Remark VARCHAR(500)",
+    "Boolean Number String Function Array Date RegExp Object Error",
+    "Error fetching allocations:",
+    "Invalid JSON:",
+    "Invalid XML:",
+    "No Transport",
+    "No conversion from",
+    "No data available to export.",
+    "Permission Denied",
+    "Please Select Allocated To User for all checked rows.",
+    "Select User",
+    "Submit Allocation",
+    "Syntax error, unrecognized expression:",
+    "Update Allocation"
+  ],
+  "page_text": "KMedNet\nCOMPLETE PRACTICE SOLUTION\nU\nSundeep Saini\n \nHome\nTBC(Shahdara)\n \nLogout\nVisit\n\t\t\nPatient Registration\n\t\t\nTask And Messages\n\t\t\nShared EMRs\n\t\t\nAccounting\n\t\t\nContacts\n\t\t\nReports\n\t\t\nAdministration\n\t\t\nMy Account\n\t\t\nLab\n\t\t\nPharmacy\n\t\t\nInventory\nExpense Allocation\nMONTHLY ALLOCATION UPDATE\n \tDATE\tCENTRE\tPREVIOUS MONTH BAL..\tTOTAL SPENT\tREMAINING BALANCE\tADDITIONAL ALLOCATION\tALLOCATED TO\tNEW ALLOCATION (₹)\tREMARK\tSTATUS\n\t31 Oct 2026\tTBC(Shahdara)\t₹0\t₹1,000\t₹-1,000\t₹0\t\nSelect User\nAbhishek jain Sr. engineer\nAbhishek jain Sr. engineer\nAdarsh Marketing\nAfsar Mohd\nAijaz nabi Manager admin\nAijaz nabi Manager admin\nAijaz nabi Manager admin\nAijaz nabi Manager admin\nAijaz nabi Manager admin\nAijaz nabi Manager admin\nAkansha Lab technician\nAman Aman\nAmir khan Sr. bd exce.\nAmit Marketing\nAmit Marketing\nAnam qureshi Pt. counsellor\nAnam qureshi Pt. counsellor\nAnand Manocha\nAnjali Calling\nAnjali Mandrai\nAnjali Mandrai\nAnjali verma Pharmacy excecutive\nAnjan Marketing\nAshish Marketing\nAshwani Kumar\nAshwani Kumar\nAslam (m) Sr. bd exce.\nAvinash Hybrid marketing\nAvinash Kumar\nBhawna nagpal Pharmacy excecutive\nBhawna nagpal Pharmacy excecutive\nBhawna singh Pharmacy excecutive\nChhavi Physiotherapist\nDanish Khan\nDanish khan Lab. technician\nDevesh Kumar\nDietician Kmednet\nDr deeksha tripathi Sr medical officer\nDr mohd danish Medical officer\nDr pranav Sr medical officer\nDr sunita rani Cheif medical officer\nDr sunita rani Cheif medical officer\nDr vikash Sr. medical officer\nDr. deepak kumar Sr. medical officer\nDr.deepak Kumar\nFaisal Saifi\nFaisal saifi Clinic manager\nGanga verma Training manager\nGaurav Kumar\nGaurav Marketing\nHarsh Pt. co-ordinator\nHema sharma Data entry operator\nHema sharma Data entry operator\nHema sharma Data entry operator\nHema sharma Data entry operator\nHema sharma Data entry operator\nHimanshi Bagiri\nHimanshu verma Medical officer\nHimanshu verma Medical officer\nHimanshu verma Medical officer\nHimanshu verma Medical officer\nHimanshu verma Medical officer\nJitender Sr. bd exce.\nJyoti Saini\nKaran Keshavpuram\nKhushboo Receptionist\nKmednet Admin\nKmednet Service\nKrish Saini\nLakshmi Verma\nLata arya Clinic manager\nManisha Call center exce.\nManisha Call center exce.\nManisha Call center exce.\nManisha Cce\nManisha Kaur\nManisha Kaur\nManisha Lab technician\nManoj Kumar assistant manager\nMansi yadav Call center exce.\nMansi yadav Call center exce.\nMansi yadav Call center exce.\nMansi yadav Call center exce.\nMansi yadav Call centre executive\nMayank Singhal\nMeenakshi panchal Lab. technician\nMohd danish Medical officer\nMonika Call cnt. executive\nMonika Kumari\nMonika singh Sr. call center exce.\nMonika singh Sr. call center exce.\nMonika thakur Sr. call center exce.\nMonika thakur Sr.call centtre excutive\nMukesh sharma Jpch\nMuskan Receptionist\nNadeem Shabnam\nNadeem Shabnam\nNaitik Marketing\nNaveen Marketing\nNawazish zaidi Xray technician\nNisha K\nNisha mayur Pt. coordinator\nNisha Mirza\nNisha Mirza\nNisha mirza Receptionist\nNisha mirza Receptionist\nNisha yadav Front office exce.\nNis",
+  "source": {
+    "found": true,
+    "aspx_path": "C:\\medcrossproject\\practice\\Accounting\\ExpenseAllocation.aspx",
+    "code_behind_path": "C:\\medcrossproject\\practice\\Accounting\\ExpenseAllocation.aspx.cs",
+    "handlers": {
+      "Page_Load": "void Page_Load(object sender, EventArgs e)\n        {\n            if (!IsPostBack)\n            {\n\n\n                // Bind Filter Dropdowns\n                AppBaseFunctions.populateDropDown(ddlFilterUser, GetAppUserList(), \"name\", \"row_id\", true, \"All Users\");\n                \n                ddlPracticeFilter.DataSource = GetList();\n                ddlPracticeFilter.DataTextField = \"practice_name\";\n                ddlPracticeFilter.DataValueField = \"practice_id\";\n                ddlPracticeFilter.DataBind();\n\n                // BindGrid(1); // Removed because grid is loaded via client-side AJAX\n                BindAllocationGrid();\n            }\n        }",
+      "btnSubmitAllocationGrid_Click": "void btnSubmitAllocationGrid_Click(object sender, EventArgs e)\n        {\n            DBHelper dbHelper = new DBHelper();\n            \n            // Attempt to add Remark column if it doesn't exist\n            try { dbHelper.ExecuteNonQuery(\"ALTER TABLE ExpenseAllocation ADD Remark VARCHAR(500)\", null, CommandType.Text); } catch { }\n\n            int successCount = 0;\n            bool isUpdate = hfAllocationId.Value != \"0\";\n            bool hasValidationError = false;\n            \n            System.Collections.Generic.List<GridViewRow> rowsToSave = new System.Collections.Generic.List<GridViewRow>();\n            foreach (GridViewRow row in gvAllocation.Rows)\n            {\n                if (row.RowType == DataControlRowType.DataRow)\n                {\n                    CheckBox chkSelect = (CheckBox)row.FindControl(\"chkSelect\");\n                    if (chkSelect != null && chkSelect.Checked)\n                    {\n                        DropDownList ddlGridUser = (DropDownList)row.FindControl(\"ddlGridUser\");\n                        if (string.IsNullOrEmpty(ddlGridUser.SelectedValue) || ddlGridUser.SelectedValue == \"0\")\n                        {\n                            hasValidationError = true;\n                        }\n                        \n                        rowsToSave.Add(row);\n                    }\n                }\n            }\n\n            if (hasValidationError)\n            {\n                lblMessage.Text = \"Please Select Allocated To User for all checked rows.\";\n                lblMessage.ForeColor = System.Drawing.Color.Red;\n                return;\n            }\n\n            foreach (GridViewRow row in rowsToSave)\n            {\n                TextBox txtNewAllocation = (TextBox)row.FindControl(\"txtNewAllocation\");\n                TextBox txtRemark = (TextBox)row.FindControl(\"txtRemark\");\n                DropDownList ddlGridUser = (DropDownList)row.FindControl(\"ddlGridUser\");\n                string practiceIdStr = gvAllocation.DataKeys[row.RowIndex].Value.ToString();\n                \n                decimal allocationAmount;\n                if (!string.IsNullOrEmpty(txtNewAllocation.Text) && decimal.TryParse(txtNewAllocation.Text, out allocationAmount) && allocationAmount > 0)\n                {\n                    string query = isUpdate ? \n                        @\"UPDATE ExpenseAllocation SET PracticeId = @PracticeId, AllocatedToUserId = @AllocatedToUserId, AllocatedAmount = @AllocatedAmount, AddedByUserId = @AddedByUserId, Remark = @Remark WHERE AllocationId = @AllocationId\" : \n                        @\"INSERT INTO ExpenseAllocation (PracticeId, AllocatedToUserId, AllocatedAmount, AllocationDate, AddedByUserId, Remark, IsActive) VALUES (@PracticeId, @AllocatedToUserId, @AllocatedAmount, @AllocationDate, @AddedByUserId, @Remark, 1)\";\n                    \n                    System.Collections.Generic.List<SqlParameter> parameters = new System.Collections.Generic.List<SqlParameter> {\n                        new SqlParame"
+    },
+    "script_files": [
+      "C:\\medcrossproject\\practice\\DataTable\\Script\\jquery-1.10.2.js",
+      "<inline scripts in .aspx>"
+    ],
+    "script_rules": "function doScrollCheck() {\n\t\t\t\t\tif ( !jQuery.isReady ) {\n\n\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\t// Use the trick by Diego Perini\n\t\t\t\t\t\t\t// http://javascript.nwbox.com/IEContentLoaded/\n\t\t\t\t\t\t\ttop.doScroll(\"left\");\n\t\t\t\t\t\t} catch(e) {\n\t\t\t\t\t\t\treturn setTimeout( doScrollCheck, 50 );\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// detach all dom ready events\n\t\t\t\t\t\tdetach();\n\n\t\t\t\t\t\t// and execute any waiting functions\n\t\t\t\t\t\tjQuery.ready();\n\t\t\t\t\t}\n\t\t\t\t}\n\nfunction siblingCheck( a, b ) {\n\tvar cur = b && a,\n\t\tdiff = cur && a.nodeType === 1 && b.nodeType === 1 &&\n\t\t\t( ~b.sourceIndex || MAX_NEGATIVE ) -\n\t\t\t( ~a.sourceIndex || MAX_NEGATIVE );\n\n\t// Use IE sourceIndex if available on both nodes\n\tif ( diff ) {\n\t\treturn diff;\n\t}\n\n\t// Check if b follows a\n\tif ( cur ) {\n\t\twhile ( (cur = cur.nextSibling) ) {\n\t\t\tif ( cur === b ) {\n\t\t\t\treturn -1;\n\t\t\t}\n\t\t}\n\t}\n\n\treturn a ? 1 : -1;\n}\n\nfunction fixDefaultChecked( elem ) {\n\tif ( manipulation_rcheckableType.test( elem.type ) ) {\n\t\telem.defaultChecked = elem.checked;\n\t}\n}\n\n"
+  },
+  "stats": {
+    "elements": 233,
+    "validators": 0,
+    "skipped_not_unique": [
+      "Search Patient",
+      "Expense Allocation",
+      "Select all",
+      "Clear",
+      "2",
+      "4",
+      "8",
+      "9",
+      "10",
+      "Select all",
+      "Clear",
+      "20",
+      "107",
+      "100",
+      "124",
+      "161",
+      "46",
+      "66",
+      "203",
+      "268",
+      "287",
+      "133",
+      "141",
+      "227",
+      "230",
+      "204",
+      "216",
+      "67",
+      "68",
+      "5",
+      "30",
+      "234",
+      "235",
+      "236",
+      "221",
+      "182",
+      "222",
+      "181",
+      "196",
+      "197",
+      "198",
+      "173",
+      "178",
+      "210",
+      "61",
+      "73",
+      "92",
+      "127",
+      "157",
+      "160"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_PRD_001,Submit valid 10-digit mobile number,smoke,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '9876543210' in 'Enter mobile number'
+3. Click 'Save doctor'",- no server error,client_script_validation for valid mobile number,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_PRD_002,Submit empty mobile number,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Clear 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Mobile number is required.' appears
+- no server error",client_script_validation for required mobile number,no,PASSED,PASSED,
+TC_PRD_003,Submit mobile number with less than 10 digits,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '123456789' in 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Enter a 10-digit mobile number.' appears
+- no server error",client_script_validation for invalid mobile number,no,PASSED,PASSED,
+TC_PRD_004,Submit mobile number with more than 10 digits,negative,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '1234567890123' in 'Enter mobile number'
+3. Click 'Save doctor'","- message 'Enter a 10-digit mobile number.' appears
+- no server error",client_script_validation for invalid mobile number,no,FAILED,APP_DEFECT,Expected the message 'Enter a 10-digit mobile number.' but it never appeared.
+TC_PRD_005,Submit mobile number with exactly 10 digits (boundary),smoke,"1. Open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx
+2. Enter '1234567890' in 'Enter mobile number'
+3. Click 'Save doctor'",- no server error,client_script_validation for valid mobile number,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run

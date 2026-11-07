@@ -1,0 +1,20 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_EA_002,Click search button after selecting a user filter,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Click 'User ▼'
+3. Select 'Abhishek jain Sr. engineer' in 'All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing'
+4. Click 'Search'",- no server error,btnSearch element is clicked,no,FAILED,SCRIPT_ERROR,Step 3 'select 'Abhishek jain Sr. engineer' in 'All Users Abhishek jain Sr. engineer Abhishek jain Sr. engineer Adarsh Marketing' (ddlFilterUser)': element did not become visible/enabled within 10s.
+TC_EA_003,Click search button after selecting a practice filter,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Click 'Practice ▾'
+3. Click 'TBC(Shahdara)'
+4. Click 'Practice ▾'
+5. Click 'TBC(Shahdara)'
+6. Click 'Apply'
+7. Click 'Search'",- no server error,btnSearch element is clicked,no,PASSED,PASSED,
+TC_EA_004,Click search button with date range filled,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '01/10/2023' in 'dd/mm/yyyy'
+3. Enter '31/10/2023' in 'dd/mm/yyyy'
+4. Click 'Search'",- no server error,btnSearch element is clicked,no,PASSED,PASSED,
+TC_EA_005,Click search button with maximum date range,smoke,"1. Open http://localhost:2786/Accounting/ExpenseAllocation.aspx
+2. Enter '01/01/2023' in 'dd/mm/yyyy'
+3. Enter '31/12/2023' in 'dd/mm/yyyy'
+4. Click 'Search'",- no server error,btnSearch element is clicked,no,PASSED,PASSED,

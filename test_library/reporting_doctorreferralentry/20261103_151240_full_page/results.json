@@ -1,0 +1,396 @@
+{
+  "finished_at": "2026-11-03T15:23:50",
+  "results": [
+    {
+      "test": "test_TC_DRE_076[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261103_151240_full_page/test_reporting_doctorreferralentry_20261103_151240.py::test_TC_DRE_076[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261103_151240_full_page\\test_reporting_doctorreferralentry_20261103_151240.py",
+      "id": "TC_DRE_076",
+      "title": "Submit form with special characters in patient name",
+      "type": "smoke",
+      "basis": "Special character handling in txtPatientName",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 14.95,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter patient name' (txtPatientName) with 'John@Doe!'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Enter age' (txtAge) with '30'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Enter mobile number' (txtMob) with '1234567890'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "select 'TBC(Shahdara)' in 'Practice' (ddlPractice)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "select 'Network Doctors' in 'Referral Source' (DdlReferralSource)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "select 'TB' in 'Disease / Program' (ddldisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 8,
+          "action": "click 'Patient Status ▾' (button_patient_status)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 9,
+          "action": "select 'On Program' in 'Program Status' (ddlPatientStatus)",
+          "status": "failed",
+          "detail": "Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_076_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+    },
+    {
+      "test": "test_TC_DRE_078[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261103_151240_full_page/test_reporting_doctorreferralentry_20261103_151240.py::test_TC_DRE_078[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261103_151240_full_page\\test_reporting_doctorreferralentry_20261103_151240.py",
+      "id": "TC_DRE_078",
+      "title": "Valid mobile number input",
+      "type": "positive",
+      "basis": "validator_passes for revMobile",
+      "expected": "no 'Enter valid 10 digit mobile number' error; no server error",
+      "writes_data": false,
+      "duration": 15.17,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter patient name' (txtPatientName) with 'John Doe'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Enter age' (txtAge) with '30'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Enter mobile number' (txtMob) with '9876543210'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "select 'TBC(Shahdara)' in 'Practice' (ddlPractice)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "select 'Network Doctors' in 'Referral Source' (DdlReferralSource)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "select 'TB' in 'Disease / Program' (ddldisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 8,
+          "action": "click 'Patient Status ▾' (button_patient_status)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 9,
+          "action": "select 'On Program' in 'Program Status' (ddlPatientStatus)",
+          "status": "failed",
+          "detail": "Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_078_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+    },
+    {
+      "test": "test_TC_DRE_079[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261103_151240_full_page/test_reporting_doctorreferralentry_20261103_151240.py::test_TC_DRE_079[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261103_151240_full_page\\test_reporting_doctorreferralentry_20261103_151240.py",
+      "id": "TC_DRE_079",
+      "title": "Boundary test for mobile number input (10 digits)",
+      "type": "boundary",
+      "basis": "validator_passes for revMobile",
+      "expected": "no 'Enter valid 10 digit mobile number' error; no server error",
+      "writes_data": false,
+      "duration": 15.19,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter patient name' (txtPatientName) with 'John Doe'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "fill 'Enter age' (txtAge) with '30'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Enter mobile number' (txtMob) with '0123456789'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "select 'TBC(Shahdara)' in 'Practice' (ddlPractice)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "select 'Network Doctors' in 'Referral Source' (DdlReferralSource)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "select 'TB' in 'Disease / Program' (ddldisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 8,
+          "action": "click 'Patient Status ▾' (button_patient_status)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 9,
+          "action": "select 'On Program' in 'Program Status' (ddlPatientStatus)",
+          "status": "failed",
+          "detail": "Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_079_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 9 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+    },
+    {
+      "test": "test_TC_DRE_090[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261103_151240_full_page/test_reporting_doctorreferralentry_20261103_151240.py::test_TC_DRE_090[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261103_151240_full_page\\test_reporting_doctorreferralentry_20261103_151240.py",
+      "id": "TC_DRE_090",
+      "title": "Select a valid program status",
+      "type": "positive",
+      "basis": "ddlPatientStatus element options",
+      "expected": "'Program Status' = 'On Program'; no server error",
+      "writes_data": false,
+      "duration": 13.57,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'On Program' in 'Program Status' (ddlPatientStatus)",
+          "status": "failed",
+          "detail": "Step 2 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_090_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 2 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+    },
+    {
+      "test": "test_TC_DRE_091[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261103_151240_full_page/test_reporting_doctorreferralentry_20261103_151240.py::test_TC_DRE_091[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261103_151240_full_page\\test_reporting_doctorreferralentry_20261103_151240.py",
+      "id": "TC_DRE_091",
+      "title": "Select the last valid option in program status",
+      "type": "boundary",
+      "basis": "ddlPatientStatus element options",
+      "expected": "'Program Status' = 'Died'; no server error",
+      "writes_data": false,
+      "duration": 13.79,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Died' in 'Program Status' (ddlPatientStatus)",
+          "status": "failed",
+          "detail": "Step 2 'select 'Died' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_091_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 2 'select 'Died' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+    },
+    {
+      "test": "test_TC_DRE_092[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261103_151240_full_page/test_reporting_doctorreferralentry_20261103_151240.py::test_TC_DRE_092[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261103_151240_full_page\\test_reporting_doctorreferralentry_20261103_151240.py",
+      "id": "TC_DRE_092",
+      "title": "Select a middle valid option in program status",
+      "type": "ui",
+      "basis": "ddlPatientStatus element options",
+      "expected": "'Program Status' = 'Cured'; no server error",
+      "writes_data": false,
+      "duration": 13.51,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Cured' in 'Program Status' (ddlPatientStatus)",
+          "status": "failed",
+          "detail": "Step 2 'select 'Cured' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_092_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 2 'select 'Cured' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+    },
+    {
+      "test": "test_TC_DRE_134[chromium]",
+      "nodeid": "test_library/reporting_doctorreferralentry/20261103_151240_full_page/test_reporting_doctorreferralentry_20261103_151240.py::test_TC_DRE_134[chromium]",
+      "file": "test_library\\reporting_doctorreferralentry\\20261103_151240_full_page\\test_reporting_doctorreferralentry_20261103_151240.py",
+      "id": "TC_DRE_134",
+      "title": "Boundary test for 'txtMob' with maximum length",
+      "type": "boundary",
+      "basis": "maxlength of txtMob",
+      "expected": "'Enter mobile number' = '1234567890'; no server error",
+      "writes_data": false,
+      "duration": 15.59,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Reporting/DoctorReferralEntry.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter patient name' (txtPatientName) with 'John Doe'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "tick 'Male' (rblGender_0)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "fill 'Enter age' (txtAge) with '30'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "fill 'Enter mobile number' (txtMob) with '1234567890'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "select 'TBC(Shahdara)' in 'Practice' (ddlPractice)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "select 'Network Doctors' in 'Referral Source' (DdlReferralSource)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 8,
+          "action": "select 'TB' in 'Disease / Program' (ddldisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 9,
+          "action": "click 'Patient Status ▾' (button_patient_status)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 10,
+          "action": "select 'On Program' in 'Program Status' (ddlPatientStatus)",
+          "status": "failed",
+          "detail": "Step 10 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_DRE_134_chromium_.png",
+      "status": "FAILED",
+      "category": "SCRIPT_ERROR",
+      "reason": "Step 10 'select 'On Program' in 'Program Status' (ddlPatientStatus)': element did not become visible/enabled within 10s."
+    }
+  ]
+}

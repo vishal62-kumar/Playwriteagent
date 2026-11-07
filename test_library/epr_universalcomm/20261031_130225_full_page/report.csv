@@ -1,0 +1,16 @@
+﻿Test ID,Scenario,Type,Status,Category,Reason,Expected,Basis,Failed Step,Duration (s)
+TC_UC_017,Submit a valid note,smoke,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,no server error,client_script_validation,,0.0
+TC_UC_019,Submit a note with maximum length,smoke,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,no server error,client_script_validation,,0.0
+TC_UC_020,Submit a note with special characters,smoke,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,no server error,client_script_validation,,0.0
+TC_UC_028,Positive test with valid reminder date,smoke,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,no server error,client_script_validation,,0.0
+TC_UC_030,Boundary test with maximum length reminder date,smoke,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run,no server error,client_script_validation,,0.0
+TC_UC_018,Submit an empty note,negative,PASSED,PASSED,,'Type communication note here…' is visible; no server error,client_script_validation,,0.78
+TC_UC_021,Select 'All Practices' from PRACTICE dropdown,positive,PASSED,PASSED,,'PRACTICE' = 'All Practices'; no server error,ddlPractice element options,,0.65
+TC_UC_022,Select 'TBC(Shahdara)' from PRACTICE dropdown,positive,PASSED,PASSED,,'PRACTICE' = 'TBC(Shahdara)'; no server error,ddlPractice element options,,2.03
+TC_UC_023,Select 'TBC(Keshavpuram)' from PRACTICE dropdown,positive,PASSED,PASSED,,'PRACTICE' = 'TBC(Keshavpuram)'; no server error,ddlPractice element options,,1.69
+TC_UC_024,Select 'TBC(MayurVihar)' from PRACTICE dropdown,positive,PASSED,PASSED,,'PRACTICE' = 'TBC(MayurVihar)'; no server error,ddlPractice element options,,1.62
+TC_UC_025,Positive case: Valid input for 'Click to search staff…',smoke,PASSED,PASSED,,no server error,"No specific validator or message for this field, so check no server error",,0.37
+TC_UC_026,Negative case: Empty input for 'Click to search staff…',smoke,PASSED,PASSED,,no server error,"No specific validator or message for this field, so check no server error",,0.5
+TC_UC_027,Boundary case: Maximum length input for 'Click to search staff…',smoke,PASSED,PASSED,,no server error,"No specific validator or message for this field, so check no server error",,0.45
+TC_UC_029,Negative test with empty reminder date,smoke,PASSED,PASSED,,no server error,client_script_validation,,0.89
+TC_UC_031,Negative test with invalid reminder date format,smoke,PASSED,PASSED,,no server error,client_script_validation,,0.83

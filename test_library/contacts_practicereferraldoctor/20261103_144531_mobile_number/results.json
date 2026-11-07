@@ -1,0 +1,182 @@
+{
+  "finished_at": "2026-11-03T14:45:50",
+  "results": [
+    {
+      "test": "test_TC_PRD_001[chromium]",
+      "nodeid": "test_library/contacts_practicereferraldoctor/20261103_144531_mobile_number/test_contacts_practicereferraldoctor_20261103_144531.py::test_TC_PRD_001[chromium]",
+      "file": "test_library\\contacts_practicereferraldoctor\\20261103_144531_mobile_number\\test_contacts_practicereferraldoctor_20261103_144531.py",
+      "id": "TC_PRD_001",
+      "title": "Submit valid 10-digit mobile number",
+      "type": "smoke",
+      "basis": "client_script_validation for valid mobile number",
+      "expected": "no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    },
+    {
+      "test": "test_TC_PRD_002[chromium]",
+      "nodeid": "test_library/contacts_practicereferraldoctor/20261103_144531_mobile_number/test_contacts_practicereferraldoctor_20261103_144531.py::test_TC_PRD_002[chromium]",
+      "file": "test_library\\contacts_practicereferraldoctor\\20261103_144531_mobile_number\\test_contacts_practicereferraldoctor_20261103_144531.py",
+      "id": "TC_PRD_002",
+      "title": "Submit empty mobile number",
+      "type": "negative",
+      "basis": "client_script_validation for required mobile number",
+      "expected": "message 'Mobile number is required.' appears; no server error",
+      "writes_data": false,
+      "duration": 1.08,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "clear 'Enter mobile number' (txtmobile)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Save doctor' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Mobile number is required.'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_PRD_003[chromium]",
+      "nodeid": "test_library/contacts_practicereferraldoctor/20261103_144531_mobile_number/test_contacts_practicereferraldoctor_20261103_144531.py::test_TC_PRD_003[chromium]",
+      "file": "test_library\\contacts_practicereferraldoctor\\20261103_144531_mobile_number\\test_contacts_practicereferraldoctor_20261103_144531.py",
+      "id": "TC_PRD_003",
+      "title": "Submit mobile number with less than 10 digits",
+      "type": "negative",
+      "basis": "client_script_validation for invalid mobile number",
+      "expected": "message 'Enter a 10-digit mobile number.' appears; no server error",
+      "writes_data": false,
+      "duration": 4.14,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter mobile number' (txtmobile) with '123456789'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Save doctor' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Enter a 10-digit mobile number.'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_PRD_004[chromium]",
+      "nodeid": "test_library/contacts_practicereferraldoctor/20261103_144531_mobile_number/test_contacts_practicereferraldoctor_20261103_144531.py::test_TC_PRD_004[chromium]",
+      "file": "test_library\\contacts_practicereferraldoctor\\20261103_144531_mobile_number\\test_contacts_practicereferraldoctor_20261103_144531.py",
+      "id": "TC_PRD_004",
+      "title": "Submit mobile number with more than 10 digits",
+      "type": "negative",
+      "basis": "client_script_validation for invalid mobile number",
+      "expected": "message 'Enter a 10-digit mobile number.' appears; no server error",
+      "writes_data": false,
+      "duration": 8.14,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/Contacts/PracticeReferralDoctor.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Enter mobile number' (txtmobile) with '1234567890123'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Save doctor' (btnSubmit)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Enter a 10-digit mobile number.'",
+          "status": "failed",
+          "detail": "Expected the message 'Enter a 10-digit mobile number.' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_PRD_004_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Enter a 10-digit mobile number.' but it never appeared."
+    },
+    {
+      "test": "test_TC_PRD_005[chromium]",
+      "nodeid": "test_library/contacts_practicereferraldoctor/20261103_144531_mobile_number/test_contacts_practicereferraldoctor_20261103_144531.py::test_TC_PRD_005[chromium]",
+      "file": "test_library\\contacts_practicereferraldoctor\\20261103_144531_mobile_number\\test_contacts_practicereferraldoctor_20261103_144531.py",
+      "id": "TC_PRD_005",
+      "title": "Submit mobile number with exactly 10 digits (boundary)",
+      "type": "smoke",
+      "basis": "client_script_validation for valid mobile number",
+      "expected": "no server error",
+      "writes_data": true,
+      "duration": 0.0,
+      "steps": [],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "SKIPPED",
+      "category": "SKIPPED",
+      "reason": "Saves data - skipped because saving data was not allowed for this run"
+    }
+  ]
+}

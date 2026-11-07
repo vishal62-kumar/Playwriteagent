@@ -1,0 +1,128 @@
+﻿Test ID,Scenario,Type,Steps,Expected Result,Why expected,Writes data,Result,Category,Reason
+TC_AE_006,Submit with invalid expense amount format,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '1000abc' in 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- validation 'Please enter valid Expense Amount use only numeric characters ' is shown
+- message 'Please enter valid Expense Amount use only numeric characters ' appears
+- no server error",revtxtexpenseamount validator fires,no,FAILED,APP_DEFECT,"Expected validation message 'Please enter valid Expense Amount use only numeric characters ' (revtxtexpenseamount) to appear, but it did not."
+TC_AE_007,Submit with empty expense amount,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Clear 'Expense Amount'
+3. Select 'Tea Club' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- validation 'Please enter Expense Amount' is shown
+- message 'Please enter Expense Amount' appears
+- no server error",rfvtxtexpenseamount validator fires,no,PASSED,PASSED,
+TC_AE_008,Submit with empty expense type,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '1000' in 'Expense Amount'
+3. Select 'Select Expense Type' in 'Expense Type'
+4. Enter 'Monthly tea expenses' in 'Description'
+5. Click 'Submit'","- validation 'Please Select Expense Type' is shown
+- message 'Please Select Expense Type' appears
+- no server error",rfvtxtexpensetype validator fires,no,PASSED,PASSED,
+TC_AE_009,Submit with maximum allowed expense amount,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '50000' in 'Expense Amount'
+3. Select 'Office Maintenance' in 'Expense Type'
+4. Enter 'Office maintenance expenses' in 'Description'
+5. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",Expense amount boundary condition,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_AE_010,Submit valid expense amount,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '1000' in 'Expense Amount'
+3. Click 'Submit'","- no 'Please enter valid Expense Amount use only numeric characters ' error
+- no server error",validator_passes for revtxtexpenseamount,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_AE_011,Submit empty expense amount,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Clear 'Expense Amount'
+3. Click 'Submit'","- validation 'Please enter Expense Amount' is shown
+- message 'Please enter Expense Amount' appears
+- no server error",validator_fires for rfvtxtexpenseamount,no,PASSED,PASSED,
+TC_AE_012,Submit non-numeric expense amount,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'abc' in 'Expense Amount'
+3. Click 'Submit'","- validation 'Please enter valid Expense Amount use only numeric characters ' is shown
+- message 'Please enter valid Expense Amount use only numeric characters ' appears
+- no server error",validator_fires for revtxtexpenseamount,no,FAILED,APP_DEFECT,"Expected validation message 'Please enter valid Expense Amount use only numeric characters ' (revtxtexpenseamount) to appear, but it did not."
+TC_AE_013,Submit expense amount exceeding maximum limit,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '60000' in 'Expense Amount'
+3. Click 'Submit'","- message 'Expense Amount cannot exceed 50,000 at one time.' appears
+- no server error",client_script_validation for amount > 50000,no,FAILED,APP_DEFECT,"Expected the message 'Expense Amount cannot exceed 50,000 at one time.' but it never appeared. Pop-ups seen: ['- Please Select Expense Type']."
+TC_AE_014,Select a valid expense type,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Tea Club' in 'Expense Type'","- 'Expense Type' = 'Tea Club'
+- no server error",The selection of a valid option is a standard operation for dropdowns.,no,PASSED,PASSED,
+TC_AE_015,Select the default option 'Select Expense Type',negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Select Expense Type' in 'Expense Type'
+3. Click 'Submit'","- validation 'Please Select Expense Type' is shown
+- message 'Please Select Expense Type' appears
+- no server error",The required validator should fire if the default option is selected.,no,PASSED,PASSED,
+TC_AE_016,Select a duplicate option 'Labour Charges',ui,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Labour Charges' in 'Expense Type'","- 'Expense Type' = 'Labour Charges'
+- no server error","The dropdown allows selecting duplicate options, but the UI should handle it gracefully.",no,PASSED,PASSED,
+TC_AE_017,Select each valid expense type option,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Select 'Office Maintenance' in 'Expense Type'
+3. Select 'Office Bill (Electricity, Water, Internet, etc.)' in 'Expense Type'
+4. Select 'Office Cleaning / Pest Control' in 'Expense Type'
+5. Select 'Medicines' in 'Expense Type'
+6. Select 'Miscellaneous' in 'Expense Type'
+7. Select 'Office Furniture' in 'Expense Type'
+8. Select 'Transport Charges' in 'Expense Type'
+9. Select 'Labour Charges' in 'Expense Type'","- 'Expense Type' = 'Labour Charges'
+- no server error",Ensure all options can be selected without error.,no,PASSED,PASSED,
+TC_AE_018,Submit with valid description,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'Office supplies purchase' in 'Description'
+3. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",code_behind_handlers,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_AE_019,Submit with empty description,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Clear 'Description'
+3. Click 'Submit'","- message 'Expense Description is mandatory.' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'Expense Description is mandatory.' but it never appeared. Pop-ups seen: ['- Please enter Expense Amount\n- Please Select Expense Type'].
+TC_AE_020,Submit with maximum length description,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'A very long description that is exactly at the boundary of what is acceptable for this field' in 'Description'
+3. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",code_behind_handlers,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_AE_021,Submit with special characters in description,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'Purchase of office chairs & tables @ 50% discount!' in 'Description'
+3. Click 'Submit'","- message 'Expense Added Successfully' appears
+- no server error",code_behind_handlers,yes,SKIPPED,SKIPPED,Saves data - skipped because saving data was not allowed for this run
+TC_AE_022,Upload a single valid file,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'",- no server error,client_script_validation,no,PASSED,PASSED,
+TC_AE_023,Upload multiple files within limit,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'",- no server error,client_script_validation,no,PASSED,PASSED,
+TC_AE_024,Attempt to upload more than the allowed number of files,negative,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'","- message 'You can only have a maximum of 5 files total (including existing files).' appears
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected the message 'You can only have a maximum of 5 files total (including existing files).' but it never appeared.
+TC_AE_025,Upload no file,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Upload a sample file to 'No file chosen'","- 'No file chosen' = 'No file chosen'
+- no server error",client_script_validation,no,FAILED,APP_DEFECT,Expected 'No file chosen' (fubillimage) to be 'No file chosen' but it is 'C:\\fakepath\\qa_upload_sample.txt'.
+TC_AE_026,Search with valid expense name,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'Tea Club' in 'Search expenses...'
+3. Click 'Search'",- no server error,Valid input should not cause any errors,no,PASSED,PASSED,
+TC_AE_027,Search with empty input,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Clear 'Search expenses...'
+3. Click 'Search'",- no server error,Empty input should not cause any errors,no,PASSED,PASSED,
+TC_AE_028,Search with special characters,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '!@#$%^&*()' in 'Search expenses...'
+3. Click 'Search'",- no server error,Special characters should not cause any errors,no,PASSED,PASSED,
+TC_AE_029,Search with long input exceeding typical length,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter 'a very long expense name that exceeds typical length' in 'Search expenses...'
+3. Click 'Search'",- no server error,Long input should not cause any errors,no,PASSED,PASSED,
+TC_AE_030,Valid date input,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '15/08/2023' in 'dd/mm/yyyy'
+3. Click 'Search'","- no 'Please enter valid Date' error
+- no server error",validator_passes for a valid date format,no,PASSED,PASSED,
+TC_AE_031,Boundary test for maximum length,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '01/01/20231' in 'dd/mm/yyyy'
+3. Click 'Search'","- 'dd/mm/yyyy' = '01/01/2023'
+- no server error",Maximum length of the date field,no,PASSED,PASSED,
+TC_AE_032,Invalid date format in search,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '15-08-2023' in 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,validator_fires for an invalid date format,no,PASSED,PASSED,
+TC_AE_033,Empty date input in search,smoke,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Clear 'dd/mm/yyyy'
+3. Click 'Search'",- no server error,validator_fires for a required field,no,PASSED,PASSED,
+TC_AE_034,Valid date input in 'dd/mm/yyyy' format,positive,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '15/09/2023' in 'dd/mm/yyyy'
+3. Click 'Submit'","- no 'Please enter valid Date' error
+- no server error",revtxtdate validator passes,no,PASSED,PASSED,
+TC_AE_035,Boundary test for maximum length of date input,boundary,"1. Open http://localhost:2786/Accounting/AddExpenses.aspx
+2. Enter '31/12/9999' in 'dd/mm/yyyy'
+3. Click 'Submit'","- no 'Please enter valid Date' error
+- 'dd/mm/yyyy' = '31/12/9999'
+- no server error",revtxtdate validator passes,no,PASSED,PASSED,

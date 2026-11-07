@@ -1,0 +1,1134 @@
+{
+  "finished_at": "2026-11-03T14:39:14",
+  "results": [
+    {
+      "test": "test_TC_NEWS_024[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_024[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_024",
+      "title": "Search with valid KMed ID",
+      "type": "smoke",
+      "basis": "Valid input for txtSearch",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 1.2,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...' (txtSearch) with '2609230201'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_025[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_025[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_025",
+      "title": "Search with invalid KMed ID",
+      "type": "negative",
+      "basis": "Invalid input for txtSearch",
+      "expected": "message 'Unable to identify this patient/prospect. Please refresh the page and try again.' appears; no server error",
+      "writes_data": false,
+      "duration": 6.44,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...' (txtSearch) with '9999999999'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect message 'Unable to identify this patient/prospect. Please refresh the page and try again.'",
+          "status": "failed",
+          "detail": "Expected the message 'Unable to identify this patient/prospect. Please refresh the page and try again.' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_NEWS_025_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Unable to identify this patient/prospect. Please refresh the page and try again.' but it never appeared."
+    },
+    {
+      "test": "test_TC_NEWS_026[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_026[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_026",
+      "title": "Search with valid mobile number",
+      "type": "smoke",
+      "basis": "Valid input for txtSearch",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 1.2,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...' (txtSearch) with '9821968438'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_027[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_027[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_027",
+      "title": "Search with empty input",
+      "type": "smoke",
+      "basis": "Empty input for txtSearch",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 1.26,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "clear 'Type name, KMed ID, mobile no, Abha ID, Nikshay ID...' (txtSearch)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_028[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_028[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_028",
+      "title": "Positive case: Valid filter selection",
+      "type": "smoke",
+      "basis": "Valid selection of filter options",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 2.86,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' (filterStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "select 'TB' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_029[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_029[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_029",
+      "title": "Negative case: Invalid filter combination",
+      "type": "negative",
+      "basis": "Invalid combination of filter options",
+      "expected": "message 'Unable to identify this patient/prospect. Please refresh the page and try again.' appears; no server error",
+      "writes_data": false,
+      "duration": 14.16,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Cured' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' (filterStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "select 'Diabetes' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect message 'Unable to identify this patient/prospect. Please refresh the page and try again.'",
+          "status": "failed",
+          "detail": "Expected the message 'Unable to identify this patient/prospect. Please refresh the page and try again.' but it never appeared."
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "screenshots/test_TC_NEWS_029_chromium_.png",
+      "status": "FAILED",
+      "category": "APP_DEFECT",
+      "reason": "Expected the message 'Unable to identify this patient/prospect. Please refresh the page and try again.' but it never appeared."
+    },
+    {
+      "test": "test_TC_NEWS_030[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_030[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_030",
+      "title": "Boundary case: Maximum entries selection",
+      "type": "smoke",
+      "basis": "Maximum entries selection in dropdown",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 2.21,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select '100' in 'Show 10 25 50 100 entries' (select_10_25_50_100)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_031[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_031[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_031",
+      "title": "UI case: Clear filter",
+      "type": "ui",
+      "basis": "Clear filter button functionality",
+      "expected": "'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' = 'All Status'; 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'All Programs'; 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'All Diseases'; no server error",
+      "writes_data": false,
+      "duration": 20.76,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' (filterStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "select 'TB' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 5,
+          "action": "click 'Clear' (btnClearFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 6,
+          "action": "expect 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' (filterStatus) = 'All Status'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 7,
+          "action": "expect 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram) = 'All Programs'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 8,
+          "action": "expect 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease) = 'All Diseases'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 9,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_032[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_032[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_032",
+      "title": "Select 'On Program' status and apply filter",
+      "type": "smoke",
+      "basis": "Valid selection of filterStatus",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 9.29,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' (filterStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_033[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_033[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_033",
+      "title": "Select 'All Programs' and apply filter",
+      "type": "smoke",
+      "basis": "Valid selection of filterProgram",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 5.99,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'All Programs' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_034[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_034[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_034",
+      "title": "Select 'TB' disease and apply filter",
+      "type": "smoke",
+      "basis": "Valid selection of filterDisease",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 6.17,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'TB' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_035[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_035[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_035",
+      "title": "Select 'Consultation Only' status and apply filter",
+      "type": "smoke",
+      "basis": "Valid selection of filterStatus",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 3.36,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Consultation Only' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' (filterStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_036[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_036[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_036",
+      "title": "Select 'Died' program and apply filter",
+      "type": "smoke",
+      "basis": "Valid selection of filterProgram",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 4.14,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Died' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_037[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_037[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_037",
+      "title": "Select 'All Status' from filterStatus dropdown",
+      "type": "smoke",
+      "basis": "filterStatus element with 'All Status' option",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 2.87,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'All Status' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' (filterStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_038[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_038[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_038",
+      "title": "Select 'On Program' from filterStatus dropdown",
+      "type": "smoke",
+      "basis": "filterStatus element with 'On Program' option",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 5.27,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'On Program' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' (filterStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_039[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_039[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_039",
+      "title": "Select 'Cured' from filterStatus dropdown",
+      "type": "smoke",
+      "basis": "filterStatus element with 'Cured' option",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 7.62,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Cured' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' (filterStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_040[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_040[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_040",
+      "title": "Select 'Review After Report' from filterStatus dropdown",
+      "type": "smoke",
+      "basis": "filterStatus element with 'Review After Report' option",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 6.63,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Review After Report' in 'All Status On Program Cured Review After Report OPD/Other Treatment Consultation' (filterStatus)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Apply' (btnApplyFilter)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_041[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_041[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_041",
+      "title": "Select 'All Programs' from filterProgram dropdown",
+      "type": "positive",
+      "basis": "element_value reflects the selected option",
+      "expected": "'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'All Programs'; no server error",
+      "writes_data": false,
+      "duration": 4.39,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'All Programs' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram) = 'All Programs'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_042[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_042[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_042",
+      "title": "Select 'On Treatment' from filterProgram dropdown",
+      "type": "positive",
+      "basis": "element_value reflects the selected option",
+      "expected": "'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'On Treatment'; no server error",
+      "writes_data": false,
+      "duration": 2.13,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'On Treatment' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram) = 'On Treatment'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_043[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_043[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_043",
+      "title": "Select 'Treatment Interrupted' from filterProgram dropdown",
+      "type": "positive",
+      "basis": "element_value reflects the selected option",
+      "expected": "'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Treatment Interrupted'; no server error",
+      "writes_data": false,
+      "duration": 3.32,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Treatment Interrupted' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram) = 'Treatment Interrupted'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_044[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_044[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_044",
+      "title": "Select 'Died' from filterProgram dropdown",
+      "type": "positive",
+      "basis": "element_value reflects the selected option",
+      "expected": "'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' = 'Died'; no server error",
+      "writes_data": false,
+      "duration": 5.22,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Died' in 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'All Programs On Treatment Treatment Interrupted Treatment Stopped By Patient Tre' (filterProgram) = 'Died'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_045[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_045[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_045",
+      "title": "Select 'All Diseases' from filterDisease dropdown",
+      "type": "positive",
+      "basis": "element_value on filterDisease",
+      "expected": "'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'All Diseases'; no server error",
+      "writes_data": false,
+      "duration": 4.57,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'All Diseases' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease) = 'All Diseases'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_046[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_046[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_046",
+      "title": "Select 'TB with Diabetes' from filterDisease dropdown",
+      "type": "positive",
+      "basis": "element_value on filterDisease",
+      "expected": "'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'TB with Diabetes'; no server error",
+      "writes_data": false,
+      "duration": 3.87,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'TB with Diabetes' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease) = 'TB with Diabetes'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_047[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_047[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_047",
+      "title": "Select 'Diabetes' from filterDisease dropdown",
+      "type": "positive",
+      "basis": "element_value on filterDisease",
+      "expected": "'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'Diabetes'; no server error",
+      "writes_data": false,
+      "duration": 3.22,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'Diabetes' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease) = 'Diabetes'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    },
+    {
+      "test": "test_TC_NEWS_048[chromium]",
+      "nodeid": "test_library/epr_newsearchpatient/20261103_143652_full_page/test_epr_newsearchpatient_20261103_143652.py::test_TC_NEWS_048[chromium]",
+      "file": "test_library\\epr_newsearchpatient\\20261103_143652_full_page\\test_epr_newsearchpatient_20261103_143652.py",
+      "id": "TC_NEWS_048",
+      "title": "Select 'No Program' from filterDisease dropdown",
+      "type": "positive",
+      "basis": "element_value on filterDisease",
+      "expected": "'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' = 'No Program'; no server error",
+      "writes_data": false,
+      "duration": 3.31,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/newsearchpatient.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "select 'No Program' in 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "expect 'All Diseases TB TB with Diabetes Diabetes No Program Follow-Up(TB) NGO TB TB Sup' (filterDisease) = 'No Program'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    }
+  ]
+}

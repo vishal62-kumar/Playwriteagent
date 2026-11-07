@@ -1,0 +1,48 @@
+{
+  "finished_at": "2026-10-30T14:04:46",
+  "results": [
+    {
+      "test": "test_TC_UC_016[chromium]",
+      "nodeid": "test_library/epr_universalcomm/20261030_140422_full_page/test_epr_universalcomm_20261030_140422.py::test_TC_UC_016[chromium]",
+      "file": "test_library\\epr_universalcomm\\20261030_140422_full_page\\test_epr_universalcomm_20261030_140422.py",
+      "id": "TC_UC_016",
+      "title": "Invalid date format in 'REMINDER FOR ME' field",
+      "type": "smoke",
+      "basis": "no_server_error",
+      "expected": "no server error",
+      "writes_data": false,
+      "duration": 0.64,
+      "steps": [
+        {
+          "n": 1,
+          "action": "open http://localhost:2786/EPR/UniversalComm.aspx",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 2,
+          "action": "fill 'REMINDER FOR ME' (txtFu) with '2023-10-15'",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 3,
+          "action": "click 'Send' (btnSend)",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "n": 4,
+          "action": "expect no server error",
+          "status": "passed",
+          "detail": ""
+        }
+      ],
+      "dialogs": [],
+      "screenshot": "",
+      "status": "PASSED",
+      "category": "PASSED",
+      "reason": ""
+    }
+  ]
+}

@@ -1,0 +1,1014 @@
+{
+  "page": "Accounting/ExpenseAllocation.aspx",
+  "url": "http://localhost:2786/Accounting/ExpenseAllocation.aspx",
+  "focus": "",
+  "generated_at": "2026-10-29T16:32:06",
+  "model": "gpt-4o",
+  "inventory_scanned_at": "2026-10-29T16:31:06",
+  "scenarios": [
+    {
+      "title": "Check 'on' checkbox",
+      "type": "positive",
+      "writes_data": false,
+      "basis": "element_value",
+      "steps": [
+        {
+          "action": "check",
+          "element": "chkSelect"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_checked",
+          "element": "chkSelect"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_006",
+      "group": "on"
+    },
+    {
+      "title": "Uncheck 'on' checkbox",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "element_value",
+      "steps": [
+        {
+          "action": "uncheck",
+          "element": "chkSelect"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_unchecked",
+          "element": "chkSelect"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_007",
+      "group": "on"
+    },
+    {
+      "title": "Boundary test for 'on' checkbox - check and uncheck",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "element_value",
+      "steps": [
+        {
+          "action": "check",
+          "element": "chkSelect"
+        },
+        {
+          "action": "uncheck",
+          "element": "chkSelect"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_unchecked",
+          "element": "chkSelect"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_008",
+      "group": "on"
+    },
+    {
+      "title": "Submit allocation without selecting user",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "btnSubmitAllocationGrid_Click handler shows validation message",
+      "steps": [
+        {
+          "action": "click",
+          "element": "btnSubmitAllocationGrid"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Please Select Allocated To User for all checked rows."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_009",
+      "group": "₹0"
+    },
+    {
+      "title": "Boundary test for txtfrom date field",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "txtfrom has maxlength of 10",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "01/01/2023"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtfrom",
+          "value": "01/01/2023"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_010",
+      "group": "₹0"
+    },
+    {
+      "title": "Boundary test for txtto date field",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "txtto has maxlength of 10",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "31/12/2023"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtto",
+          "value": "31/12/2023"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_011",
+      "group": "₹0"
+    },
+    {
+      "title": "Submit allocation without selecting user",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "Validation error for missing user selection",
+      "steps": [
+        {
+          "action": "click",
+          "element": "btnSubmitAllocationGrid"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Please Select Allocated To User for all checked rows."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_012",
+      "group": "Enter amount"
+    },
+    {
+      "title": "Clear selection",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "Clear selection button functionality",
+      "steps": [
+        {
+          "action": "check",
+          "element": "chkSelect"
+        },
+        {
+          "action": "click",
+          "element": "btnClearSelection"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_unchecked",
+          "element": "chkSelect"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_013",
+      "group": "Enter amount"
+    },
+    {
+      "title": "Boundary test for date input",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "Date input field maxlength",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "01/01/2023"
+        },
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "31/12/2023"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtfrom",
+          "value": "01/01/2023"
+        },
+        {
+          "type": "element_value",
+          "element": "txtto",
+          "value": "31/12/2023"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_014",
+      "group": "Enter amount"
+    },
+    {
+      "title": "Negative scenario: Submit allocation without selecting a user",
+      "type": "negative",
+      "writes_data": false,
+      "basis": "Validation error when no user is selected",
+      "steps": [
+        {
+          "action": "click",
+          "element": "btnSubmitAllocationGrid"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "message_shown",
+          "value": "Please Select Allocated To User for all checked rows."
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_015",
+      "group": "Optional note"
+    },
+    {
+      "title": "Boundary scenario: Fill 'txtfrom' with maximum length date",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "txtfrom element has maxlength of 10",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "31/12/2023"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtfrom",
+          "value": "31/12/2023"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_016",
+      "group": "Optional note"
+    },
+    {
+      "title": "UI scenario: Check 'chkSelect' checkbox",
+      "type": "ui",
+      "writes_data": false,
+      "basis": "chkSelect element allows checking",
+      "steps": [
+        {
+          "action": "check",
+          "element": "chkSelect"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_checked",
+          "element": "chkSelect"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_017",
+      "group": "Optional note"
+    },
+    {
+      "title": "Valid date input in 'dd/mm/yyyy' format",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid date format",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "15/10/2023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_018",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Invalid date input with incorrect format",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Invalid date format",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "2023-10-15"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_019",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Empty date input",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Empty input",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtfrom"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_020",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Boundary test for maximum length of date input",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "Maximum length of input",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtfrom",
+          "value": "15/10/20232023"
+        },
+        {
+          "action": "click",
+          "element": "btnSearch"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtfrom",
+          "value": "15/10/2023"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_021",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Valid date input for 'dd/mm/yyyy' field",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Valid date format",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "15/10/2023"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_022",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Invalid date format input for 'dd/mm/yyyy' field",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Invalid date format",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "2023-10-15"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_023",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Empty input for 'dd/mm/yyyy' field",
+      "type": "smoke",
+      "writes_data": false,
+      "basis": "Empty input",
+      "steps": [
+        {
+          "action": "clear",
+          "element": "txtto"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [
+        "no provable expected result - runs as a smoke test (no crash / server error)"
+      ],
+      "id": "TC_EA_024",
+      "group": "dd/mm/yyyy"
+    },
+    {
+      "title": "Boundary test for maximum length in 'dd/mm/yyyy' field",
+      "type": "boundary",
+      "writes_data": false,
+      "basis": "Maximum length",
+      "steps": [
+        {
+          "action": "fill",
+          "element": "txtto",
+          "value": "15/10/202312345"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "element_value",
+          "element": "txtto",
+          "value": "15/10/2023"
+        },
+        {
+          "type": "no_server_error"
+        }
+      ],
+      "notes": [],
+      "id": "TC_EA_025",
+      "group": "dd/mm/yyyy"
+    }
+  ],
+  "rejected": [
+    {
+      "scenario": {
+        "title": "UI test for 'on' checkbox visibility",
+        "type": "ui",
+        "writes_data": false,
+        "basis": "element_visible",
+        "steps": [],
+        "assertions": [
+          {
+            "type": "element_visible",
+            "element": "chkSelect"
+          }
+        ]
+      },
+      "problems": [
+        "scenario has no steps",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Verify 'chkSelect' checkbox visibility",
+        "type": "ui",
+        "writes_data": false,
+        "basis": "element_visible",
+        "steps": [],
+        "assertions": [
+          {
+            "type": "element_visible",
+            "element": "chkSelect"
+          }
+        ]
+      },
+      "problems": [
+        "scenario has no steps"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select 'Select User' from dropdown",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "ddlGridUser is disabled or readonly",
+        "steps": [
+          {
+            "action": "select",
+            "element": "ddlGridUser",
+            "value": "Select User"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_disabled",
+            "element": "ddlGridUser"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'ddlGridUser' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select 'Abhishek jain Sr. engineer' from dropdown",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "ddlGridUser is disabled or readonly",
+        "steps": [
+          {
+            "action": "select",
+            "element": "ddlGridUser",
+            "value": "Abhishek jain Sr. engineer"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_disabled",
+            "element": "ddlGridUser"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'ddlGridUser' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select 'Adarsh Marketing' from dropdown",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "ddlGridUser is disabled or readonly",
+        "steps": [
+          {
+            "action": "select",
+            "element": "ddlGridUser",
+            "value": "Adarsh Marketing"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_disabled",
+            "element": "ddlGridUser"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'ddlGridUser' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select 'Anjali Calling' from dropdown",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "ddlGridUser is disabled or readonly",
+        "steps": [
+          {
+            "action": "select",
+            "element": "ddlGridUser",
+            "value": "Anjali Calling"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_disabled",
+            "element": "ddlGridUser"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'ddlGridUser' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Check disabled state of ddlGridUser dropdown",
+        "type": "ui",
+        "writes_data": false,
+        "basis": "ddlGridUser is disabled or readonly",
+        "steps": [],
+        "assertions": [
+          {
+            "type": "element_disabled",
+            "element": "ddlGridUser"
+          }
+        ]
+      },
+      "problems": [
+        "scenario has no steps"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Submit allocation with valid data",
+        "type": "positive",
+        "writes_data": true,
+        "basis": "btnSubmitAllocationGrid_Click handler processes valid data",
+        "steps": [
+          {
+            "action": "check",
+            "element": "chkSelect"
+          },
+          {
+            "action": "fill",
+            "element": "txtNewAllocation",
+            "value": "1000"
+          },
+          {
+            "action": "select",
+            "element": "ddlFilterUser",
+            "value": "Abhishek jain Sr. engineer"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmitAllocationGrid"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 2: 'txtNewAllocation' is disabled/read-only",
+        "step 3: 'ddlFilterUser' is hidden when the page loads - click the control that reveals it first"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Enter a valid positive amount",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "Valid input for txtNewAllocation",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtNewAllocation",
+            "value": "100.50"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtNewAllocation' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Enter zero amount",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "Zero is not a valid allocation amount",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtNewAllocation",
+            "value": "0"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtNewAllocation' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Enter a negative amount",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "Negative values are not valid for txtNewAllocation",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtNewAllocation",
+            "value": "-50"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtNewAllocation' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Enter a non-numeric value",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "Non-numeric input should not be accepted",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtNewAllocation",
+            "value": "abc"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtNewAllocation' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Select a user for allocation",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "Valid selection of user in dropdown",
+        "steps": [
+          {
+            "action": "select",
+            "element": "ddlGridUser",
+            "value": "Abhishek jain Sr. engineer"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "ddlGridUser",
+            "value": "Abhishek jain Sr. engineer"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'ddlGridUser' is disabled/read-only"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Submit allocation with valid user selection",
+        "type": "positive",
+        "writes_data": true,
+        "basis": "Successful allocation submission",
+        "steps": [
+          {
+            "action": "check",
+            "element": "chkSelect"
+          },
+          {
+            "action": "select",
+            "element": "ddlGridUser",
+            "value": "Abhishek jain Sr. engineer"
+          },
+          {
+            "action": "click",
+            "element": "btnSubmitAllocationGrid"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "no_server_error"
+          }
+        ]
+      },
+      "problems": [
+        "step 2: 'ddlGridUser' is disabled/read-only"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Positive scenario: Fill 'Optional note' with a valid text",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "txtRemark element allows text input",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtRemark",
+            "value": "This is a valid remark."
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "txtRemark",
+            "value": "This is a valid remark."
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtRemark' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Negative scenario: Attempt to fill 'Optional note' when disabled",
+        "type": "negative",
+        "writes_data": false,
+        "basis": "txtRemark element is disabled",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtRemark",
+            "value": "Attempt to fill when disabled"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_disabled",
+            "element": "txtRemark"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtRemark' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Boundary scenario: Fill 'Optional note' with maximum length text",
+        "type": "boundary",
+        "writes_data": false,
+        "basis": "txtRemark element accepts text input",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtRemark",
+            "value": "A very long text that exceeds the typical length for a remark field, but should be accepted as it is within reasonable limits for testing purposes."
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "txtRemark",
+            "value": "A very long text that exceeds the typical length for a remark field, but should be accepted as it is within reasonable limits for testing purposes."
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtRemark' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "UI scenario: Clear 'Optional note' field",
+        "type": "ui",
+        "writes_data": false,
+        "basis": "txtRemark element allows clearing input",
+        "steps": [
+          {
+            "action": "fill",
+            "element": "txtRemark",
+            "value": "Temporary text"
+          },
+          {
+            "action": "clear",
+            "element": "txtRemark"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "txtRemark",
+            "value": ""
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'txtRemark' is disabled/read-only",
+        "step 2: 'txtRemark' is disabled/read-only",
+        "(model was asked to fix this; see accepted scenarios for its replacement)"
+      ]
+    },
+    {
+      "scenario": {
+        "title": "Positive scenario: Select a user from 'ddlGridUser' dropdown",
+        "type": "positive",
+        "writes_data": false,
+        "basis": "ddlGridUser element allows selection",
+        "steps": [
+          {
+            "action": "select",
+            "element": "ddlGridUser",
+            "value": "Abhishek jain Sr. engineer"
+          }
+        ],
+        "assertions": [
+          {
+            "type": "element_value",
+            "element": "ddlGridUser",
+            "value": "Abhishek jain Sr. engineer"
+          }
+        ]
+      },
+      "problems": [
+        "step 1: 'ddlGridUser' is disabled/read-only"
+      ]
+    }
+  ],
+  "groups": [
+    "on",
+    "₹0",
+    "Enter amount",
+    "Optional note",
+    "dd/mm/yyyy"
+  ]
+}
